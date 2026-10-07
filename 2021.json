@@ -1,0 +1,602 @@
+{
+ "_help": "Per-tour extras that are NOT in the playbook. Image values are Wix media IDs (the 32-character code after 588d17_ in the Wix image address). Videos use the Vimeo number (vimeo.com/<number>) or a 'youtube' ID. Leave any field empty (\"\" or []) and that part of the page simply hides. rc_images / leaderboard_images may also be file paths (relative to tour_media) – those images are built into the page.",
+ "year": 2021,
+ "strapline": "THE 20TH ANNIVERSARY",
+ "hero": {
+  "id": "40b4422d9ea549f78ec8800f6eebf1b9",
+  "caption": "2021 Tourists"
+ },
+ "venue": {
+  "map_query": "The Celtic Manor Resort, Coldra Wood, Newport NP18 1HQ",
+  "map_zoom": 15,
+  "blurb": ""
+ },
+ "captains": {
+  "BH": {
+   "id": "532c5944e3ff436f90c1cd44d861b410"
+  }
+ },
+ "accommodation": {
+  "name": "Celtic Manor Resort",
+  "blurb": "Home for BDT 2021 – 11 tourists, with Twenty Ten and Roman Road on the golf schedule.\n\nA Visit Wales five-star resort in the Usk Valley with three championship courses: the Twenty Ten, the Roman Road and the Montgomerie. The Twenty Ten hosted the 2010 Ryder Cup. The resort also has a floodlit Toptracer driving range and two clubhouses.",
+  "photos": [
+   {
+    "id": "89be0ea748c74950a8828d4ff3adcee3",
+    "caption": ""
+   },
+   {
+    "id": "f924a7923e354ad7af1e0bc3ec5a5a87",
+    "caption": ""
+   },
+   {
+    "id": "1a7c4558473a475588d7eda8d55bc5e3",
+    "caption": ""
+   },
+   {
+    "id": "d9ca1071d7014c5f9ec3895078e39924",
+    "caption": ""
+   },
+   {
+    "id": "2ee0be318d8e4658a806d3aee29c3d02",
+    "caption": ""
+   },
+   {
+    "id": "c9269c7095a441c1b9a0024da3b6dba2",
+    "caption": ""
+   },
+   {
+    "id": "57f19481033946229f3ab4f4d4ab8d1a",
+    "caption": ""
+   },
+   {
+    "id": "d18557c1a5514e309a23b58df7120148",
+    "caption": ""
+   },
+   {
+    "id": "5f5576dbe6b24fb289d998b5659e3d7d",
+    "caption": ""
+   },
+   {
+    "id": "68d27b66f7cf417cbc5c7a742694f9e9",
+    "caption": ""
+   },
+   {
+    "id": "66297f081e8149a1bc5672b120cab555",
+    "caption": ""
+   },
+   {
+    "id": "185936daa55e4f54b3dc7c7f5e278259",
+    "caption": ""
+   }
+  ],
+  "where": "Usk Valley · Newport · Wales",
+  "facts": [
+   "Visit Wales five-star",
+   "Three championship courses",
+   "2010 Ryder Cup venue",
+   "Toptracer driving range"
+  ],
+  "link": "https://www.celtic-manor.com/home/golf/"
+ },
+ "itinerary_images": [
+  {
+   "id": "9414d0230b5f463f860e34d59faec86b",
+   "caption": ""
+  }
+ ],
+ "itinerary_extra": {},
+ "team_photos": {
+  "BH": "c4a2b3152e6444bc9a01073881af0600",
+  "RT": "ae27ae0c8f034932ac5bac379c979d80"
+ },
+ "team_announcement": [
+  {
+   "vimeo": "592750850",
+   "title": "BDT 2021 Team Announcement",
+   "thumb": "https://i.vimeocdn.com/video/1224823246-86fc61610941784e1ba2df0357a9e5aa97309430602712b32439287e31696a60-d_640?region=us"
+  }
+ ],
+ "rc_images": [
+  "boards/BDT_2021_RyderCup_1.jpg",
+  "boards/BDT_2021_RyderCup_2.jpg",
+  "boards/BDT_2021_RyderCup_3.jpg"
+ ],
+ "leaderboard_images": [
+  "boards/BDT_2021_Leaderboard_1.jpg"
+ ],
+ "summary": {
+  "banner": "721dd25472fe49a795aaebba5fb7842e",
+  "title": "",
+  "text": "",
+  "link": "https://www.bigdogstour.com/post/bdt-2021-tour-summary-the-20th-anniversary"
+ },
+ "video_sections": [
+  {
+   "title": "Photo Slideshow",
+   "items": [
+    {
+     "vimeo": "612618890",
+     "title": "BDT 2021 Slideshow",
+     "thumb": "https://i.vimeocdn.com/video/1250113572-6127dffbf1755a5e82cb73f26376a28ec1553b56e8913b892_640?region=us"
+    }
+   ]
+  },
+  {
+   "title": "Tour clips",
+   "items": [
+    {
+     "vimeo": "613017890",
+     "title": "Draw For The Solo BHs",
+     "thumb": "https://i.vimeocdn.com/video/1251172491-71a6ef453ad1ade39ffb8e8232781a0fb3e02e30c0f8b48ed_640?region=us"
+    },
+    {
+     "vimeo": "623426875",
+     "title": "Captains at OC",
+     "thumb": "https://i.vimeocdn.com/video/1265711883-2cc80a7af8953022daf8e2722042313a749cf19deabdbb23b_640?region=us"
+    },
+    {
+     "vimeo": "623439546",
+     "title": "Captains Necking",
+     "thumb": "https://i.vimeocdn.com/video/1265724109-25ce3d0d731cdb6299b0b2b97c949f3ee9a18842ed4574995_640?region=us"
+    },
+    {
+     "vimeo": "623444554",
+     "title": "Langers Stash Smashed",
+     "thumb": "https://i.vimeocdn.com/video/1265729174-7f66491e6055b2163ada94aff53b2cde634ea83ecce5c8f38_640?region=us"
+    },
+    {
+     "vimeo": "617740430",
+     "title": "Gav Warm Up Round I",
+     "thumb": "https://i.vimeocdn.com/video/1259815532-3000a481f9d8abc327bc814fc06654a77c6b0780da3ec71c4_640?region=us"
+    },
+    {
+     "vimeo": "617744153",
+     "title": "Rufus - Round I - First Tee Freshie",
+     "thumb": "https://i.vimeocdn.com/video/1259819375-a31957bb37e30621cc22c9ce932ff61a8e0e43fe49d81e901_640?region=us"
+    },
+    {
+     "vimeo": "617743775",
+     "title": "Rufus - Round I - First Proper Tee Shot",
+     "thumb": "https://i.vimeocdn.com/video/1259819068-354558a4b16ac782fb51493c3b582171f59014c9f9ef361ec_640?region=us"
+    },
+    {
+     "vimeo": "613016063",
+     "title": "BT & Ravo, First Tee, Round I",
+     "thumb": "https://i.vimeocdn.com/video/1251167397-b45f98961a94dd37b64eae2d47fddbed7a27578b29c2c6cfb_640?region=us"
+    },
+    {
+     "vimeo": "623493055",
+     "title": "Paddy - First Tee - Round I",
+     "thumb": "https://i.vimeocdn.com/video/1265779613-4ab6018dd2c7ac3d634bdb933708ff0ba705d40ef1c5109c2_640?region=us"
+    },
+    {
+     "vimeo": "623494049",
+     "title": "Harbo - First Tee - Round I",
+     "thumb": "https://i.vimeocdn.com/video/1265780848-ff66a89b23620f754be8019a9cb8a3cc28f6233c53231b1d5_640?region=us"
+    },
+    {
+     "vimeo": "623520843",
+     "title": "Ash - Round I - First Tee - Drive I",
+     "thumb": "https://i.vimeocdn.com/video/1265808795-14852a45262469127e09f8cd4a855350f4214d594395645ea_640?region=us"
+    },
+    {
+     "vimeo": "613014251",
+     "title": "Ash - Round I - First Tee - Drive II",
+     "thumb": "https://i.vimeocdn.com/video/1251152984-d07e7b6aa28592289c7975ecf2e776e08d9a5117fe14aa1f7_640?region=us"
+    },
+    {
+     "vimeo": "623495801",
+     "title": "Boysie - Round I - First Tee",
+     "thumb": "https://i.vimeocdn.com/video/1265783028-91d107fb62aec0530cdc68e9f5855ed621e8fcca408a977e6_640?region=us"
+    },
+    {
+     "vimeo": "623511525",
+     "title": "Gav - Round I - First Tee",
+     "thumb": "https://i.vimeocdn.com/video/1265799995-c6cbade927ede8390d947afe79a544cc09b48479deae69c45_640?region=us"
+    },
+    {
+     "vimeo": "623511468",
+     "title": "Knoxy - Round I - First Tee",
+     "thumb": "https://i.vimeocdn.com/video/1265800003-b98bd1d12f0b3ebcd7f2f0f44df568c5dd3ffd84274ffc6d8_640?region=us"
+    },
+    {
+     "vimeo": "623451947",
+     "title": "Buzz - Round I - First Tee",
+     "thumb": "https://i.vimeocdn.com/video/1265737065-e54813a0503d3ed54258abccf975c507ea34f616867d2f8d7_640?region=us"
+    },
+    {
+     "vimeo": "623508791",
+     "title": "Langers - Round I - First Tee",
+     "thumb": "https://i.vimeocdn.com/video/1265797992-82defc0206287e49f5731d1f8b763e44472420a331937634e_640?region=us"
+    },
+    {
+     "vimeo": "617740698",
+     "title": "Golf Day II Pairings - 1st Pair",
+     "thumb": "https://i.vimeocdn.com/video/1259816259-4b9179f2a13de29587a5a84e1d5b3b3bd2c581690c3d86c8e_640?region=us"
+    },
+    {
+     "vimeo": "617740967",
+     "title": "Golf Day II Pairings - 2nd and 3rd Pairs",
+     "thumb": "https://i.vimeocdn.com/video/1259816850-fd4b4a79606fa87cc40720c4773c13c55bf7c22df4420a8b2_640?region=us"
+    },
+    {
+     "vimeo": "623535886",
+     "title": "Rufus Is Found!",
+     "thumb": "https://i.vimeocdn.com/video/1265826748-351d6573b844ab3426b44a74b5017d1f3fcb221216fa6d9f6_640?region=us"
+    },
+    {
+     "vimeo": "623555902",
+     "title": "Ravo and Buzz - Round II - Drives",
+     "thumb": "https://i.vimeocdn.com/video/1265847925-e13906fbbede96f9e7301f1a35192b4362f38fa0f9c18cd5b_640?region=us"
+    },
+    {
+     "vimeo": "617747778",
+     "title": "Ravo - Round II - Dogs Barking",
+     "thumb": "https://i.vimeocdn.com/video/1259824230-9f8431b9b346a1b42d5e0dd946593da5d8cfb57d0bb4e6f26_640?region=us"
+    },
+    {
+     "vimeo": "617747486",
+     "title": "Ravo - Round II - Ladies Tee - Shot IV",
+     "thumb": "https://i.vimeocdn.com/video/1259824072-6749f295e0bb468ce73768d70d13448233ef3cb698d5aa23b_640?region=us"
+    },
+    {
+     "vimeo": "623551287",
+     "title": "Boysie - Round II - Ladies Tee With Trousers On",
+     "thumb": "https://i.vimeocdn.com/video/1265839544-1b4d298812a39dd4a0c2b62a4413ee5d4062f56c25d0d8386_640?region=us"
+    },
+    {
+     "vimeo": "623434297",
+     "title": "Round II - Ash Chip",
+     "thumb": "https://i.vimeocdn.com/video/1265718510-0a4f04a8e688b5b41b754997c71d52e21057bbccceccb2304_640?region=us"
+    },
+    {
+     "vimeo": "613014859",
+     "title": "Ash - Round II - Trying To Avoid Shitzu",
+     "thumb": "https://i.vimeocdn.com/video/1251157954-a2494cc898f8f542eb885988e8c25a13912a2ebb58684c5e0_640?region=us"
+    },
+    {
+     "vimeo": "617745809",
+     "title": "Monkey MDE",
+     "thumb": "https://i.vimeocdn.com/video/1259822297-80ae1818a038760352721d798f963958f71511ddfec98a57e_640?region=us"
+    },
+    {
+     "vimeo": "623727880",
+     "title": "Ash Press-ups",
+     "thumb": "https://i.vimeocdn.com/video/1266019326-1b1b9769936e1a693d2b31483cb0eef80661365438c74414c_640?region=us"
+    },
+    {
+     "vimeo": "613014482",
+     "title": "Ash \"Not Top Lad\" Knoxy Gav",
+     "thumb": "https://i.vimeocdn.com/video/1251155112-202a60df8f5a406980b70bdcf810a9329c8c8aeb9399e4195_640?region=us"
+    },
+    {
+     "vimeo": "617746342",
+     "title": "Paddy Fine Failing To Organise An International Tour",
+     "thumb": "https://i.vimeocdn.com/video/1259822092-d6bb96e0a9f0355d6d935dd1f49fd9d7db680ec0e7fbd7be3_640?region=us"
+    },
+    {
+     "vimeo": "623596452",
+     "title": "Gav - Fine",
+     "thumb": "https://i.vimeocdn.com/video/1265886506-a07ab243f449e951ebd33ea30ecd578fed01f29eced48cb74_640?region=us"
+    },
+    {
+     "vimeo": "617744481",
+     "title": "Langers Talking Welsh",
+     "thumb": "https://i.vimeocdn.com/video/1259819929-58d91c8d9c47299417a5cbfeb21d03d23d462baaa6e9b5755_640?region=us"
+    },
+    {
+     "vimeo": "623623388",
+     "title": "Message to Charlie",
+     "thumb": "https://i.vimeocdn.com/video/1265913161-75dc2b8a993d7eab530dfa922563bea3f48e72600f2aa7788_640?region=us"
+    },
+    {
+     "vimeo": "623623308",
+     "title": "Charlie Reply",
+     "thumb": "https://i.vimeocdn.com/video/1265912519-10778c2a8572d2d38984aeead706d5cd6ae7c6c9b1f8031a5_640?region=us"
+    },
+    {
+     "vimeo": "617744371",
+     "title": "You're Speaking My Language",
+     "thumb": "https://i.vimeocdn.com/video/1259819384-fc52ccc5eaa48831a5c4def21ca52ebc166a0f16fb4240101_640?region=us"
+    },
+    {
+     "vimeo": "613013141",
+     "title": "Ash Discusses Tissi V BDT",
+     "thumb": "https://i.vimeocdn.com/video/1251147582-84dc1a5ee1c600f709c15b14daf317ddcc11d513309c5e25b_640?region=us"
+    },
+    {
+     "vimeo": "623623821",
+     "title": "Boysie Coin Game",
+     "thumb": "https://i.vimeocdn.com/video/1265913186-f52f77a20f2d33a122ec886a44f7378705fc77b02518f5162_640?region=us"
+    },
+    {
+     "vimeo": "623623942",
+     "title": "BT Coin Game",
+     "thumb": "https://i.vimeocdn.com/video/1265913753-56ab86b95910007375094e35ea2e1e3b9799d47ce81a58c6d_640?region=us"
+    },
+    {
+     "vimeo": "623623888",
+     "title": "Harbo Necking",
+     "thumb": "https://i.vimeocdn.com/video/1265913093-34780d645cd9151a12f6861f691b9f7334c1992d7840e363d_640?region=us"
+    },
+    {
+     "vimeo": "623624023",
+     "title": "Gav Coin Game",
+     "thumb": "https://i.vimeocdn.com/video/1265913905-3be113e471d60381f1b18493e881b65d00e906a40259e88b5_640?region=us"
+    },
+    {
+     "vimeo": "623623163",
+     "title": "Ravo Coin Game",
+     "thumb": "https://i.vimeocdn.com/video/1265912554-f518737a125703948dd42a044b4b907302eaa4edccdc622e8_640?region=us"
+    },
+    {
+     "vimeo": "623623235",
+     "title": "Ravo Coin Game II",
+     "thumb": "https://i.vimeocdn.com/video/1265912753-6f298823b933f441f0dfc11802278fd0ae1582f01901742d6_640?region=us"
+    },
+    {
+     "vimeo": "623623075",
+     "title": "Paddy Coin Game",
+     "thumb": "https://i.vimeocdn.com/video/1265912361-bd0e8e0e6f1903ad7a130af087096c5847caea69413fa914b_640?region=us"
+    },
+    {
+     "vimeo": "623624080",
+     "title": "Knoxy and Langers Form",
+     "thumb": "https://i.vimeocdn.com/video/1265913893-a1957a810aebe4abb06047c49d5fd753a1bd25f3a794a2ff0_640?region=us"
+    },
+    {
+     "vimeo": "623470204",
+     "title": "Ash Gav Knoxy - Round III - First Tee",
+     "thumb": "https://i.vimeocdn.com/video/1265756177-0167b6655b9f822d02dc958f45d67ff16cadfb18bc093ca4a_640?region=us"
+    },
+    {
+     "vimeo": "613013833",
+     "title": "Ash - Round III - First Tee - Drive II",
+     "thumb": "https://i.vimeocdn.com/video/1251150830-fef223d0a476b0c5edb3c53d337a020065194ef3994af781f_640?region=us"
+    },
+    {
+     "vimeo": "617741994",
+     "title": "Knoxy - Round III - First Tee - Drive II",
+     "thumb": "https://i.vimeocdn.com/video/1259817006-ed2708814ae97abba80b24f9a74c3e70ee71885ceb9fd53ff_640?region=us"
+    },
+    {
+     "vimeo": "623580315",
+     "title": "Gav - Round III - First Tee - Drive II",
+     "thumb": "https://i.vimeocdn.com/video/1265868866-af377ae588355f0cdc450faa83ad506e77ecc7a73cc7a3e88_640?region=us"
+    },
+    {
+     "vimeo": "613013047",
+     "title": "BT - Round III - First Tee",
+     "thumb": "https://i.vimeocdn.com/video/1251149311-4f5aec8cb8c83a486622f0bc72160000f3cafb261e6881099_640?region=us"
+    },
+    {
+     "vimeo": "617743083",
+     "title": "Langers - Round III - First Tee",
+     "thumb": "https://i.vimeocdn.com/video/1259818323-6c9285bb3ca3e590b29918bd0b12c4271e33b5b2d8270a1de_640?region=us"
+    },
+    {
+     "vimeo": "623567777",
+     "title": "Paddy - Round III - First Tee",
+     "thumb": "https://i.vimeocdn.com/video/1265856252-47026067c438553b35c65bedc5ff552185d04168fd3f3fdef_640?region=us"
+    },
+    {
+     "vimeo": "623568885",
+     "title": "Boysie - Round III - First Tee",
+     "thumb": "https://i.vimeocdn.com/video/1265857708-cdb682ec273904cd67994b8f3e5fe7c4e12c7330cfd993a79_640?region=us"
+    },
+    {
+     "vimeo": "623586444",
+     "title": "Paddy - Round III - Longest Drive",
+     "thumb": "https://i.vimeocdn.com/video/1265876091-127932c8becbdb3ee0ab5d50a462de0b2a210624e8e0b6519_640?region=us"
+    },
+    {
+     "vimeo": "617742562",
+     "title": "Langers - Round III - Longest Drive",
+     "thumb": "https://i.vimeocdn.com/video/1259817743-5e074f278df13f2601756522b975a96006c0fbd423c0d04ea_640?region=us"
+    }
+   ]
+  }
+ ],
+ "gallery": [
+  "7be75f421b3d4a5c96c482c68189c4c2",
+  "a3f2b0d612eb41d6ab7349efab0f7e4e",
+  "a56351121f274a4cb97ae1fbd5a3881e",
+  "d085df8a53d740fc8699d6a857228552",
+  "9911f0d6678a46f8a7d4449e0438f72a",
+  "40b4422d9ea549f78ec8800f6eebf1b9",
+  "e358a9ee14304d25916f7582e93c84b0",
+  "7a54339ab1e34afab19623b8a0a5a725",
+  "37e02c9730544e35b3bb055f72536851",
+  "23620287959b479d988229c4b2adc7cc",
+  "04a049be250342d1b49db738cb2c168e",
+  "1f4d537141e14fb4a56dd480c1c5250a",
+  "00695681d0094f1e8df83b716b830dcc",
+  "f615cd473de7472497adaeda828b3f54",
+  "42a614ec115d4d92a6d20e7b05091222",
+  "6f4f3590b65947d884a9190caf663243",
+  "881bf9d3118c4ba9a02b39e1ce205925",
+  "258981064efc4562b6f0cb62a487d13f",
+  "bdd78d7ba8784369bfda2016e919a59c",
+  "9ece9935269d4d02823caaa9039ae711",
+  "937f221144e443ad87d28a8c08986de2",
+  "392af3cb695b4a2c9b73e14ed0148efd",
+  "035c771931d54cc1b0565b65489c5ae1",
+  "6be80abbafe3482cb32c4c7c30ff82d1",
+  "f7a0ff1d4067474f95afddf7f3938d03",
+  "e86d2cfe20b74320a3f2d7691ba30edc",
+  "9310170542a34cb080f5727c35bae4d0",
+  "76f7a09cc42c49f784b82c7b171ec4eb",
+  "255c125dba8d4155ac01b4d4876c4a78",
+  "76264eb559b94c918a072bcc0c5bc07f",
+  "ffd50e8609bd478eb46dab548f8e63a5",
+  "3c0bc9b56e644e759f464c68b4f2a0e1",
+  "ebfbf6baa1194ac1ab0d3a049d08ccca",
+  "464e1876b98d488da3cc0753d910928e",
+  "1bad80a2e76d48028e6aa772c6ed8ffc",
+  "266071ccad844579a406dcbe0e3d8c9c",
+  "570374ebdcab41f3872d3c1fae18db82",
+  "7cef5f854fec48e8a7b09129b09b424a",
+  "eee7bf487d454be3ad6ba315d7ef25c2",
+  "6af543dae35b460480067ee162570b05",
+  "a44c8a6cb7a54b31842a414917315a70",
+  "b13e87eb068442908a47c3d3a96eb514",
+  "915622d189994909a7ddeaf1845d9d9a",
+  "4c0ed544492645a49fe090c8418a64c5",
+  "40445664163c4676a55294c9f0f18387",
+  "adb7a19598a844c2972dd031190091d6",
+  "beec9535fa664db1bc26cc934ccd4a93",
+  "d35a3917e2c64db49f6f211d1f83da1d",
+  "bc317528fa24404f913f812220834d68",
+  "4faf406f87874048ae4e572c84584b37",
+  "7da96e00a59940dfa6efd0646db9a059",
+  "0f07fc9a4c1f425ba351a035ae916b18",
+  "e2f658fda9f440429f6e3cc4540f492c",
+  "ecd9a7afe7d6420393cf00af7eb7b24d",
+  "6b7a7c6857cf40caa19685b57f4d0db4",
+  "1716bed9e26b483588267a77a56dc833",
+  "036a1a4d0e104915a0353eaf77024568",
+  "3f6706586b3c4e68926a7674be98a9ce",
+  "6c0cb8ce2118488d8a6483b6950770d0",
+  "8777132108764aefaa9ea5d10610c482",
+  "d241133cd70b4b78847fac4c706fbd37",
+  "1e26408f84d64140a5f4dbf8e8197429",
+  "d579583bae2b4e07bd303c1c705eb9cf",
+  "749e2422b0004f15bb82d96687b7b4e5",
+  "f5fe6cee1dbb44d7a873feadf34c03b6",
+  "a0e672b843b347f8a4c45ca74a25d097",
+  "aaf99683357547cc969aa631ef0291cc",
+  "c2abbc449a7048f5b5685f939ed7c80e",
+  "d81b6ae0cb0844dcae37db9331f0c5d7",
+  "77a5eb88aca24da688a398d76fdd5e41",
+  "1ddb221ddb524e36a5d496484409cabe",
+  "75d08c1999504302a8cb95b71e347a7d",
+  "628ca61ca0ee428da7522673ca32a40d",
+  "821b4e94dc8f4547b6466b068781a608",
+  "41d21c94767341b4b2847813e701cd19",
+  "5a5ef0017f1644b08290e5867e820cf8",
+  "39dfd674fa2a472c813f210b314363ac",
+  "f526138a68fb49a38aed8dfeee179b7e",
+  "691c245a6d9a451e8e67ee8d5dbdf080",
+  "8c58161d8ab14cab986efb553f9ab451",
+  "11de378c13d344f78fb15bbf62870356",
+  "36951b6d1ad042edb3b4d23278272f5f",
+  "08d8e46edc7942d5a89c8fd1906095d5",
+  "40cd222d8d3946b893891a852a05ba0a",
+  "b7035feb6ffe44c9a5709cf5570b3025",
+  "9b5fd7efc1c44d998085c836567e4919",
+  "2602222056ba4626bf615fd90940d75e",
+  "22f465fcdf894c0a91b64101777ea170",
+  "131e2e16ad914d9bb5facae64f355b86",
+  "27c01395613845f499ba191049c82574",
+  "97bc2f0a662448f7ad68ed807cdf777d",
+  "9453f2bc0b1d497ca5a8d80dff51b01a",
+  "9af7b349ca324beb824412087ac13a9e",
+  "3cb3fef2ee2149729292e9cc4cecb2be",
+  "2a70e577659c4cdc8cc55bbd4aa95168",
+  "9bf77cda37214558bc1d24e1cd012e45",
+  "4336e35b77e84d9e86a83a77aef50b5f",
+  "a451e14246e84d48b29a7277be7edf58",
+  "11d0694e9db04205b537dd8bd1f22d91",
+  "55b01fedec004efc9108de46dd8f8541",
+  "4bda776270084bc39b0db9b1eef78b41",
+  "e611a1d6b1b541bba352f66eb55d7327",
+  "0d382dae74f44d93b044a4a5b7191e30",
+  "7cab82132b204759a5546e36098c01df",
+  "6ee8132412d541b9b47194990d237b87",
+  "f7a91dfccb8549519addb5dd6343cd67",
+  "ee92422e11104c5e97ff3833844c1adc",
+  "8119c45de766477cb4c4265d4ce7021a",
+  "e948361747cd4cc496eb6c41d399304f",
+  "79e867fc5ff6415c87163e472e956812",
+  "3f19e4d70974448abb4a93c4630f8188",
+  "dd1651958c1949049a939bb9cd10f95b",
+  "4080f05fbdee4076b9338cace21da8bb",
+  "4247bd691551417986298862c08f7067",
+  "662c9397d0eb4b7cac1f3a76bfcfbda2",
+  "9fe81d2725f44ba4b980fd0949c76ed2",
+  "b39b59df24df43f99891cab8462a14ab",
+  "69b10f19c2054fa69312cef469ffbd5b",
+  "9a2f0e62951f4d10aea72d4b795a365d",
+  "2c829045bf2346aa940696cc1a2eca3f",
+  "d0b914bba554487895564e8fce9bf993",
+  "c0a6652384014331b38e84f395d4924a",
+  "751be1dbb0c248debd34a9e42218ab3e",
+  "fe578fb5c7bb4d23a74bd5457bb415d2",
+  "b0a164c7f541461dbb4409b28197232d",
+  "2e2c4f22c6a74c19835bf96b8bc1a16d",
+  "dd24c50a363448668614ac1b27902a34",
+  "af07498cd689400cbd06201a049abe4f",
+  "9abece0e2744425ca491adbc7d17e24f",
+  "5a2d79fc6988406ba90ab2f7bbc5a10a",
+  "acf214011b4f48f9a6f01f03ffe5a449",
+  "190269cfd5f8490ab91e82b87d6fa903",
+  "b6ca5135c301476fbe5e2d6f6a65b333",
+  "c5cbfa190317408e9266a4816a6b2d22",
+  "fb7b311de6364c6bb255beb908f0413b",
+  "1a2e3204d4d3482f9cc983132295c7d7",
+  "bad75a47017640cabe53df3f507c48f6",
+  "42fb946d00954e74add3e9dda00d9423",
+  "b103fb340c5444e8a255f8075c545324",
+  "fe42c60d08004640bd34099171959dfd",
+  "661e0b098afa46b5be1ba06d3b3a4fa3",
+  "dad34af3a27443009cb1908258153c52",
+  "391d6943cedc4612ab361c1095c43636",
+  "0535d07cbbbf458b90d8964d2bbe5fa1",
+  "df64cded02b9437b9823213cb65b60d8",
+  "c1990d8de06d47eeadd052e52ba47591",
+  "cdc2bb1ee84d4a96b8f76d9a383714b6",
+  "7b9d3a4b113841acb2d4e19b55ab2de3",
+  "9492b4495d9d4c4a95e6ba209590c548",
+  "89112a015fe548d7b915f4464d339896",
+  "9a3eb0881d6f4dd99962bff1198c37c8",
+  "42290aa079844147bd5aff150489ce68",
+  "2b51db66191942ba8b38231f2adf6522",
+  "22346412319d43908e80c8c7d8bef2b1",
+  "57f28b20b3414713afc6e715a0db34da",
+  "3763d7e311264967ad7914ff0eb389ad",
+  "557ed337511d4c539d36a29ec059bedb",
+  "8963b648adbf49e182cc836dc6ac67e0",
+  "03d76caa332e4ff9add753115c8101ad",
+  "064de8c6df2645bcba14f048afff6d73",
+  "7efa2af64dcb460d9ee4ad70d5c2d7c8",
+  "aa5e3c2b7f904ad9a388c537ab2564e1",
+  "40515d52537b433494017114bce5c934",
+  "1b976545f7bd46afb5c35fe3ecf94607",
+  "e59c8e1a0f9b458b9e96193fa4a2351f",
+  "3b74e1b0b2624055a8637132ee7b1233",
+  "1aa52e4ee1e244a9bad7ffcca873cf70",
+  "30d84ee0b021405f8646cf2d39e138f1",
+  "3b57cb6a9cce49d4b1fa028830a80b83",
+  "bb56c9e31d554939816d144f98948500",
+  "ae54e3734db94e4cad6b40a0b693d6ac",
+  "96056d72bfa24dbdb552416a028508c3",
+  "548ef607731b45879597f689291eba15",
+  "0e26d042f6754935bcea85b215dc9d82",
+  "2701e95c95f44bfcb5ce604418ae29dc",
+  "95e6852812a1439381315f76e9c2ab7a",
+  "157b545581b3463da1c31f3b6e050b3a",
+  "660cec73eaa84f79bf6fc5c8e4366958",
+  "dd9e03b5badf40d7a4baa273db0327fe",
+  "372ec14b54c94d0587894226a962c886",
+  "f85f6d33e2394dc7801f6793f22b7ff6",
+  "4dd3e06bd0b94067ad37bc9089b1c99f",
+  "ec1a7c26a9e545a6b4ca5d70632b4d2d",
+  "02c113b59c5f4634a115b5b735bdb838",
+  "4f0601f0447c42e79ad40e580cf89d5c",
+  "3f1b145c07f34f74a84c7a9f210f124f",
+  "b7dd668f54064c73ab5e8ab34a7b52d3",
+  "deac261d2dcc4767a499cdb0994dde4a",
+  "25268498215e48c2a9578bdeb0c94da1",
+  "f8f29ef370eb46d7a95f4314f3d576b8",
+  "ae1b5bac0dd64636a1d162eecbad9e4f",
+  "24f3f2ef7f4f4723b2afee0092dcd27e",
+  "5699ff3de5d648baa728e45d8473d767",
+  "c6af93557e7347d1b6f632f86e3cd569",
+  "1e90e9470ae142a99cd67850e3c76826",
+  "29f212b4ef2f4b5891025f2870915eef",
+  "1719c37f06024fad86de43c18efea498",
+  "a938fdcc45494cef996ba9acf659bfec",
+  "b3f97dc003624e8680c7117ab63a5f85",
+  "4617ac053bbe42e38665d22a38b0a0cf"
+ ]
+}

@@ -1,0 +1,722 @@
+{
+ "_help": "Per-tour extras that are NOT in the playbook. Image values are Wix media IDs (the 32-character code after 588d17_ in the Wix image address). Videos use the Vimeo number (vimeo.com/<number>) or a 'youtube' ID. Leave any field empty (\"\" or []) and that part of the page simply hides. rc_images / leaderboard_images may also be file paths (relative to tour_media) – those images are built into the page.",
+ "year": 2016,
+ "strapline": "THE 15TH ANNIVERSARY",
+ "hero": {
+  "id": "942496775eb84335879cd9a551bf3957",
+  "caption": "2016 Tourists"
+ },
+ "venue": {
+  "map_query": "Castillo Hotel Son Vida, Carrer Raixa 2, 07013 Son Vida, Spain",
+  "map_zoom": 16,
+  "blurb": ""
+ },
+ "captains": {
+  "BH": {
+   "id": "d92b5622e44e4d6c94a0041ad042909e"
+  },
+  "RT": {
+   "id": "d118ecaac9a24dc8a2a998ed1c680c4e"
+  }
+ },
+ "accommodation": {
+  "name": "Castillo Hotel Son Vida",
+  "blurb": "Home for BDT 2016 – 24 tourists, with Alcanada, Son Vida and Son Quint on the golf schedule.\n\nA Luxury Collection castle hotel in Son Vida, on the hillside above Palma, with views across the Bay of Palma. It has indoor and outdoor pools and a spa, and guests can play the three Arabella golf courses (63 holes in total).",
+  "photos": [
+   {
+    "id": "a5a4d4701fd44156b7d36c6dcc9a28b3",
+    "caption": ""
+   },
+   {
+    "id": "3d9fd8306b734c2abc91880a398fed2f",
+    "caption": ""
+   },
+   {
+    "id": "6e39a834411948e391c8db72e807704a",
+    "caption": ""
+   },
+   {
+    "id": "2924b296335241849f4f58b9de36078b",
+    "caption": ""
+   },
+   {
+    "id": "72ebce655e6c4da387833e569706c2aa",
+    "caption": ""
+   },
+   {
+    "id": "9a7193f5042243aabedf272a5c6e83d3",
+    "caption": ""
+   },
+   {
+    "id": "86e84ea40a134615b1727fff8d41ca4c",
+    "caption": ""
+   },
+   {
+    "id": "f61747b1214e43db9147b09b9464ced2",
+    "caption": ""
+   },
+   {
+    "id": "8e1ad638666a4921bac5544f25007d00",
+    "caption": ""
+   },
+   {
+    "id": "db985fad27b64be98a546b0ee25e5b19",
+    "caption": ""
+   },
+   {
+    "id": "9632624944164f0fbde4f1147f9e14fc",
+    "caption": ""
+   },
+   {
+    "id": "08fb279aa5744ef8a26d9aaf5d13816e",
+    "caption": ""
+   },
+   {
+    "id": "cde6b28d7d7646538526d420255b0a36",
+    "caption": ""
+   },
+   {
+    "id": "ec27dd1825cf41ae96302fc6dcd14c07",
+    "caption": ""
+   },
+   {
+    "id": "2dbad24cbed3439ea4f3bb4388b1a1bc",
+    "caption": ""
+   },
+   {
+    "id": "ba6285fafdcc4019b5e05901ef1270e4",
+    "caption": ""
+   },
+   {
+    "id": "88e965960bc1486382e631a5f252eb33",
+    "caption": ""
+   },
+   {
+    "id": "5890ab08dab9494e94812dc66ac1dde0",
+    "caption": ""
+   },
+   {
+    "id": "5ee55aa9c10f4a60a473d8bc6c4b3a19",
+    "caption": ""
+   },
+   {
+    "id": "c8fc8e520ecc4f058942e5b27dfe6295",
+    "caption": ""
+   },
+   {
+    "id": "704e542457444179a57c1d5f419c049e",
+    "caption": ""
+   },
+   {
+    "id": "5bb0c6e59dbe4bb196130a6184bf1f29",
+    "caption": ""
+   },
+   {
+    "id": "2900ec037b024e2887468371d880e30d",
+    "caption": ""
+   },
+   {
+    "id": "aa5bb440c48d49a78192ff5c648bbbcb",
+    "caption": ""
+   },
+   {
+    "id": "7b67e2d2431c45ec92a75a7c86b29a90",
+    "caption": ""
+   },
+   {
+    "id": "666ca8e59d1e4b1dbd7d0c076ae15c65",
+    "caption": ""
+   },
+   {
+    "id": "62d4f7e7ead04f328daa86bb4059a132",
+    "caption": ""
+   },
+   {
+    "id": "b146bad6c16e48a587de9cc5132e4fa2",
+    "caption": ""
+   },
+   {
+    "id": "7cbc9883f2af4c80aeb61bbea06ceab4",
+    "caption": ""
+   },
+   {
+    "id": "9eb70b875ce94bb99eb10012a4bf8e65",
+    "caption": ""
+   },
+   {
+    "id": "3953400d22bf414b88f065f4c24d4bf6",
+    "caption": ""
+   },
+   {
+    "id": "3824974022194b33ba40b00b461e4596",
+    "caption": ""
+   },
+   {
+    "id": "32ec356c55074947a73a341abeaae316",
+    "caption": ""
+   },
+   {
+    "id": "bf763b8dce3446f49de20ba6da946c4a",
+    "caption": ""
+   },
+   {
+    "id": "3d5533f16e8e4a67b8234b9389e5b2ee",
+    "caption": ""
+   },
+   {
+    "id": "823dcf35c3734baa8434c86a7413b984",
+    "caption": ""
+   },
+   {
+    "id": "f8e91870aa6c4d6a83daf2f7a3ac700b",
+    "caption": ""
+   },
+   {
+    "id": "f7f076e79707434ba7a357bbfac0ce99",
+    "caption": ""
+   },
+   {
+    "id": "3abbe749c69e4e569c3d8f2f9d5e90f4",
+    "caption": ""
+   },
+   {
+    "id": "91e5cf817a8a445ea0a95b051c87ebb9",
+    "caption": ""
+   },
+   {
+    "id": "687eebbcd8aa475081381039bdb32e47",
+    "caption": ""
+   },
+   {
+    "id": "910537b043334a05bd7b6e343ef0efff",
+    "caption": ""
+   },
+   {
+    "id": "cc8a51b77a5d4f779f6053d3c04beec2",
+    "caption": ""
+   },
+   {
+    "id": "0bc75bc26829495cb15dcdcc7062e42c",
+    "caption": ""
+   },
+   {
+    "id": "6ec34e27eadd40248dd4dad563a5d61f",
+    "caption": ""
+   }
+  ],
+  "where": "Son Vida · Palma · Mallorca",
+  "facts": [
+   "Castle hotel",
+   "Bay of Palma views",
+   "Indoor and outdoor pools",
+   "Spa",
+   "Three courses, 63 holes"
+  ],
+  "link": "https://www.marriott.com/en-us/hotels/pmilc-castillo-hotel-son-vida-a-luxury-collection-hotel-mallorca/overview/"
+ },
+ "itinerary_images": [
+  {
+   "id": "3f6971b5c48e4bc69e6f7c0436442fba",
+   "caption": ""
+  }
+ ],
+ "itinerary_extra": {},
+ "team_photos": {
+  "BH": "b40b468d0aec497d89f7fd0509d54c8d",
+  "RT": "d58c94ef95f1413bbb3ecc1eb18b6c11"
+ },
+ "team_announcement": [
+  {
+   "vimeo": "161527017",
+   "title": "BDT 2016 Team Announcement",
+   "thumb": "https://i.vimeocdn.com/video/563806366-0cea0d6c9756597a894846fedd0fa5f72a3f3d981de39b38732f703c3e07954d-d_640?region=us"
+  }
+ ],
+ "rc_images": [
+  "boards/BDT_2016_RyderCup_1.jpg",
+  "boards/BDT_2016_RyderCup_2.jpg",
+  "boards/BDT_2016_RyderCup_3.jpg"
+ ],
+ "leaderboard_images": [
+  "boards/BDT_2016_Leaderboard_1.jpg",
+  "boards/BDT_2016_Leaderboard_2.jpg",
+  "boards/BDT_2016_Leaderboard_3.jpg"
+ ],
+ "summary": {
+  "banner": "c976f195511b4aadb78dc8fed0a91545",
+  "title": "",
+  "text": "",
+  "link": ""
+ },
+ "video_sections": [
+  {
+   "title": "Photo Slideshow",
+   "items": [
+    {
+     "vimeo": "425195412",
+     "title": "BDT 2016 Slideshow",
+     "thumb": "https://i.vimeocdn.com/video/902939681-a60bdc18e2c84fb9a640a015187dfa8b1a0ed3b31c12f5233ed63a0b3e4ee62c-d_640?region=us"
+    }
+   ]
+  },
+  {
+   "title": "Tour clips",
+   "items": [
+    {
+     "vimeo": "415287535",
+     "title": "BT Rufus Caught In A Trap",
+     "thumb": "https://i.vimeocdn.com/video/888699747-e169d74b8b23d6576e753b5a59d5cfe78b0995502c3f22f5eead98c808143c0a-d_640?region=us"
+    },
+    {
+     "vimeo": "415287322",
+     "title": "Ash Can't Get No Chipping Action",
+     "thumb": "https://i.vimeocdn.com/video/888699562-25d23f19b6692ba14a7938d3406cb25cf3abd0255a1b45c1161892cc04c286ee-d_640?region=us"
+    },
+    {
+     "vimeo": "415273215",
+     "title": "Langrish Freshie",
+     "thumb": "https://i.vimeocdn.com/video/888680591-581846ea1531245df30933e79147f66792bad1e52b482876d2bd3c663b9d00fa-d_640?region=us"
+    },
+    {
+     "vimeo": "415286909",
+     "title": "Langrish Fresh Air PE",
+     "thumb": "https://i.vimeocdn.com/video/888705094-cc0b6868c6788d8ba6c138c40eb965339e33fa597446a10521e07a8c164a8d23-d_640?region=us"
+    },
+    {
+     "vimeo": "415287281",
+     "title": "Adam T Drive",
+     "thumb": "https://i.vimeocdn.com/video/888699499-ba807322556839d5689735b7a22c54b48591c7f1e0b9b2a1dbb933fb536c6e54-d_640?region=us"
+    },
+    {
+     "vimeo": "415301891",
+     "title": "Adam T Ladies Tee",
+     "thumb": "https://i.vimeocdn.com/video/888719824-8f95de9c336ec768ff5a66b5fbc773059e2baefde477caa21aaaf8f56829ae5b-d_640?region=us"
+    },
+    {
+     "vimeo": "415287432",
+     "title": "Ash Drive",
+     "thumb": "https://i.vimeocdn.com/video/888699647-9111494911a3d41db873f5b05592026c7a7a71cdfd594d968c739cfe93ce00e8-d_640?region=us"
+    },
+    {
+     "vimeo": "415287369",
+     "title": "Ash Drive II",
+     "thumb": "https://i.vimeocdn.com/video/888699642-b68294725961091e00555d213e5d6a55383c0eaab21b0059b68a55566b0d58a4-d_640?region=us"
+    },
+    {
+     "vimeo": "415287471",
+     "title": "Boysie Drive",
+     "thumb": "https://i.vimeocdn.com/video/888699712-6bf61eb0f64287f24285abff0907c85fed3df8f7ef24597fb1e38969a90d0b2e-d_640?region=us"
+    },
+    {
+     "vimeo": "415287498",
+     "title": "Boysie Ladies Tee",
+     "thumb": "https://i.vimeocdn.com/video/888699720-69a658fe41ce6e84eecf4644cd2a179d25df3c3f72cdb087d8c79f1481866878-d_640?region=us"
+    },
+    {
+     "vimeo": "415287565",
+     "title": "Buzz Drive",
+     "thumb": "https://i.vimeocdn.com/video/888700643-4e8da38e16ec20cca572e84e9f1b94f55213dfb9d26f07e4bbb32573440e6dc8-d_640?region=us"
+    },
+    {
+     "vimeo": "415287632",
+     "title": "Charlie Drive",
+     "thumb": "https://i.vimeocdn.com/video/888700113-bc89a5be38fedf72b4b981a753dcaa73acfefdd679a8d1f29793feb6a2bf5aa9-d_640?region=us"
+    },
+    {
+     "vimeo": "415303561",
+     "title": "Charlie Drive II",
+     "thumb": "https://i.vimeocdn.com/video/888722406-ebd559583095d027d665b239dbbfaf52b0be01438b4f66c0dfbb3fa9e260b083-d_640?region=us"
+    },
+    {
+     "vimeo": "415287676",
+     "title": "Charlie Tee Off",
+     "thumb": "https://i.vimeocdn.com/video/888700349-6ecacdd3269f05c7a4edcc62ddfe4e6d595cf12de1227a458785d4b1e264edc6-d_640?region=us"
+    },
+    {
+     "vimeo": "415286660",
+     "title": "Drinky Drive",
+     "thumb": "https://i.vimeocdn.com/video/888698776-11dd1176b6313c434d682a04237ff789c285d16f44eab30560132abd7b3e9899-d_640?region=us"
+    },
+    {
+     "vimeo": "415286628",
+     "title": "Drinky Drive II",
+     "thumb": "https://i.vimeocdn.com/video/888698688-7ccb3e842bff503c155c0174bcb8a406cc4efa67b03fe82bdc01cb75ef77c0b9-d_640?region=us"
+    },
+    {
+     "vimeo": "415286723",
+     "title": "Glenn Drive",
+     "thumb": "https://i.vimeocdn.com/video/888698821-6edef76925668641b2f01d075790efa247d9c595f843365b50d92db6ab7de26b-d_640?region=us"
+    },
+    {
+     "vimeo": "415286689",
+     "title": "Glenn Drive II",
+     "thumb": "https://i.vimeocdn.com/video/888698780-9055a2b7103033e968f7a9b6a2032d213043fcf954d024af25d6422e0a6dc12a-d_640?region=us"
+    },
+    {
+     "vimeo": "415286829",
+     "title": "Harbo Drive",
+     "thumb": "https://i.vimeocdn.com/video/888699083-1dfd3a51f03a830af1cc4d603732432fcd29e61612bbf2737c81ebc5c1ca6a7c-d_640?region=us"
+    },
+    {
+     "vimeo": "415286747",
+     "title": "Harbo Drive II",
+     "thumb": "https://i.vimeocdn.com/video/888698913-0f56756c53b7cd0f52fc7276fbcbef2942b37a59371c81d2a8bb75e9071d84a5-d_640?region=us"
+    },
+    {
+     "vimeo": "415286857",
+     "title": "Jules Drive",
+     "thumb": "https://i.vimeocdn.com/video/888699965-56115f20f64a2ef7da0fd75e952b377555799037e1ba41631b9ff0181cd9e454-d_640?region=us"
+    },
+    {
+     "vimeo": "415286879",
+     "title": "Langers Drive",
+     "thumb": "https://i.vimeocdn.com/video/888698971-29d503af5eaf095c9959dca711a5bd14f00460c6aadd0f6672cb392da52ffe7e-d_640?region=us"
+    },
+    {
+     "vimeo": "415286973",
+     "title": "Little Drive",
+     "thumb": "https://i.vimeocdn.com/video/888699113-c54fca17755a450162b823b5f3d2dfd8e09832a5284dbd6321e2510d20565d8c-d_640?region=us"
+    },
+    {
+     "vimeo": "415287059",
+     "title": "Lordy Drive",
+     "thumb": "https://i.vimeocdn.com/video/888699169-e26422605beff1f4a4037bf366f0d06760cf6aa51d59ed2f42795c103607c1fb-d_640?region=us"
+    },
+    {
+     "vimeo": "415287087",
+     "title": "Rick Drive",
+     "thumb": "https://i.vimeocdn.com/video/888699270-e4e92e7c8448c8250d2accdf3c4698cc129e5d1e327188ff7fe25b2cf8466dca-d_640?region=us"
+    },
+    {
+     "vimeo": "415287120",
+     "title": "Rufus Drive",
+     "thumb": "https://i.vimeocdn.com/video/888699232-aba230ca5c5a2a9a208ea517a566dcd6687fbd842bfd7e46706fb2b5f4b7759a-d_640?region=us"
+    },
+    {
+     "vimeo": "415287264",
+     "title": "Virgin Necking and Dancing",
+     "thumb": "https://i.vimeocdn.com/video/888699490-ed017782d4bedbcc0c48ca95c9ec21ad02ebd19f157b867d7d2fa8ef9e1265f3-d_640?region=us"
+    },
+    {
+     "vimeo": "414921960",
+     "title": "Virgin dancing",
+     "thumb": "https://i.vimeocdn.com/video/888192992-6513c4b6be6453c115839d517524818c2901ebb7c22bdfd90d1f739e3934d85b-d_640?region=us"
+    },
+    {
+     "vimeo": "415287195",
+     "title": "Virgin Dancing II",
+     "thumb": "https://i.vimeocdn.com/video/888699463-4bd97095814ee5e15163a9eb21bc41685c282808fcb9105d714717bc5f8679c9-d_640?region=us"
+    },
+    {
+     "vimeo": "414921532",
+     "title": "Lordy dancing",
+     "thumb": "https://i.vimeocdn.com/video/888192491-5601647630c795a6ba9ee2ad965b27234f8eaedbefdd832e0ad03eda6e812b22-d_640?region=us"
+    },
+    {
+     "vimeo": "414921667",
+     "title": "Paddy third shot in GJ play off",
+     "thumb": "https://i.vimeocdn.com/video/888194406-a1881b0486d057d052d4ce3af652ee998bd656dba0c36a8543927f81cc2a1ac8-d_640?region=us"
+    },
+    {
+     "vimeo": "414921171",
+     "title": "Glenn play off putt",
+     "thumb": "https://i.vimeocdn.com/video/888191916-ec35d2d8ecf735295c4f59e14de79bd4a23b1776445be91bffa2a5ecdb05647e-d_640?region=us"
+    },
+    {
+     "vimeo": "414921602",
+     "title": "Monkey play off putt",
+     "thumb": "https://i.vimeocdn.com/video/888192580-9799ef6425589563015a41d31950e6506f8c37eff16df59f0ea5ee0260f23837-d_640?region=us"
+    },
+    {
+     "vimeo": "414921703",
+     "title": "Paddy's Winning Putt",
+     "thumb": "https://i.vimeocdn.com/video/888192724-76c06a73ce286ebca1519224eb118e8524b42a207134d1aacd36f59ecc18ba6f-d_640?region=us"
+    },
+    {
+     "vimeo": "415287140",
+     "title": "Shitzu Charlie Sunglasses",
+     "thumb": "https://i.vimeocdn.com/video/888699349-535d662afbc644253b16f7d0ebd4c464864c4117fd2e5493312d9f06cc5bc12e-d_640?region=us"
+    },
+    {
+     "vimeo": "415287005",
+     "title": "Little Rufus & Gav Last Night",
+     "thumb": "https://i.vimeocdn.com/video/888699172-b96e87298aec1e45888640ff376a4bcc522047c643e502dba2198ddd02118d23-d_640?region=us"
+    }
+   ]
+  }
+ ],
+ "gallery": [
+  "578f56f786a94940af25b214efee65c6",
+  "b14777c96e164b6ca6c35e695fe2bb10",
+  "9eecc23a4c3f4f528ea360dba09e4458",
+  "99a181ff16564d469291e62071e86994",
+  "37f66644f7dc4f0c9d4c79e14f930fb2",
+  "0831530543e9442d93061028ec70b405",
+  "c6657635a3e24fd7a26e6357b71b0712",
+  "43d54d34e61d4c71a22401d5413c4510",
+  "d29567dcb59d4511a63037a2d84a1bea",
+  "3e3a344f3caf4753946777713f209869",
+  "5eefccb506354b6499308bd903022625",
+  "5680813903f443c2b8ca396a2d6fa0d5",
+  "4c424e5aea2c4f708616ddd8129ce8f2",
+  "85f8446df32d43a48842a106d1562cc0",
+  "832795f0742b44b68ffb3d71a275a7cd",
+  "e913a11aae814ace9fb03f10953cf43e",
+  "a7984395f02344ad928630cbea95ae79",
+  "cddfe3d781b2456499598c10b98122bb",
+  "5aae37250b62494581eb3b1a8e90f739",
+  "4b0312145bf64193a16b1dae3a8a42bb",
+  "3305580e9a9f44abaf022c6de4923264",
+  "223bab338b974f4eb9ad6575c7acdcd2",
+  "9d1b8322c33f49179938d2f56bcd4305",
+  "9a28e2eab16c40068ae10c670e963d06",
+  "8500b3a82b14486bafb49c39208e733d",
+  "b912636d3cad4ee1ad6ed3ee51c574bd",
+  "b89e0a4614e045d98e798da79e459b49",
+  "495e480ffe5642408098571665e4f04e",
+  "d692f2d5b6e64a51be5651212768868c",
+  "7c7c47da129242ff82bc7fa3deb3c050",
+  "546cd93e248c4b6196f3992d34fe839d",
+  "415605f501844fe48f9f21c104799805",
+  "1a70e71be2a0402699f75baa5f264148",
+  "95aa6f472707455ab236844a465447f4",
+  "7f849740c3024aaf9f878f555e6501f7",
+  "c958552fd1fd4ce384945ab3649804d2",
+  "4001d9206251468ab406a1d7128acb23",
+  "e5c9fb5650b14d2981c6d88dc54e1df5",
+  "7047620502804b74a48060bc586996da",
+  "2923c64fe0c5490c87425f9905d4b3ce",
+  "7a8410c4b3234144a19921a94e7dc792",
+  "2e0f721a645342f7ad611e66ae0b0c13",
+  "619a2e629d534dae940ed678c27db9f0",
+  "ee8f69f325f2489ba61b5c0e3cfab429",
+  "3e77f204a82b48b3b28d12f464b071b1",
+  "084e10d85273454f9d66aef002d38548",
+  "54f8d7db42514e9a9de4e49f4d5c1ee9",
+  "8036629c1e6d49ddbb591e2c5be718a1",
+  "3fb6786f9f8845a5a60df9242014004b",
+  "4cf47f4f68bf4fe586bf243feb461f8b",
+  "4d954be5245c4d14a9f63d8454c297b7",
+  "dee3eec6b3924a7d9ff1644fdf36cd4c",
+  "43f183d4bd6b48db81fb5a9a1b82f8aa",
+  "e069d9e406df4338b6d3db686c84e086",
+  "fa8b6b65fd0048ad98d7ecbb27492d70",
+  "1d5401215ab042e69a60d4d16cffda2b",
+  "8c6aa0cc17464acfaa109b6abbee27b0",
+  "a099549f89264f9e9ab634c59588ca44",
+  "44d3c91b3da54511be8a916a42b762e3",
+  "aadafa6eca1944f1abe575388ade654b",
+  "ed78ab1ed5d7420287f7a80db6553164",
+  "bd0abc85538047d5a71a84e09decb80e",
+  "a22de441df7b4ded846f517b2dcd1408",
+  "35e8404663694d0693b3a3794a11fb68",
+  "dcd73d76573c445db5795c7012ee346d",
+  "9ee90d8a19a04d099af4cefef6e35546",
+  "c5887d6114ad48db8b093dd84603c45d",
+  "fd8fb1c2290d49f68b53bb9cdb76fd92",
+  "cfa83641d9f74e7ca03aabcfbd1e3ae7",
+  "d208c783cf3948ea8208d04ebc361a2b",
+  "996c0e0c1b6745ba81d81e4c4db8bbff",
+  "5088333b54674236b7fbeb0f82a16596",
+  "3211f44b02d641d383a0a0df3bb53b92",
+  "949c18b52d5e4cd79ca9687d9ced0af9",
+  "690753a734804f89bb961a9955be7c59",
+  "a123099ec9cb4130be335ad62ab30a8e",
+  "d69530dca8e349efbc449e5281d5406e",
+  "db304a7a5cf4496b80cc42f8231dc409",
+  "8c923411149f4a0dac0accfca8ca21ae",
+  "34fa15202da847bd8eeda36289aa2ce9",
+  "26222f99fa2d446d964d8450ebfd8476",
+  "22a56b1599fc4fdfbfd6d1b2a998c933",
+  "6c24bf615bb24cb09cfba44a24e48387",
+  "50bec660626242819d80bda302b7e00b",
+  "293edc3a3c984818b2cbbdf312f256cc",
+  "d10a6890ee0d447cacafaa36eb087195",
+  "3d6291a22135489698d546e7172ff3da",
+  "e9e0d8c56138477c92f8621387186bdc",
+  "f17b323e6a9e4de4a6c6404661cf1061",
+  "3e10fdcedf3640f9b3bdd1e858f6d086",
+  "2b3e28b446504eb59a3b9bd8d694f8c2",
+  "d356ed1fdbb34800a53acf02caa34bd1",
+  "9e0b416d5f374ab2992a02f1b21c55b1",
+  "c8c1bbdaf86b44f5a465794ba2f1a53f",
+  "2c063a5649da4c4cb7a9f09a8e169551",
+  "a7d042798622461483ad33b6dd470eb8",
+  "942496775eb84335879cd9a551bf3957",
+  "05eb1ba8df3b4f818f37a601f59d6bd1",
+  "efc2a6bf8efc4dd5b393b18a56c62bbd",
+  "c39895d08862413b8cdaec04d584519f",
+  "989654024bae4cc59799e129ba816782",
+  "07a07486cdd04a94ac3ceb862bfe6c00",
+  "505dcab8049c4f72bf1d76e5a5c4cf42",
+  "d1f5d48a7095421d848399eea11c3428",
+  "307e50abd8f64e729b457b3fc618e180",
+  "140410043c274739937a29a7f800b20d",
+  "be1a9501f3164bb5a86afd822eb7edf9",
+  "77c575d5a5554699a0d207c886cfb75d",
+  "64d64b5925384aa8827c72386cef88a1",
+  "ea2f289e4d7a476a8243c2ec77ef693a",
+  "1bcbaa012b1144189e352869256f1072",
+  "b5d522f763974c589e47a5223b4036f5",
+  "31ffc3e21f2d4bbcbd70d06f8fd4dadc",
+  "46deb8624b0044ac9fc5f8082058aea7",
+  "7d5fc862734048209c1e59b2b6153e68",
+  "91edf3bd5d604729b368e82d8317bff5",
+  "f719dda467824d8fa9f1c349f2f71314",
+  "05c7b4aa01934c668156a1224056739e",
+  "5d8289a1d0f34906b9c5897ee5d3d71d",
+  "99f70c93369b4127a433e84cecf5b786",
+  "38cce9e0d4074ccf9bbc0a3bcdf8b1e3",
+  "5f057a9896184b38b83b743628d9bba3",
+  "a2139b14bc8b4e169eb5d75e5003ad97",
+  "6050b89f528e4357be5258a4a44e9b80",
+  "e15c7ecce381429d94a9bde9ce1a5908",
+  "e6ff5d57312743b583be04c06dc969bf",
+  "257b761a25ca4b20b629adfe92d7eaa5",
+  "725222fc1e124790885df8b47b56ec9b",
+  "c18f338a68a141e6bf3daf19ed8734b1",
+  "662429bb53ca4a70bb8fcce30d4f976d",
+  "bccd29852e24425880254c0b63092850",
+  "f9a99ce0b6ab4ffa946f952c82813a54",
+  "e280f1d9e2814f01a731e5ca19b20e0d",
+  "7e77bfc202ac48429cd175ae1f1d7edc",
+  "d9b522c0e2b345318d5f072562f41242",
+  "68d0be4723bf4f72be9ce0a2e3914f3c",
+  "2e209dd02ecd4e8e86bd51de72d38359",
+  "9b7e4d78a6774c419fe01fda1fc9d881",
+  "e511269c18fd42809e45b1a98d8b98a0",
+  "369769db9ee2478fa8655418711ac72f",
+  "7a0a3f221fc841cc844227dc6b764677",
+  "ca1bef73f0d7492abbef176db814e03d",
+  "30f4751d58604f44838f3b9575bffa1b",
+  "ea93e06096b34304833f567dcf3ad580",
+  "6839f5f73af344eda608f8cb44127492",
+  "20a06fbbd08e4715a627553cf853a0c7",
+  "5e598e6e6e4d4dfea6e81f4a4fd696fe",
+  "b72529e6436043ffbd5a4726a6264287",
+  "dc9410a0fbe9490c8f8ad88aeb9641ab",
+  "ab18a378dbe04245ba929fb58af886b9",
+  "cbbbabd7e4c44d9090dced613d6d0e92",
+  "9376ea3ff21545f5bf5168c15cd2d7e1",
+  "320da50c1070461784fa4b6ba6ff82f0",
+  "2692e28f45db4fd485556eedc1e4eaef",
+  "5ffc86c5ce71408198fc359a9039137c",
+  "ca8d4b2ab52547e2a600ee891a9f4639",
+  "2dfa2891813e4dea8c614bde3964249d",
+  "62bf629215314de88445a08f01c4d373",
+  "2d4da51ed07848569d1f8c5e7d9afdd1",
+  "5ffd5c19fc6a4d4abdd0f0364bfae601",
+  "f0e4e60985c64d7c8ef772e25b76de5a",
+  "17e109e90ae94413ac20a3670d9e4d25",
+  "da527660307241c988f33f15798d16f4",
+  "53ab5223002b42f2940ab2ee90441ac5",
+  "d30470e6fed142f080cb8bde69c0c912",
+  "fd4dfec44c4246089c0317da1d571d4d",
+  "dfc058a6dbc54e549d5ac685f3e3c3d7",
+  "155d4513f8164a3ca27e513e8ee715bb",
+  "27d9a503280b45a0909d32e38c904431",
+  "2120928cac0f4841b4d224b69eb1afa6",
+  "b21eeff2d69f450dae6c557ea6ca6795",
+  "94378f8321914d47845be7d999f12874",
+  "4a6ddc244bdf487b920b78905cad8252",
+  "72b470932d9c46fd815add2347f7235a",
+  "77fc73b70ad54cb69ef79ec8d3050c88",
+  "02e1d0e54fa34c91b67c7ac26d1cfdbb",
+  "0c9b4fb775d44c0c9b006a6d886fcacb",
+  "ecec2d4162ea4b6f876c0f8727437891",
+  "5b6948b7ed8142b78ce689d017578661",
+  "ca45f8738c8d4dabb620b95e39414792",
+  "d41b7069922742b8b6a5bd945514585a",
+  "ee78f5b41a8041db8ceff56117f61e84",
+  "8afc07778065417f9e5a991d1ec4be20",
+  "b01d9589a5784612a0cbc1f57e61b479",
+  "eeac5546b570495fa1d105d4d112bf99",
+  "3824901b75f74940a7e1b8d1e0356a8d",
+  "e5aad60e484c4696951e40f200cc020a",
+  "3197232a53ab41b39a8c0dc4a23801f9",
+  "0ff17f5347f147d4b318fd68eaffe261",
+  "545ae8ea40114de1a1f5af882748e573",
+  "486ca4757aa64c5f85677edd973d24c5",
+  "05f69c3e4d214bb0bdce21612bf8ae51",
+  "f13d11ba748342f097dccc47f657e86c",
+  "a6a1c01e80c5439294d1635b1d30f6f8",
+  "d4b7f915d29047a1b0f94f940f34a27e",
+  "09c612cca91847beaf2c4e9dff3443ae",
+  "9f747a114b354e9a88500eb80f274cca",
+  "c1e0af5beec84a97bbe01f414adc2a35",
+  "068bf599e7ab4630a2b6a4331afda908",
+  "e873bde042e947a3a4f6c11cdf7ff6aa",
+  "88cc92d608d74841b2765d27b8b10e66",
+  "a43328b313cd40a4852b232234a02f4e",
+  "04ec4197609a4c1c8de4d8b07beb06f8",
+  "6a3c47ffea5c48daadec229fed918568",
+  "cabcb073a6754115b73902bdf2876d91",
+  "93e69248d7c7471e892df9f6e0d6b672",
+  "813288ad34a54cef97d61a3dde91483d",
+  "b97ab5edb4d24397ac7f95237adb9a59",
+  "b3689348c23f424e99560ca6a039bac4",
+  "530eb7df6fd641268087afd9c6e77812",
+  "e4ac0fdb272943b286aad25abd850678",
+  "40b8624a25dc4e6d8aea0ebe748fc945",
+  "93fd90d220e14a24b4b1f0828697bd96",
+  "66c11ac18f8e4c4f939f6a53f3e3326c",
+  "06a376f1ab424c64806e00ba9ab3677e",
+  "4abd4d10cb9e4d07ab9432d00d736196",
+  "e044753897404da09e33e379bdc2236d",
+  "97207c4cd16a478c98cf0494b591d6f4",
+  "c16294960b8a445a9bf314e409c7265f",
+  "10ca7fa23253498a89662d0d228a46aa",
+  "587a4bf6fcee46648c8babccb92a94ba",
+  "47bb08bf35744455b1836429acb44a29",
+  "56fdce8b4fa642f5afb25f553fafc809",
+  "91650af9ae4e443cb10ef8077129b0a3",
+  "9580541e5b5e4e39bd7ecbca9fdf14e7",
+  "9211480591b0461cbb3fbf0ac53f4bc6",
+  "304b74d78945442d90b5eeb213dcc1fd",
+  "44059ea00375415fa5582c469f6a6132",
+  "d12b3b26ae2347dfb90e533449a81373",
+  "d4fae9090cf145dd8fbe7dc0c46a8f1e",
+  "86ae96f2634d494183245ba6335b5ba4",
+  "8ca90d6608424ac588712ae0c9923af9",
+  "36ec4f33defa4563b98c04bba97c9f79",
+  "71cc6cdd6faa45f8b55ae73639ec5d52",
+  "c8892376d13c419a88aa6b523f482ee5",
+  "775f516efad342399c20378cf6e502c8",
+  "5851bb3f77374ed8af9e193b8ed04bb5",
+  "6676c20cb7454d8c8b4f5ff0bc9c662e",
+  "b4638ea42e4840888d1d84d0320538b4",
+  "09b8e9a075394044800ed6e19a31c7bd",
+  "a10dd6c4405c46a3a4c736b858a7af95",
+  "6d74c06188424a8880ea7ad16190d98d",
+  "07b8730e6aee4982815752cd3d3553a9",
+  "bb59ea07e31941f99c22b0913e06efff",
+  "471e06bb9ef74e7ca0d5c8869b1fa254",
+  "7e40039f34bd425e95f35aee680a119d",
+  "06f65fda4f9945b1ad1ac9100e143e80",
+  "f0dafaac6d664da28a23062f9e90b89f",
+  "ca95bd8ae6654fd2affe114e441c4d81",
+  "76d4586184f94d3297996145936dfcf4",
+  "37946cfe0a434477ad8b70fbf4894e14",
+  "18539ca36f1242aa8847d515a63e097d",
+  "eb495a7ed61d4acfb0bb88b92add0556",
+  "aef41963c83c4215a83593b6d23af251",
+  "a5893d52bd6646819916490e10b137e6",
+  "10fd5b1cc8a04d82ba24cc45965fdfd6",
+  "89cf38ff74c14342aaccfbe3b002f8dc",
+  "6e4328a65d9348da87bf775c19688b5b",
+  "289061075bec46c8924f9c0a99ffd64f",
+  "eec38255537f46a6b6e516dfffa3c0a3",
+  "5b3721dc34ea4f1cbd652b732b2f9e7d",
+  "7faf528271bd47948bc35e347383fe67",
+  "28a13a02bd38427cafbdbe179b632a82",
+  "f67f0018ba7b4370a7ee817f3cdffdef",
+  "42344bf12c634f1186dd54084b46055d",
+  "c64f3b644852461292c40ac9d73e0612",
+  "7b16b723961847e8b394998bbc668f16",
+  "1faceb009eee4d4dbfa9b67364bf99f5",
+  "d443858f8b1d470b80f4fdb7591e6ecc",
+  "480512122e2840309d783dffd1798a4a",
+  "8ed9915e3e2a49a99669909711e268ca",
+  "00a2450700a841a087c59ce3ad638a95"
+ ]
+}

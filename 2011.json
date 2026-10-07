@@ -1,0 +1,392 @@
+{
+ "_help": "Per-tour extras that are NOT in the playbook. Image values are Wix media IDs (the 32-character code after 588d17_ in the Wix image address). Videos use the Vimeo number (vimeo.com/<number>) or a 'youtube' ID. Leave any field empty (\"\" or []) and that part of the page simply hides. rc_images / leaderboard_images may also be file paths (relative to tour_media) – those images are built into the page.",
+ "year": 2011,
+ "strapline": "DORAL DOGS",
+ "hero": {
+  "id": "ce64d95b50774da6a55a83d751ac5fb9",
+  "caption": "2011 Tourists"
+ },
+ "venue": {
+  "map_query": "Trump National Doral Miami, 4400 NW 87th Ave, Miami, FL 33178",
+  "map_zoom": 15,
+  "blurb": ""
+ },
+ "captains": {
+  "BH": {
+   "id": "bcbd598abfd54da297b1bf730a1c7ccd"
+  },
+  "RT": {
+   "id": "7692ea8ee7b447369aac740062a49ab8"
+  }
+ },
+ "accommodation": {
+  "name": "Doral Golf Resort, Miami",
+  "blurb": "Home for BDT 2011 – 16 tourists, with Jim McClean Signature Course, Great White and Blue Monster on the golf schedule.\n\nA golf resort in Doral, west Miami, now run as Trump National Doral. It has four championship courses, including the Blue Monster, a 48,000 sq ft spa, the Royal Palm pool and a large golf pro shop.",
+  "photos": [
+   {
+    "id": "a2bf0b83536f4a8687bc9dcc9760d111",
+    "caption": ""
+   },
+   {
+    "id": "b1dd7b7b62e54fbe8af4069442b84321",
+    "caption": ""
+   },
+   {
+    "id": "1d73c17999be408b80f70103c67bff16",
+    "caption": ""
+   },
+   {
+    "id": "b2cc98c22b264ae5a6a16a1ad16bfbb5",
+    "caption": ""
+   },
+   {
+    "id": "3e4d34047dbd49d48ff8d1d88b865e9e",
+    "caption": ""
+   },
+   {
+    "id": "8e55ce76feaa42fda0105a06bb205cd1",
+    "caption": ""
+   },
+   {
+    "id": "d30e1d535d3e4ee59e696d0448c9f956",
+    "caption": ""
+   },
+   {
+    "id": "4a9c723f73904aacabe1e21f51fa0d45",
+    "caption": ""
+   },
+   {
+    "id": "78d367163cc54bf3a66dea5f9e4e037a",
+    "caption": ""
+   },
+   {
+    "id": "33b024ab62ca4b58a5632b44e4e2d27e",
+    "caption": ""
+   },
+   {
+    "id": "9d6962ab7c644f2f9859a865c7c872b9",
+    "caption": ""
+   },
+   {
+    "id": "29d0175f6f13424d8e7ecbe61545a457",
+    "caption": ""
+   },
+   {
+    "id": "3b7ca5beb3054eeeb6c33662bde9f62d",
+    "caption": ""
+   },
+   {
+    "id": "e180fc32cc4c4f7ea1009f294e87205a",
+    "caption": ""
+   },
+   {
+    "id": "1cc16918cf924d2db973a9184c2ba3dd",
+    "caption": ""
+   },
+   {
+    "id": "d9f89a7566d1439382b549f1dde577e8",
+    "caption": ""
+   },
+   {
+    "id": "37504705fc9f4cee840035054706b52f",
+    "caption": ""
+   },
+   {
+    "id": "c847e23cae3b4e9a9ce4e6ff1ef38f08",
+    "caption": ""
+   },
+   {
+    "id": "6bcab27ce97449e8b74a9cd9d29f8999",
+    "caption": ""
+   },
+   {
+    "id": "9163a3d1fb1a4bcab4c6ba51f67c48ed",
+    "caption": ""
+   }
+  ],
+  "where": "Doral · Miami, Florida · USA",
+  "facts": [
+   "Four championship courses",
+   "Blue Monster course",
+   "48,000 sq ft spa",
+   "Royal Palm pool"
+  ],
+  "link": "https://www.trumphotels.com/miami"
+ },
+ "itinerary_images": [
+  {
+   "id": "ca6cd9e477e746d8935633ea61433c30",
+   "caption": ""
+  },
+  {
+   "id": "5d6fa1d34ee649f097b6f4086f463e76",
+   "caption": ""
+  },
+  {
+   "id": "e15402ce060f442bb40b2f7ff6212f12",
+   "caption": ""
+  },
+  {
+   "id": "0092f76fc0a64602a8aae076a5740bd4",
+   "caption": ""
+  },
+  {
+   "id": "42a48ae2b08c495ebaf8f1fd84fbb1e2",
+   "caption": ""
+  },
+  {
+   "id": "17087901eae94370a731808562080d1b",
+   "caption": ""
+  }
+ ],
+ "itinerary_extra": {},
+ "team_photos": {
+  "BH": "82783d4dcce6484f96e4331ad4d3464f",
+  "RT": "85726d8b881f4164a4e34aee2afb580c"
+ },
+ "team_announcement": [],
+ "rc_images": [
+  "boards/BDT_2011_RyderCup_1.jpg",
+  "boards/BDT_2011_RyderCup_2.jpg",
+  "boards/BDT_2011_RyderCup_3.jpg"
+ ],
+ "leaderboard_images": [
+  "boards/BDT_2011_Leaderboard_1.jpg",
+  "boards/BDT_2011_Leaderboard_2.jpg"
+ ],
+ "summary": {
+  "banner": "942b01dd8bc348c48fa1929058c98b85",
+  "title": "",
+  "text": "",
+  "link": ""
+ },
+ "video_sections": [
+  {
+   "title": "Tour preview",
+   "items": [
+    {
+     "vimeo": "24529654",
+     "title": "BDT 2011 Preview DVD Part I",
+     "thumb": "https://i.vimeocdn.com/video/884776800-960bb3f6221236dae5f19c687ea7577a3f18bcca9277a8e1c1974f64e1f6fe46-d_640?region=us"
+    },
+    {
+     "vimeo": "24686925",
+     "title": "BDT 2011 Preview DVD Part II",
+     "thumb": "https://i.vimeocdn.com/video/884777611-983c62376ec47d5ded902ba40bd8261d9a30d86d7f6c192e74cb403fd13bcbc0-d_640?region=us"
+    }
+   ]
+  },
+  {
+   "title": "Photo Slideshow",
+   "items": [
+    {
+     "vimeo": "425194722",
+     "title": "BDT 2011 Slideshow",
+     "thumb": "https://i.vimeocdn.com/video/902675420-a3b298d9615655bb660fcd98ec5cdd9ce15682ec7ea587725faa2c525d999ada-d_640?region=us"
+    }
+   ]
+  }
+ ],
+ "gallery": [
+  "1ee172541be243dba9e846b16ace5a2f",
+  "04edacce1dfe4d81ab3a2dd07265fb1c",
+  "a17b663155c54466892da9e558e2a449",
+  "d43b43e9cfbd483e9e471b1dde4fa5bb",
+  "0774dcca9c4b468a932c61756d57d28b",
+  "96c695b0e69945e09c480f29df4f1dfb",
+  "59652d3e9b2f4f19aeb995251150ac2a",
+  "f9ed66b93ac342348511481fdadcaaa3",
+  "a50b2980ca1d450e83cf15c0ae1ebbd2",
+  "c982916c0ef3453ba2e193f4d608fe0f",
+  "60a08139c4a34760925d3406be11e5b1",
+  "a8614728184241aa8de4a3dc965cacd1",
+  "977d4e8a4d664164ac984d7a67ed0ac3",
+  "ce64d95b50774da6a55a83d751ac5fb9",
+  "659d33556db44376a29bac3076def771",
+  "01eb91c22c694550a99c24770d21e5ea",
+  "51b489731fb94346b36fb1b33baa4934",
+  "768772e4a8dd44bba2ad49a2a7e7ad96",
+  "9d5274b387fd405fa92e449e51f47eff",
+  "24cd233135ac4b18bf5f533a2fc94002",
+  "fe07acbaa6c242f1a149a819764f7a6a",
+  "71d7a6d7aa884b9e93642e640f0c445b",
+  "da6ca1fa324f45f29040baca555ec960",
+  "dbabca88b57d46d58de1efe3302d7ab0",
+  "ac8d6991039c4fc1ac8e5539e6ce3bfa",
+  "2f96ce679b5940148d3279e56247cd0f",
+  "8c40842f8c1d48ac8926b7424912dffe",
+  "8a635451c9254dfbae428a486b185b5a",
+  "ddb00436f9cc411f8eaa0d50d17b8bc3",
+  "d6dd21b79f9c4c1e99fd791c2d0581e6",
+  "9c672fa1bb4f44c789e26a407636c68a",
+  "835b7835a594440d9753475abc26d69f",
+  "b404458545df4e9387667a635022137d",
+  "abed3f53b16c454180f6f4ce6f73f6ef",
+  "e1a764a220e3438fb0a62f841e3beead",
+  "8c4fdec731f5478d8a48df68d6cabba5",
+  "5ee1aee8761148f5b9b28836844f1bcf",
+  "b31eaf258dc2488a990545730a89ee94",
+  "0469bd48bb7a4846b910ede1da675fd7",
+  "97fd90c90bca493dbbbcba5ab3dbc6a6",
+  "5437cb510f6e4541a5063022109368b3",
+  "a709ef2c75614219b4168fd4173a8b5e",
+  "d3c90d39d03c4296afb55bcd57501f2f",
+  "4735bd5bc9384901b124bc256af2c4a3",
+  "6ff87ad5eab445a1902ab8b65074d904",
+  "69f3e304565c4b90ad8422774c4b9ada",
+  "57f1bc4b274a4e2585b5ebd713cd0b24",
+  "226c9d8a78e342a48fbfe9dc579a59ed",
+  "41cc926e000848d3ad9c054733c39cf6",
+  "dc74ca8273f6402c9ac4a6976c4659dd",
+  "13caf6ebd90b4beca78c856c1af6a191",
+  "090ec7b3f49a4589baa422b6f04bb81d",
+  "2b29ac5b8e1747cb965badd039399221",
+  "6dab055c510b4ab4bae72a94eb23eaa0",
+  "ce08c216040c4cbf86f4c8b402b43de8",
+  "483f68d3f457487e93e637e2b5ce9f2d",
+  "84ae8ca09c354f309aac7637b53243c5",
+  "bcd24363836b44b499d8e572fb8bd700",
+  "7af1338410da484daa6e6f595e166594",
+  "62b5a4f6b1fa4b00aae072da9885c686",
+  "67785bc73e4740478c8b1c5f54266f9f",
+  "75da9945d8244d4aa0f23cfa4a6a6ce8",
+  "7d186106caab4fe19207d8e4fb8a23da",
+  "24332e9f9a6545f8a75c4b6173c6ead3",
+  "2a12fd6949534751b62293101d52d819",
+  "aee0d8e9d7d442a082c1f210e5433e0d",
+  "937128cbddc34ff98002b0f726cbee6e",
+  "df98ee848a1940178aa7f2475ae7e916",
+  "d85fbc98104c4c5abafc895d7ea66818",
+  "124355856e38410d99334f3ed2a2ec80",
+  "c481f0c698034037879f63129ffe5fba",
+  "c5c368a0b94a4daf9b4a648e8271513e",
+  "b82e26664f814248ad904d296e7b33ac",
+  "e6050c032a7f4c358bf0dc01203a35af",
+  "39326448307d4b8e93d86df844afeb21",
+  "f18b8fb352224b31bb2bdff0e42e1226",
+  "22a7e3bf37464d42900aa808687b7844",
+  "5df1773f70df4ae384a449091ca83dc5",
+  "76759f0d66ee44768358af8462d3493c",
+  "35e77cb2988a431e862c4f8708f796e2",
+  "2e1527c20a10431a9b74b0501986777f",
+  "f3aedfa3cac347c2a602795d0ac8d619",
+  "4655a7622ded49fb8d8c72583ce69d43",
+  "688cd5c696a540c2bf98d26684ad5757",
+  "777e012706ff49b5acee4f9d6d1e04fd",
+  "76bf7013a15a496283617fb2fc2ca1a9",
+  "380cf069e24943fabb5afa7d4b39b8db",
+  "698560c5d0db4e22b4f9c4d983894372",
+  "b048f231f447484ab75b04684fe7cd88",
+  "5838e73671d144ad82c4e93800228a52",
+  "2897a37a02474cf3a0e6a76ecfd3efdc",
+  "a78ffb4142b5432c91a1f81d334830ab",
+  "3b23c872307842a3b1a409b7e0b50312",
+  "255f8b3dbf594377a8e29dcb806cf617",
+  "f6bd53e9a41c4049a2211cf93c2c50a9",
+  "e6afd34cc4e043b295f9c3fd94442f49",
+  "a2e3fe5abe7e48d0b4620c8655434d63",
+  "f6ff311b13df4459b72a50355db9972a",
+  "df06014a32db468a9945a324105935bc",
+  "4e649fe864274c6ab9ac924344baa887",
+  "01f707d635fd443391663cdd29e882c4",
+  "7b5897d8ee954ea196e7d7a95f07ff81",
+  "96ed355811364e59bb436b6dc6b2625d",
+  "e2d77dc4f76c43abbc672cf0110440a0",
+  "301effc209cf422b96ab29f0261d8fb0",
+  "5cf8627c0714493d87bf2e714caf50b0",
+  "874323e0b71246b0a7e2c223cfd96d8f",
+  "1ba099ece88a447488b0171af90884f1",
+  "808242c3d23b4a778bbda32e0286009b",
+  "1d97ad5df73d483ea493f26c4be2f240",
+  "8c9f5a0533164c0398b7ebe0c9c188e6",
+  "a79408a3f16341f599207544ff6f3498",
+  "cb40d2e483484e158714f394e09f8f1b",
+  "571a056dcab74f3c9df9c3545a5faf9e",
+  "4c7f231c0a034a38ad2b1996da4cff69",
+  "4b7cef7bd6e04e3db007e7274600bb60",
+  "b647fa5d24fe44ac9d5573cc6d6e5aed",
+  "d49aadb47cfe47bb95bbf701640a5f53",
+  "23fb6616d925495abe93ed07cf885abb",
+  "11c1d8281d19478591d2b603084cda0b",
+  "28e058b21eee4d31aa70193e641f5647",
+  "a26124716b694d369bf6583da5b42d21",
+  "8ed138283a114a69843f762bbb88fffa",
+  "ee6fb4926ede4aeea5ca2cd5ecfb13fd",
+  "463afb3ddbdc4c7fbc067e9a9f1b0b7c",
+  "154e9aa70d6e43ce99a914b23177d696",
+  "74f99cb7ea27482bbbc269922d15d68f",
+  "e3fd363c659f4dd7909fe040b898604b",
+  "a9f2d1d0b44246c9b9d1060a10cb4cd7",
+  "0bc9877633254141b9c72e1ae304a50d",
+  "d8f20be093354a12b5f4d91bb89e365e",
+  "088ff3775470464ba3fc6ebf011d167e",
+  "edd1057a94a241f18a407c7f8fbe32fb",
+  "28b085aae9fc47d3a9e3500f0c2b1beb",
+  "77161d1997034bd7a5fc3c32666de3ee",
+  "2b5b256813fe41169e2c1fad7bd0c2d9",
+  "e06888c691e54ca6886328fcdfe1a262",
+  "a66cea10d0714d34b11aa9f3a9ca0fee",
+  "9f71f055f72f4e37a63ae4a961d59eae",
+  "21c8a41ad8f648b69c4f29971f85ae49",
+  "d8923f7fef494a478f42495ce4029236",
+  "80faa5e8cec14695aca98ff2a4856f03",
+  "d4d7bae421844117bb1293b92d175a76",
+  "b03e123ee72c4d1a9118c91060cb9d0d",
+  "0d71dd39fb814316846222cd24809d24",
+  "44e510a6c2a34aceabe58b299e804a2d",
+  "5f49429dfabf49bfa8f993a9c82ab7f8",
+  "9f26096901b4448991ff4119ef20ff2b",
+  "03c26fcd61104309af6f0ac7c9d48590",
+  "95e4ad6480304c1a954b3b91c946582f",
+  "900ab40c6d4445cd95f48369e848645a",
+  "8ccaa92278f24ca39af99a0fb508c8b1",
+  "4e92205b8b0247c8a02f7c6958731610",
+  "7a2633b4d7e64802bf92633bb00ed201",
+  "1ce0ed769c8346279b4517636a485b30",
+  "3acef16c8d2c4dc19a0f7405a6156abd",
+  "840ff42f8fdf4a61915ce4d9e6f3b308",
+  "7e602786e64949c5ac66f2fc2c247687",
+  "c597a3879731476da082dd95290ac383",
+  "1ac76e3762e4436c88213532851bad39",
+  "67316e74675649ffa6624de2c3e2d031",
+  "419a35ebb82a4810a26554ac2b489814",
+  "2442919d3b1e4df9818feae7da36a4bb",
+  "532f86e4128b4e9ea4d6566d0e2daa55",
+  "e8ba2574c272496cb5c4352ecdbd8beb",
+  "bab6d4a4bf3f460b9e65783832bccffc",
+  "76cdac0a0fed4043ad0b226e6a67626f",
+  "abb9b7e7c7ff4779a748b316cf5c9ec0",
+  "29895aa4c691483d8171f58f5bafa7f9",
+  "d21eff39103e42cd9f12d2cb798ae5b3",
+  "17f81a84f5b54a4f8815e4cdf55acc8c",
+  "63466184c1ed4414a7a172bd03313d7f",
+  "1cdf5b2931d743b6a365017189cab662",
+  "b88d5efaaa0c40599821aedc24d6ebbf",
+  "22c1f56d595241bf993f5e023cc3b31b",
+  "b95e5c57bcd04079a0b4958ba2f203e3",
+  "aaf00c57036f477ab52b5df0cc6b32ef",
+  "05a5ba7814c04dbc86a10eb15b1f9bc8",
+  "86b25ebaf0054dccbb95655ad61108ac",
+  "2f03315d59a14847aab854290d37b76c",
+  "41c065fc9cdf4029828937f38f8e2077",
+  "f703e4b1b549476695c1d4db549c8105",
+  "00306a47f3b9477cbdbf953468f10189",
+  "70f154b598f347dbbd901b50b14e2340",
+  "e79bd53c5082440da69f7ca9d227369f",
+  "fa57d6777b584c0e8047b39e99142fc5",
+  "8eeed1d705d04e5392e60acd731ab7a1",
+  "d46fa5091c2444109aaf451ac058c418",
+  "bfedb6b179a64ccea761b7e443e13c8a",
+  "691612b7176c451f887aac0de025789f",
+  "7fafdcbcdb4946f88c2cd7cea77fa14f",
+  "d65b1ae1850846569ea38536711d6bd5",
+  "088456ce49ae413c89c200b682e11bf7",
+  "17d3815a4f7e41658641891893880f67",
+  "89c4e8116b804fecb70812c72105e04c",
+  "e7c17ee6f3ae44c1a44dac6497209f68",
+  "6df849f647c548b4878bff2244d37758",
+  "c38e090793e8433bb2869258cf200a83",
+  "38392913eac644a4b6b66277afa789e0",
+  "6a3b9e897acf41f581eb54c9285854a7"
+ ]
+}

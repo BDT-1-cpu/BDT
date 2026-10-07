@@ -1,0 +1,236 @@
+{
+ "_help": "Per-tour extras that are NOT in the playbook. Image values are Wix media IDs (the 32-character code after 588d17_ in the Wix image address). Videos use the Vimeo number (vimeo.com/<number>) or a 'youtube' ID. Leave any field empty (\"\" or []) and that part of the page simply hides. rc_images / leaderboard_images may also be file paths (relative to tour_media) – those images are built into the page.",
+ "year": 2012,
+ "strapline": "VILLA EL CANINE",
+ "hero": {
+  "id": "5c27ea35399b44a9912c5b9f1366b102",
+  "caption": "2012 Tourists"
+ },
+ "venue": {
+  "map_query": "36.47329,-5.05124",
+  "map_zoom": 16,
+  "blurb": ""
+ },
+ "captains": {
+  "BH": {
+   "id": "ff073241ebb345f9863b58ae4acd7e00"
+  },
+  "RT": {
+   "id": "89efa563c6b54847a010ebe403a5bcb9"
+  }
+ },
+ "accommodation": {
+  "name": "Villa el Cano",
+  "blurb": "The first of three straight tours at Villa el Cano – re-christened “Villa El Canine” for the occasion. Sixteen dogs took over the whole place for four nights, with Aloha, Finca Cortesin and Alferini on the golf schedule.\n\nVilla el Cano is a ten-bedroom private estate above Puerto Banús on the Marbella coast, in a gated community overlooking Los Flamingos golf club, with views across the countryside to the Mediterranean. It has heated indoor and outdoor pools, a sauna and jacuzzi, a tennis court, a putting green, an outdoor bar and BBQ area, and air-conditioned en-suite bedrooms throughout.",
+  "photos": [
+   {
+    "id": "73de43a39b0844a6b90fbe164fcd59f5",
+    "caption": ""
+   },
+   {
+    "id": "5c424037c0844c6da2945a7414635313",
+    "caption": ""
+   },
+   {
+    "id": "c88f32d793964efbaaf689f535d2cecc",
+    "caption": ""
+   },
+   {
+    "id": "5bcf4322dcc247bf88ef0396d14e7731",
+    "caption": ""
+   },
+   {
+    "id": "52d663a00ada462ea864a1d34275720f",
+    "caption": ""
+   },
+   {
+    "id": "4c08ff203eeb41609178fd621e6c078a",
+    "caption": ""
+   },
+   {
+    "id": "b9bc56786e614b47b05b3ff0c7787f88",
+    "caption": ""
+   },
+   {
+    "id": "8e404a1004d847269152cb32af414b69",
+    "caption": ""
+   },
+   {
+    "id": "0b780bf98b894270af3cf5f91c6a23a2",
+    "caption": ""
+   },
+   {
+    "id": "7e6e094667334239a585b2fd0ec29cb3",
+    "caption": ""
+   },
+   {
+    "id": "0d2c2979222042ffb18e1dd4f95cf610",
+    "caption": ""
+   },
+   {
+    "id": "a1f1378b8e2d44ed8bbcc25a449d4f55",
+    "caption": ""
+   },
+   {
+    "id": "0f81add9dcf2478da71c623c7f782e4c",
+    "caption": ""
+   },
+   {
+    "id": "587e6b695ec64676b15c547d2901380e",
+    "caption": ""
+   },
+   {
+    "id": "24833fb436b04897a72b5eb38c19b3f0",
+    "caption": ""
+   },
+   {
+    "id": "2819426c46f64036b2efab71628295e3",
+    "caption": ""
+   },
+   {
+    "id": "ce9e20d284b642449a883701ce882bd5",
+    "caption": ""
+   },
+   {
+    "id": "3ff6f4cec44f472389df123e6876c61f",
+    "caption": ""
+   },
+   {
+    "id": "2e2c1b6e61c543eebfd8519639ec74d9",
+    "caption": ""
+   },
+   {
+    "id": "8eff7baac1b7494fbc9e3fce8645e1cb",
+    "caption": ""
+   },
+   {
+    "id": "7058fb1952d0433a83cae745df085977",
+    "caption": ""
+   },
+   {
+    "id": "4a332af22d46491cad0e4d2d37bae4fe",
+    "caption": ""
+   },
+   {
+    "id": "8b8b7f55e8ce4d818bf1322628e0cc3e",
+    "caption": ""
+   },
+   {
+    "id": "65f0d80b32534dc69540fbb1fc31ecec",
+    "caption": ""
+   },
+   {
+    "id": "142f425022144d4683bb6cb18fe1775c",
+    "caption": ""
+   }
+  ],
+  "where": "Puerto Banús · Marbella · Spain",
+  "facts": [
+   "10 bedrooms",
+   "4 nights",
+   "Indoor & outdoor pools",
+   "Tennis & putting green",
+   "1st of 3 villa tours"
+  ],
+  "link": "https://www.elegantresorts.co.uk/luxury-properties/spain/villa-el-cano"
+ },
+ "itinerary_images": [],
+ "itinerary_extra": {},
+ "team_photos": {
+  "BH": "e37cd5a1e73f4b04bb27d7cbd1290086",
+  "RT": "c02b31e71df6452ea75a088793a0236e"
+ },
+ "team_announcement": [
+  {
+   "vimeo": "37632493",
+   "title": "BDT 2012 Team Announcement",
+   "thumb": "https://i.vimeocdn.com/video/887023676-f03ff6b13e590c786895485d4fc69cb4f012a8031f90bbe0c316316cf3b8eb9f-d_640?region=us"
+  }
+ ],
+ "rc_images": [
+  "boards/BDT_2012_RyderCup_1.jpg",
+  "boards/BDT_2012_RyderCup_2.jpg",
+  "boards/BDT_2012_RyderCup_3.jpg"
+ ],
+ "leaderboard_images": [
+  "boards/BDT_2012_Leaderboard_1.jpg",
+  "boards/BDT_2012_Leaderboard_2.jpg"
+ ],
+ "summary": {
+  "banner": "7121a1f0fe374f50ac1321fa57d760ef",
+  "title": "",
+  "text": "",
+  "link": ""
+ },
+ "video_sections": [
+  {
+   "title": "Tour preview",
+   "items": [
+    {
+     "vimeo": "41247731",
+     "title": "BDT 2012 Preview DVD",
+     "thumb": "https://i.vimeocdn.com/video/285813097-d10fb2c9571db75b51f0ee701219a73e42679c8bdd6210ec4212ab5d94c722ef-d_640?region=us"
+    }
+   ]
+  },
+  {
+   "title": "Photo Slideshow",
+   "items": [
+    {
+     "vimeo": "422917378",
+     "title": "BDT 2012 Slideshow",
+     "thumb": "https://i.vimeocdn.com/video/899180151-ea95237b45545f45adcc15ab9c9997d0484ec0f1ac577dbc5d8e98e047b6479f-d_640?region=us"
+    }
+   ]
+  },
+  {
+   "title": "Tour clips",
+   "items": [
+    {
+     "vimeo": "415097383",
+     "title": "Knoxy v Ravo You Wanna Fight...",
+     "thumb": "https://i.vimeocdn.com/video/888444009-d1937d7f6ffbcaefe939f3153508dbbc807a1880f7be1c6f09ac5163ff1664dc-d_640?region=us"
+    },
+    {
+     "vimeo": "415097360",
+     "title": "Charlie v Gav BDT 2012 Singles Match Dubai",
+     "thumb": "https://i.vimeocdn.com/video/1793779968-babc58ba82787be4993651beec1d3fd0e4de4eaeb510131d139acff206ce55b3-d_640?region=us"
+    },
+    {
+     "vimeo": "56871340",
+     "title": "Ash v BT BDT 2012 Singles Match at Worplesdon",
+     "thumb": "https://i.vimeocdn.com/video/393900450-9cfa1ac515d72ffcbbf29df2d8a03b6634a0ad5d70bed63a4591fc95351abf64-d_640?region=us"
+    }
+   ]
+  }
+ ],
+ "gallery": [
+  "95b1d4208ae84a59acb89ae0565cb970",
+  "7ec9e92635a549c9b02a9c4334bb933f",
+  "77e63ff012dc488ead3b534b0db77663",
+  "11223cee5b414db18f6ccdd1d01d7c56",
+  "f8eaa9fa9eba48a997c92cfbd8e7e969",
+  "ed4a6d9cb1e94195babe4ab41e7aa285",
+  "33e6cf36bc7640e98f4ffa0926583484",
+  "5094faebf861401687e7462f6315944b",
+  "bc6571950e7c444a9d77d2d1f8e843b3",
+  "224fcc37f3ba4096bcb19360f78c3267",
+  "b3259c06a5bd4470ac7556a7e24dc0f7",
+  "69e490db433a4f25a499aefa3c08fec2",
+  "5faf5b66872e4c27b56f3efedb3916c4",
+  "569187b24aea486397934525c991db82",
+  "bb4f0dbbc88f4b65968a2ddb1a2d6cc3",
+  "cad438ca8aa547258a4f5154a6576805",
+  "7695b82864134982a1c1920f6a8ffcd8",
+  "1636f0cef6a84564877808d34395e57e",
+  "1df32df04df54d3fa21b9444ccc2cf9b",
+  "f026fe1ea54b470a97970ec838ca47ec",
+  "4a1dbace494145d5bbd137bfea99f650",
+  "bf8f8e1c54404691847bddd518c50378",
+  "d5c003046fc5483791f49e524f368b9b",
+  "08cc23e247a84262bb119b24ab1eae80",
+  "740522e05d524b45b6da108310d37593",
+  "50643ab572a043f0b4acc11613ce5617",
+  "5c27ea35399b44a9912c5b9f1366b102"
+ ]
+}

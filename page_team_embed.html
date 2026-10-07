@@ -1,0 +1,1173 @@
+<meta charset="utf-8">
+<title>Big Dogs Tour</title>
+<meta name="description" content="Every stat from the Big Dogs Tour playbook: Ryder Cup results, records, leaderboards and trophies, searchable and sortable.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Alumni+Sans:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    /* clubhouse-at-night palette: deep felt green, glossy gold trim, team pops */
+    --bg0:#081310;
+    --bg-grad-a:#0A1C16;
+    --bg-grad-b:#050B09;
+    --felt:#0F251D;
+    --felt-hi:#173A2C;
+    --felt-glass: rgba(23,58,44,0.55);
+    --glass-border: rgba(240,197,102,0.14);
+    --gold:#F0C566;
+    --gold-2:#C99A3D;
+    --gold-soft: rgba(240,197,102,0.16);
+    --bh:#FF0000;
+    --bh-deep:#B30000;
+    --bh-soft: rgba(255,0,0,0.14);
+    --bh-chart:#FF0000;
+    --rt:#7086F0;
+    --rt-deep:#000080;
+    --rt-soft: rgba(112,134,240,0.14);
+    --rt-chart:#7086F0;
+    --ink:#F4F1E4;
+    --ink-soft:#A9BAAE;
+    --ink-dim:#72847A;
+    --line: rgba(240,197,102,0.12);
+    --line-soft: rgba(255,255,255,0.06);
+    --shadow: 0 1px 0 rgba(255,255,255,0.03) inset, 0 14px 40px -16px rgba(0,0,0,0.65);
+    --shadow-lift: 0 1px 0 rgba(255,255,255,0.05) inset, 0 20px 50px -14px rgba(0,0,0,0.7), 0 0 0 1px var(--glass-border);
+    --bg-glow-a: rgba(240,197,102,0.10);
+    --bg-glow-b: rgba(143,163,255,0.07);
+    color-scheme: dark;
+    --topbar-h: 60px;
+    --scrollbar-mirror-h: 14px;
+  }
+  /*__TEAM_THEME__*/
+
+  *{box-sizing:border-box;}
+  /* scroll-behavior:smooth here means every plain, non-"smooth-option" scroll
+     the app code triggers (scrollIntoView(true), window.scrollTo(0,y)) is
+     animated by the browser itself rather than jumping instantly - without
+     asking the JS call for a "smooth" behavior, which is what the app's own
+     auto-scroll-to-profile logic already avoids doing, since the JS-level
+     smooth option is where past attempts to animate this broke down on some
+     mobile engines when run inside a cross-origin embed frame. Letting CSS
+     drive the animation instead keeps the already-working instant-jump target
+     calculation completely untouched and only changes how the resulting
+     scroll is rendered. */
+  html{ scroll-behavior:smooth; }
+  html,body{ height:100%; }
+  body{
+    margin:0; color:var(--ink);
+    font-family:"IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+    font-size:15px; line-height:1.5;
+    background:
+      radial-gradient(1100px 620px at 14% -8%, var(--bg-glow-a), transparent 60%),
+      radial-gradient(900px 700px at 100% 0%, var(--bg-glow-b), transparent 55%),
+      linear-gradient(160deg, var(--bg-grad-a), var(--bg-grad-b) 70%);
+    background-attachment:fixed;
+  }
+  /* faint dimpled-golf-ball texture, tiled, very low opacity */
+  body::before{
+    content:""; position:fixed; inset:0; pointer-events:none; z-index:0; opacity:0.5;
+    background-image: radial-gradient(rgba(255,255,255,0.035) 1px, transparent 1.4px);
+    background-size: 16px 16px;
+  }
+  h1,h2,h3,.display{
+    font-family:"Anton", Impact, "Arial Narrow Bold", sans-serif; font-weight:400; letter-spacing:0.01em;
+    text-wrap:balance; color:var(--ink);
+  }
+  .brand-font{ font-family:"Anton", Impact, "Arial Narrow Bold", sans-serif; font-weight:400; }
+  .mono, .num{ font-family:"IBM Plex Mono", ui-monospace, monospace; font-variant-numeric:tabular-nums; }
+  a{ color:var(--gold); }
+  ::selection{ background:var(--gold); color:#12200; color:#14210F; }
+
+  ::-webkit-scrollbar{ width:11px; height:11px; }
+  ::-webkit-scrollbar-track{ background:transparent; }
+  ::-webkit-scrollbar-thumb{ background:linear-gradient(var(--gold-2), var(--gold)); border-radius:8px; border:2.5px solid var(--bg0); }
+  *{ scrollbar-color: var(--gold-2) transparent; scrollbar-width:thin; }
+
+  @media (prefers-reduced-motion: no-preference){
+    .kpi, .card, .table-card{ animation: rise .5s cubic-bezier(.2,.7,.2,1) both; }
+    section.page.active .kpi:nth-child(1){animation-delay:.02s}
+    .fade-in{ animation: rise .45s cubic-bezier(.2,.7,.2,1) both; }
+  }
+  @keyframes rise{ from{ opacity:0; transform:translateY(10px);} to{ opacity:1; transform:none; } }
+
+  /* ---------- app shell ---------- */
+  .app{ display:flex; min-height:100vh; position:relative; z-index:1; }
+
+  .sidebar{
+    width:270px; flex:none; position:sticky; top:0; align-self:flex-start; height:100vh;
+    overflow-y:auto; z-index:20; padding:22px 14px;
+    background: linear-gradient(180deg, color-mix(in srgb, var(--felt) 92%, transparent), color-mix(in srgb, var(--bg0) 96%, transparent));
+    border-right:1px solid var(--glass-border);
+    box-shadow: 6px 0 30px -18px rgba(0,0,0,0.6);
+  }
+  .brand{ padding:6px 10px 20px; border-bottom:1px solid var(--glass-border); margin-bottom:16px; }
+  .brand-row{ display:flex; align-items:center; gap:12px; }
+  .brand-crest{ width:42px; height:auto; flex:0 0 auto; filter:drop-shadow(0 2px 6px rgba(0,0,0,.45)); }
+  .brand-text{ min-width:0; }
+  .brand .kicker{ font-size:10.5px; letter-spacing:0.12em; text-transform:uppercase; font-family:"Anton",sans-serif; font-weight:400; }
+  .brand .kicker .bh{ color:var(--bh); } .brand .kicker .vs{ color:var(--gold); } .brand .kicker .rt{ color:var(--rt); }
+  .brand h1{
+    margin:6px 0 0; font-size:25px; line-height:1.1; font-weight:700;
+    background:linear-gradient(100deg, #FBF7E9 10%, var(--gold) 55%, #FBF7E9 90%);
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+    background-size:220% 100%; animation: sheen 6s ease-in-out infinite;
+  }
+  @keyframes sheen{ 0%,100%{ background-position:0% 0; } 50%{ background-position:100% 0; } }
+  .brand .sub{ font-size:12px; color:var(--ink-soft); margin-top:6px; }
+
+  .navlist{ list-style:none; margin:0; padding:0; }
+  .navlist .navgroup{ margin-bottom:3px; }
+  .navlist button.navlink{
+    all:unset; display:flex; align-items:center; gap:9px; width:100%;
+    padding:9px 10px; border-radius:9px; font-size:13.5px;
+    font-family:"Anton",sans-serif; font-weight:400; letter-spacing:0.02em;
+    color:#CBD8CE; cursor:pointer; position:relative; transition:background .15s, color .15s;
+  }
+  .navlist button.navlink svg{ width:16px; height:16px; flex:none; opacity:0.85; }
+  .navlist button.navlink:hover{ background:rgba(240,197,102,0.08); color:#fff; }
+  .navlist button.navlink.active{
+    background:linear-gradient(90deg, rgba(240,197,102,0.22), rgba(240,197,102,0.05));
+    color:#FCF3DD; box-shadow: inset 2px 0 0 var(--gold);
+  }
+  .navlist .subnav{ list-style:none; margin:2px 0 12px 15px; padding:0; border-left:1px solid var(--glass-border); }
+  .navlist .subnav button{
+    all:unset; display:block; width:100%; padding:5px 10px; margin-left:-1px; padding-left:13px;
+    border-left:2px solid transparent; font-size:12.3px; color:var(--ink-dim); cursor:pointer; border-radius:0 7px 7px 0;
+    transition:color .15s, border-color .15s;
+  }
+  .navlist .subnav button:hover{ color:#fff; }
+  .navlist .subnav button.active{ color:var(--gold); border-left-color:var(--gold); font-weight:600; }
+
+  .main{ flex:1; min-width:0; }
+
+  .topbar{
+    position:sticky; top:0; z-index:10;
+    background:rgba(8,19,16,0.72); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--glass-border); padding:14px 30px; padding-top:calc(14px + env(safe-area-inset-top,0px));
+    display:flex; align-items:center; gap:14px; flex-wrap:wrap;
+  }
+  .topbar .title{ font-size:12.5px; color:var(--ink-soft); }
+  .topbar .title b{ color:var(--gold); font-weight:600; }
+  .filterwrap{ margin-left:auto; position:relative; min-width:230px; flex:1; max-width:360px; }
+  .filterwrap input{
+    width:100%; padding:9px 34px 9px 14px; border-radius:10px; border:1px solid var(--glass-border);
+    background:rgba(255,255,255,0.04); color:var(--ink); font-size:13.5px; font-family:inherit;
+    transition:box-shadow .15s, border-color .15s;
+  }
+  .filterwrap input::placeholder{ color:var(--ink-dim); }
+  .filterwrap input:focus{ outline:none; border-color:var(--gold); box-shadow:0 0 0 3px var(--gold-soft); }
+  .filterwrap .clearbtn{
+    all:unset; position:absolute; right:7px; top:50%; transform:translateY(-50%);
+    width:22px; height:22px; border-radius:6px; display:flex; align-items:center; justify-content:center;
+    color:var(--ink-soft); cursor:pointer; font-size:15px;
+  }
+  .filterwrap .clearbtn:hover{ background:rgba(255,255,255,0.08); color:#fff; }
+
+  .content{ padding:28px 30px 90px; max-width:1220px; }
+  section.page{ display:none; }
+  section.page.active{ display:block; }
+
+  /* every top-level section opens on this banner (not just a bare heading) so a
+     section landing reads as its own page rather than a caption glued to whatever
+     table happens to be first underneath it — an icon badge for the section, the
+     name/blurb, and the crest worked faintly into the corner for a little brand
+     texture, echoing the .hero treatment on the Overview page itself. */
+  .section-head{
+    position:relative; overflow:hidden; display:flex; align-items:center; gap:20px;
+    background:linear-gradient(155deg, var(--felt-hi), var(--felt) 130%);
+    border:1px solid var(--glass-border); border-radius:18px;
+    padding:26px 30px; margin-bottom:26px; box-shadow:var(--shadow-lift);
+  }
+  .section-head .sh-icon{
+    position:relative; z-index:1; flex:0 0 auto; width:52px; height:52px; border-radius:14px;
+    background:rgba(240,197,102,0.12); border:1px solid var(--glass-border);
+    display:flex; align-items:center; justify-content:center; color:var(--gold);
+  }
+  .section-head .sh-icon svg{ width:26px; height:26px; }
+  .section-head .sh-body{ position:relative; z-index:1; min-width:0; flex:1 1 auto; padding-right:104px; }
+  .section-head .eyebrow{ font-size:11px; text-transform:uppercase; letter-spacing:0.1em; color:var(--gold); font-family:"Anton",sans-serif; font-weight:400; }
+  .section-head h2{ font-size:30px; margin:5px 0 7px; }
+  .section-head p{ color:var(--ink-soft); margin:0; max-width:70ch; }
+  /* watermark badge - centred on the row's own height and flush to the box's
+     right-hand inner edge (the same inset the icon sits at on the left); the
+     body above reserves padding-right so no heading/blurb text can ever sit
+     under it, whatever the card's width */
+  .section-head .sh-crest{
+    position:absolute; top:50%; right:24px; transform:translateY(-50%); width:84px; height:auto;
+    opacity:0.1; pointer-events:none; z-index:0;
+  }
+  @media (max-width:640px){
+    .section-head{ padding:20px 20px; gap:14px; }
+    .section-head .sh-icon{ width:42px; height:42px; }
+    .section-head .sh-icon svg{ width:22px; height:22px; }
+    .section-head h2{ font-size:22px; }
+    .section-head .sh-body{ padding-right:80px; }
+    .section-head .sh-crest{ width:64px; }
+  }
+
+  /* ---------- section hub (records/h2h/placings/alltime/log landing pages) ---------- */
+  .hub-highlight{
+    background:linear-gradient(155deg, var(--felt-hi), var(--felt) 130%);
+    border:1px solid var(--glass-border); border-radius:16px; padding:22px 26px;
+    margin-bottom:24px; box-shadow:var(--shadow-lift);
+  }
+  .hub-highlight-label{ font-size:11px; text-transform:uppercase; letter-spacing:0.08em; color:var(--ink-dim); margin-bottom:7px; }
+  .hub-highlight-value{ font-size:27px; font-weight:700; color:var(--gold); line-height:1.1; }
+  .hub-highlight-sub{ font-size:13px; color:var(--ink-soft); margin-top:5px; }
+  .hub-links-head{ font-size:11px; text-transform:uppercase; letter-spacing:0.08em; color:var(--ink-dim); margin-bottom:12px; }
+  .hub-links-grid{ display:grid; grid-template-columns:repeat(auto-fill, minmax(240px,1fr)); gap:14px; }
+  .hub-link-card{
+    all:unset; box-sizing:border-box; cursor:pointer; display:block; position:relative;
+    background:rgba(255,255,255,0.02); border:1px solid var(--glass-border); border-radius:14px;
+    padding:18px 46px 18px 18px; box-shadow:var(--shadow); transition:border-color .15s, background .15s, transform .15s;
+  }
+  .hub-link-card:hover{ border-color:var(--gold-soft); background:rgba(240,197,102,0.05); transform:translateY(-1px); }
+  .hub-link-card h4{ margin:0 0 6px; font-size:15px; color:var(--ink); line-height:1.3; }
+  .hub-link-card p{ margin:0; font-size:12.5px; color:var(--ink-soft); line-height:1.45; }
+  .hub-link-arrow{ position:absolute; right:16px; top:18px; color:var(--gold); font-size:16px; opacity:0.75; }
+  @media (max-width:640px){
+    .hub-links-grid{ grid-template-columns:1fr; }
+  }
+
+  .sheet-block{ margin-bottom:40px; }
+  .sheet-block h3{ font-size:19px; margin:0 0 4px; }
+  .sheet-block .subtitle{ color:var(--ink-soft); font-size:13px; margin:0 0 14px; max-width:80ch; }
+
+  /* ---------- paged sections: a short run of standalone pages (one topic each)
+     within a single nav section, switched via a tab strip instead of stacked
+     and scrolled ---------- */
+  .subpage-tabs{ display:flex; gap:8px; flex-wrap:wrap; margin-bottom:26px; }
+  .subpage-tab{
+    all:unset; box-sizing:border-box; cursor:pointer;
+    padding:9px 18px; border-radius:999px; border:1px solid var(--glass-border);
+    background:rgba(255,255,255,0.03); color:var(--ink-soft); font-size:12.5px;
+    font-family:"Anton",sans-serif; font-weight:400; letter-spacing:0.03em; text-transform:uppercase;
+    transition:background .15s, border-color .15s, color .15s;
+  }
+  .subpage-tab:hover{ border-color:var(--gold-soft); color:var(--ink); }
+  .subpage-tab.active{ background:var(--gold-soft); border-color:var(--gold); color:var(--gold); }
+  .subpage-tab:focus-visible{ outline:2px solid var(--gold); outline-offset:2px; }
+  .subpage{ display:none; }
+  .subpage.active{ display:block; }
+
+  /* ---------- series scoreboard: overall record between the sides ---------- */
+  .series-scoreboard{
+    display:flex; align-items:stretch; justify-content:center; gap:0; margin-bottom:30px;
+    background:linear-gradient(180deg, var(--felt-hi), var(--felt)); border:1px solid var(--glass-border);
+    border-radius:14px; overflow:hidden; box-shadow:var(--shadow-lift);
+  }
+  /* the card itself now spans the full content width, matching every other box
+     on the page — but letting the two team panels grow to fill all of that extra
+     width would blow their padding and 42px score out into a lot of empty-looking
+     space, so they stop growing at a sensible cap (flex-basis 340px, allowed to
+     shrink but not grow past it) and sit centred in the card (see justify-content
+     above), with the felt-gradient background filling the rest either side */
+  .series-scoreboard .st-team{ flex:0 1 340px; padding:20px 22px; display:flex; flex-direction:column; gap:6px; min-width:0; }
+  .series-scoreboard .st-team.bh{ background:linear-gradient(135deg, var(--bh-soft), transparent); }
+  .series-scoreboard .st-team.rt{ background:linear-gradient(135deg, transparent, var(--rt-soft)); align-items:flex-end; text-align:right; }
+  .series-scoreboard .st-name{ font-size:10.5px; letter-spacing:0.12em; text-transform:uppercase; color:var(--ink-soft); font-family:"Anton",sans-serif; font-weight:400; }
+  .series-scoreboard .st-score{ font-family:"Anton",sans-serif; font-weight:400; font-size:42px; line-height:1; }
+  .series-scoreboard .st-team.bh .st-score{ color:var(--bh); }
+  .series-scoreboard .st-team.rt .st-score{ color:var(--rt); }
+  .series-scoreboard .st-sub{ font-size:11px; color:var(--ink-dim); }
+  .series-scoreboard .st-divider{
+    flex:0 0 auto; padding:18px 20px; display:flex; flex-direction:column; align-items:center;
+    justify-content:center; gap:4px; border-left:1px solid var(--glass-border); border-right:1px solid var(--glass-border);
+  }
+  .series-scoreboard .st-divider .sd-label{ font-size:9.5px; letter-spacing:0.12em; text-transform:uppercase; color:var(--ink-dim); white-space:nowrap; }
+  .series-scoreboard .st-divider .sd-leader{ font-family:"Anton",sans-serif; font-weight:400; font-size:11px; letter-spacing:0.04em; text-transform:uppercase; color:var(--gold); text-align:center; white-space:nowrap; }
+  @media (max-width:480px){
+    .series-scoreboard{ flex-direction:column; }
+    /* the 340px cap above is a WIDTH limit for the side-by-side desktop layout;
+       stacked in a column here, flex-basis instead governs height, so it has to
+       be released back to a plain "grow to fit its content" panel */
+    .series-scoreboard .st-team{ flex:1 1 auto; }
+    .series-scoreboard .st-team.rt{ align-items:flex-start; text-align:left; }
+    .series-scoreboard .st-divider{
+      flex-direction:row; border-left:none; border-right:none;
+      border-top:1px solid var(--glass-border); border-bottom:1px solid var(--glass-border); padding:8px 18px;
+    }
+  }
+
+  /* ---------- glossy table cards ---------- */
+  /* Note: this card deliberately does NOT use overflow:hidden to get its rounded
+     corners — an overflow:hidden ancestor silently breaks position:sticky for any
+     descendant (the sticky mirror scrollbar and table header below), since it becomes
+     the sticky containing block instead of the viewport. Each piece rounds its own
+     matching corners instead. */
+  .table-card{
+    background:linear-gradient(180deg, var(--felt-hi), var(--felt));
+    border:1px solid var(--glass-border); border-radius:14px;
+    box-shadow:var(--shadow-lift); margin-bottom:18px;
+    /* lets a "jump to this table" link (RC Records' quick nav) land below the sticky
+       topbar instead of right under it, the same fix already used for .sfx-leaderboard */
+    scroll-margin-top:calc(var(--topbar-h,60px) + 16px);
+  }
+  .table-card .tc-head{
+    display:flex; align-items:center; gap:10px; padding:12px 16px; border-bottom:1px solid var(--glass-border);
+    background:rgba(255,255,255,0.02); flex-wrap:wrap; border-radius:14px 14px 0 0;
+  }
+  .table-card .tc-label{ font-family:"Anton",sans-serif; font-weight:400; letter-spacing:0.01em; font-size:14.5px; flex:1; min-width:120px; color:#F1ECD9; }
+  .table-card .tc-card-icon{ width:34px; height:34px; border-radius:50%; object-fit:cover; border:2px solid var(--glass-border); flex:none; }
+  .table-card .tc-count{ font-size:11.5px; color:var(--ink-dim); font-family:"IBM Plex Mono",monospace; }
+  .table-card .tc-search{
+    padding:6px 11px; border-radius:8px; border:1px solid var(--glass-border); background:rgba(0,0,0,0.2);
+    color:var(--ink); font-size:12.5px; width:170px; font-family:inherit;
+  }
+  .table-card .tc-search:focus{ outline:none; border-color:var(--gold); }
+
+  .table-scroll{
+    overflow-x:auto; position:relative; border-radius:0 0 14px 14px;
+    background:
+      linear-gradient(to right, var(--felt) 0, transparent 24px) left / 30px 100% no-repeat local,
+      linear-gradient(to left, var(--felt) 0, transparent 24px) right / 30px 100% no-repeat local,
+      radial-gradient(farthest-side at left, rgba(0,0,0,0.35), rgba(0,0,0,0)) left / 14px 100% no-repeat scroll,
+      radial-gradient(farthest-side at right, rgba(0,0,0,0.35), rgba(0,0,0,0)) right / 14px 100% no-repeat scroll;
+    background-color: var(--felt);
+  }
+  table.data{ border-collapse:collapse; width:100%; font-size:12.8px; }
+  table.data th, table.data td{ padding:8px 12px; text-align:left; white-space:nowrap; border-bottom:1px solid var(--line-soft); }
+  table.data td.wrap, table.data th.wrap{ white-space:normal; min-width:220px; }
+  /* a column declared short-content-only (Yes/No, a small round count) — capped so
+     it doesn't stretch to soak up space freed by hiding a wider neighbour column */
+  table.data td.narrow, table.data th.narrow{ max-width:92px; white-space:normal; }
+  /* a fixed-width date column (e.g. "2026-05-10") — no cap needed since the content
+     itself is short and constant-width; just keep it from ever wrapping onto two lines */
+  table.data td.date-col, table.data th.date-col{ white-space:nowrap; }
+  /* a little extra breathing room between columns on wider screens, for tables that
+     ask for it (e.g. Tour by Tour, once its columns weren't fighting a Result column) */
+  @media (min-width:641px){
+    .table-card.spread table.data th, .table-card.spread table.data td{ padding-left:24px; padding-right:24px; }
+  }
+  table.data.dense th, table.data.dense td{ padding:5px 8px; font-size:11.6px; }
+  /* .dense's own 8px right padding (2 classes) otherwise outranks the plain
+     "table.data thead th" arrow-clearance padding above (1 class) no matter which
+     comes later in the file — a wide, many-column table like Head to Head uses
+     .dense, so without this override every one of its header cells goes right back
+     to the too-tight 8px and the sort arrow crowds the last letter of the label */
+  table.data.dense thead th{ padding-right:22px; }
+  table.data.dense thead th.narrow, table.data.dense thead th.date-col, table.data.dense thead th.eqw{ padding-right:24px; }
+  /* a table declared small enough to never need horizontal scroll (see buildTable's
+     noScroll option) — no mirror bar, no frozen-header split, and cells wrap instead
+     of forcing nowrap-driven overflow, so the whole thing fits the card at any width */
+  .table-scroll.no-hscroll{ overflow-x:hidden; }
+  table.data.auto-width th, table.data.auto-width td{ white-space:normal; }
+  /* a noScroll table already wraps every cell, so the generic .wrap column's
+     220px minimum (sized for a table that's free to scroll instead) is more than
+     it can spare — cap it lower so a wide column still gets extra room without
+     forcing the whole table past its card and back into a horizontal scrollbar */
+  table.data.auto-width td.wrap, table.data.auto-width th.wrap{ min-width:138px; }
+  /* the auto-width rule above sets every cell to white-space:normal, which would
+     otherwise win the tie against the plain .date-col rule and let dates wrap again */
+  table.data.auto-width td.date-col, table.data.auto-width th.date-col{ white-space:nowrap; }
+  /* a noScroll table is sized to fit a desktop-width card; a phone screen simply
+     doesn't have enough width for a table with this many columns of real text
+     (course names, captain names, dates), so below 640px let it fall back to the
+     same plain horizontal scroll every other wide table already uses on mobile,
+     rather than forcing unreadable compression */
+  @media (max-width:640px){
+    .table-scroll.no-hscroll{ overflow-x:auto; }
+    table.data.auto-width th, table.data.auto-width td{ white-space:nowrap; }
+    table.data.auto-width td.wrap, table.data.auto-width th.wrap{ white-space:normal; min-width:220px; }
+    table.data.auto-width td.narrow, table.data.auto-width th.narrow{ white-space:normal; }
+  }
+  table.data thead th{
+    background:#132A20; cursor:pointer; user-select:none;
+    font-weight:600; color:var(--ink-soft); font-size:11.3px; text-transform:uppercase; letter-spacing:0.03em;
+    border-bottom:1px solid var(--glass-border); z-index:2; transition:color .15s;
+  }
+
+  /* mirrored horizontal scrollbar, pinned near the top of each table while any part of
+     it is on screen — the native scrollbar sits at the very bottom of the (often very
+     tall) table, which is unreachable while looking at rows near the top */
+  .scrollbar-mirror-wrap{
+    position:sticky; top:var(--topbar-h, 60px); z-index:6;
+    background:var(--felt); border-bottom:1px solid var(--glass-border);
+  }
+  .scrollbar-mirror{ overflow-x:auto; overflow-y:hidden; height:var(--scrollbar-mirror-h, 14px); }
+  .scrollbar-mirror-inner{ height:1px; }
+  .scrollbar-mirror-wrap.is-hidden{ display:none; }
+
+  /* the frozen header strip — a second, header-only table kept in lockstep with the
+     real one's horizontal scroll (see app.js splitHeaderOnce). Its own overflow-x:auto
+     is what lets its sticky-left first cell work, and its scrollbar is hidden since the
+     mirror bar above already gives a visible handle for dragging */
+  .sticky-header-wrap{
+    position:sticky; top:calc(var(--topbar-h, 60px) + var(--scrollbar-mirror-h, 14px) + 1px);
+    z-index:5; background:var(--felt);
+  }
+  .sticky-header-scroll{
+    overflow-x:auto; overflow-y:hidden; scrollbar-width:none; -ms-overflow-style:none;
+  }
+  .sticky-header-scroll::-webkit-scrollbar{ display:none; }
+  .sticky-header-scroll table.data{ margin:0; }
+  table.data thead th:hover{ color:var(--gold); }
+  /* the arrow is taken out of normal flow and pinned to the header cell's own right
+     edge instead of flowing inline after the label — inline placement could strand
+     it alone on a new line once the label (a short column's label especially) left
+     no room beside it on its own line. Because it's positioned absolutely, it does
+     NOT contribute to the header cell's own natural (shrink-to-fit) width, so the
+     one-time column-width measurement in splitHeaderOnce() only ever "sees" the
+     icon+label and never reserves room for the arrow on top of that — with the
+     base 12px right padding that leaves the arrow only a pixel or two of clearance,
+     which some glyphs (and, worse, an icon avatar sitting right before the label)
+     eat into, making the arrow crowd or visually merge with the label's last
+     letter. Give the header cell itself a right padding wide enough to clear the
+     arrow with real margin, so the frozen column width always has room for it. */
+  table.data thead th{ position:relative; padding-right:22px; }
+  table.data thead th .arrow{
+    opacity:0.35; font-size:9px; position:absolute; right:4px; top:50%;
+    transform:translateY(-50%); transition:transform .15s, opacity .15s;
+  }
+  /* a narrow or date column is an even tighter case — give those a touch more still */
+  table.data thead th.narrow, table.data thead th.date-col{ padding-right:24px; }
+  table.data.dense thead th.narrow, table.data.dense thead th.date-col{ padding-right:24px; }
+  table.data thead th.sorted{ color:var(--gold); }
+  table.data thead th.sorted .arrow{ opacity:1; }
+  table.data thead th.sorted.desc .arrow{ transform:translateY(-50%) rotate(180deg); }
+  table.data tbody tr{ transition:background .1s; }
+  table.data tbody tr:hover{ background:rgba(240,197,102,0.06); }
+  table.data td.num, table.data th.num{ font-family:"IBM Plex Mono", monospace; font-variant-numeric:tabular-nums; text-align:center; }
+  table.data td.bh{ color:var(--bh); font-weight:600; }
+  table.data td.rt{ color:var(--rt); font-weight:600; }
+  table.data td.tie{ color:var(--gold); font-weight:600; }
+  table.data td.na-cell{ color:var(--ink-dim); font-style:italic; font-weight:400; }
+  table.data td.no-record{ color:var(--ink-dim); font-style:italic; font-weight:400; text-align:center; }
+  /* score heatmap (opts.heatmap in buildTable) - background colour itself is set
+     inline per-cell (the value-to-colour mix, computed in JS); these classes just
+     handle text contrast against it and the "that year's best" ring, the same
+     visual language as the Explorer's "Whole Picture" tab. */
+  table.data td.heat-cell{ color:var(--ink); font-weight:600; }
+  table.data td.heat-cell.heat-hi{ color:#1A1400; }
+  table.data td.heat-cell.heat-win{ box-shadow:inset 0 0 0 2px var(--gold); }
+  .empty-row td{ text-align:center; color:var(--ink-dim); padding:18px; font-style:italic; }
+
+  /* a percentage column shown as a small filled bar instead of bare text -
+     opts.barCols in buildTable() (Player Records' "Point %") */
+  table.data td.pct-cell{ padding-top:6px; padding-bottom:6px; }
+  .pct-bar-wrap{
+    position:relative; display:flex; align-items:center; justify-content:center;
+    height:18px; min-width:56px; background:rgba(255,255,255,0.06); border-radius:5px; overflow:hidden;
+  }
+  .pct-bar-fill{
+    position:absolute; left:0; top:0; bottom:0; border-radius:5px 0 0 5px;
+    background:linear-gradient(90deg, var(--gold-2), var(--gold));
+  }
+  .pct-bar-label{ position:relative; z-index:1; font-family:"IBM Plex Mono",monospace; font-size:11.5px; font-weight:700; color:var(--ink); }
+
+  /* player-name columns in ordinary tables (trophy Winner/Big Dog columns) - a
+     small circular headshot chip before the name; opts.avatarCols in buildTable().
+     A joint win renders one chip per name (see .avatar-multi) so the column gets
+     a little extra breathing room by default. */
+  table.data td.avatar-cell{ text-align:left; min-width:155px; }
+  .avatar-multi{ display:flex; flex-wrap:wrap; align-items:center; gap:5px 8px; }
+  .avatar-sep{ color:var(--ink-dim); font-size:11px; }
+  .avatar-wrap{ display:inline-flex; align-items:center; gap:8px; max-width:100%; }
+  .player-avatar{ width:24px; height:24px; border-radius:50%; object-fit:cover; flex:0 0 auto; border:1px solid var(--glass-border); }
+  .player-avatar-blank{ width:24px; height:24px; border-radius:50%; flex:0 0 auto; background:var(--felt-hi); border:1px solid var(--glass-border); display:inline-block; }
+  .avatar-name{ overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+
+  /* "Player Roster" - a photo-card grid replacing the plain roster table */
+  .roster-wrap{ display:grid; grid-template-columns:repeat(auto-fill, minmax(230px, 1fr)); gap:16px; margin:8px 0 24px; }
+  .roster-card{
+    background:rgba(255,255,255,0.02); border:1px solid var(--glass-border);
+    border-radius:14px; padding:16px; box-shadow:var(--shadow-lift);
+    display:flex; gap:12px; align-items:flex-start;
+  }
+  .roster-photo{ flex:0 0 auto; width:56px; height:56px; }
+  .roster-photo img{ width:56px; height:56px; border-radius:50%; object-fit:cover; display:block; border:2px solid var(--glass-border); }
+  .roster-initials{
+    width:56px; height:56px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+    background:var(--felt-hi); border:2px solid var(--glass-border); color:var(--gold);
+    font-family:"Anton",sans-serif; font-size:18px; letter-spacing:.02em;
+  }
+  .roster-body{ flex:1; min-width:0; }
+  .roster-name{ font-family:"Anton",sans-serif; font-weight:400; font-size:16px; color:#F1ECD9; letter-spacing:.01em; }
+  .roster-real{ font-size:12px; color:var(--ink-dim); margin-top:1px; }
+  .roster-meta{ font-size:11.5px; color:var(--ink-soft); margin-top:6px; }
+  .roster-stats{ display:flex; gap:14px; margin-top:8px; }
+  .roster-stat{ display:flex; flex-direction:column; }
+  .roster-stat-val{ font-family:"IBM Plex Mono",monospace; font-weight:700; font-size:14px; color:var(--gold); }
+  .roster-stat-label{ font-size:9.5px; color:var(--ink-dim); text-transform:uppercase; letter-spacing:.04em; }
+  @media (max-width:480px){ .roster-wrap{ grid-template-columns:1fr; } }
+
+  .footnote-ref{ color:var(--gold); font-size:10px; margin-left:1px; cursor:help; }
+  .table-footnotes{ padding:2px 20px 16px; }
+  .table-footnotes p{ margin:2px 0; font-size:11.5px; color:var(--ink-dim); }
+  .table-footnotes sup{ color:var(--gold); margin-right:3px; }
+
+  /* sticky first column so you don't lose the player/name while scrolling sideways */
+  table.data th:first-child, table.data td:first-child{
+    position:sticky; left:0; z-index:1; background:#132A20;
+    box-shadow: 3px 0 8px -2px rgba(0,0,0,0.45);
+  }
+  table.data td:first-child{ background:var(--felt); font-weight:600; }
+  table.data tbody tr:hover td:first-child{ background:#1B4232; }
+  table.data thead th:first-child{ z-index:3; }
+
+  .rank-badge{ display:inline-flex; align-items:center; justify-content:center; min-width:22px; height:22px; padding:0 6px;
+    border-radius:7px; font-weight:700; font-size:12px; font-family:"IBM Plex Mono",monospace; }
+  .rank-1{ background:linear-gradient(180deg,#FCE7AE,#D9A83D); color:#3A2A05; }
+  .rank-2{ background:linear-gradient(180deg,#E7E9EC,#B7BEC6); color:#2B2E33; }
+  .rank-3{ background:linear-gradient(180deg,#E8B487,#B4713A); color:#3A2005; }
+
+  /* ---------- overview ---------- */
+  .hero{
+    position:relative; overflow:hidden;
+    background:
+      radial-gradient(480px 260px at var(--mx,20%) var(--my,10%), rgba(240,197,102,0.20), transparent 60%),
+      linear-gradient(155deg, #163C2C, #0B1C15 130%);
+    color:#F6F5EC; border-radius:20px; padding:38px 34px; margin-bottom:30px;
+    box-shadow:var(--shadow-lift); border:1px solid var(--glass-border);
+  }
+  .hero::after{
+    content:""; position:absolute; inset:0; pointer-events:none; opacity:0.5;
+    background-image: repeating-radial-gradient(circle at 30% 20%, rgba(255,255,255,0.025) 0 1px, transparent 1px 44px);
+  }
+  .hero .kicker{ font-size:11.5px; text-transform:uppercase; letter-spacing:0.14em; color:var(--gold); font-family:"Anton",sans-serif; font-weight:400; position:relative; }
+  .hero h2{ color:#fff; font-size:34px; margin:8px 0 10px; position:relative; }
+  .hero p{ color:#CBD9CF; max-width:60ch; margin:0; font-size:14.5px; position:relative; }
+  /* the bulldog mascot sits low and large in the corner, faded well back so it reads
+     as texture behind the copy rather than competing with it; the crest is a small,
+     crisp badge up top since the shield's lettering needs to stay legible */
+  .hero-mascot{
+    position:absolute; right:-36px; bottom:-52px; width:280px; height:auto;
+    opacity:0.14; pointer-events:none; z-index:0;
+  }
+  .hero-crest{
+    position:absolute; top:30px; right:36px; width:78px; height:auto; z-index:1;
+    filter:drop-shadow(0 8px 18px rgba(0,0,0,.5)); pointer-events:none;
+  }
+  @media (max-width:760px){
+    .hero-crest{ display:none; }
+    .hero-mascot{ width:190px; opacity:0.10; }
+  }
+
+  .kpi-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(190px,1fr)); gap:13px; margin-bottom:30px; }
+  .kpi{
+    background:linear-gradient(180deg, var(--felt-hi), var(--felt)); border:1px solid var(--glass-border); border-radius:13px;
+    padding:15px 17px; box-shadow:var(--shadow); transition:transform .18s, box-shadow .18s;
+  }
+  .kpi:hover{ transform:translateY(-2px); box-shadow:var(--shadow-lift); border-color:var(--gold-soft); }
+  .kpi .k-label{ font-size:11.3px; color:var(--ink-soft); text-transform:uppercase; letter-spacing:0.05em; }
+  .kpi .k-value{ font-family:"Anton",sans-serif; font-weight:400; font-size:26px; letter-spacing:0.02em; margin-top:5px; color:#F7F2E3; }
+
+  .two-col{ display:grid; grid-template-columns:1.3fr 1fr; gap:20px; align-items:start; }
+  @media (max-width:820px){ .two-col{ grid-template-columns:1fr; } }
+
+  .roh-list{ list-style:none; margin:0; padding:0; }
+  .roh-list li{
+    display:flex; align-items:baseline; gap:12px; padding:10px 2px; border-bottom:1px solid var(--line-soft);
+    font-size:13.5px; transition:background .15s;
+  }
+  .roh-list li:hover{ background:rgba(240,197,102,0.05); border-radius:8px; }
+  .roh-list li:last-child{ border-bottom:none; }
+  .roh-list .roh-year{ font-family:"IBM Plex Mono",monospace; color:var(--ink-dim); width:120px; flex:none; font-size:12px; }
+  .roh-list .roh-winner{ font-weight:600; color:var(--gold); }
+  .roh-list .roh-second{ color:var(--ink-soft); font-size:12.5px; }
+
+  .lead-list{ list-style:none; margin:0 0 18px; padding:0; }
+  .lead-list li{ display:flex; justify-content:space-between; align-items:center; padding:7px 2px; border-bottom:1px dashed var(--line-soft); font-size:13.5px; }
+  .lead-list li:last-child{ border-bottom:none; }
+  .lead-list .lv{ font-family:"IBM Plex Mono",monospace; font-weight:700; color:var(--gold); }
+
+  .card{
+    background:linear-gradient(180deg, var(--felt-hi), var(--felt)); border:1px solid var(--glass-border);
+    border-radius:14px; padding:18px 20px; box-shadow:var(--shadow-lift);
+  }
+  .card h4{ margin:0 0 10px; font-size:14px; text-transform:uppercase; letter-spacing:0.04em; color:var(--gold); font-family:"Anton",sans-serif; font-weight:400; }
+
+  /* ---------- All Editions: clickable per-tour cards + match drill-down ---------- */
+  .editions-wrap{ margin-bottom:32px; }
+  .editions-grid{ display:grid; grid-template-columns:repeat(auto-fill, minmax(148px,1fr)); gap:10px; margin-bottom:18px; }
+  .edition-card{
+    all:unset; box-sizing:border-box; cursor:pointer; display:block;
+    background:linear-gradient(180deg, var(--felt-hi), var(--felt)); border:1px solid var(--glass-border);
+    border-left:3px solid var(--glass-border); border-radius:10px; padding:13px 15px;
+    transition:transform .15s, border-color .15s, box-shadow .15s;
+  }
+  .edition-card:hover, .edition-card:focus-visible{ border-color:var(--gold-soft); transform:translateY(-2px); box-shadow:var(--shadow); }
+  .edition-card:focus-visible{ outline:2px solid var(--gold); outline-offset:2px; }
+  .edition-card.bh-win{ border-left-color:var(--bh); }
+  .edition-card.rt-win{ border-left-color:var(--rt); }
+  .edition-card.tie{ border-left-color:var(--gold); }
+  .edition-card.selected{ border-color:var(--gold); box-shadow:0 0 0 1px var(--gold-soft), var(--shadow-lift); }
+  .edition-card .ed-year{ font-family:"Anton",sans-serif; font-weight:400; font-size:21px; color:#F7F2E3; line-height:1; }
+  .edition-card .ed-loc{ font-size:11px; color:var(--ink-dim); margin:3px 0 9px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .edition-card .ed-score{ font-family:"IBM Plex Mono",monospace; font-weight:700; font-size:13.5px; }
+  .edition-card .ed-score .bh{ color:var(--bh); }
+  .edition-card .ed-score .rt{ color:var(--rt); }
+  .edition-card .ed-score .sep{ color:var(--ink-dim); font-weight:400; margin:0 3px; }
+
+  .edition-detail{
+    background:linear-gradient(180deg, var(--felt-hi), var(--felt)); border:1px solid var(--glass-border);
+    border-radius:14px; padding:22px 24px; box-shadow:var(--shadow-lift); display:none;
+    scroll-margin-top:calc(var(--topbar-h,60px) + 16px);
+  }
+  .edition-detail.show{ display:block; }
+  .edition-detail h3{ margin:0 0 4px; font-size:19px; }
+  .edition-detail .ed-subtitle{ color:var(--ink-soft); font-size:13px; margin:0 0 16px; }
+  .edition-detail .ed-summary{ display:flex; gap:30px; flex-wrap:wrap; margin-bottom:18px; padding-bottom:16px; border-bottom:1px solid var(--line-soft); }
+  .edition-detail .es-label{ font-size:10.5px; letter-spacing:0.1em; text-transform:uppercase; color:var(--ink-dim); margin-bottom:4px; }
+  .edition-detail .es-value{ font-family:"IBM Plex Mono",monospace; font-weight:700; font-size:15px; }
+
+  .match-day{ margin-bottom:18px; }
+  .match-day:last-child{ margin-bottom:0; }
+  .match-day-label{
+    font-size:11px; letter-spacing:0.09em; text-transform:uppercase; color:var(--gold); font-family:"Anton",sans-serif; font-weight:400;
+    margin-bottom:8px; padding-bottom:6px; border-bottom:1px solid var(--glass-border);
+  }
+  .match-row{ display:grid; grid-template-columns:1fr auto 1fr; gap:12px; align-items:center; padding:10px 0; border-bottom:2px solid rgba(255,255,255,0.16); }
+  .match-row:last-child{ border-bottom:none; }
+  .match-row .match-bh{ text-align:right; font-size:13px; font-weight:600; }
+  .match-row .match-rt{ text-align:left; font-size:13px; font-weight:600; }
+  .match-result{ padding:4px 11px; border-radius:6px; font-size:11px; font-weight:700; letter-spacing:0.03em; text-align:center; min-width:64px; white-space:nowrap; }
+  .match-result.bh{ background:var(--bh-soft); color:var(--bh); }
+  .match-result.rt{ background:var(--rt-soft); color:var(--rt); }
+  .match-result.halved{ background:rgba(240,197,102,0.14); color:var(--gold); }
+  .match-format{ text-align:center; font-size:10px; color:var(--ink-dim); margin-top:3px; }
+  @media (max-width:640px){
+    .match-row{ grid-template-columns:1fr; text-align:center; gap:6px; padding:14px 0; border-bottom-width:3px; }
+    .match-row .match-bh, .match-row .match-rt{ text-align:center; }
+  }
+
+  /* ---------- clickable landing cards ---------- */
+  .landing-heading{ font-family:"Anton",sans-serif; font-weight:400; font-size:12.5px; letter-spacing:0.09em;
+    text-transform:uppercase; color:var(--gold); margin:0 0 12px; }
+  .landing-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(230px,1fr)); gap:13px; margin-bottom:32px; }
+  .landing-card{
+    all:unset; box-sizing:border-box; cursor:pointer; display:flex; gap:13px; align-items:flex-start;
+    background:linear-gradient(180deg, var(--felt-hi), var(--felt)); border:1px solid var(--glass-border);
+    border-radius:14px; padding:16px 16px; box-shadow:var(--shadow); transition:transform .18s, box-shadow .18s, border-color .18s;
+  }
+  .landing-card:hover, .landing-card:focus-visible{ transform:translateY(-2px); box-shadow:var(--shadow-lift); border-color:var(--gold-soft); }
+  .landing-card:focus-visible{ outline:2px solid var(--gold); outline-offset:2px; }
+  .landing-card .lc-icon{
+    width:38px; height:38px; flex:none; border-radius:10px; background:var(--gold-soft); color:var(--gold);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .landing-card .lc-icon svg{ width:19px; height:19px; }
+  .landing-card .lc-body{ flex:1; min-width:0; }
+  .landing-card .lc-body h4{ margin:0 0 3px; font-size:14.5px; font-family:"Anton",sans-serif; font-weight:400; color:#F1ECD9; }
+  .landing-card .lc-body p{ margin:0; font-size:12px; color:var(--ink-soft); line-height:1.45; }
+  .landing-card .lc-arrow{ color:var(--gold); font-size:17px; align-self:center; opacity:0.65; transition:transform .18s, opacity .18s; flex:none; }
+  .landing-card:hover .lc-arrow, .landing-card:focus-visible .lc-arrow{ transform:translateX(4px); opacity:1; }
+
+  /* ---------- charts ---------- */
+  .chart-card{
+    background:linear-gradient(180deg, var(--felt-hi), var(--felt)); border:1px solid var(--glass-border);
+    border-radius:14px; padding:18px 20px 20px; box-shadow:var(--shadow-lift); margin-bottom:18px;
+  }
+  .chart-head{ margin-bottom:14px; }
+  .chart-title{ font-family:"Anton",sans-serif; font-weight:400; font-size:15px; letter-spacing:0.01em; color:#F1ECD9; }
+  .chart-sub{ font-size:12px; color:var(--ink-soft); margin-top:2px; }
+
+  .barlist{ display:flex; flex-direction:column; gap:9px; }
+  .bar-row{ display:grid; grid-template-columns:112px 1fr minmax(44px,auto); align-items:center; gap:10px; }
+  .bar-row .bar-label{ font-size:12.5px; color:var(--ink-soft); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .bar-row .bar-track{ height:14px; border-radius:7px; background:rgba(255,255,255,0.05); position:relative; overflow:hidden; transition:background .15s; }
+  .bar-row:hover .bar-track{ background:rgba(255,255,255,0.09); }
+  .bar-row .bar-fill{ height:100%; width:0; border-radius:0 4px 4px 0; background:linear-gradient(90deg, var(--gold-2), var(--gold));
+    transition:width .8s cubic-bezier(.2,.7,.2,1); }
+  .bar-row .bar-fill.bh{ background:linear-gradient(90deg, var(--bh-deep), var(--bh-chart)); }
+  .bar-row .bar-fill.rt{ background:linear-gradient(90deg, var(--rt-deep), var(--rt-chart)); }
+  .bar-row .bar-value{ font-family:"IBM Plex Mono",monospace; font-variant-numeric:tabular-nums; font-size:12.5px;
+    text-align:right; color:#F1ECD9; font-weight:600; white-space:nowrap; }
+
+  .chart-legend{ display:flex; gap:16px; margin-bottom:12px; flex-wrap:wrap; }
+  .chart-legend .legend-item{ display:flex; align-items:center; gap:6px; font-size:12px; color:var(--ink-soft); }
+  .legend-swatch{ width:10px; height:10px; border-radius:3px; display:inline-block; }
+  .legend-swatch.bh{ background:var(--bh-chart); }
+  .legend-swatch.rt{ background:var(--rt-chart); }
+
+  .chart-scroll{ overflow-x:auto; overflow-y:visible; position:relative; }
+  svg.trendchart{ display:block; }
+  svg.trendchart .gridline{ stroke:var(--line-soft); stroke-width:1; }
+  svg.trendchart .axislabel{ font-family:"IBM Plex Mono",monospace; font-size:9.5px; fill:var(--ink-dim); }
+  svg.trendchart .mark.bh{ fill:var(--bh-chart); }
+  svg.trendchart .mark.rt{ fill:var(--rt-chart); }
+  svg.trendchart .chart-hit{ fill:transparent; cursor:pointer; }
+  svg.trendchart .chart-hit:hover{ fill:rgba(240,197,102,0.05); }
+
+  .chart-tooltip{
+    position:absolute; background:#0D2118; border:1px solid var(--glass-border); border-radius:9px;
+    padding:8px 11px; font-size:12px; box-shadow:var(--shadow-lift); pointer-events:none; z-index:5; min-width:150px;
+  }
+  .chart-tooltip .tt-head{ font-family:"Anton",sans-serif; font-weight:400; font-size:11.5px; color:var(--gold); margin-bottom:5px; white-space:nowrap; }
+  .chart-tooltip .tt-row{ display:flex; align-items:center; gap:6px; font-size:12px; padding:1.5px 0; white-space:nowrap; }
+  .chart-tooltip .tt-key{ width:8px; height:8px; border-radius:2px; display:inline-block; flex:none; }
+  .chart-tooltip .tt-key.bh{ background:var(--bh-chart); }
+  .chart-tooltip .tt-key.rt{ background:var(--rt-chart); }
+  .chart-tooltip .tt-val{ font-family:"IBM Plex Mono",monospace; font-weight:700; color:#F1ECD9; }
+  .chart-tooltip .tt-lbl{ color:var(--ink-soft); }
+  @media (max-width:640px){
+    .bar-row{ grid-template-columns:84px 1fr minmax(40px,auto); }
+  }
+
+  .menubtn{ display:none; }
+  @media (max-width:900px){
+    .sidebar{ position:fixed; left:0; top:0; bottom:0; transform:translateX(-100%); transition:transform .2s ease; }
+    .sidebar.open{ transform:translateX(0); box-shadow:0 0 40px rgba(0,0,0,0.6); }
+    .menubtn{
+      all:unset; display:flex; align-items:center; justify-content:center; width:36px; height:36px;
+      border-radius:9px; border:1px solid var(--glass-border); background:rgba(255,255,255,0.04); cursor:pointer; font-size:16px; color:var(--ink);
+    }
+    .content{ padding:20px 16px 90px; }
+    .topbar{ padding:10px 16px; }
+    .hero{ padding:26px 22px; }
+    .hero h2{ font-size:26px; }
+  }
+  .backdrop{ display:none; }
+  .backdrop.show{ display:block; position:fixed; inset:0; background:rgba(3,7,5,0.55); z-index:15; backdrop-filter:blur(2px); }
+
+  /* Trophy Cabinet: a hub-and-spoke visual — the Ryder Cup in the centre, every trophy
+     as a clickable circle around it. Desktop/tablet gets true radial placement (fixed
+     geometry, decided once from window width rather than a live layout measurement, so
+     it works even before the container is attached to the page); narrow screens fall
+     back to a plain wrapping grid under the hub, which needs no positioning math at all. */
+  .trophy-cabinet{ position:relative; width:100%; max-width:640px; height:640px; margin:8px auto 24px; }
+  .trophy-cabinet.mode-grid{ height:auto; max-width:none; }
+  .tc-item{
+    position:absolute; left:0; top:0; transform:translate(-50%,-50%); width:104px;
+    display:flex; flex-direction:column; align-items:center; gap:7px; cursor:pointer;
+    background:none; border:none; padding:0; font:inherit; color:inherit;
+  }
+  .tc-item.tc-hub{ width:170px; z-index:2; left:50%; top:50%; }
+  .tc-circle{
+    width:92px; height:92px; border-radius:50%; background-size:cover; background-position:center;
+    border:2px solid var(--glass-border); box-shadow:var(--shadow-lift); transition:transform .18s, border-color .18s, box-shadow .18s;
+    flex:none;
+  }
+  .tc-hub .tc-circle{ width:150px; height:150px; border-color:var(--gold); box-shadow:0 0 0 5px var(--gold-soft), var(--shadow-lift); }
+  .tc-item:hover .tc-circle{ transform:scale(1.08); border-color:var(--gold); }
+  .tc-item:focus-visible .tc-circle{ outline:2px solid var(--gold); outline-offset:2px; }
+  .tci-label{ font-size:12.5px; font-weight:600; color:var(--ink); text-align:center; line-height:1.25; }
+  .tc-hub .tci-label{ font-family:"Anton",sans-serif; font-weight:400; font-size:15px; color:var(--gold); letter-spacing:.02em; }
+  .tc-ring{ position:absolute; inset:0; }
+  .trophy-cabinet.mode-grid .tc-hub{ position:static; transform:none; margin:0 auto 28px; }
+  .trophy-cabinet.mode-grid .tc-ring{
+    position:static; display:grid; grid-template-columns:repeat(auto-fill, minmax(88px,1fr)); gap:22px 8px; justify-items:center;
+  }
+  .trophy-cabinet.mode-grid .tc-ring .tc-item{ position:static; transform:none; width:100%; }
+  .trophy-cabinet.mode-grid .tc-circle{ width:74px; height:74px; }
+
+  /* "Closest to a Full Set" - one card per player, a grid of trophy circles. Grid
+     (not flex-wrap) so every card is the same width, including a lone card left over
+     on the final row — flex-wrap would stretch that leftover card to fill the row. */
+  .tcl-wrap{ display:grid; grid-template-columns:repeat(auto-fill, minmax(290px, 1fr)); gap:18px; margin:8px 0 24px; }
+  .tcl-card{
+    background:rgba(255,255,255,0.02); border:1px solid var(--glass-border);
+    border-radius:14px; padding:16px 18px 20px; box-shadow:var(--shadow-lift);
+  }
+  .tcl-head{ display:flex; align-items:baseline; gap:10px; margin-bottom:14px; }
+  .tcl-rank{ font-family:"Anton",sans-serif; font-weight:400; font-size:20px; color:var(--gold); }
+  .tcl-name{ font-family:"Anton",sans-serif; font-weight:400; font-size:17px; color:#F1ECD9; flex:1; letter-spacing:.01em; }
+  .tcl-count{ font-family:"IBM Plex Mono",monospace; font-size:16px; font-weight:700; color:var(--gold); }
+  /* flexbox (not grid) so a trailing part-row - 15 slots doesn't divide evenly into
+     rows of 4 - wraps centred under the rows above it instead of hugging the left
+     edge with an empty gap on the right, which is what grid's row-by-row left-to-right
+     placement would otherwise leave it doing; each slot's flex-basis reproduces the
+     grid's own 4-per-row (3-per-row on mobile) math so full rows look identical. */
+  .tcl-grid{ display:flex; flex-wrap:wrap; justify-content:center; gap:12px 8px; }
+  .tcl-slot{
+    background:none; border:none; padding:0; font:inherit; color:inherit; cursor:pointer;
+    display:flex; flex-direction:column; align-items:center; gap:5px;
+    flex:0 0 calc((100% - 24px) / 4); max-width:calc((100% - 24px) / 4);
+  }
+  .tcl-slot > img{
+    width:100%; aspect-ratio:1; border-radius:50%; object-fit:cover; display:block;
+    border:2px solid var(--glass-border); transition:transform .15s, border-color .15s, opacity .15s, filter .15s;
+  }
+  .tcl-slot:hover > img{ transform:scale(1.06); }
+  .tcl-slot.have > img{ border-color:var(--gold); box-shadow:0 0 0 2px var(--gold-soft); }
+  .tcl-slot.missing > img{ opacity:.32; filter:grayscale(1); }
+  .tcl-slot{ position:relative; }
+  .tcl-badge{
+    position:absolute; top:-2px; right:14%; width:16px; height:16px; border-radius:50%;
+    background:var(--gold); color:#1a1400; font-size:10px; font-weight:700; line-height:16px; text-align:center;
+  }
+  .tcl-slot-label{ font-size:10.5px; color:var(--ink-soft); text-align:center; line-height:1.2; }
+  .tcl-slot.missing .tcl-slot-label{ color:var(--ink-dim); }
+  @media (max-width:480px){ .tcl-slot{ flex-basis:calc((100% - 16px) / 3); max-width:calc((100% - 16px) / 3); } }
+
+  /* ---------- Stableford Explorer: year picker, all-time sort, and score heatmap ---------- */
+  .sfx-section{ margin-bottom:30px; }
+  .sfx-section-head{ display:flex; flex-wrap:wrap; justify-content:space-between; align-items:flex-end; gap:8px; margin-bottom:14px; }
+  .sfx-section-head h4{ margin:0; font-size:16px; text-transform:uppercase; letter-spacing:0.04em; color:var(--gold); font-family:"Anton",sans-serif; font-weight:400; }
+  .sfx-section-head p{ margin:4px 0 0; font-size:12.5px; color:var(--ink-soft); max-width:62ch; }
+
+  .sfx-yeargrid{ display:grid; grid-template-columns:repeat(auto-fill, minmax(110px,1fr)); gap:9px; margin-bottom:16px; }
+  .sfx-yearcard{
+    all:unset; box-sizing:border-box; cursor:pointer; display:block;
+    background:linear-gradient(180deg, var(--felt-hi), var(--felt)); border:1px solid var(--glass-border);
+    border-radius:10px; padding:10px 12px; transition:transform .15s, border-color .15s, box-shadow .15s;
+  }
+  .sfx-yearcard:hover, .sfx-yearcard:focus-visible{ border-color:var(--gold-soft); transform:translateY(-2px); box-shadow:var(--shadow); }
+  .sfx-yearcard:focus-visible{ outline:2px solid var(--gold); outline-offset:2px; }
+  .sfx-yearcard.active{ border-color:var(--gold); box-shadow:0 0 0 1px var(--gold-soft), var(--shadow-lift); }
+  .sfx-yearcard.norecord{ cursor:default; border-style:dashed; opacity:.7; }
+  .sfx-yearcard .sy-year{ font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:0.06em; color:var(--ink-dim); }
+  .sfx-yearcard .sy-winner{ font-size:12.8px; font-weight:600; color:#F1ECD9; margin:3px 0 2px; line-height:1.25;
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .sfx-yearcard.norecord .sy-winner{ color:var(--ink-dim); font-weight:400; }
+  .sfx-yearcard .sy-score{ font-family:"Anton",sans-serif; font-weight:400; font-size:16px; color:var(--gold); }
+
+  .sfx-leaderboard{
+    background:linear-gradient(180deg, var(--felt-hi), var(--felt)); border:1px solid var(--glass-border);
+    border-radius:14px; padding:18px 20px 20px; box-shadow:var(--shadow-lift);
+    /* clicking a year card scrolls this into view (see showYear in app.js) - without
+       this, "block:start" lines its very top edge up with the viewport's top edge,
+       which sits right under the sticky topbar and clips the heading/first rows */
+    scroll-margin-top:calc(var(--topbar-h,60px) + 16px);
+  }
+  .sfx-lb-head{ display:flex; flex-wrap:wrap; gap:6px 20px; align-items:baseline; margin-bottom:14px; }
+  .sfx-lb-head h5{ margin:0; font-size:17px; font-family:"Anton",sans-serif; font-weight:400; color:#F1ECD9; }
+  .sfx-lb-meta{ font-size:12px; color:var(--ink-soft); display:flex; gap:16px; flex-wrap:wrap; }
+  .sfx-lb-meta b{ color:var(--ink); font-family:"IBM Plex Mono",monospace; }
+
+  /* hero headshot(s) of that year's Stableford champion(s), above the leaderboard */
+  .sfx-champion{ display:flex; flex-wrap:wrap; gap:12px; margin-bottom:16px; }
+  .sfx-champion:empty{ margin-bottom:0; }
+  .sfx-champ-chip{
+    display:flex; align-items:center; gap:12px; padding:8px 18px 8px 8px;
+    background:linear-gradient(135deg, rgba(240,197,102,0.16), rgba(240,197,102,0.03));
+    border:1px solid var(--gold-soft); border-radius:14px;
+  }
+  .sfx-champ-photo{ width:52px; height:52px; border-radius:50%; object-fit:cover; border:2px solid var(--gold); flex:0 0 auto; }
+  .sfx-champ-blank{ background:var(--felt-hi); display:inline-block; }
+  .sfx-champ-kicker{ font-size:10px; text-transform:uppercase; letter-spacing:.06em; color:var(--gold); font-weight:700; }
+  .sfx-champ-name{ font-family:"Anton",sans-serif; font-weight:400; font-size:16px; color:#F1ECD9; line-height:1.25; }
+  .sfx-champ-score{ font-family:"IBM Plex Mono",monospace; font-size:11.5px; color:var(--ink-soft); }
+
+  /* small headshot chip inside a bar-list row label (Explorer leaderboards only —
+     opted in per row via the "has-avatar" class, so the generic buildBarList()
+     rows used elsewhere are unaffected) */
+  .bar-label.has-avatar{ display:flex; align-items:center; gap:5px; }
+  .bar-avatar{ width:16px; height:16px; border-radius:50%; object-fit:cover; flex:0 0 auto; }
+  .bar-avatar-blank{ width:16px; height:16px; border-radius:50%; background:var(--felt-hi); flex:0 0 auto; display:inline-block; }
+  .bar-avatar-name{ overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+
+  .bar-row.sfx-win .bar-fill{ background:linear-gradient(90deg, var(--gold-2), var(--gold)); box-shadow:0 0 0 1px var(--gold-soft); }
+  .bar-row.sfx-win .bar-label{ color:var(--gold); font-weight:700; }
+  .bar-row.sfx-win .bar-value{ color:var(--gold); }
+
+  .sfx-sortchips{ display:flex; gap:6px; flex-wrap:wrap; }
+  .sfx-sortchips button{
+    all:unset; box-sizing:border-box; cursor:pointer; font:600 12px "IBM Plex Sans",sans-serif;
+    padding:6px 13px; border-radius:999px; border:1px solid var(--glass-border); color:var(--ink-soft);
+    background:rgba(255,255,255,0.02); transition:border-color .15s, color .15s, background .15s;
+  }
+  .sfx-sortchips button:hover{ border-color:var(--gold-soft); color:var(--ink); }
+  .sfx-sortchips button.active{ background:var(--gold-soft); border-color:var(--gold); color:var(--gold); }
+
+  /* RC Records quick-nav: this page is 30-odd separate ranking tables in a row, so a
+     jump-to-table strip up top scrolls straight to any one of them (see chartsForSheet
+     and buildTable's opts.anchorId) rather than making the person scroll past the rest */
+  .rcrec-nav{
+    background:rgba(255,255,255,0.02); border:1px solid var(--glass-border);
+    border-radius:14px; padding:16px 18px; margin-bottom:18px; box-shadow:var(--shadow-lift);
+  }
+  .rcrec-nav-head{ font-size:11px; text-transform:uppercase; letter-spacing:.05em; color:var(--ink-dim); margin-bottom:10px; }
+  .rcrec-nav-grid{ display:grid; grid-template-columns:repeat(4, 1fr); gap:8px; }
+  @media (max-width:900px){ .rcrec-nav-grid{ grid-template-columns:repeat(2, 1fr); } }
+  @media (max-width:520px){ .rcrec-nav-grid{ grid-template-columns:1fr; } }
+  .rcrec-nav-btn{
+    all:unset; box-sizing:border-box; cursor:pointer; font:600 12px "IBM Plex Sans",sans-serif;
+    padding:9px 12px; border-radius:9px; border:1px solid var(--glass-border); color:var(--ink-soft);
+    background:rgba(255,255,255,0.02); transition:border-color .15s, color .15s, background .15s;
+    text-align:left; line-height:1.3;
+  }
+  .rcrec-nav-btn:hover{ border-color:var(--gold-soft); color:var(--gold); background:rgba(240,197,102,0.06); }
+
+  .sfx-heat-wrap{
+    overflow-x:auto; border:1px solid var(--glass-border); border-radius:14px;
+    background:linear-gradient(180deg, var(--felt-hi), var(--felt)); box-shadow:var(--shadow-lift); padding:14px 0;
+  }
+  /* width:max-content keeps the table at its natural (sum-of-columns) width instead
+     of shrinking to fit a narrower wrapper — without it, plain table auto-layout
+     compresses every column below its own min-width rather than overflowing, so the
+     wrapper never actually needs to scroll and the mirrored scrollbar above it (added
+     for the same reason a wide data table gets one) sits permanently hidden. */
+  /* the wrapper's own left/right breathing room lives on the TABLE's margin, not the
+     wrapper's padding — padding is part of the scrollport (overflow clips at the
+     border edge, not the padding edge), so once the table scrolled sideways, a
+     column would slide into that padding strip and peek out to the left of the
+     frozen Player column, a few stray pixels of a score cell right before the
+     sticky one began. A table margin scrolls away as one piece with the table
+     itself, so there's no strip left for anything to bleed into. */
+  table.sfx-heat{ border-collapse:separate; border-spacing:3px; font-size:11.3px; font-family:"IBM Plex Mono",monospace; font-variant-numeric:tabular-nums; width:max-content; margin:0 14px; }
+  table.sfx-heat th{ font-weight:600; color:var(--ink-dim); padding:3px 2px; text-align:center; }
+  table.sfx-heat td.sfx-n, table.sfx-heat th.sfx-n{
+    position:sticky; left:0; background:#132A20; text-align:left; padding:0 12px 0 4px;
+    font-size:12px; font-family:"IBM Plex Sans",sans-serif; font-weight:600; color:#F1ECD9; white-space:nowrap; z-index:1;
+    /* border-spacing (separate-borders table) still leaves a hairline gap right after
+       this sticky column that its own background doesn't cover - paint over just that
+       sliver, plus a soft shadow beyond it to read as a frozen column's edge. */
+    box-shadow: 3px 0 0 0 #132A20, 9px 0 10px -8px rgba(0,0,0,0.5);
+  }
+  table.sfx-heat td.sfx-c{ width:30px; min-width:30px; height:24px; text-align:center; border-radius:4px; background:rgba(255,255,255,0.04); color:var(--ink-dim); }
+  table.sfx-heat td.sfx-c.has{ color:var(--ink); }
+  table.sfx-heat td.sfx-c.has.hi{ color:#1A1400; }
+  table.sfx-heat td.sfx-c.win{ outline:2px solid var(--gold); outline-offset:-2px; }
+  table.sfx-heat td.sfx-c.nr{ background:repeating-linear-gradient(135deg, rgba(255,255,255,0.035) 0 3px, transparent 3px 6px); }
+  table.sfx-heat th.sfx-nr{ opacity:.5; }
+  table.sfx-heat td.sfx-t{ color:var(--ink-soft); font-weight:700; padding:0 8px; }
+  .sfx-ramp{ display:flex; align-items:center; gap:8px; font-size:12px; color:var(--ink-soft); margin:0 0 12px 2px; flex-wrap:wrap; }
+  .sfx-ramp .rb{ width:120px; height:9px; border-radius:3px; background:linear-gradient(90deg, rgba(240,197,102,0.1), var(--gold)); }
+  .sfx-ramp .rn{ display:inline-block; width:16px; height:9px; border-radius:3px; margin-left:8px;
+    background:repeating-linear-gradient(135deg, rgba(255,255,255,0.05) 0 3px, transparent 3px 6px); border:1px solid var(--glass-border); }
+  /* the same ramp key, reused inside a plain table-card's header for its own heatmap
+     columns (Three-Round Totals, Round I/II/III) - see opts.heatmap in buildTable() */
+  .table-card .table-heat-ramp{ margin:0; padding:10px 16px 0; font-size:11.5px; }
+  .table-card .table-heat-ramp .heat-key-note{ color:var(--ink-dim); }
+
+  @media (max-width:640px){
+    .sfx-yeargrid{ grid-template-columns:repeat(auto-fill, minmax(90px,1fr)); }
+  }
+
+  /* a small trophy image inline in a table header, beside the label text */
+  table.data thead th .th-icon{
+    width:18px; height:18px; border-radius:50%; object-fit:cover; vertical-align:-4px; margin-right:5px;
+    border:1px solid var(--glass-border);
+  }
+  /* a column list that should all render the same width regardless of content length -
+     nowrap is the table default, so without this override a long value (a shared-trophy
+     "Adam G / BT / Hursty" cell, or the header text itself) forces the column wider than
+     the fixed width rather than wrapping inside it */
+  table.data td.eqw, table.data th.eqw{ width:90px; max-width:90px; white-space:normal; word-break:break-word; }
+  table.data thead th.eqw{ padding-right:24px; }
+
+  /* Bloodhounds player-profile card: the printed landscape/portrait design is used
+     as-is as a background image, with only the two fields the user updates by hand
+     each year (No of Caps, the Trophies Won row) laid over it as live text, positioned
+     by percentage so it tracks the image at any size, and sized with container query
+     units (cqw) so it tracks the rendered image width rather than the viewport. */
+  .boysie-wrap{ display:flex; justify-content:center; }
+  .boysie-card{
+    position:relative; width:100%; container-type:inline-size; line-height:1;
+    border-radius:18px; overflow:hidden; box-shadow:var(--shadow-lift);
+  }
+  .boysie-card img{ display:block; width:100%; height:auto; }
+  /* reserve the known template aspect ratio before the image itself has loaded -
+     without this the card sits at 0 height while the image decodes, so anything
+     that scrolls to the card (or to the team-profile-detail box around it) targets
+     a position that then jumps as the image pops in and grows the page underneath
+     it, cutting a smooth-scroll animation short partway there. */
+  .boysie-card.boysie-landscape{ max-width:1180px; aspect-ratio:1700/941; }
+  .boysie-card.boysie-portrait{ display:none; max-width:420px; aspect-ratio:980/1673; }
+  @media (max-width:640px){
+    .boysie-card.boysie-landscape{ display:none; }
+    .boysie-card.boysie-portrait{ display:block; margin:0 auto; }
+  }
+  /* a player with no landscape template on file (see buildPlayerProfileCard) falls
+     back to the portrait card at every width, rather than showing a blank card on
+     desktop */
+  .boysie-wrap.portrait-only .boysie-card.boysie-landscape{ display:none !important; }
+  .boysie-wrap.portrait-only .boysie-card.boysie-portrait{ display:block !important; margin:0 auto; }
+  .boysie-ov{
+    /* off-white (matches the page's own --ink text tone) rather than pure white -
+       the template's baked-in white text is softened by JPEG compression against
+       the dark background, so a flat #fdfdfd overlay reads noticeably brighter/
+       starker next to it. */
+    position:absolute; transform:translate(-50%,-50%); font-family:'Alumni Sans', sans-serif;
+    font-weight:700; color:#F4F1E4; text-shadow:0 1px 2px rgba(0,0,0,0.6), 0 0 6px rgba(0,0,0,0.25);
+    white-space:nowrap; pointer-events:none;
+  }
+  .boysie-landscape .boysie-caps{ font-size:1.1cqw; transform:translate(0,-50%); }
+  .boysie-landscape .boysie-trophy-num{ font-size:1.85cqw; font-weight:600; }
+  .boysie-portrait .boysie-caps{ font-size:3.0cqw; transform:translate(0,-50%); }
+  .boysie-portrait .boysie-trophy-num{ font-size:2.8cqw; font-weight:600; }
+
+  /* Team roster grid (Bloodhounds/Retrievers landing pages) - a clickable photo
+     card per player, click-through to their full profile card below, the same
+     grid+detail pattern as the "All Editions" cards. */
+  .team-grid{ display:grid; grid-template-columns:repeat(auto-fill, minmax(150px,1fr)); gap:12px; margin-bottom:26px; }
+  .team-player-card{
+    all:unset; box-sizing:border-box; cursor:pointer; display:flex; flex-direction:column; align-items:center; gap:9px;
+    background:linear-gradient(180deg, var(--felt-hi), var(--felt)); border:1px solid var(--glass-border);
+    border-radius:14px; padding:16px 10px; box-shadow:var(--shadow); text-align:center;
+    transition:transform .15s, border-color .15s, box-shadow .15s;
+  }
+  .team-player-card:hover, .team-player-card:focus-visible{ transform:translateY(-2px); box-shadow:var(--shadow-lift); border-color:var(--gold-soft); }
+  .team-player-card:focus-visible{ outline:2px solid var(--gold); outline-offset:2px; }
+  .team-player-card.selected{ border-color:var(--gold); box-shadow:0 0 0 1px var(--gold-soft), var(--shadow-lift); }
+  .team-player-card .tp-photo{ width:64px; height:64px; border-radius:50%; object-fit:cover; border:2px solid var(--glass-border); flex:none; }
+  .team-player-card .tp-initials{
+    width:64px; height:64px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+    background:var(--felt-hi); border:2px solid var(--glass-border); color:var(--gold);
+    font-family:"Anton",sans-serif; font-size:19px; letter-spacing:.02em; flex:none;
+  }
+  .team-player-card .tp-name{ font-family:"Anton",sans-serif; font-weight:400; font-size:14px; color:#F1ECD9; letter-spacing:.01em; line-height:1.2; }
+  .team-player-card .tp-real{ font-size:10.5px; color:var(--ink-dim); line-height:1.2; }
+  .team-player-card .tp-caps{ font-size:10.5px; color:var(--gold); font-family:"IBM Plex Mono",monospace; font-weight:700; }
+  /* the player's overall Ryder Cup Won/Lost/Halved record, on the roster grid card
+     itself rather than on the full profile below - a compact one-line readout */
+  .team-player-card .tp-record{ display:flex; gap:7px; font-family:"IBM Plex Mono",monospace; font-size:10px; font-weight:600; }
+  .team-player-card .tp-rec-w{ color:#8FD19E; }
+  .team-player-card .tp-rec-l{ color:var(--ink-dim); }
+  .team-player-card .tp-rec-h{ color:var(--ink-soft); }
+  .team-profile-detail{ scroll-margin-top:calc(var(--topbar-h,60px) + 16px); }
+  .team-profile-detail .tpd-head{ display:flex; align-items:baseline; gap:10px; margin:0 0 14px; }
+  .team-profile-detail .tpd-head h3{ margin:0; font-size:20px; }
+  .team-profile-detail .tpd-head .tpd-real{ color:var(--ink-soft); font-size:13px; }
+
+  /* ---------- Team-roster embed override ----------
+     This variant of page.html is used only for the standalone Bloodhounds/
+     Retrievers embeds. It drops the left-hand nav rail (there's only ever one
+     page here, so a menu is dead weight) and keeps just the crest + "BLOODHOUNDS
+     v RETRIEVERS / Big Dogs Tour" brand mark as a slim banner across the top,
+     freeing up the width that used to sit behind the sidebar for bigger roster
+     cards and a bigger player profile card underneath. */
+  .app{ flex-direction:column; }
+  .sidebar{
+    position:static; width:100%; height:auto; flex:none; overflow:visible;
+    padding:16px 22px; border-right:none; border-bottom:1px solid var(--glass-border);
+    box-shadow:none;
+  }
+  .sidebar .navlist{ display:none; }
+  .sidebar .brand{ padding:0; margin-bottom:0; border-bottom:none; }
+  @media (max-width:900px){
+    .sidebar{ position:static; transform:none; box-shadow:none; }
+  }
+
+  /* the topbar on this page held only the "Viewing: X" label and the
+     cross-table filter box - neither means anything on a single-roster page
+     with no data tables to filter, so the whole bar is hidden. Its elements
+     stay in the DOM (app.js wires listeners to them unconditionally), just
+     not shown. */
+  .topbar{ display:none; }
+
+  /* bigger roster cards now that the sidebar's ~270px is back in play */
+  .team-grid{ grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:18px; }
+  .team-player-card{ position:relative; padding:22px 16px; gap:12px; }
+  .team-player-card .tp-photo, .team-player-card .tp-initials{ width:92px; height:92px; }
+  .team-player-card .tp-initials{ font-size:26px; }
+  .team-player-card .tp-name{ font-size:17px; }
+  .team-player-card .tp-real{ font-size:12.5px; }
+  .team-player-card .tp-caps{ font-size:12.5px; }
+  .team-player-card .tp-record{ font-size:11.5px; gap:9px; }
+
+  /* theme-song play button - pinned to the card's top-right corner, above the
+     photo. It's a <span role="button"> rather than a nested <button> (cards
+     are already buttons themselves, and buttons can't nest); its own handlers
+     stop the click from also selecting the player card underneath. */
+  .team-player-card .tp-play{
+    position:absolute; top:10px; right:10px; width:30px; height:30px; border-radius:50%;
+    background:color-mix(in srgb, var(--bg0) 55%, transparent); border:1px solid var(--glass-border); color:var(--gold);
+    display:flex; align-items:center; justify-content:center; cursor:pointer; z-index:2;
+    transition:background .15s, border-color .15s, transform .15s;
+  }
+  .team-player-card .tp-play:hover, .team-player-card .tp-play:focus-visible{
+    background:rgba(240,197,102,0.2); border-color:var(--gold-soft); transform:scale(1.08);
+  }
+  .team-player-card .tp-play:focus-visible{ outline:2px solid var(--gold); outline-offset:2px; }
+  .team-player-card .tp-play svg{ width:14px; height:14px; }
+  .team-player-card .tp-play .icon-pause{ display:none; }
+  .team-player-card .tp-play.playing{
+    background:var(--gold); border-color:var(--gold); color:#1A1400;
+    animation:tp-play-pulse 1.4s ease-in-out infinite;
+  }
+  .team-player-card .tp-play.playing .icon-play{ display:none; }
+  .team-player-card .tp-play.playing .icon-pause{ display:block; }
+  @keyframes tp-play-pulse{
+    0%,100%{ box-shadow:0 0 0 0 rgba(240,197,102,0.45); }
+    50%{ box-shadow:0 0 0 6px rgba(240,197,102,0); }
+  }
+
+  /* bigger player-profile heading to match the larger profile card below it,
+     which already scales up to fill whatever width its container gives it */
+  .team-profile-detail .tpd-head h3{ font-size:24px; }
+  .team-profile-detail .tpd-head .tpd-real{ font-size:14px; }
+</style><style id="bdt-mobile-tabs">
+@media(max-width:760px){
+.subpage-tabs{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px!important}
+.subpage-tabs .subpage-tab{width:100%;margin:0!important;min-height:44px;padding:9px 10px!important;font-size:13px!important;line-height:1.2!important;text-align:center;white-space:normal;display:flex;align-items:center;justify-content:center}
+}
+</style>
+<style id="bdt-head-css">
+.bdt-head{position:relative;z-index:5;display:block;box-sizing:border-box;width:100%;margin:0;text-align:center;background:radial-gradient(700px 300px at 15% -20%,rgba(240,197,102,.14),transparent 60%),linear-gradient(160deg,#0A1C16,#050B09 75%);padding:26px 16px 22px;border-bottom:2px solid #C99A3D;line-height:normal;letter-spacing:normal}
+.bdt-brand{display:inline-flex;align-items:center;gap:16px;text-align:left;vertical-align:top}
+.bdt-crest{width:64px;height:auto;display:block;filter:drop-shadow(0 3px 8px rgba(0,0,0,.5))}
+.bdt-kicker{font:13px Anton,Impact,sans-serif;letter-spacing:.12em;text-transform:none}.bdt-kicker .bh{color:#FF0000}.bdt-kicker .vs{color:#F0C566}.bdt-kicker .rt{color:#7086F0}
+.bdt-title{font:clamp(28px,6vw,42px)/1.1 Anton,Impact,sans-serif;margin:4px 0 2px;background:linear-gradient(100deg,#FBF7E9 10%,#F0C566 55%,#FBF7E9 90%);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:normal}
+.bdt-sub{font:15px Anton,Impact,sans-serif;letter-spacing:.08em;color:#A9BAAE;text-transform:uppercase}
+@media(max-width:600px){.bdt-crest{width:50px}.bdt-kicker{font-size:11px}.bdt-brand{gap:12px}}
+.sidebar{display:none!important}
+</style>
+<style id="bdt-tabs-css">
+#tabs>button,.subpage-tab,#chips>button{font:600 12.5px/1.15 Archivo,system-ui,sans-serif !important;letter-spacing:.02em !important;text-transform:none !important;
+ border-radius:11px !important;border:1px solid rgba(240,197,102,.22) !important;background:#0f2219 !important;color:#E6ECE7 !important;padding:9px 14px !important;box-shadow:none !important;transition:border-color .15s,background .15s}
+#tabs>button:hover,.subpage-tab:hover,#chips>button:hover{border-color:rgba(240,197,102,.55) !important}
+#tabs>button.on,#tabs>button.active,.subpage-tab.active,.subpage-tab.on,#chips>button.on,#chips>button.active{background:linear-gradient(100deg,#F0C566,#C99A3D) !important;color:#14210F !important;border-color:#F0C566 !important}
+#chips>button span,#chips>button b{color:inherit !important;opacity:.75}
+</style><style id="bdt-team-css">
+.page>.section-head{display:none !important}
+.subpage-tabs:has(>:only-child){display:none !important}
+.editions-wrap>.landing-heading:first-child{display:none !important}
+.bdt-hero .bdt-hin>div{position:relative}
+.bdt-hero .bdt-note{position:absolute;left:0;top:100%;width:max-content;max-width:min(640px,100%)}
+@media(max-width:760px){.bdt-hero .bdt-hin{padding-bottom:60px !important}.bdt-hero .bdt-note{width:auto;right:0;max-width:none}}
+</style><style id="bdt-hero-css">
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+.bdt-hero{position:relative;z-index:5;display:flex;align-items:center;min-height:300px;margin:0;padding:0;overflow:hidden;text-align:left;line-height:normal;letter-spacing:normal;background:#050B09 var(--hero,none) center 42%/cover no-repeat;box-sizing:border-box}
+.bdt-hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,11,9,.12) 0%,rgba(5,11,9,.5) 45%,rgba(5,11,9,.96) 100%)}
+.bdt-hero .bdt-hin{position:relative;display:flex;align-items:center;gap:22px;width:100%;max-width:1180px;margin:0 auto;padding:28px 32px 32px;box-sizing:border-box}
+.bdt-hero .bdt-crest{width:110px;height:auto;flex:none;display:block;filter:drop-shadow(0 6px 18px rgba(0,0,0,.7))}
+.bdt-hero .bdt-kicker{font:13px Anton,Impact,sans-serif;letter-spacing:.14em;text-shadow:0 1px 6px rgba(0,0,0,.7)}
+.bdt-hero .bdt-kicker .bh{color:#FF2a2a}.bdt-hero .bdt-kicker .vs{color:#F0C566}.bdt-hero .bdt-kicker .rt{color:#5068f2}
+.bdt-hero .bdt-t1{font:clamp(40px,7.4vw,84px)/.92 Anton,Impact,sans-serif;text-transform:uppercase;letter-spacing:.01em;margin:4px 0 0;background:linear-gradient(100deg,#FBF7E9 10%,#F0C566 55%,#FBF7E9 90%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 2px 10px rgba(0,0,0,.55))}
+.bdt-hero .bdt-t2{font:clamp(16px,2.6vw,26px) Anton,Impact,sans-serif;letter-spacing:.12em;color:#F0C566;text-transform:uppercase;margin-top:8px;text-shadow:0 1px 8px rgba(0,0,0,.8)}
+.bdt-hero .bdt-yr{white-space:nowrap}
+.bdt-hero .bdt-stripe{position:absolute;left:0;right:0;bottom:0;height:4px;background:linear-gradient(90deg,#FF0000 0 50%,#5068f2 50%)}
+@media(max-width:760px){.bdt-hero{min-height:210px}.bdt-hero .bdt-hin{flex-direction:row;align-items:center;gap:12px;padding:20px 12px 22px}.bdt-hero .bdt-crest{width:64px}.bdt-hero .bdt-kicker{font-size:9.5px;letter-spacing:.1em}.bdt-hero .bdt-t1{font-size:34px}.bdt-hero .bdt-t2{font-size:12px;letter-spacing:.08em;margin-top:6px}}
+/* card layout to match the tour pages (Oct 2026) */
+.bdt-hero img.bdt-crest:not([src]){visibility:hidden}
+.bdt-hero .bdt-note{font:600 13px/1.35 Archivo,system-ui,sans-serif;color:#d6dfd8;margin-top:8px;text-shadow:0 1px 6px #000;max-width:640px}
+@media(min-width:761px){
+.bdt-hero{margin:10px auto 0;max-width:1180px;width:calc(100% - 36px);border-radius:20px;min-height:280px;box-shadow:0 0 0 1px rgba(255,255,255,.07),0 18px 40px -20px rgba(0,0,0,.9)}
+.bdt-hero .bdt-hin{padding:24px 34px 28px;gap:26px;max-width:none}
+.bdt-hero .bdt-crest{width:112px}
+.bdt-hero .bdt-kicker{font-size:12px;letter-spacing:.16em}
+.bdt-hero .bdt-t1{font-size:62px}
+.bdt-hero .bdt-t2{font-size:17px;margin-top:8px}
+.bdt-hero .bdt-note{font-size:14px;margin-top:10px}
+}
+@media(max-width:760px){
+.bdt-hero{min-height:0;margin:10px 10px 0;border-radius:16px;border:1px solid rgba(240,197,102,.28);box-shadow:0 14px 34px -16px rgba(0,0,0,.9)}
+.bdt-hero .bdt-hin{padding:16px 14px 18px;gap:12px}
+.bdt-hero .bdt-crest{width:60px}
+.bdt-hero .bdt-kicker{font-size:9px;letter-spacing:.09em}
+.bdt-hero .bdt-t1{font-size:30px;line-height:.95}
+.bdt-hero .bdt-t2{font-size:12px;margin-top:5px}
+.bdt-hero .bdt-note{font-size:11.5px;margin-top:6px}
+}
+</style><style id="bdt-hero-team">.bdt-hero.team-Bloodhounds{--hero:url('https://static.wixstatic.com/media/588d17_b49cfb04dff8448fadd0c744205c91aa~mv2.jpg/v1/fill/w_1600,h_700,al_c,q_82,enc_auto/588d17_b49cfb04dff8448fadd0c744205c91aa~mv2.jpg')}.bdt-hero.team-Retrievers{--hero:url('https://static.wixstatic.com/media/588d17_e5f9248a6a1342fd84be031dd02942af~mv2.jpg/v1/fill/w_1600,h_700,al_c,q_82,enc_auto/588d17_e5f9248a6a1342fd84be031dd02942af~mv2.jpg')}</style><header class="bdt-hero team-__TEAM_NAME__" ><meta name="robots" content="noindex, nofollow"><script id="bdt-guard">(function(){var alone;try{alone=window.top===window.self}catch(e){alone=false}if(!alone||location.protocol==='file:'||/^(localhost|127\.|\[::1\])/.test(location.hostname))return;try{window.stop()}catch(e){}document.documentElement.innerHTML='\x3chead>\x3cmeta charset="utf-8">\x3cmeta name="viewport" content="width=device-width,initial-scale=1">\x3cmeta name="robots" content="noindex, nofollow">\x3ctitle>Big Dogs Tour\x3c/title>\x3c/head>\x3cbody style="margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#050B09;color:#F4F1E4;font:16px/1.5 system-ui,sans-serif;text-align:center;padding:24px;box-sizing:border-box">\x3cp>This page is part of the Big Dogs Tour website.\x3cbr>\x3ca style="color:#F0C566" href="https://www.bigdogstour.com">Go to www.bigdogstour.com\x3c/a>\x3c/p>\x3c/body>';})();</script><div class="bdt-hin"><img class="bdt-crest" id="bdtHeadCrest" alt="Big Dogs Tour crest"><div><div class="bdt-kicker"><span class="bh">BLOODHOUNDS</span> <span class="vs">v</span> <span class="rt">RETRIEVERS</span></div><div class="bdt-t1">Big Dogs Tour</div><div class="bdt-t2">__TEAM_NAME__</div><div class="bdt-note">The __TEAM_NAME__ team roster — click a player for their full profile.</div></div></div><div class="bdt-stripe"></div></header>
+<div class="app">
+  <div class="backdrop" id="backdrop"></div>
+  <nav class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-row">
+        <img class="brand-crest" id="brandCrest" alt="Big Dogs Tour crest">
+        <div class="brand-text">
+          <div class="kicker"><span class="bh">BLOODHOUNDS</span> <span class="vs">v</span> <span class="rt">RETRIEVERS</span></div>
+          <h1>Big Dogs Tour</h1>
+        </div>
+      </div>
+    </div>
+    <ul class="navlist" id="navlist"></ul>
+  </nav>
+  <div class="main">
+    <div class="topbar">
+      <button class="menubtn" id="menubtn" aria-label="Toggle navigation">&#9776;</button>
+      <div class="title">Viewing: <b id="topbar-title">Overview</b></div>
+      <div class="filterwrap">
+        <input id="globalFilter" type="text" placeholder="Filter every table by player or text&hellip;" list="playerlist" autocomplete="off">
+        <button class="clearbtn" id="clearFilter" title="Clear filter">&times;</button>
+      </div>
+      <datalist id="playerlist"></datalist>
+    </div>
+    <div class="content" id="content"></div>
+  </div>
+</div>
+<script id="webdata" type="application/json">__WEBDATA__</script>
+<script>__APPJS__</script>

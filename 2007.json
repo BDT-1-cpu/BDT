@@ -1,0 +1,432 @@
+{
+ "_help": "Per-tour extras that are NOT in the playbook. Image values are Wix media IDs (the 32-character code after 588d17_ in the Wix image address). Videos use the Vimeo number (vimeo.com/<number>) or a 'youtube' ID. Leave any field empty (\"\" or []) and that part of the page simply hides. rc_images / leaderboard_images may also be file paths (relative to tour_media) – those images are built into the page.",
+ "year": 2007,
+ "strapline": "THE SULTANS OF SWING",
+ "hero": {
+  "id": "ad825ca745b0420a8b0bb65bede56ee0",
+  "caption": "2007 Tourists"
+ },
+ "venue": {
+  "map_query": "Novotel World Trade Centre Dubai, Al Mustaqbal St, Dubai",
+  "map_zoom": 16,
+  "blurb": ""
+ },
+ "captains": {
+  "BH": {
+   "id": "13dfaf3694e24244b51204b24911dbed"
+  },
+  "RT": {
+   "id": "89efa563c6b54847a010ebe403a5bcb9"
+  }
+ },
+ "accommodation": {
+  "name": "Novotel Dubai World Trade Centre",
+  "blurb": "Home for BDT 2007 – 16 tourists, with The Montgomerie, The Emirates and Al Badia on the golf schedule.\n\nA city hotel next to the Dubai World Trade Centre, with easy access to Sheikh Zayed Road, DIFC and Downtown Dubai. It has a pool, a gym and several restaurants and bars, including a jazz bar.",
+  "photos": [
+   {
+    "id": "f61e6525141e43a6bedb1383be46a2f5",
+    "caption": ""
+   },
+   {
+    "id": "de614dc163ce44ea9f8863cdc6179a5a",
+    "caption": ""
+   },
+   {
+    "id": "c5573af0f5c74410b8bc0709c558bf0e",
+    "caption": ""
+   },
+   {
+    "id": "02e408fca84b4250b42798669291e5ea",
+    "caption": ""
+   },
+   {
+    "id": "6bf34726109645d9b893ba3d2793bde9",
+    "caption": ""
+   },
+   {
+    "id": "d72c4d3dd5c3445dbdbb47bd32c84a90",
+    "caption": ""
+   },
+   {
+    "id": "191e65fcbf2548639fdb676787e0b942",
+    "caption": ""
+   },
+   {
+    "id": "3bcdbb8fa15c4e02abc9ca7118794355",
+    "caption": ""
+   },
+   {
+    "id": "d4efe8452eca4bf6b2460a00abec9370",
+    "caption": ""
+   },
+   {
+    "id": "3f670e4f4d184eee8a4db27ad4c732b8",
+    "caption": ""
+   },
+   {
+    "id": "c11cd7b5f811415ea84b29690fef0c3f",
+    "caption": ""
+   },
+   {
+    "id": "8614fe88768d48d5a118b0ef13b8912b",
+    "caption": ""
+   },
+   {
+    "id": "6976f55d86f04220b3c122708bae8ad0",
+    "caption": ""
+   },
+   {
+    "id": "53cd2da0ebb548c685fb3404d439305e",
+    "caption": ""
+   },
+   {
+    "id": "e3aa5a98608a4f09b6b84203f999444b",
+    "caption": ""
+   },
+   {
+    "id": "b9727f9ed6374ba69e3a6f298675e212",
+    "caption": ""
+   },
+   {
+    "id": "b7fb5349e6fe4be8946a3874669d912a",
+    "caption": ""
+   },
+   {
+    "id": "23eaf60f838f488782e15048de79041c",
+    "caption": ""
+   },
+   {
+    "id": "473b5b25ac1744d19226a9f3e6cb7aee",
+    "caption": ""
+   },
+   {
+    "id": "2524d6fa6bb744c5a9e970487f5a4055",
+    "caption": ""
+   },
+   {
+    "id": "99aa11a37a0545f1b46cbd46a978b0af",
+    "caption": ""
+   },
+   {
+    "id": "6ca0be8644784141b3101f7a672d27a2",
+    "caption": ""
+   },
+   {
+    "id": "b3428e8ec54041babe187ffe2057564b",
+    "caption": ""
+   },
+   {
+    "id": "b2829cf2820f45ffa4eba6bb425f468d",
+    "caption": ""
+   },
+   {
+    "id": "73e988808ca7411d9396678fc103fbff",
+    "caption": ""
+   },
+   {
+    "id": "ab7bcd361dcd4640b65e4f6b3843eda8",
+    "caption": ""
+   },
+   {
+    "id": "feb1b4e1beb64f8a8e70d16e2fafd272",
+    "caption": ""
+   },
+   {
+    "id": "cb3addcd2ac04aeeb871e31615a6ad6c",
+    "caption": ""
+   },
+   {
+    "id": "df05355aceba437c931b5d3246802f22",
+    "caption": ""
+   },
+   {
+    "id": "43afd1ab9406480aae5165f4dc1eeea1",
+    "caption": ""
+   },
+   {
+    "id": "86697e907cbe48319392f64fff67479e",
+    "caption": ""
+   },
+   {
+    "id": "30d8e1c2da924e4eb90ef5fe6f4f5298",
+    "caption": ""
+   },
+   {
+    "id": "16c9940fce9642a4a1d29001d61a4f23",
+    "caption": ""
+   },
+   {
+    "id": "ef4a67de1da64ce3b174ba3ecc2fe70e",
+    "caption": ""
+   },
+   {
+    "id": "c086909bc9104dd599c46f40ddfb34cf",
+    "caption": ""
+   },
+   {
+    "id": "f7d3305657e24f44aaabc6f4c88bb05f",
+    "caption": ""
+   },
+   {
+    "id": "edd3df2a781543c7b4fb0f5377f45625",
+    "caption": ""
+   }
+  ],
+  "where": "Trade Centre · Dubai · UAE",
+  "facts": [
+   "Next to World Trade Centre",
+   "Outdoor pool",
+   "Several restaurants and bars",
+   "Gym"
+  ],
+  "link": "https://www.novotel-dubai-world-trade-centre.com/about-us/"
+ },
+ "itinerary_images": [
+  {
+   "id": "3e29b4e2406d4f30ad2c95c449e6731e",
+   "caption": ""
+  },
+  {
+   "id": "4a9b972995db4b69b7b6d041e60f6388",
+   "caption": ""
+  }
+ ],
+ "itinerary_extra": {},
+ "team_photos": {
+  "BH": "cdcdcfe792364706ac771eeddb47dc59",
+  "RT": "24f4804dd6cc49ad9cca1ef849c151ee"
+ },
+ "team_announcement": [],
+ "rc_images": [
+  "boards/BDT_2007_RyderCup_1.jpg",
+  "boards/BDT_2007_RyderCup_2.jpg",
+  "boards/BDT_2007_RyderCup_3.jpg"
+ ],
+ "leaderboard_images": [
+  "boards/BDT_2007_Leaderboard_1.jpg",
+  "boards/BDT_2007_Leaderboard_2.jpg"
+ ],
+ "summary": {
+  "banner": "461965e70e304e589bd41211a248be27",
+  "title": "",
+  "text": "",
+  "link": "https://www.bigdogstour.com/post/bdt-2007-tour-summary-the-war-in-the-desert"
+ },
+ "video_sections": [
+  {
+   "title": "Photo Slideshow",
+   "items": [
+    {
+     "vimeo": "420440797",
+     "title": "BDT 2007 Slideshow",
+     "thumb": "https://i.vimeocdn.com/video/895693100-c83f413b62b228a7a46b498057db43ffab0c0e7442403a162d54833ebe186d27-d_640?region=us"
+    }
+   ]
+  },
+  {
+   "title": "Tour clips",
+   "items": [
+    {
+     "vimeo": "412647915",
+     "title": "2007 Swings",
+     "thumb": "https://i.vimeocdn.com/video/885111213-b32ac7964b530f6cb7f9a5c7a3e5bd78208f296cf2bb73edcdcef72cfa4f859c-d_640?region=us"
+    },
+    {
+     "vimeo": "884052746",
+     "title": "360 Bar",
+     "thumb": "https://i.vimeocdn.com/video/1752972526-77cad44d3b65b1065b9b53bdf10cc1ae6bf461c332b2d6acbfcaab0da83f3fb6-d_640?region=us"
+    },
+    {
+     "vimeo": "623755765",
+     "title": "Bouncing Dogs",
+     "thumb": "https://i.vimeocdn.com/video/1266047313-47ff8602941f4b88afca6f9e6e43e1863804b1861c0ce92ef_640?region=us"
+    }
+   ]
+  }
+ ],
+ "gallery": [
+  "dc75b3e115da47df9fddb748d89fd8ae",
+  "ff1ff648477a4088b8aa45344259a452",
+  "9671867ecdb04eba86f0f78e592be307",
+  "3fcc82d11475456bb86007175ed8a6a3",
+  "970254dca7c6403f858c6f948a8b1d77",
+  "4a2fb637d381489393d914cc2b1b2c24",
+  "e40d3e14920a49a8babe532524b6e32e",
+  "c0a5f19466794d299b8a7a2f2ef50435",
+  "6b99fce9680d4954b79731b41dbb6ca4",
+  "914842844ad4440dbc7644679c82010e",
+  "d5a5a46c10a84521949e721b3c6626a7",
+  "d5f25e2ff56b4de6b97f3300b6abb5ee",
+  "7b305dc7eb3146c3a451cc3f6ae6ecee",
+  "214bfe39b3e74182bba7bc38cc50e8b6",
+  "d1fab8301ee449248b558434aff1227f",
+  "6a30eb523dc14c9bb047698b51e80157",
+  "b078127fe0ea4c8e919aa6e2d9548f40",
+  "64a49d3971274cce944ce19ecea4b144",
+  "f146d8882a9b4f9a926bc49be61c917d",
+  "73045002770f4322986e0937006e4e5e",
+  "412c229440ab492e9402940ec74bd0aa",
+  "7255b7750cdb4dd9bbcac140c5bfe127",
+  "fab19a3d8b064f12b1dcca0f1efecbbd",
+  "4656d9d2b6bf42f1acd686ce2ee34827",
+  "538d083b90114dcc9681ea0e46cbdb02",
+  "60e24bc654b34419ac00f41ecc79d283",
+  "2b33efedfebf4cd8bfd2fdba798084db",
+  "9abdf1d527d34501a14e99deaf23310b",
+  "05499ced21f64fa995a9006337bf5ab6",
+  "52ce338874484c319f91009e94d74199",
+  "7d68cb77523d4769ace0346aab8ac5d6",
+  "18e3e90afb67421d9126bd7d8d6d2d05",
+  "08a51b6ae91f47c4b4fd75b23f3200a8",
+  "b08bc928dcb14750b2b802922993eb10",
+  "33d111d4d9cf4494838b699e6ee2a80b",
+  "fa5d6f95c1464a76892e5e81131dd5d6",
+  "60354760049944afada11bb89b6978df",
+  "ac658aea02724969ad75188e9b14e621",
+  "87e3c5d1583b4dbd881f3e87acd9ccbf",
+  "b763d8224a1c4405a3a8185015cf00da",
+  "ce0e315cce1a41b9b429afb5c5702ebd",
+  "fac02c1d445d4364a601b8d205d41309",
+  "cb5cdd75687748069b842640006e235c",
+  "51fc0671cb7f4acfa53442571074f0cd",
+  "3e13aa35494e467bb447ee285e973709",
+  "35e1dcafe8e341649c8c03c08bd2ff54",
+  "2852db50f60e4182b2a4834c6e0fc11c",
+  "6dd2882508064ffd8327ed6f7d191127",
+  "97cc5910f7b948008be7230bb0d2df4d",
+  "80d52df53c9d4e5bbfd0c13255358917",
+  "2c9d6328a0a4481bb58938186c0b4549",
+  "3a15b9979383432c8cb0043ef3a897d9",
+  "82f5beba6be445f9a1ce44412f07db4a",
+  "4ca94a11b82b491093b23ca51b95e7ba",
+  "f7d387ffdb5849c3b8e50100ad2970f8",
+  "0b4d30fda41841e0b42d058dd84c7607",
+  "fc6eae3d787b48cb9e2599a7a9b3d525",
+  "83bf392c284a472688d9bc9679aca3db",
+  "ee6ec59b191b4a999913ab1bda68bf72",
+  "46e84e73dc3b46e6b1fa7c048d7ae814",
+  "c031e7641d4a4cad84124ebb06f0a7e2",
+  "c46ca007cf484471a5a2bb875ce5488e",
+  "633ffe52a6ef43dd8b89c87f8f0cd1ca",
+  "0764316ac2da4ac58f15f48601f1c527",
+  "925fa2fc19c04b51872466417efa07b5",
+  "a10bc8b181cc4ec1912dec41956b68b3",
+  "7093e181de2f4956b2dc8ae9cbacf447",
+  "aacb0ef80a3f4cbcaa3432c7e69278b2",
+  "f2d26f7b3a02458cbb479222c2f807ff",
+  "99118c4c42f648c8b82522e9403fba4a",
+  "29d8840c097749468e8ef109fa29f603",
+  "adbebfba095d4430b086d25e0c048a3d",
+  "d6f4b14d2d3f4a35907d170571f75e80",
+  "d8bfda1c0c0b47c4a20bfac7e7de7b70",
+  "0244da890ead4777b63a403a679e1102",
+  "528926529b414527be0de2a6fd177bd6",
+  "57fc7dfe5b364a84a3a70cd089b5be24",
+  "173cb8553c854f3aa5c4a639159d290a",
+  "c5aa70208c094a53a0418cfd2b74f7f3",
+  "e5a62ffa922e4683b0020eb16887ad81",
+  "b8f0a87b9df644ce8ea1e02c8b23a3aa",
+  "f90ad9bcd3904d56951df60625b3bdf1",
+  "2162532323514faa9428fc00c6540962",
+  "670588bee73f4474a990871db52deb03",
+  "9700ae42d9364e51adb1382d5dec6c9f",
+  "6c0a11d2f4144ee487511c900688d261",
+  "d9dfa62a71434eefb227012990bce874",
+  "fd01f2169f4f4aa09b3d2d9a2508821c",
+  "edd74092866b46298ca0ec6196c5de56",
+  "a670e6594bee4427a8d3b8af093ee961",
+  "fcd0cf11cb274db68a198f3f4e471f15",
+  "d10f2048f9014492819ce769c871aed7",
+  "f4252d4cf1bf4bfa98db3506743060ed",
+  "87183805aa374ad4b8e189e391f0c086",
+  "2e2dbcc95f564254a690d622167f8096",
+  "c0cfb1b8b6b0476ebb33d296c0e12d43",
+  "3dd12c4991764baab7d3c4a5184579d6",
+  "edfd423aa034425690a3dd40f273b183",
+  "b78ff05d2be448d5b919c82139bea1fc",
+  "5914a3249c8a4aa8a03a8359e2bf0ca6",
+  "2dc089e6f74d4a6889e4d5ad5bfd5c72",
+  "89303752b57741b2b54f030641b5f4bd",
+  "4f6190b573264981a67324740f5218c6",
+  "b26867b574d141a584b556064ac87e3c",
+  "8dd8335da0964764833e46507d79d6fe",
+  "53c8c512bffb44f198c0abf84f46bab1",
+  "c1c8bd4f93af43e4ae2ac4bbb9a256d3",
+  "0192d784d5e1447491a3ac928c482deb",
+  "ebb0e51052c046ba87ff83400f1419ef",
+  "df24bf0fd49d4eebb1e11ba65da94ea0",
+  "70d481247ab44fe69b1dff127446c052",
+  "03c5a0b65ac94464ac6bfa6f73d85503",
+  "2bc5d0f690e84e5aa9d8a81e9d64244d",
+  "521beb33556847d5a5efe945ea32a436",
+  "975911eb10f743c7b6c9999225a6108f",
+  "fbff968f399c4714be7a5279316c1a28",
+  "1e03c609310d488198964eea3736ddef",
+  "54698ed7d62649ba8ab357f412165b51",
+  "19dcf5bee7b54bcabb785217825206c1",
+  "b564f92a5413484091c4a20075854930",
+  "9872f622f2434c7a96e7693969383d1e",
+  "ea486eeeaabb40fcb2326afefe388416",
+  "2790326519da42f987f2d4c0666fd6b6",
+  "15005aaebe814ab898792b83810b8899",
+  "bc535f37e2144200a72f2a003cff4ddf",
+  "dba0d3a1aa6e4b5a89ffb9b997232e8f",
+  "16226e3998504de9b747323dc7991140",
+  "3c5fa49a47a147ecb62e7ca61ddff62f",
+  "ad825ca745b0420a8b0bb65bede56ee0",
+  "d56a55a8f2bc417d992bb8174c7ff74c",
+  "8480b8cf0049428783ed1d06e2cd5854",
+  "8170a5f46bd74bb5b8fb678cbd32ea12",
+  "6fdf4b8215744c8e9f334c7636bbc71d",
+  "f6c75e21aa534a3f9b524b0915db1be9",
+  "5f6b992bc6c94b519e589a71745be693",
+  "3608740c2e5b438b88e7562045b83284",
+  "6a9a6105ae4b40d6be4c25241fd03095",
+  "64c12ef4ac494531a6253dbb120262d6",
+  "9bc969b2e045422ea567f7090d6c58ad",
+  "0f134df74a93441894367838951f385e",
+  "ea7284e221184ca087b4fb845eeb23ad",
+  "79da9b1f985d4c009f3c89949fef3ed8",
+  "9af8422c03c14144b3ea3e9fe692a1c4",
+  "370eb6520a7b497197c7c902cbc2bdb3",
+  "84f048ff0e1b477cb14af4e4a32a65a2",
+  "0078937649e24a799fc12ff1b9b4b722",
+  "17f37f56ff7046e28007ab598172bf0a",
+  "4948c8a3f4734b52b7aaf49f0a0f27ec",
+  "1fdef08ce2da47c894f016e0a845872b",
+  "eb9c8f6c28e842609f52c868513c8869",
+  "4d3dbcd46ee64ae790ca21ebbb5115ff",
+  "a6be74b4c4ea42d6b33e7a12f95e8816",
+  "8642762e7d624134bdab47696a8e1de8",
+  "26e5dc19802d49c6bb28424343dfb9b9",
+  "86a6a4431dea42a082b31567e29d9bd0",
+  "7870354e593743a5b94e4e441a60a39c",
+  "38fa3c15e25644fcafbd5619b71c25ae",
+  "f7c32bc488204ef5ae983111b862e462",
+  "1dcf9c66e5384c1cb19a97e3f16eba00",
+  "837b1b142e38403b87e2e120a884c0ed",
+  "3f281d19bb1c43529435f1cd6583deff",
+  "baff88e291a84ea28bd2dce0df8b9b2a",
+  "4496568f01b34ff398a2765c12cb3c5e",
+  "04cf5562b09d41599aa7cc930d289663",
+  "1b07f5d707154be498cf595e9daca487",
+  "d2a2fa9bc379423ba1d7de616043b468",
+  "0e5012d5c2d746ad8f07c75af5e0175a",
+  "53e7c680dede42f789aedbddab9308a0",
+  "708e17f8bc86486f87dac21545ec8e85",
+  "8705363b39a845b5855cc0411228f772",
+  "29181eb7d1d940538ee3f60e5357d376",
+  "156664a6071048b196500d3e32631db0",
+  "337ba4a7e1394ba3934c26f1ec69c265",
+  "f09b752198f443bc96a341a9db5ce912",
+  "d92b616584ab49b9b44057e2f727bc51",
+  "3a4abcb70a7a47d294114846c38ba418",
+  "55edfee0865c4918bf18d982cf31b1cc",
+  "3ad058ac5f1a43269fef9c771c1b1534",
+  "b0e674f966174b328b04587471414d28",
+  "d993e0beb4f94378a70a0db98a1309c1",
+  "d84b4dea5de748758ef066fc275aacf4",
+  "e24e4602634541acbee04c95a863c456",
+  "8a538ece738d410db5dc5e7ed11b730a"
+ ]
+}

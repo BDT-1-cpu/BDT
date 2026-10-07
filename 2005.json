@@ -1,0 +1,344 @@
+{
+ "_help": "Per-tour extras that are NOT in the playbook. Image values are Wix media IDs (the 32-character code after 588d17_ in the Wix image address). Videos use the Vimeo number (vimeo.com/<number>) or a 'youtube' ID. Leave any field empty (\"\" or []) and that part of the page simply hides. rc_images / leaderboard_images may also be file paths (relative to tour_media) – those images are built into the page.",
+ "year": 2005,
+ "strapline": "THE DARK TOUR",
+ "hero": {
+  "id": "fc30e52f8363444ba003e93350cd92a9",
+  "caption": "2005 Tourists"
+ },
+ "venue": {
+  "map_query": "The Old Village, Largo da Igreja 10A, Vilamoura, 8125-249 Quarteira, Portugal",
+  "map_zoom": 16,
+  "blurb": ""
+ },
+ "captains": {
+  "BH": {
+   "id": "d92b5622e44e4d6c94a0041ad042909e"
+  },
+  "RT": {
+   "id": "d640235b6980445d92489de4ebbb826b"
+  }
+ },
+ "accommodation": {
+  "name": "The Old Village, Vilamoura",
+  "blurb": "Home for BDT 2005 – 16 tourists, with Vilamoura Old Course, Millennium and Vila Sol on the golf schedule.\n\nA pedestrianised resort of around 280 apartments and townhouses, built in the late 1980s in traditional Portuguese style and surrounded by the Pinhal golf course. Vilamoura Marina is about a 15-minute walk away.",
+  "photos": [
+   {
+    "id": "e1ce91fd00e546e296b9fbd53621b374",
+    "caption": ""
+   },
+   {
+    "id": "8fed4c8aae88455ca6361edae828c24b",
+    "caption": ""
+   },
+   {
+    "id": "1f8238b6ee32471d939b564c384b1170",
+    "caption": ""
+   },
+   {
+    "id": "5623fd75a98948ebbea05bc5edfd8e46",
+    "caption": ""
+   },
+   {
+    "id": "313c9b1ee3b74e25b89b6610bbf38441",
+    "caption": ""
+   },
+   {
+    "id": "757b46997b024f06835ad2ed0786d54f",
+    "caption": ""
+   },
+   {
+    "id": "ce7611482cd14d779d383628d640952f",
+    "caption": ""
+   },
+   {
+    "id": "d924552c2fa04b3984f578094239969d",
+    "caption": ""
+   },
+   {
+    "id": "db55d8c85b7944529194fa452677c1cc",
+    "caption": ""
+   },
+   {
+    "id": "cef8a3babfaa4feb8496cbb48458e0ea",
+    "caption": ""
+   },
+   {
+    "id": "777e17bb484345f5aea030833ac198e7",
+    "caption": ""
+   },
+   {
+    "id": "dea7ec73109844898954aef0d4ba4b8c",
+    "caption": ""
+   },
+   {
+    "id": "1bf3e64fed4c4294aaede011bbf36112",
+    "caption": ""
+   },
+   {
+    "id": "7c3bf2b4ca46433ab1cae1e27fbf14f1",
+    "caption": ""
+   },
+   {
+    "id": "1087a11b9b03493cba8dd0298fcdb00f",
+    "caption": ""
+   },
+   {
+    "id": "2f1fa8b5cb7543fdbcfaacaa9f30fcc1",
+    "caption": ""
+   },
+   {
+    "id": "4b4a1ee9b3224bf8aa1c664f4926a3f8",
+    "caption": ""
+   },
+   {
+    "id": "640d7d403cf249f2869149ef98adcb83",
+    "caption": ""
+   },
+   {
+    "id": "0eaebedacc0c45f2972a0d352d2c5a81",
+    "caption": ""
+   },
+   {
+    "id": "a83d9793c32c4795a8cc2817f3f23c13",
+    "caption": ""
+   },
+   {
+    "id": "785651b267264dff9f71f5edf3bddec8",
+    "caption": ""
+   },
+   {
+    "id": "a40038c48a9241429fd1e956bc8a812b",
+    "caption": ""
+   },
+   {
+    "id": "10d8ce689aa54364b3e47556fc2b4efb",
+    "caption": ""
+   },
+   {
+    "id": "8a5d22f1f4c146d9a4546b903f6b6b7d",
+    "caption": ""
+   },
+   {
+    "id": "b5426ea81cce401889384bb7ff994a25",
+    "caption": ""
+   },
+   {
+    "id": "226cbcc89fb34d2ca8e8dbee7dc38c2c",
+    "caption": ""
+   },
+   {
+    "id": "227dd5b1c86f4e379357efffbaa77dcc",
+    "caption": ""
+   },
+   {
+    "id": "575d88df96634705ade2c3329f00dd04",
+    "caption": ""
+   },
+   {
+    "id": "f83aec5b5a9644baa9bb4fcf90a20e00",
+    "caption": ""
+   },
+   {
+    "id": "262e3d4cdc9144fc817606035cfc747d",
+    "caption": ""
+   },
+   {
+    "id": "5673be3b657d4e958740aa8b1f329906",
+    "caption": ""
+   },
+   {
+    "id": "eb8ed290d332484782f94d49f2880f36",
+    "caption": ""
+   },
+   {
+    "id": "8d07a31c8ded4138ae09c9ffa078b25a",
+    "caption": ""
+   },
+   {
+    "id": "00b2785e7278453e85d14233f7e35eb4",
+    "caption": ""
+   },
+   {
+    "id": "ce342f6aab4441cc89a761ba8eb9fff5",
+    "caption": ""
+   },
+   {
+    "id": "fc76e678de374d92befbedcda217d8c9",
+    "caption": ""
+   },
+   {
+    "id": "fccd97ae1d3b49719f7c5583892263ab",
+    "caption": ""
+   },
+   {
+    "id": "c9e8388dcf35441a9410b5607cfaf205",
+    "caption": ""
+   },
+   {
+    "id": "5012559ab3124e9cb230dfe7e4a69651",
+    "caption": ""
+   },
+   {
+    "id": "3d6270675a1a459aa745e4068447c426",
+    "caption": ""
+   },
+   {
+    "id": "00b5f9cd87124a89af1ed05c711f68cb",
+    "caption": ""
+   },
+   {
+    "id": "4d1794a4b59a424e882fd520a35d6a6a",
+    "caption": ""
+   },
+   {
+    "id": "ab2156c9c12e4896a4fcc7310dc18397",
+    "caption": ""
+   }
+  ],
+  "where": "Vilamoura · Algarve · Portugal",
+  "facts": [
+   "Surrounded by Pinhal course",
+   "Three pools",
+   "Restaurants, cafés and bars",
+   "15 min walk to marina"
+  ],
+  "link": "https://www.oldvillagealgarve.com/"
+ },
+ "itinerary_images": [
+  {
+   "id": "51f69454bb144891b4421de72ae8f126",
+   "caption": ""
+  }
+ ],
+ "itinerary_extra": {},
+ "team_photos": {
+  "BH": "bc67fd5a910f461da537f51bff05a80d",
+  "RT": "509ad4f433874a71bbb7fcae46ab26b3"
+ },
+ "team_announcement": [],
+ "rc_images": [
+  "boards/BDT_2005_RyderCup_1.jpg",
+  "boards/BDT_2005_RyderCup_2.jpg",
+  "boards/BDT_2005_RyderCup_3.jpg"
+ ],
+ "leaderboard_images": [
+  "boards/BDT_2005_Leaderboard_1.jpg",
+  "boards/BDT_2005_Leaderboard_2.jpg"
+ ],
+ "summary": {
+  "banner": "6fc00f2eb38b4286893f7a0e1277a1bf",
+  "title": "",
+  "text": "",
+  "link": "https://www.bigdogstour.com/post/bdt-2005-tour-summary-the-dark-tour"
+ },
+ "video_sections": [
+  {
+   "title": "Photo Slideshow",
+   "items": [
+    {
+     "vimeo": "420384665",
+     "title": "BDT 2005 Slideshow",
+     "thumb": "https://i.vimeocdn.com/video/895670927-174162f49425128eaaca7dc0fb393b945423b2762192b77973928c7fd54b94dc-d_640?region=us"
+    }
+   ]
+  },
+  {
+   "title": "Tour clips",
+   "items": [
+    {
+     "vimeo": "623763609",
+     "title": "Marsh Dog v Mateus Dog",
+     "thumb": "https://i.vimeocdn.com/video/1266055121-be0af9aab462a87368addeb6387491dbeeb8b9fbbae7e4641_640?region=us"
+    },
+    {
+     "vimeo": "2285607",
+     "title": "BT Don't Stop Me Now",
+     "thumb": "https://i.vimeocdn.com/video/86619449-87c4fbad5c9ee6af5246c575289d86ea4160cc0341998d0f9cbffeb30f39c304-d_640?region=us"
+    },
+    {
+     "vimeo": "2285602",
+     "title": "BT Suspicious Minds",
+     "thumb": "https://i.vimeocdn.com/video/86619323-ae0cb2b2e2484b87b3cbc4e168fa9e70f5c9117b4c3323262148c6cbaf1a143a-d_640?region=us"
+    },
+    {
+     "vimeo": "2285609",
+     "title": "Ravo Swim",
+     "thumb": "https://i.vimeocdn.com/video/86619494-a04f79e1565d5d43875637edebd7164796ebeb4a8fdf0654ce3db94e2ea17a82-d_640?region=us"
+    },
+    {
+     "vimeo": "158896100",
+     "title": "Robbo Swim",
+     "thumb": "https://i.vimeocdn.com/video/560505277-d8ca51a48b024461914325112d23c832f3926aedc43a1f0190abdf948cb96070-d_640?region=us"
+    }
+   ]
+  }
+ ],
+ "gallery": [
+  "fe8b1847dda143e299a56d41e403303c",
+  "b08089f4760a472d99d044394f6a0708",
+  "c3b2d9db42694765b6aa405c06acd75c",
+  "3fa6d34a9b58424ebf8d3e96d4e1a4a6",
+  "250e4da55ffe43718b27864571519e82",
+  "6d4ea24556d14af69adcb94b1c058c6e",
+  "d14a0cbf57914d0b8e594c6244d2dc40",
+  "a6095d2c10fd43f8b1154bb1290bb937",
+  "ff027529b7344f2d98f6df4cdfda600f",
+  "7a75ff11ad8a4f529b471eb8b14e5fa9",
+  "6bfd5e078a774de786aa38019c6950e2",
+  "4a8aae83ca814ea0af1423882e13bfbc",
+  "2fed54a6ef6f4ce0a380ddd62fd498b4",
+  "af9b70ff2f8e47beb1f147c0e2d98045",
+  "02248d9f972e45d0b3c35959a3f086b7",
+  "d562b3a74c85435eaf2358757be45542",
+  "d1d378a48f2b4453a6a6b2dfa2b55cb8",
+  "744eee4cecd241f69b8aa4dd9722048c",
+  "332ee624c9e8460c838723b96a753ba6",
+  "187a21846f8f40c08c904149295f629e",
+  "eb7a755c76c443278e098aeef74b1038",
+  "232cd5c8b44a43afa31d4ff54353e155",
+  "c4146aaf14b2455d8cf5ccab737e8e96",
+  "e2eda1ed3eff4462a678c53749c6e4c6",
+  "821c792b64ea4c8d80b04bed6a7e7a1e",
+  "4f8a0a616c0243ff93d3811f22fba5bd",
+  "52d20aa8c7864865bdbc8565ab9a0541",
+  "cf28126ad81e4f04a6096a6b3a1d3fa7",
+  "b13247a161dd4fa1bd29e1402279adff",
+  "30daf26796d74442a14a3e10f98223be",
+  "92ad29dbcbb64f04ad93d3514379f542",
+  "b1934239d49d4468bc5bd6467909ca8f",
+  "16e04664e4c54ffeb58636559b3509dd",
+  "53912bd0d23642318a3fb5dbd1483df7",
+  "3fa04e5188aa4087bf1d11b1a268cced",
+  "57af0860b9d94661a213385cb01ebdc5",
+  "0b21d8308b8845979789f17b754201bf",
+  "e7aad80ae97a4014b01c885df7ae5f9e",
+  "d2e81d31241c461687fcce6161b8ff70",
+  "70b84c1317e742cbbd8c40cd4e4f44b6",
+  "421c6a7c13654cd0967d26771f4ac266",
+  "d0c43e43b9c24e349b2f257f459b5433",
+  "d87773171651466c9464b19eebbd8a43",
+  "30bd2ec0a1c1436ba2ec6b997b75256a",
+  "727aec9f51a848e8982b3992ce933941",
+  "59da7ee2565548bf9eb676ad0dcc7af4",
+  "c00482966d314f0d968e5804955b3dc2",
+  "30893cc0ef3c44b8ae1dedc7323a7eeb",
+  "a91b61d46ba640b7994c9778120f2633",
+  "bce3ee53ce3c4771872e2486b5d78557",
+  "5e4652484caf4ea4afa0e3cb4c489af0",
+  "d673ae6cf0b445d5b68dff1c3095b9e1",
+  "82ad857cdaca4de7af2ea9264ed8c8b6",
+  "13418bb1890440a694ea7545f04b6299",
+  "0549f4a041c7407782055047081821d0",
+  "2430d4821b2449b5a6106a928be7f3b0",
+  "4a586c5168b447bab85cc895f4baa280",
+  "6969f5566e1c44f1898c8122141f755c",
+  "c0fedd4b5d2d439e9c71456b203d6703",
+  "3a380167e6264bcf8e8b7adafe0c5dc9",
+  "ab3e6743a2424c3699723e424939973b",
+  "48cd9ad2ff4745c2b493e2b13122a955",
+  "5151825054474d9fbda6b9bb26a6c5c3",
+  "ccb56b54465a45afab2827fa7f052234",
+  "35c94652e37e4523aec015bb74701fe0"
+ ]
+}

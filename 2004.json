@@ -1,0 +1,248 @@
+{
+ "_help": "Per-tour extras that are NOT in the playbook. Image values are Wix media IDs (the 32-character code after 588d17_ in the Wix image address). Videos use the Vimeo number (vimeo.com/<number>) or a 'youtube' ID. Leave any field empty (\"\" or []) and that part of the page simply hides. rc_images / leaderboard_images may also be file paths (relative to tour_media) – those images are built into the page.",
+ "year": 2004,
+ "strapline": "BIRTH OF THE RYDER CUP",
+ "hero": {
+  "id": "b874fcd2ae5342ba8f3585ca1d9f462e",
+  "caption": "Lagos Marina"
+ },
+ "venue": {
+  "map_query": "Marina Club Lagos Resort, Marina de Lagos, 8600-315 Lagos, Portugal",
+  "map_zoom": 16,
+  "blurb": ""
+ },
+ "captains": {
+  "BH": {
+   "id": "bcbd598abfd54da297b1bf730a1c7ccd"
+  },
+  "RT": {
+   "id": "7692ea8ee7b447369aac740062a49ab8"
+  }
+ },
+ "accommodation": {
+  "name": "Marina Club Lagos Resort",
+  "blurb": "Home for BDT 2004 – 15 tourists, with Penina, Palmares and Boavista on the golf schedule.\n\nAn apartment resort within Marina de Lagos, with suite-hotel and self-catering apartment units looking over the marina or the pools. On-site facilities include a spa with an indoor pool, a gym, and a restaurant and bar.",
+  "photos": [
+   {
+    "id": "9fee29e5d29647539d404db66544bf45",
+    "caption": ""
+   },
+   {
+    "id": "4c22deb24e8348fcaafacf237d438d29",
+    "caption": ""
+   },
+   {
+    "id": "f29fe1134b32439fa27979b23cd14fee",
+    "caption": ""
+   },
+   {
+    "id": "9fa2a92f23df4497a7b218b95b6c0648",
+    "caption": ""
+   },
+   {
+    "id": "32b29aef27fa419296416bb16d089999",
+    "caption": ""
+   },
+   {
+    "id": "d7ccd1b150ab47c9b9d7cc072a869bd9",
+    "caption": ""
+   },
+   {
+    "id": "ae4d4b0aec544f6c92bbd59c71e8619e",
+    "caption": ""
+   },
+   {
+    "id": "5827956b6e3d4885be0b8a5357a9761f",
+    "caption": ""
+   },
+   {
+    "id": "ab0238baafbc4dfe9b27c40f27bf821a",
+    "caption": ""
+   },
+   {
+    "id": "356ff99515554172b4e24937032f51b0",
+    "caption": ""
+   },
+   {
+    "id": "d4484f9e2c7c4ce8b9a85344b70d16bf",
+    "caption": ""
+   },
+   {
+    "id": "8a21827b68c84fb784b96ae685070e0a",
+    "caption": ""
+   },
+   {
+    "id": "b992670ed1d74624934a8f2959549609",
+    "caption": ""
+   },
+   {
+    "id": "4d94e391551542db9ebce4180e74a7fe",
+    "caption": ""
+   },
+   {
+    "id": "b872effcc7a14601b0e8ae2b3cafbf08",
+    "caption": ""
+   },
+   {
+    "id": "f07c95a8032243d9a1fa0bc1b02a6454",
+    "caption": ""
+   },
+   {
+    "id": "78a5e9dbfac04f46b42c5de69a2621e4",
+    "caption": ""
+   },
+   {
+    "id": "22b94c92b3f4472e87abee2617e2041d",
+    "caption": ""
+   },
+   {
+    "id": "945dec4c91ed440b8fa8517e230d93d7",
+    "caption": ""
+   },
+   {
+    "id": "e4466e5073f94064a567c726a6a0d796",
+    "caption": ""
+   },
+   {
+    "id": "db519297031c4e3288488c6a3ff95797",
+    "caption": ""
+   },
+   {
+    "id": "0cfb6ef05cf5423bb75dd2f004039f75",
+    "caption": ""
+   }
+  ],
+  "where": "Lagos · Algarve · Portugal",
+  "facts": [
+   "Marina de Lagos setting",
+   "Marina or pool views",
+   "Indoor pool and spa",
+   "Gym",
+   "Restaurant and bar"
+  ],
+  "link": "https://www.marinaclub.pt/"
+ },
+ "itinerary_images": [],
+ "itinerary_extra": {},
+ "team_photos": {
+  "BH": "af01f5f751464598b05e606f98eaf574",
+  "RT": "1ce7bd7fdef44fa797188d6df88beb52"
+ },
+ "team_announcement": [],
+ "rc_images": [
+  "boards/BDT_2004_RyderCup_1.jpg",
+  "boards/BDT_2004_RyderCup_2.jpg",
+  "boards/BDT_2004_RyderCup_3.jpg"
+ ],
+ "leaderboard_images": [
+  "boards/BDT_2004_Leaderboard_1.jpg",
+  "boards/BDT_2004_Leaderboard_2.jpg"
+ ],
+ "summary": {
+  "banner": "da2ae2d869e14ed88731156500af8918",
+  "title": "",
+  "text": "",
+  "link": "https://www.bigdogstour.com/post/bdt-2004-tour-summary-birth-of-the-big-dogs-ryder-cup"
+ },
+ "video_sections": [
+  {
+   "title": "Photo Slideshow",
+   "items": [
+    {
+     "vimeo": "420384462",
+     "title": "BDT 2004 Slideshow",
+     "thumb": "https://i.vimeocdn.com/video/895669551-5cceb1e89688c35ffbe1bf8eeb29dc08a68875b9dd8542e43fe394c5af1858d9-d_640?region=us"
+    }
+   ]
+  }
+ ],
+ "gallery": [
+  "665fce6c77fb4c6993cde3b457f7218d",
+  "93457780c6034231af90def51702b07a",
+  "62b1c528f6f6461b840e46e5c2750347",
+  "c88bf2a2b3294fea938670f5f096d6c3",
+  "e4ecb1c32acb4ee78c9014378cdaaae5",
+  "cdeeb5d15ae84f8199052cd7e34977d1",
+  "4c22deb24e8348fcaafacf237d438d29",
+  "9fee29e5d29647539d404db66544bf45",
+  "b00bf1f85e914626b8b6c92b8c546803",
+  "e8a49abf4c284eb0bd3b3763e9fd0cee",
+  "ce678c1010004fb8a31c54a000d994e3",
+  "3b7beb4473794a49afe070252c1d458f",
+  "3972bc64e27b4564a8ade433e32f6a1a",
+  "ce3e16d17ac44a349989ecc61a05d57e",
+  "ad80db33e1f84be890ed9e760df92241",
+  "4244abb286bc4014943d4d7e26d3c9b9",
+  "1de3faf6024a4eef87d14bf930c24c44",
+  "ce2f9442f0fd401fb0fc1259940663b7",
+  "2b106555ee4e438480f379a2d1788607",
+  "f8f9c637563f47ea8f3600d8b789d5dd",
+  "5e0ee4cad0f84060a1bd768c531bd943",
+  "0cfb6ef05cf5423bb75dd2f004039f75",
+  "db519297031c4e3288488c6a3ff95797",
+  "e4466e5073f94064a567c726a6a0d796",
+  "32b29aef27fa419296416bb16d089999",
+  "6182c8b490fb47b29c8ca5e7dd61e513",
+  "b992670ed1d74624934a8f2959549609",
+  "f29fe1134b32439fa27979b23cd14fee",
+  "9fa2a92f23df4497a7b218b95b6c0648",
+  "d4484f9e2c7c4ce8b9a85344b70d16bf",
+  "d7ccd1b150ab47c9b9d7cc072a869bd9",
+  "ab0238baafbc4dfe9b27c40f27bf821a",
+  "ae4d4b0aec544f6c92bbd59c71e8619e",
+  "356ff99515554172b4e24937032f51b0",
+  "5827956b6e3d4885be0b8a5357a9761f",
+  "4d94e391551542db9ebce4180e74a7fe",
+  "8a21827b68c84fb784b96ae685070e0a",
+  "b872effcc7a14601b0e8ae2b3cafbf08",
+  "f07c95a8032243d9a1fa0bc1b02a6454",
+  "78a5e9dbfac04f46b42c5de69a2621e4",
+  "22b94c92b3f4472e87abee2617e2041d",
+  "945dec4c91ed440b8fa8517e230d93d7",
+  "7099467bdf374ad490b0e9881013facb",
+  "f03d0b92a4ea4f96987ef3cecc0c6464",
+  "267f54c2f6a34bb78e4ecc4f54319f98",
+  "44420a22e21f406da680d408e24f8980",
+  "12631e250e9e46f6a0fceec902f781ee",
+  "fdc0810fbedc4f6b93a13524002b1245",
+  "506d6db37ac645abbe37500345fb406c",
+  "35173167cff74604a2c1059b2e388955",
+  "006c30fc496b42ff9fe21942db9a7ce3",
+  "4f5dc605fdf84e11b9af5a6cfd06fd57",
+  "1eb87115474449a490c544e5c0dac779",
+  "b71cf160fb8049fba448f3476226039a",
+  "b93dbfdbd61c433d9ccba4bb02ad4ee7",
+  "8ab10d357ddb41c99dff8937a73195ce",
+  "e977d5b7341147799f8b8ddc95e55282",
+  "967df0df4af945a89fcebbd9f5cc710c",
+  "79ec91f7a9894267abe107f0503c6c42",
+  "bac305039da74fe290669813c66bcbf4",
+  "277edbba0ee540caa487eb617f565cc7",
+  "ee5fbcbab537462ab8636b618b7ad7d5",
+  "de3dc7e063964633b4681ec2590ee6b2",
+  "dee03718569d4ae0b221b4d8960249aa",
+  "28a9a56949b04fbe8b898392c0f9fee8",
+  "df5c71554edd49eeb250587b409b0888",
+  "65c1348140c843e3b805aeab0836c870",
+  "49e087682329420084f5fa0d12b57bba",
+  "194dbb0ed94c4401870db3d4c3801989",
+  "d13743f328c34e27a5873329f57f8b52",
+  "9ab43f08cf024877b638d9d2737ddc26",
+  "6b980833c76e4c77893d6050ff142526",
+  "2bcf8447b9b74e6ba73ab870a143f0c7",
+  "bbf04228213a4921944c57ce3fa489ef",
+  "e2dbc0e673d74d7a8ff5df2d5d9f6ef7",
+  "d58620115a2a4424a2b269fca2b0b430",
+  "60aec4b379dd4967afe36cc4eac4fda1",
+  "b99625e3613e4ed8a9909c14fd956cda",
+  "5431ef5c491240f5bbeca669aa6c34f1",
+  "954ef65e51a0444682f2ca3ce4b1f93a",
+  "8bce3150073d4c4a844084b2e5d9b0e6",
+  "2a4b39bcfc9945079be542fbea453355",
+  "28655e698c404099b46ecccc3fe6150e",
+  "03cd4bbf0e734c1193f18bfb014d4c59",
+  "aa29e2ebd8be4b1d9bcfd72c2c8e819a",
+  "15df764e1ab04852a7930b57b14a1b55",
+  "04ae41c0a5134abc94e19d6cfff88095"
+ ]
+}

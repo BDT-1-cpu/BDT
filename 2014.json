@@ -1,0 +1,380 @@
+{
+ "_help": "Per-tour extras that are NOT in the playbook. Image values are Wix media IDs (the 32-character code after 588d17_ in the Wix image address). Videos use the Vimeo number (vimeo.com/<number>) or a 'youtube' ID. Leave any field empty (\"\" or []) and that part of the page simply hides. rc_images / leaderboard_images may also be file paths (relative to tour_media) – those images are built into the page.",
+ "year": 2014,
+ "strapline": "THE VILLA HAT-TRICK",
+ "hero": {
+  "id": "edbe5af25ea242a58203264b0d47ba47",
+  "caption": "2014 Tourists"
+ },
+ "venue": {
+  "map_query": "36.47329,-5.05124",
+  "map_zoom": 16,
+  "blurb": ""
+ },
+ "captains": {
+  "BH": {
+   "id": "1809df686d8749388cf598b77a18396d"
+  },
+  "RT": {
+   "id": "a6b64c7b809841359014542bfc143600"
+  }
+ },
+ "accommodation": {
+  "name": "Villa el Cano",
+  "blurb": "“The Villa Hat-Trick” – a third consecutive year at Villa el Cano. Twenty dogs again, with Finca Cortesin, Alferini and Los Flamingos on the card.\n\nVilla el Cano is a ten-bedroom private estate above Puerto Banús on the Marbella coast, in a gated community overlooking Los Flamingos golf club, with views across the countryside to the Mediterranean. It has heated indoor and outdoor pools, a sauna and jacuzzi, a tennis court, a putting green, an outdoor bar and BBQ area, and air-conditioned en-suite bedrooms throughout.",
+  "photos": [
+   {
+    "id": "0f81add9dcf2478da71c623c7f782e4c",
+    "caption": ""
+   },
+   {
+    "id": "8e404a1004d847269152cb32af414b69",
+    "caption": ""
+   },
+   {
+    "id": "73de43a39b0844a6b90fbe164fcd59f5",
+    "caption": ""
+   },
+   {
+    "id": "2e2c1b6e61c543eebfd8519639ec74d9",
+    "caption": ""
+   },
+   {
+    "id": "3ff6f4cec44f472389df123e6876c61f",
+    "caption": ""
+   },
+   {
+    "id": "5c424037c0844c6da2945a7414635313",
+    "caption": ""
+   },
+   {
+    "id": "c88f32d793964efbaaf689f535d2cecc",
+    "caption": ""
+   },
+   {
+    "id": "5bcf4322dcc247bf88ef0396d14e7731",
+    "caption": ""
+   },
+   {
+    "id": "52d663a00ada462ea864a1d34275720f",
+    "caption": ""
+   },
+   {
+    "id": "a1f1378b8e2d44ed8bbcc25a449d4f55",
+    "caption": ""
+   },
+   {
+    "id": "4c08ff203eeb41609178fd621e6c078a",
+    "caption": ""
+   },
+   {
+    "id": "ce9e20d284b642449a883701ce882bd5",
+    "caption": ""
+   },
+   {
+    "id": "7058fb1952d0433a83cae745df085977",
+    "caption": ""
+   },
+   {
+    "id": "b9bc56786e614b47b05b3ff0c7787f88",
+    "caption": ""
+   },
+   {
+    "id": "142f425022144d4683bb6cb18fe1775c",
+    "caption": ""
+   },
+   {
+    "id": "0b780bf98b894270af3cf5f91c6a23a2",
+    "caption": ""
+   },
+   {
+    "id": "7e6e094667334239a585b2fd0ec29cb3",
+    "caption": ""
+   },
+   {
+    "id": "0d2c2979222042ffb18e1dd4f95cf610",
+    "caption": ""
+   },
+   {
+    "id": "587e6b695ec64676b15c547d2901380e",
+    "caption": ""
+   },
+   {
+    "id": "24833fb436b04897a72b5eb38c19b3f0",
+    "caption": ""
+   },
+   {
+    "id": "2819426c46f64036b2efab71628295e3",
+    "caption": ""
+   },
+   {
+    "id": "8eff7baac1b7494fbc9e3fce8645e1cb",
+    "caption": ""
+   },
+   {
+    "id": "4a332af22d46491cad0e4d2d37bae4fe",
+    "caption": ""
+   },
+   {
+    "id": "8b8b7f55e8ce4d818bf1322628e0cc3e",
+    "caption": ""
+   },
+   {
+    "id": "65f0d80b32534dc69540fbb1fc31ecec",
+    "caption": ""
+   }
+  ],
+  "where": "Puerto Banús · Marbella · Spain",
+  "facts": [
+   "10 bedrooms",
+   "4 nights",
+   "Indoor & outdoor pools",
+   "Overlooks Los Flamingos",
+   "3rd of 3 villa tours"
+  ],
+  "link": "https://www.elegantresorts.co.uk/luxury-properties/spain/villa-el-cano"
+ },
+ "itinerary_images": [
+  {
+   "id": "5982fbd6db9340f4ba027d8a7db92a9f",
+   "caption": ""
+  }
+ ],
+ "itinerary_extra": {},
+ "team_photos": {
+  "BH": "0529a090a3eb44b28083beeadff67e29",
+  "RT": "fbd1110a6a80456e891923f1f6ed2c25"
+ },
+ "team_announcement": [
+  {
+   "vimeo": "86989832",
+   "title": "BDT 2014 Team Announcement",
+   "thumb": "https://i.vimeocdn.com/video/464871775-919767fa1cfc2db70c340cc0aad19664a61054e706cced6010f865fc2920462b-d_640?region=us"
+  }
+ ],
+ "rc_images": [
+  "boards/BDT_2014_RyderCup_1.jpg",
+  "boards/BDT_2014_RyderCup_2.jpg",
+  "boards/BDT_2014_RyderCup_3.jpg"
+ ],
+ "leaderboard_images": [
+  "boards/BDT_2014_Leaderboard_1.jpg",
+  "boards/BDT_2014_Leaderboard_2.jpg"
+ ],
+ "summary": {
+  "banner": "39387ac88ffd4a4c90054529c7e4c4be",
+  "title": "",
+  "text": "",
+  "link": ""
+ },
+ "video_sections": [
+  {
+   "title": "Photo Slideshow",
+   "items": [
+    {
+     "vimeo": "422918112",
+     "title": "BDT 2014 Slideshow",
+     "thumb": "https://i.vimeocdn.com/video/899152051-026e7fa7b078ba768739b225d501debb129a9091fa39101e513c92c9fb5de9e6-d_640?region=us"
+    }
+   ]
+  },
+  {
+   "title": "Tour clips",
+   "items": [
+    {
+     "vimeo": "415099510",
+     "title": "Boysie Rocky Theme",
+     "thumb": "https://i.vimeocdn.com/video/888447183-d295673b3b2d789336bb2f9c569ea503d46cdcb0ed1def454c61b9d900c82179-d_640?region=us"
+    },
+    {
+     "vimeo": "415134855",
+     "title": "OC Question 1 Gav Neilan",
+     "thumb": "https://i.vimeocdn.com/video/888496118-6e2fb8f84a8648a5904bd043904777284299076d81c9ee363e69209f7fa5893d-d_640?region=us"
+    },
+    {
+     "vimeo": "415101186",
+     "title": "Hey Hey He's A Monkey",
+     "thumb": "https://i.vimeocdn.com/video/888449453-da7e6e54b7a4da6ab98ad334a6e5009bed63605058951443215af1fbe433345d-d_640?region=us"
+    },
+    {
+     "vimeo": "415136248",
+     "title": "Paddy Only Fools",
+     "thumb": "https://i.vimeocdn.com/video/888497952-b85f46d1669941b8f290fb675517ec85c89ee90e887abbf4fc2ab8ee8c0e66bf-d_640?region=us"
+    },
+    {
+     "vimeo": "415139079",
+     "title": "Red Red Love",
+     "thumb": "https://i.vimeocdn.com/video/888501468-b421c50c1c5b172e031fd438aad95b648bf4bbd37cc85e73e31c5dbe34bb0314-d_640?region=us"
+    },
+    {
+     "vimeo": "410781029",
+     "title": "BT First Tee Ollie Ball",
+     "thumb": "https://i.vimeocdn.com/video/882569600-fbb5b178914e31753cf139b2ad263aea61c53efc0b42b33e28fd4285f8ea24df-d_640?region=us"
+    },
+    {
+     "vimeo": "410778878",
+     "title": "Buzz First Tee Round I",
+     "thumb": "https://i.vimeocdn.com/video/882566854-e414fcf03e9247c749e2adfd11b7c127e50d06750b9f6876ad0dafa151a58939-d_640?region=us"
+    },
+    {
+     "vimeo": "410779015",
+     "title": "Boggy First Tee Round I",
+     "thumb": "https://i.vimeocdn.com/video/882567004-5b905e7e50ce5f49fffc05f5c61aa0b2fc9737b06731caf3fa500e0dd379cf74-d_640?region=us"
+    }
+   ]
+  }
+ ],
+ "gallery": [
+  "0359461c53b24e8292c5a78de85097d7",
+  "227963fbd0654bf09f28e49203e02cad",
+  "421ce97bf1f1441a810803f77bf74402",
+  "e12619c46f86453f9f308d91f2c3c225",
+  "84aa9fdb61ee4e868d3a1a431b32a3f6",
+  "4e951ca85be84e8cab0ad2244157e7ae",
+  "216ed27a69dc472bbaaec4d30406a43c",
+  "be19677e14e64434b38abd8d55527904",
+  "f1d44e35e60c471a9f557ac8bffe7f7b",
+  "4442b49df6d749829def0c2cf5b1385a",
+  "ee78f8152370470e8e4f3161f2ea7806",
+  "f54e26778276478c80d1b91a391ab953",
+  "3d67d05eaa944ac380e3fb5be8c47050",
+  "71048ec914004f709b2e50dd7aadb096",
+  "77855402286648579516cf624751c378",
+  "03394f348b204dc0ae2b39a8cae66dd0",
+  "deebdf421b1f4daf9a9580ef99c6b465",
+  "96fc0a616d3040cd806a9100fb3151e3",
+  "a288af947f734bd780823d3e33701b63",
+  "dce0178cdc7f40f396a56ac25f9688a5",
+  "05f37de60e4f4a979d7209698d3f0381",
+  "1d2bb7f1d090435d821e77f7c8173e95",
+  "ba0b5a0e73d4414c942ae730f14fe815",
+  "d2f6b9ff9722447b832beffa711e72fd",
+  "c68d7ecdca5b485ebe881661b13e66b9",
+  "6a90c3cd9bb241a29c249bda729f5a68",
+  "9613a503fe0e4dcd8b699456b051d5fe",
+  "ce2c8ee494874e80b5ea4782dda5d059",
+  "3179531d8047464aa8bcbafe4ea21357",
+  "c9645a4a69bb4104a8d240a3242ec64b",
+  "808366f1c2da41b694458bf06adfe992",
+  "15576bfce2884e26bdc86d7edf3a68bf",
+  "db6ee86446044902826514d83f332300",
+  "7ed11ce377754b30ba0a1ef27f89bdc6",
+  "85cc78a5f0d2425599ed40ae799aa99d",
+  "e0c742b0e2bc43a5afcebf79bbfc0a7f",
+  "04f6b505088c4b218dc61e1f3622b602",
+  "70905b1ace9b445e99bade48b292efcd",
+  "abd45726b38345b4a0827a53147d891c",
+  "703441c0eeff4a678380ddf2bed99739",
+  "92228243f3254ca393c8d8d0c6f82c19",
+  "e73039ff2f954a8b9192fe355ca6327a",
+  "e926068357af49a3b2d7eec1033c1d07",
+  "4ce2b84830ba4dbc9140c9e9ad541d11",
+  "a3ab97eb95c34583b9582d33655e2ed5",
+  "c8771a76b6714fa28f312ee2b0fab0ac",
+  "093543ea4f964d51a02c5849b28ba568",
+  "307da6e19f3044299f040e617bcbdcfc",
+  "0cc25a9ea9ce43e39aec0267991ea227",
+  "3639c79faa9842e194c34d2f872024e6",
+  "e952226e9ba14c2381f52b245668fa47",
+  "9fa33565fceb4e7486b92500c9ce75ee",
+  "37902e753a9b42c4be7962676c74c717",
+  "3ca9e6272cc347e088c8e37349aa6945",
+  "0db679f7e9b0463ca9df1cee8b654701",
+  "ef5b5df8e17a43a8a092eb8f71c1ad3e",
+  "11f4c3cb9c77416bbe04d9a57960153a",
+  "7a0c101434174b6aa3580c550cddea71",
+  "0890a45b737d42db83c3fd29cda0aee1",
+  "7a3ba679040a4a879ce90e63250fe472",
+  "33e138e6be6d44cdbf7fb7bbd1c197cc",
+  "cce087782a734cc0b2523d6324e64833",
+  "b01490fd4f1f487d8c84119026228cd7",
+  "61a39efc5fa9426fab1c7b29c1c3d121",
+  "ae550f360dbd4cd1b6f7aa898fd1c6c7",
+  "3aa8af072f714cbc94e655c1b001fef0",
+  "88eb0236b05b4760b92dcdf0cc789b15",
+  "2aeeb513924b4a6ebd7fdd881283f7b0",
+  "cd9d74e61a3c4e4c99fa5735d0d6bdc9",
+  "0be757ed6961424ebb88020431752687",
+  "7a48177220b64811a21324617b7b5ef9",
+  "6047dec7bc2740e6ac8838e9e16ae084",
+  "49a60ac94c654b3791a0cd935fc1a22f",
+  "bf5eaa8e530641f7af5b7c9c6f2e74ad",
+  "c95a0321bbfd4f229f5b88c1c71bebeb",
+  "e0cc98b96b9b49e69e064aaad5d1b738",
+  "7971ac557e0f45d0bc7d055227ff838f",
+  "7b9553b81f41418ca3ed9102883af5e7",
+  "5d0e4d7f47bf452fae8d6cd1303261f9",
+  "6f7a19af95f74dd8aa493f3e52bf7786",
+  "370e790f27cf461fb9958527dd61969a",
+  "067b7710aa0d4437972772018eb54a9e",
+  "df91aa5c700645aebded1230532172f3",
+  "03ad3c66c3e343c69f53f25092a77b7f",
+  "a3a9782e13e04b79b0e390970219ae97",
+  "e0bba099842e4e13b554f9758cd0fc22",
+  "bb1e7b17f4ee41c4bae45ea1fba6c032",
+  "dab97562a2014c2cb95dccef831c5be2",
+  "78597ab56c6c4974a5844628f01c7991",
+  "48788032192d4e648dff57fcce11c960",
+  "0b32406167df469482a64fee517a8072",
+  "a176571deb424fb1bbdc191cf8987cb1",
+  "01defe5546dc4213a078005dd4949c60",
+  "e60789e787e7498e8ad0fb86cb001283",
+  "a9a6a52ac36245849447bb74429b6b84",
+  "8a5234e6b26b499fa9fc31c1578f8bd1",
+  "7eb04b7598164a1f8351f63435395c68",
+  "548c36bc38f74a4e8b6a9dd5c7445d9b",
+  "e9585fc2e32f4a4e9f09a51f145bb7f7",
+  "487e2befe667419b929badea4c8d152c",
+  "5498f4bc8303473f8ffd2c2ad14d94bc",
+  "a354b52e09444695a9b10f3040a6e380",
+  "23ad3719a44a4928837c8a02b51fb539",
+  "3e1c39c6d3384fa38949bb34ff879dee",
+  "5739906483a84157a8aeb9b7ee97e36e",
+  "09cf7c0afebc46ca89042582ed07bc99",
+  "c2df46523e1443e0978a31bbe587de56",
+  "f9c2fe1d278347e6bc1ce134d92a4942",
+  "997be1e3a45f41bda10db4c95a9ce930",
+  "cdb4471c20d540298d5c58d7e648ae9a",
+  "051e903e34654c8ba8444e0f49f55915",
+  "8f9442101cb940f3ae685b352c9094cf",
+  "63ae3108311144ea8ae9abfd6833b85d",
+  "e4a3a32a36774206af1549feccb3ec48",
+  "34f9cfbbdd084f968b5e29d05d9f9a95",
+  "ff8262bfaf1243c89d407f6ec0bcb5dc",
+  "f9375e9dc4524ff988af38dd97966bae",
+  "32c2950519814e3cb21620fb523369e8",
+  "0a41b4dfb037489ca9937bcfc9849779",
+  "779439659d544b3593b5642b86f7ea3d",
+  "fd3f325f30e54ed690bf0f8f51fe1e8e",
+  "9620407abcc64bba9a6f3c1d2723af5e",
+  "aa87e8d43c03430caa3cb14f9412fe0f",
+  "edbe5af25ea242a58203264b0d47ba47",
+  "e5162144511048668e0cb6e7a2b6d581",
+  "3e88c86882884dbf8363c724d2d7d693",
+  "f366ab5d382f41d28da8c37a27c347f7",
+  "a0fe246a30534a658dc76b818f98e131",
+  "ee5767e7de1f470988795a3f871ba203",
+  "b44f0b4e862e45e8baca561432eda3b4",
+  "9242c7d48595451596b93534087d6f40",
+  "057eda7d1fb848e08e4b133ff2633cb0",
+  "8ea43beb2bfe447887f17e23b31b7606",
+  "452873cccf0e4f7096ca38addec189ed",
+  "0c645dc3c47c4925a7ca6a724466f66f",
+  "aecd44ab41684e268be80bb4af21e8fe",
+  "319389ba77a34698a83c79652a0e9d10",
+  "491e2c1bb9034425920ad98f3fcc0f85",
+  "0a3d6883e2c644528853bbc5043d7e45",
+  "431f6985adb84892b2e98ce2f2500b88",
+  "b524a591fb674220b9b42a7b0e3cf064",
+  "ebf2d7bffdb241f99a0c4b8a82a54eb0",
+  "ef05103fe32d4392828a6fdf81388a8b",
+  "e6248e2cbdf7414e89dcbbdae49a6f81",
+  "74519f2c915b4f01930c1dfcda7cc251",
+  "f8d30e364ed64f58b65e0a4d36896069",
+  "98c809dd31b340ad91354f69b606fdfa",
+  "56e576deeda54c11a6c11ded0d392027",
+  "ea1fb7efc8114654955e70e2ab788073",
+  "1a3b9c2de3984c0b82b0b71a242a0dce"
+ ],
+ "rc_numbers_note": "A fitting result in the year of Ollie Gobat's passing."
+}

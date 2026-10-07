@@ -1,0 +1,1174 @@
+{
+ "_help": "Per-tour extras that are NOT in the playbook. Image values are Wix media IDs (the 32-character code after 588d17_ in the Wix image address). Videos use the Vimeo number (vimeo.com/<number>) or a 'youtube' ID. Leave any field empty (\"\" or []) and that part of the page simply hides. rc_images / leaderboard_images may also be file paths (relative to tour_media) – those images are built into the page.",
+ "year": 2023,
+ "strapline": "BELEK BIG DOGS",
+ "hero": {
+  "id": "11599f0993f74ec2b42c35352d7dc731",
+  "caption": "The 2023 Tourists"
+ },
+ "venue": {
+  "map_query": "Gloria Serenity Resort, Turizm Cad No:74/57, 07506 Belek, Antalya, Türkiye",
+  "map_zoom": 15,
+  "blurb": ""
+ },
+ "captains": {
+  "BH": {
+   "id": "1809df686d8749388cf598b77a18396d"
+  },
+  "RT": {
+   "id": "42e4bb10e9a74081b6fa4bab998a35d3"
+  }
+ },
+ "accommodation": {
+  "name": "Gloria Serenity Resort",
+  "blurb": "The tour's first stay at Gloria Serenity – it went down so well that the dogs came straight back in 2024. Gloria Serenity is a five-star, all-inclusive resort on the Belek coast, around 40 minutes from Antalya airport, set in landscaped gardens with a huge saltwater pool winding around the grounds, villas with their own private pools, and a fine-sand beach and pier on the Mediterranean.",
+  "photos": [
+   {
+    "id": "972a41bbca7e425e918717f8564826aa",
+    "caption": ""
+   },
+   {
+    "id": "4956aa4111c249dc830f198a9a0f2a6b",
+    "caption": ""
+   },
+   {
+    "id": "8c30235cc37c4a94a7a721e89bd9d416",
+    "caption": ""
+   },
+   {
+    "id": "bda2a290893b4e0c97db15a5b730db0f",
+    "caption": ""
+   },
+   {
+    "id": "d6e7bd59b2f342ddad8fff57479c36e5",
+    "caption": ""
+   },
+   {
+    "id": "acc4d0606a344653a716bfec12f16308",
+    "caption": ""
+   },
+   {
+    "id": "ce27268a10274730af45292342a8feff",
+    "caption": ""
+   },
+   {
+    "id": "d4cd7f88151e471186c547893adfd089",
+    "caption": ""
+   },
+   {
+    "id": "e34faada91de46f78d8b5206e4f09538",
+    "caption": ""
+   },
+   {
+    "id": "0fc86242311e4d88855ad7da8be38b03",
+    "caption": ""
+   },
+   {
+    "id": "ea9f1c29c4994db895bbd4d72b9a221a",
+    "caption": ""
+   },
+   {
+    "id": "dcd31058b432418fadbd4e374ca30793",
+    "caption": ""
+   },
+   {
+    "id": "7872e168dd7d43d5944d84979bfdf4e0",
+    "caption": ""
+   },
+   {
+    "id": "853fde2f0f384428bd30bdb490e33521",
+    "caption": ""
+   },
+   {
+    "id": "0e5276c935504667a23a0ab9de82b887",
+    "caption": ""
+   },
+   {
+    "id": "d5a87042dbfb44369dea8aa6cdf0f8c4",
+    "caption": ""
+   },
+   {
+    "id": "1302337e9f15457daaec7aca82e34384",
+    "caption": ""
+   },
+   {
+    "id": "6896d45b5d1b4d9982ef74ce00d44f12",
+    "caption": ""
+   },
+   {
+    "id": "bf72c699b2c64eb59e393b58a84e94cc",
+    "caption": ""
+   },
+   {
+    "id": "5cebb6aeebb0455399dc37143fbaa29b",
+    "caption": ""
+   },
+   {
+    "id": "d1badac12e944c3dabe265d15b7669f9",
+    "caption": ""
+   },
+   {
+    "id": "5440490c59bc47258628ad5dfc3f8fec",
+    "caption": ""
+   },
+   {
+    "id": "1611eb7cf5f4436a8df9d257bec83dc5",
+    "caption": ""
+   },
+   {
+    "id": "1838c51c108045e2a5e348ac72e459a0",
+    "caption": ""
+   },
+   {
+    "id": "203a6ed057ec4fabac021d892f09fc4a",
+    "caption": ""
+   },
+   {
+    "id": "55decc7b0a6f4f84a90cdd37f95b04a3",
+    "caption": ""
+   },
+   {
+    "id": "54fb18eb1a0541679398809eec7d4097",
+    "caption": ""
+   },
+   {
+    "id": "84b9548c61b74c7aabb1ffac69a9665f",
+    "caption": ""
+   },
+   {
+    "id": "9ee339ab26bc42c9beb5d3042d39ba30",
+    "caption": ""
+   },
+   {
+    "id": "15a473ba2fe143d08d0ecc18ed4d7f52",
+    "caption": ""
+   },
+   {
+    "id": "620ea2582abb44a195a6937458cca04e",
+    "caption": ""
+   },
+   {
+    "id": "51d32892683448ea89ed66344d400067",
+    "caption": ""
+   },
+   {
+    "id": "32e086c227c147b19a2e8de5a4142601",
+    "caption": ""
+   },
+   {
+    "id": "806e8802fbe04d4f81706fcdcc9a53eb",
+    "caption": ""
+   },
+   {
+    "id": "dcfd6d85fb614111849b7b6386aebd36",
+    "caption": ""
+   },
+   {
+    "id": "6fc1a91761424508ae06ffcf54b48b5f",
+    "caption": ""
+   },
+   {
+    "id": "564863a8c5804e9382f6fbacc1b86fab",
+    "caption": ""
+   },
+   {
+    "id": "262ac0c171f34fd0906ac9cb4a911a25",
+    "caption": ""
+   },
+   {
+    "id": "d9098270b2f6482db67b1e0d5858cb4c",
+    "caption": ""
+   },
+   {
+    "id": "7f9f92f9006a450dbb145e2b55702703",
+    "caption": ""
+   },
+   {
+    "id": "06653e30ac9f4d70beb76d68563437dd",
+    "caption": ""
+   },
+   {
+    "id": "6f0eaea2e6fc465a885733c5187f37b6",
+    "caption": ""
+   },
+   {
+    "id": "ca8b168444684cd6bef1ef077f199355",
+    "caption": ""
+   },
+   {
+    "id": "2e0ca7d823e94bfdb9973d70fbbb0640",
+    "caption": ""
+   },
+   {
+    "id": "614a4d844bcf4e0880db355f21deb0f6",
+    "caption": ""
+   },
+   {
+    "id": "7adcb256f6c042ad82471e180ecedcd5",
+    "caption": ""
+   }
+  ],
+  "where": "Belek · Antalya · Turkey",
+  "facts": [
+   "5-star all-inclusive",
+   "4 nights",
+   "Gloria golf on site",
+   "Antalya airport 40 mins"
+  ],
+  "link": "https://www.gloria.com.tr/en/hotels/gloria-serenity-resort/"
+ },
+ "itinerary_images": [
+  {
+   "id": "d35eb41a8ddb43f4a0701323e06f2102",
+   "caption": ""
+  },
+  {
+   "id": "e9248597c7e64e2b9009aad09d618e46",
+   "caption": ""
+  },
+  {
+   "id": "6028d05b757d40e28ad9c5666ac6bd3f",
+   "caption": ""
+  },
+  {
+   "id": "6b5902b1107e4a24b133363c3413223c",
+   "caption": ""
+  },
+  {
+   "id": "ca4b084a93f34a28b7a12c0e191c28b0",
+   "caption": ""
+  },
+  {
+   "id": "4949d2742a5044b49e84e7492a19a703",
+   "caption": ""
+  },
+  {
+   "id": "c7f71a231e8f479fac97fbc6bb02bc2b",
+   "caption": ""
+  }
+ ],
+ "itinerary_extra": {},
+ "team_photos": {
+  "BH": "88d10640e9e248af86b239414393f9a7",
+  "RT": "aa61accb4a8f4949b3ef5f41046934d9"
+ },
+ "team_announcement": [
+  {
+   "vimeo": "810201752",
+   "title": "BDT 2023 - The Story So Far",
+   "thumb": "https://i.vimeocdn.com/video/1637342034-7fc7de8801a271706f37c03c4d72e6aa10f7ee138f5f858ba3de0706afce0e7e-d_295x166?region=us"
+  },
+  {
+   "vimeo": "810198553",
+   "title": "BDT 2023 Team Announcement",
+   "thumb": "https://i.vimeocdn.com/video/1637331778-545734df25583af8ae40a6ef976fb44d0a0f8ffccc4b5cd974d703b56dbe960d-d_295x166?region=us"
+  }
+ ],
+ "rc_images": [
+  "boards/BDT_2023_RyderCup_1.jpg",
+  "boards/BDT_2023_RyderCup_2.jpg",
+  "boards/BDT_2023_RyderCup_3.jpg"
+ ],
+ "leaderboard_images": [
+  "boards/BDT_2023_Leaderboard_1.jpg",
+  "boards/BDT_2023_Leaderboard_2.jpg",
+  "boards/BDT_2023_Leaderboard_3.jpg"
+ ],
+ "summary": {
+  "banner": "de86e02634284ff1a224d1476ea2a035",
+  "title": "",
+  "text": "",
+  "link": "https://www.bigdogstour.com/post/bdt-2023-tour-summary-the-belek-big-dogs"
+ },
+ "video_sections": [
+  {
+   "title": "Photo Slideshow",
+   "items": [
+    {
+     "vimeo": "865543946",
+     "title": "BDT 2023 Review - Day I",
+     "thumb": "https://i.vimeocdn.com/video/1725490372-fc97098f03fcf580d6054fb11f1fb1be053fb732d7fe59d103bec356a4c6345f-d_295x166?region=us"
+    },
+    {
+     "vimeo": "865544102",
+     "title": "BDT 2023 Review - Day II",
+     "thumb": "https://i.vimeocdn.com/video/1725489843-f6268a42e66587f8847570a01c49534906585600a6a9fc4c5b358bd5d21d9849-d_295x166?region=us"
+    },
+    {
+     "vimeo": "865544256",
+     "title": "BDT 2023 Review - Day III",
+     "thumb": "https://i.vimeocdn.com/video/1725489989-2774f9edc2d1619e9bca4840cc2ea3c9691608e223bae7f3e26b00553d2b30ca-d_295x166?region=us"
+    },
+    {
+     "vimeo": "866083447",
+     "title": "BDT 2023 Review - Day IV",
+     "thumb": "https://i.vimeocdn.com/video/1726233986-2109113b0931904ab0aa2bb3c0cc1d83f59b9a4d430a4fe939148498f7486391-d_295x166?region=us"
+    }
+   ]
+  },
+  {
+   "title": "Tour clips",
+   "items": [
+    {
+     "vimeo": "879121505",
+     "title": "BT Playing Sax",
+     "thumb": "https://i.vimeocdn.com/video/1745472179-52db516344da12dfde28e23e336eb9b64a83bae3689e202b1c8e807250b87956-d_295x166?region=us"
+    },
+    {
+     "vimeo": "866097684",
+     "title": "DGC I",
+     "thumb": "https://i.vimeocdn.com/video/1726236262-8416d6ae081bb636713be94a793f5af284c456d7b3619e1c84adc1d7ef03c135-d_295x166?region=us"
+    },
+    {
+     "vimeo": "866097586",
+     "title": "DGC Finish",
+     "thumb": "https://i.vimeocdn.com/video/1726236212-0cd669dfabde714481b35e2d0b7ad77ede4c56159af590f228144752abb037a4-d_295x166?region=us"
+    },
+    {
+     "vimeo": "867265710",
+     "title": "Hulmey Paddy Outfit",
+     "thumb": "https://i.vimeocdn.com/video/1727843051-aced3a2b94e029377251e50910e26f8a9e6d330ecc8de66c82ab9975498d5a82-d_295x166?region=us"
+    },
+    {
+     "vimeo": "866083952",
+     "title": "Ash Goblat",
+     "thumb": "https://i.vimeocdn.com/video/1726217373-98111640e7ad98599307f3f135c9785a27d513309dc954e95989f4bab230f9b4-d_295x166?region=us"
+    },
+    {
+     "vimeo": "879121703",
+     "title": "Ash Out Of The Trees",
+     "thumb": "https://i.vimeocdn.com/video/1745472493-c20b59d4b89f00f65b63d9d783e120e06bae425282563e05e501cd0aefb3114d-d_295x166?region=us"
+    },
+    {
+     "vimeo": "867265646",
+     "title": "Hulmey Holes Out",
+     "thumb": "https://i.vimeocdn.com/video/1727842122-af68077d2549782c332d305cfa51363171f6a2cee6b1d0372b517e8a7f51d348-d_295x166?region=us"
+    },
+    {
+     "vimeo": "872141724",
+     "title": "Little Halves 18",
+     "thumb": "https://i.vimeocdn.com/video/1734987979-e64cc1f3c2402c6dee377d4759b6303d574fd7e66641c9890f09dfe0c6ee5c04-d_295x166?region=us"
+    },
+    {
+     "vimeo": "866097729",
+     "title": "DT New Tour Record Round I",
+     "thumb": "https://i.vimeocdn.com/video/1726236437-c88c8431f8c629309627c95fc528c2ff5c3ff1580033f5358141fc9867c9cd13-d_295x166?region=us"
+    },
+    {
+     "vimeo": "872523310",
+     "title": "Virgin Gets Jazzy Snap",
+     "thumb": "https://i.vimeocdn.com/video/1735615153-1e837dfd5cdb2597d5bc8a36093a4327feb35e2d84628a5dc74a608d6a8e64e8-d_295x166?region=us"
+    },
+    {
+     "vimeo": "872141809",
+     "title": "Hursty Meets Alan",
+     "thumb": "https://i.vimeocdn.com/video/1734987898-b95a2134852d4e94f09f5421bfa29e866a841c72d419a1d6588b8fd5ee53186c-d_295x166?region=us"
+    },
+    {
+     "vimeo": "872141784",
+     "title": "Hulmey Nine Pins",
+     "thumb": "https://i.vimeocdn.com/video/1734987951-c8c83ece928c70f88131772f1f4d415a9dd17774906068b1e4cd0df5e40ccff2-d_295x166?region=us"
+    },
+    {
+     "vimeo": "879121888",
+     "title": "Bean Podium Hulmey Shirt Off",
+     "thumb": "https://i.vimeocdn.com/video/1745472790-a36ca9dbb24d0aace3c7b149824c83a120d9414c32ca7ed2be51cd0febb72671-d_295x166?region=us"
+    },
+    {
+     "vimeo": "879121898",
+     "title": "Bean Shirt Off",
+     "thumb": "https://i.vimeocdn.com/video/1745472814-d1e60bd10c0421ce04527b4363e0093b842d504de20327c44b7dbc9ae93d1946-d_295x166?region=us"
+    },
+    {
+     "vimeo": "879121878",
+     "title": "BT Langers Shirt Off",
+     "thumb": "https://i.vimeocdn.com/video/1745472788-cf56808522a8571888b727d386af540c8fd1985f074302686c3916fe8d6bffd3-d_295x166?region=us"
+    },
+    {
+     "vimeo": "872141737",
+     "title": "Everybody Dance Now Podium Shirts Off",
+     "thumb": "https://i.vimeocdn.com/video/1734987902-07b9395415ec8177ce8e580121ceead3394a0e9d676e0796ceb7e09a5cfcb258-d_295x166?region=us"
+    },
+    {
+     "vimeo": "872141756",
+     "title": "Everybody Dance Now",
+     "thumb": "https://i.vimeocdn.com/video/1734987906-5c0586533216c8ff5535685aff7089d7f59122aea91e2b213031359ed48a0c1f-d_295x166?region=us"
+    },
+    {
+     "vimeo": "867245202",
+     "title": "Freed From Desire",
+     "thumb": "https://i.vimeocdn.com/video/1727814192-874b90b605da471e5b1251d1e0479be835926e1739d9565411219e272233cf87-d_295x166?region=us"
+    },
+    {
+     "vimeo": "872141792",
+     "title": "Hulmey Ravo Dancing",
+     "thumb": "https://i.vimeocdn.com/video/1734987889-b327db7ddff57c7ee826cb06abbfc93b880f08d6b1f11383529bd8fd363d006c-d_295x166?region=us"
+    },
+    {
+     "vimeo": "872141831",
+     "title": "Langers Ravo Dancing",
+     "thumb": "https://i.vimeocdn.com/video/1734987998-1a119a9a4900910e89d8a67bdae8af6120e3582724c45075b4017d1fefb415c4-d_295x166?region=us"
+    },
+    {
+     "vimeo": "872141843",
+     "title": "Langers Ravo Hulmey Dancing Pink Floyd",
+     "thumb": "https://i.vimeocdn.com/video/1734988434-8cd6af2b87d963015c2b47d3398b982807d43f7ee99b4e72af735f81380c51fd-d_295x166?region=us"
+    },
+    {
+     "vimeo": "872141863",
+     "title": "Langers Ravo Hulmey Dancing",
+     "thumb": "https://i.vimeocdn.com/video/1734988066-42b269598a6fe63170f6a23da875b9a6462bf9f68533b8324686cd148b74336b-d_295x166?region=us"
+    },
+    {
+     "vimeo": "872523280",
+     "title": "Rob Podium Dance",
+     "thumb": "https://i.vimeocdn.com/video/1735615131-7de1ae65cc2eb3a0c5c453e3542e87cf0ee4ce29b6b59c83485b3ae997f4487e-d_295x166?region=us"
+    },
+    {
+     "vimeo": "872141818",
+     "title": "Hursty Stage Speech",
+     "thumb": "https://i.vimeocdn.com/video/1734987984-2ccb9c99fc0916eb46fe5eeb82c2e0b7efb4df4fa8feaee1d4ccbb0272549300-d_295x166?region=us"
+    },
+    {
+     "vimeo": "872523243",
+     "title": "Monkey Dancing",
+     "thumb": "https://i.vimeocdn.com/video/1735614996-189d8e02647082521a18c3ce38a338031e6208750bbb3b5b25c95e4af398bd5a-d_295x166?region=us"
+    },
+    {
+     "vimeo": "872523847",
+     "title": "Boggy Boysie Jogging",
+     "thumb": "https://i.vimeocdn.com/video/1735615888-7b4456eae0144b2ac1d005e4df136a8efac0e56cff32d30bb39eefe108845a92-d_295x166?region=us"
+    },
+    {
+     "vimeo": "881785516",
+     "title": "Virgin Lives It Up",
+     "thumb": "https://i.vimeocdn.com/video/1749545630-b7b50c88225989b2b25c7bacdacb96858698694c13159349d195790c95a001b3-d_295x166?region=us"
+    },
+    {
+     "vimeo": "881785535",
+     "title": "Wake Me Up",
+     "thumb": "https://i.vimeocdn.com/video/1749545623-eea29ebcbc963a0dd09d2ad0dfbb976bd618d00b655c27859bca9963ecfb2b95-d_295x166?region=us"
+    },
+    {
+     "vimeo": "872523765",
+     "title": "Ash Drive",
+     "thumb": "https://i.vimeocdn.com/video/1735615666-b32c225697bbf5fa60a1174d4ecebe61e366cd903424ba78663b2e4ffeddafee-d_295x166?region=us"
+    },
+    {
+     "vimeo": "872523781",
+     "title": "Bean Drive",
+     "thumb": "https://i.vimeocdn.com/video/1735615716-e459349c10ad7a88249d9e6b54680bec1d1efda0ed53fca3c9905e389f8a6f3b-d_295x166?region=us"
+    },
+    {
+     "vimeo": "872523877",
+     "title": "Boggy Drive",
+     "thumb": "https://i.vimeocdn.com/video/1735615802-24e6fc481cdc4157cf0b4d8f7b253a9c08f3011301a0cc9c25b6cf9de5f03de3-d_295x166?region=us"
+    },
+    {
+     "vimeo": "878947122",
+     "title": "BT Drive",
+     "thumb": "https://i.vimeocdn.com/video/1745155802-a579fce7a53027cc3fb6b6c697022cab701cf8befff660aeacd7d6e6f72ec5ee-d_295x166?region=us"
+    },
+    {
+     "vimeo": "878947138",
+     "title": "Buzz Drive",
+     "thumb": "https://i.vimeocdn.com/video/1745155800-30d7fce8cbbf72f35ef4e53365110978723502c7e8f0e995610887b01b500006-d_295x166?region=us"
+    },
+    {
+     "vimeo": "878947148",
+     "title": "Charlie Drive",
+     "thumb": "https://i.vimeocdn.com/video/1745155871-36cb3ca9953521de5c29499859b5f32c68b3df9036b12ed7a5570ecd62c49a24-d_295x166?region=us"
+    },
+    {
+     "vimeo": "878947172",
+     "title": "DT Drive I",
+     "thumb": "https://i.vimeocdn.com/video/1745155895-d8adf6e39ad54b9fa63eaa58bef8e568b00dfb061eaf66a7f7beff0cae936824-d_295x166?region=us"
+    },
+    {
+     "vimeo": "878947184",
+     "title": "DT Drive II",
+     "thumb": "https://i.vimeocdn.com/video/1745155894-35d1f3cb557a3ce0dd1f85ab8b8e9d2dee04ebc42cc4f8345d3607ec52fbbb19-d_295x166?region=us"
+    },
+    {
+     "vimeo": "879121982",
+     "title": "Gav Drive",
+     "thumb": "https://i.vimeocdn.com/video/1745472927-2c11fc92436f0e53f7d3cee39ceab4967f442d127cf35cbfd1138c2af32c7447-d_295x166?region=us"
+    },
+    {
+     "vimeo": "879121974",
+     "title": "Hursty Drive",
+     "thumb": "https://i.vimeocdn.com/video/1745472935-ef64f843fb861571375ae115d2907347381081790c7dd898023eda21a2310307-d_295x166?region=us"
+    },
+    {
+     "vimeo": "880121539",
+     "title": "Kezza Drive",
+     "thumb": "https://i.vimeocdn.com/video/1746969718-a36b4d664861c7da474fc7aa35b1c616886bdfe0a56a6d1152d93068004e67e7-d_295x166?region=us"
+    },
+    {
+     "vimeo": "880121644",
+     "title": "Little Drive",
+     "thumb": "https://i.vimeocdn.com/video/1746970837-49170f43b17fed51b7a68a54a7c0c31b2ddb3e0f9ead919f2befaf48ad8c3081-d_295x166?region=us"
+    },
+    {
+     "vimeo": "880121675",
+     "title": "Marshy Drive",
+     "thumb": "https://i.vimeocdn.com/video/1746969509-2de47cbd519e27605ac971f2aac68e3fd50327e07c18915f70526e64cd71fbea-d_295x166?region=us"
+    },
+    {
+     "vimeo": "880121691",
+     "title": "Ravo Drive",
+     "thumb": "https://i.vimeocdn.com/video/1746969342-4a3a520e9b678f241e0e996e245bdcf03d4fe3f343acfb18be23b635f3b4fea5-d_295x166?region=us"
+    },
+    {
+     "vimeo": "881785423",
+     "title": "Rob Drive",
+     "thumb": "https://i.vimeocdn.com/video/1749545327-0910538c7012702baf42861b79a24ccc7f0bca0c4b3d12987f65bf1d11cffacf-d_295x166?region=us"
+    },
+    {
+     "vimeo": "881785492",
+     "title": "Tully Drive Hulmey Chat",
+     "thumb": "https://i.vimeocdn.com/video/1749545489-9f12dd0b394cf5acd1aae1ab7cb8a4b2bb60bce5772d0a227d8a97892bc4ed32-d_295x166?region=us"
+    },
+    {
+     "vimeo": "880121557",
+     "title": "Langers Necks",
+     "thumb": "https://i.vimeocdn.com/video/1746969447-8085c8c9f56f504a3d96bff8078f6f0d05e32ff5330d2a671ba57d73b8ff738a-d_295x166?region=us"
+    },
+    {
+     "vimeo": "880121706",
+     "title": "Ravo Into The Water",
+     "thumb": "https://i.vimeocdn.com/video/1746969409-feaead9e6567bf352b0239db04251f79697160eb41a46f5fd25475c0c1da5bba-d_295x166?region=us"
+    },
+    {
+     "vimeo": "881785409",
+     "title": "Ravo Pants Down Drive",
+     "thumb": "https://i.vimeocdn.com/video/1749545404-5c42889781a8aa5963d62932202c7d5755545803e7776f59fe9f9f237e000435-d_295x166?region=us"
+    },
+    {
+     "vimeo": "878947099",
+     "title": "Boysie Pants Down",
+     "thumb": "https://i.vimeocdn.com/video/1745155748-511c9ee0134b048c9f184e6b28a9c1d8165ebe720823d46906d2533001d16c1e-d_295x166?region=us"
+    },
+    {
+     "vimeo": "878947106",
+     "title": "Boysie Trousers Down",
+     "thumb": "https://i.vimeocdn.com/video/1745155752-1a2a74f88c2512a13718f456f714291fb0f64c75cc5874d61d294ff6ca8bd1b5-d_295x166?region=us"
+    },
+    {
+     "vimeo": "883732872",
+     "title": "Langers Waiting By Water",
+     "thumb": "https://i.vimeocdn.com/video/1752489093-27b52b99a7da84e56679b0b907e36ce452db95ddbbd2f3faadb7b7bae23b1cb2-d_295x166?region=us"
+    },
+    {
+     "vimeo": "880121580",
+     "title": "Langers Water Shot I",
+     "thumb": "https://i.vimeocdn.com/video/1746969933-ef4ee02bc1b4a97ffb6a880c66f80164922a5f66443d1f7c2c2040f330778d7e-d_295x166?region=us"
+    },
+    {
+     "vimeo": "880121617",
+     "title": "Langers Water Shot II",
+     "thumb": "https://i.vimeocdn.com/video/1746969542-7a05bf1858183d1fe0268b4e637aa6e26006db1a31bd0e43556ac7e1c610c941-d_295x166?region=us"
+    },
+    {
+     "vimeo": "883733155",
+     "title": "Marshy Decent Three Wood",
+     "thumb": "https://i.vimeocdn.com/video/1752489487-6bfa7077f55ea75c58fb7b791254605b30ae67f68e03933f47ccd7575220e25b-d_295x166?region=us"
+    },
+    {
+     "vimeo": "881785616",
+     "title": "He's Putting From The Hazard",
+     "thumb": "https://i.vimeocdn.com/video/1749545718-4183f8e02c4c04de25359e400c6e9ce2b5e9d0d0f34f50a59991345f72eae57d-d_295x166?region=us"
+    },
+    {
+     "vimeo": "878947117",
+     "title": "BT Dorito Jenga",
+     "thumb": "https://i.vimeocdn.com/video/1745155767-33e725f13fe3881ab560dd2ac7e9a6f669e51666c5f25a1065eeeb118fe20737-d_295x166?region=us"
+    },
+    {
+     "vimeo": "881785475",
+     "title": "Sweet Caroline",
+     "thumb": "https://i.vimeocdn.com/video/1749545518-57a56557b835b033fb379da8eb8bbe22fbc499cc8748a41d6f5943e5fe5025c4-d_295x166?region=us"
+    },
+    {
+     "vimeo": "881785444",
+     "title": "Robbo I'll Probably Win It",
+     "thumb": "https://i.vimeocdn.com/video/1749545389-0870f3e69678aceaf36642a69b1ce4bdac4b62677e53983661d577ca23a9c171-d_295x166?region=us"
+    },
+    {
+     "vimeo": "881785456",
+     "title": "Robbo I'm Gonna Win It",
+     "thumb": "https://i.vimeocdn.com/video/1749545580-dc6c75f26b47c10ffe3156e3cfcba106a1961c87f827dbf1cce2c2e0fe694ed1-d_295x166?region=us"
+    },
+    {
+     "vimeo": "872523800",
+     "title": "Bean Solo Dancing",
+     "thumb": "https://i.vimeocdn.com/video/1735615772-bb13cde146970accba3f666d4326ab68279b554af79b131d8d05d80232f40106-d_295x166?region=us"
+    },
+    {
+     "vimeo": "872523715",
+     "title": "Bouncing Dogs I",
+     "thumb": "https://i.vimeocdn.com/video/1735615639-8f48f0f0c685516fa39d8df9bbd284117ab8b5250c6eab58212f6f69ab5204e8-d_295x166?region=us"
+    },
+    {
+     "vimeo": "872523739",
+     "title": "Bouncing Dogs II",
+     "thumb": "https://i.vimeocdn.com/video/1735615655-52535bda9cb2471ef004d3f03ee32efb1b6e64523a697229f21ea55a70702b8d-d_295x166?region=us"
+    },
+    {
+     "vimeo": "878947130",
+     "title": "BT Stilts",
+     "thumb": "https://i.vimeocdn.com/video/1745155779-200a124fe78d6ce6fee3fea9173d8d9321dcdddf64457cee694bae13d751ac7a-d_295x166?region=us"
+    },
+    {
+     "vimeo": "878947155",
+     "title": "Dancing Dogs I",
+     "thumb": "https://i.vimeocdn.com/video/1745155890-e3b1191e5ec92a8e131718744dce62393c22804050b6f5722f130f1539218a4d-d_295x166?region=us"
+    },
+    {
+     "vimeo": "879121993",
+     "title": "Gloria Night Zone I",
+     "thumb": "https://i.vimeocdn.com/video/1745472952-1a381eec9a68c9c1dfe36611aa8ec89fb4e1af7796098bb93b3df8acbf673f9c-d_295x166?region=us"
+    },
+    {
+     "vimeo": "879122005",
+     "title": "Gloria Night Zone II",
+     "thumb": "https://i.vimeocdn.com/video/1745473023-6da31467288bc6643a1cad393e01164d46d0de535de185c5809e9816f8bdbf35-d_295x166?region=us"
+    },
+    {
+     "vimeo": "879121953",
+     "title": "Gloria Stilts Scene",
+     "thumb": "https://i.vimeocdn.com/video/1745472875-fb95406f7989ffe3e5140418c648e7519ab4cda5101cb108434acdc39bff1c35-d_295x166?region=us"
+    },
+    {
+     "vimeo": "880121522",
+     "title": "Hursty Stilts High Five",
+     "thumb": "https://i.vimeocdn.com/video/1746969020-f51517da2b86cc6738798cfe8b4968e976c3ec775bbcc9f61864f9a36f2fa7cc-d_295x166?region=us"
+    },
+    {
+     "vimeo": "881785554",
+     "title": "We Will Rock You",
+     "thumb": "https://i.vimeocdn.com/video/1749545592-cbac065317bb223d9cee323747caf87d6523d9d93a9fce076f262e1f784b07dc-d_295x166?region=us"
+    },
+    {
+     "vimeo": "880121660",
+     "title": "Magic Mike Does Fred",
+     "thumb": "https://i.vimeocdn.com/video/1746969263-e7a5335c439c0d1f0699d3a4590f4ff74fc7388aff3168d86cde9f677de285df-d_295x166?region=us"
+    },
+    {
+     "vimeo": "883028549",
+     "title": "Knoxy Missed Putt For The Win",
+     "thumb": "https://i.vimeocdn.com/video/1751341126-88698589540936d58f1a0df7564c45eb8847c1195750be2137c76b0c6966b8e6-d_295x166?region=us"
+    },
+    {
+     "vimeo": "883028764",
+     "title": "Langers Missed Putt To Win RC",
+     "thumb": "https://i.vimeocdn.com/video/1751341110-3b995a9ed8eb6b13b0b5fbd4dcd2688a0570dc3f82bdca7c1b804797e1d584c8-d_295x166?region=us"
+    },
+    {
+     "vimeo": "883559205",
+     "title": "Robbo Putt To Halve RC",
+     "thumb": "https://i.vimeocdn.com/video/1752166281-2a479f1df519aabe61a6b68c2ae105466980787159c9238f6af6ca4a5dcd2ea8-d_295x166?region=us"
+    },
+    {
+     "vimeo": "883028003",
+     "title": "Boggy NTP Play Off Shot",
+     "thumb": "https://i.vimeocdn.com/video/1751340550-6c904d8382cd4b4644c0b09c87eaec4d5837147ca51c546b5cfe1e2e8e08d301-d_295x166?region=us"
+    },
+    {
+     "vimeo": "883028844",
+     "title": "Paddy NTP Play Off Shot I",
+     "thumb": "https://i.vimeocdn.com/video/1751341282-30f4148061e91cb13d7178a8081dd91e38e62d47785a1a6d791cea9ffc337195-d_295x166?region=us"
+    },
+    {
+     "vimeo": "883559221",
+     "title": "Paddy NTP Play Off Shot II",
+     "thumb": "https://i.vimeocdn.com/video/1752166240-aae1805151315d292952eb9c046a297b4f9ed305003494b5b3c46f396d2f6629-d_295x166?region=us"
+    },
+    {
+     "vimeo": "883028507",
+     "title": "Hulmey Awards Langers Goblat",
+     "thumb": "https://i.vimeocdn.com/video/1751340768-4f8ccfd429602d69205ff2b8ae3a694528e5480cdc4e712fc2f603e6feb3bc54-d_295x166?region=us"
+    },
+    {
+     "vimeo": "883028793",
+     "title": "Langers Solo Dancing GJ",
+     "thumb": "https://i.vimeocdn.com/video/1751341261-15b2eca55254bc9ecadf5cc8b022ca50f4684c9f32ef0fa5e2c0b9a3e7f21e45-d_295x166?region=us"
+    },
+    {
+     "vimeo": "883559136",
+     "title": "Rufus Lauds Langers",
+     "thumb": "https://i.vimeocdn.com/video/1752166233-07cf6e6829345cc55e1ff77371a625a654499c1f1be836cc61f70f516022bea8-d_295x166?region=us"
+    },
+    {
+     "vimeo": "883028626",
+     "title": "Langers Champ High Fiving",
+     "thumb": "https://i.vimeocdn.com/video/1751340884-68f2e9d5ab7ee6cb43b7b2b9433914f70a86dc67168f9bf2167a0b94ad2acfab-d_295x166?region=us"
+    },
+    {
+     "vimeo": "883028653",
+     "title": "Langers GJ Dancing",
+     "thumb": "https://i.vimeocdn.com/video/1751341193-d5918b5d8e0164b9e57127674054840604b22c69ba0a4cd3a6b9d6f720b567b3-d_295x166?region=us"
+    },
+    {
+     "vimeo": "883028596",
+     "title": "Langers Big Crow",
+     "thumb": "https://i.vimeocdn.com/video/1751341452-12c1d716aa5a1c8818fece7df06593fbdd836dc80c20a0be314e64489b5dee8d-d_295x166?region=us"
+    },
+    {
+     "vimeo": "883028693",
+     "title": "Langers GJ Swim",
+     "thumb": "https://i.vimeocdn.com/video/1751341094-1594983823f01ea11df16fb462dea6593b121a1b4dfa441c9db851afc7744e44-d_295x166?region=us"
+    }
+   ]
+  }
+ ],
+ "gallery": [
+  "c13bec836bc54ab5af879126130c3293",
+  "3e6a518852534171b6046916e3c9af2b",
+  "fb8edac510c7457fb9fa9a9264ee298d",
+  "607388d326674ee0b2e9551fa73581e5",
+  "98e51711983a45b19471268529aa7992",
+  "15f255536682460791384759fb668eef",
+  "a8fa9a58b03945ec8f431567e6e2201b",
+  "15cd0bfaf4654d278ea412cd00417900",
+  "4e6cc6125d3742b8bc237c265523bd99",
+  "dac4b5bbe8db40b3a954b6d767e711f0",
+  "bf2eca8f6708489a9499e94b20ca49eb",
+  "0f429c2bedc64a7fb8ab198abc1c5f4e",
+  "9af3fca5db454aa0884a57f1fe9811cb",
+  "14519752ba7644b8b79c29396f24eaea",
+  "a2601ac66b424ee7aaa3563d03320069",
+  "57840e45c8dc4b31a083189fcd4ecc02",
+  "198b0ca1ea1b4e509840cac092dcb734",
+  "9e46d839895149d5b70dea1f34f492d9",
+  "2ceaf08739e3483ea2560446eecb1340",
+  "6d5f1b19b68741af9694105219245c9b",
+  "e3717d91c7ba4a8da3cc79c8b16cd17d",
+  "979333ad546147958dd80b4a93828b68",
+  "1ba0ae73ad974b17a5d243ddddda9c39",
+  "1b6243b3452a4b5f9897d306dbd8c01c",
+  "b13b7ce450bb4236ba25ebbba80acb4c",
+  "08ad2c9f5c5e40d8bbf728d662906a65",
+  "41fdfe2691a949f59efb65cb268707d5",
+  "2251ee09221a4f3c977deef661a30aa7",
+  "13dfc81ddfe44c17a423d5e48c5f01c9",
+  "79d1507622084e65924e2859a6db28aa",
+  "d21270f251f34b608419908049814779",
+  "c9ef99a60d924c0599c1f5a36e432a1f",
+  "ebd96db3d90a472f8a2cea07fdb537d5",
+  "fce0de1e614740c9bcbb21484d055a30",
+  "3e88ce2027af41e5a4f6964b78558c8b",
+  "7057f90f7b1844989bcdf5da312cb146",
+  "dec41dcfd9674492bfba19044e4b6f37",
+  "b3988042ad6b42ce9231a8203ed043cb",
+  "4e1528a32539437ca6faaf8c2744018c",
+  "690f3cc84e2b48a89fced902ce7647ff",
+  "4aad5a25c78749da99092c91e63c5651",
+  "7d7eaa46463746e3a24f6497eaecbb60",
+  "16b9fc6528544717b42e21ffa8b81be8",
+  "c0f67b0245864ee5b3718091f0ac681e",
+  "33958637ae304aac8b3296b392bd6cc3",
+  "24bd8e17b2874a458bdf2c6cb51b6235",
+  "992dc8de925c417ab92a165ba71da8c6",
+  "4b56335dba904a13a986b9fa1b40c488",
+  "9a4c6b0b34314d29abc9e4ead38c5f94",
+  "86354079f4f34cf0bfea45bb3aca7826",
+  "e0fe913c0c014c95a1e7d2973bb55751",
+  "898e77810bbc43cdaf98175c0352c5aa",
+  "1cd271926d1141028f091787048f4c68",
+  "868a7c4978ca42fda06b6dc2b5921720",
+  "b7a0e067f9424c7a9cc80ef7745e4df2",
+  "84a4ebe131e74092986dc27f86c48139",
+  "1f5beece3d914544ab7dea9f245fae74",
+  "4f4db255171f4f458260d4832e12cccc",
+  "024b3c262d0d4d23a22adf361054b339",
+  "75740c1c195f42b18cf8c04e3e3078f1",
+  "d2eab4d9aca1466996ca4d014684b8e9",
+  "eb09ef23d54e41b896f3dfb1cbf1c875",
+  "873eeec72e79424281848ccfe6e4f3c7",
+  "8d4021f481504efea1c44e626ff771d5",
+  "fb6d14e726be4884b917b0926a896ab7",
+  "28d43e1e42764e4886b0b3bea171c883",
+  "4bb60ddf832a4f968c789f5f6e959d1b",
+  "e4155287b8b44d5f899f62f49ea17350",
+  "8702ae27eede458bb6f1641ddd652d96",
+  "821d2873c68d41bca01dd72a44bd2002",
+  "de71ef97782b4bb89b9f22663887b18b",
+  "6f7b4ebca4244be28402e383fc446218",
+  "abaa3c0d1e2a48fc911d3b493f36973a",
+  "fd907dfc3b4744d48c2044c698fb65f3",
+  "90cadc8630624042bb9acfa1bf119a89",
+  "5b928c8c9330445b87b80646a0c4ea00",
+  "5ff1590bdac84d89bf4c192a4018f888",
+  "3491a01d722c48659bc5c932acd49f8d",
+  "e89bd6004052457c95cc0c02775f51cd",
+  "983aecb82e42425b8d51838555568b28",
+  "ac5a297506184d668859a31e8e25103a",
+  "9847b9b29aba47b58600e81c6b599952",
+  "208a39df44434e97b9e7eec1fb68c5e4",
+  "5e8e3b8428254cbd8839819f423ecd0c",
+  "36ce69dc5cb449a695e18c61c587a29e",
+  "20dfd2f786234f8e9c50544da1ced143",
+  "ba248ae2c4994f448bfba0804d851c51",
+  "79f4a4cca98e4188bd32f55090fb16da",
+  "bfe2d963af5e40b49f84d7dec91233fe",
+  "c5c4626059434c70ac1d6d66876280bf",
+  "90f3e4f8adab46c0ad69d0282783c28e",
+  "339e4d78a57c450788e4693c2b000087",
+  "1c928facbc34439690b21905a2424516",
+  "9d8dce7f66d744ccaa6696614f989bce",
+  "e7d226c7783643d5a7232da9579ab678",
+  "dfb2b7a7416d47339cba41cbc05ffeef",
+  "74177c34a8b34cd5bcf594066dcdc376",
+  "caf215d00e664ddb8d0888c275a8c157",
+  "bda5ff26ab674260bd901419d4ce96b3",
+  "e93b79acc3b34fc1be45456ba852ca0c",
+  "6aacf4f658fa493481c37f46572d2600",
+  "d819990a437d47a4a7d15841a5255991",
+  "7fb1d9cd915845db9bd081331922d5c7",
+  "789b75734db645c09734015dfaf3b536",
+  "e074e5ad931547b188fff15cb741aa4b",
+  "3cb14841008f4c4e802a205fadbedbc6",
+  "7427ccf136b34388904e748b3c3bdf6f",
+  "5f26923560244c169de8716a684c3a0d",
+  "e92e19c8ac8f41599cf6aab80e2b3d61",
+  "cacf152acc7e435c8b6e5117f84064ae",
+  "f8c2b704e346463db6c89a855dc5313e",
+  "571c15c9538e48f0adf584a366b5ebce",
+  "1e5967bdf1354e3199e9f6befa25c9bd",
+  "5f6c63ddc16241df9a5b88db777fa887",
+  "5c937ec22a074426b577c0b2fb6fdf25",
+  "f41fcfa4692a483d86a479484ec03524",
+  "50beac680be645eca43933972b3963ef",
+  "f5a2a941de38476e800c61f8711c68fd",
+  "672c371412c041f88d5665e0ed337633",
+  "9d238d9c73bd4f07bb139bab36e40f70",
+  "55406271060e4260a60b29ff8d22359a",
+  "26e4c111d68048bc91d5be562f9f1735",
+  "1649ad7a68ac4dab81c32cd16a135864",
+  "c1a46d488d774d2097011bc5dbde2436",
+  "e98bd62add9140a0b28a6ec103ae0d31",
+  "3214723baa4044baaadf241f1623ae4d",
+  "4a306c726dbe4f8384e37f3aa0618127",
+  "a0d4e19c23bf470c97ca052ef9062e64",
+  "884b349bf1e840338a9cd2544a6d4177",
+  "47bc05cf2b6c4f7abe8d34dbe90fb0cc",
+  "e05e68a2133a4bdfb6581ec893cc6992",
+  "ba0ac375acf5486dacbae78cbcd005a1",
+  "9c1389d285aa47f581642c001380fe36",
+  "1f569f12b9c54b90976dae1604f5a66f",
+  "f263d9ac4f54496d9f3468327a369798",
+  "1bdda11e794c4e44ae48c8083d0d9d1e",
+  "d86112d4f8274b3d91f316ebed8516b4",
+  "b9c582bf2b104d0ebab2081c40a5c351",
+  "15114ddb259c4de19ea4b32bc283015e",
+  "86cec491b82a499ca6815158b7af8063",
+  "cad94e17bb31485fa646664cc010734d",
+  "b19051dc75924eaea2eef73faf96a067",
+  "c103a072d12b4a808fe1d3eda275c70f",
+  "392cd89072fd413c980245b8289c39b8",
+  "d4d8f5e5bcf848b0b3e2331e6f3b20e8",
+  "0cec1e04716841c28372e193d203bb11",
+  "169df932673e45f09b2af60ff484c9bc",
+  "ecf6101b48eb4834a5c2300e276e1c0f",
+  "707c62ecd427473caccb7c4bd5409a07",
+  "be85e96ac56f472ea66f0f4a2da4394e",
+  "ad3b95a4cab840a7a932537f104218d5",
+  "fa10e9471f7c4103b08e93f6cfd91f08",
+  "e027cb5e5b864e1a8bf1fe6a8c58e189",
+  "a6179fb9bfff4d19a7dca909abe304ae",
+  "bf6a9e56c6c044cebcd5f1815d283a8f",
+  "e69eea6e9c064c769bc1e4b07e44d4b0",
+  "7796df0e9a4f4101a498b557afacfcc9",
+  "1513e19c4a654c45bada12cc6859ec7b",
+  "625350204af84a1f91aeca78b416ebe5",
+  "447b5bb98e7548cc83f27e197158be12",
+  "d5b95362c4564ed18a6bb8b5c8a78e72",
+  "78a5ed58f6204eb0bfa04faa6a2609b4",
+  "e19aa33d3bac4aa4a17a24d9065848c8",
+  "11599f0993f74ec2b42c35352d7dc731",
+  "f1a8026ebd54423bb09502e3d2522132",
+  "ec7dbabd8c9c4fdc8045654612052f5e",
+  "7434b2325426491ba5ccba03f330c713",
+  "877edcff844b47d8a0762170c5584d4a",
+  "a9540b62ddae4c2791c6f4ef8cd8e10d",
+  "dd467e3356d044a791c408aba1dfc2bc",
+  "13d9659e938345a3b111bca16fadfabe",
+  "e115e5ac821b4e269d6c77d6ca0cdb45",
+  "07d3df807b7245518ccffd5e28441cc2",
+  "9d0eed648dbb4751ad7bdc680e5999b5",
+  "b9eb9ce1ca99404fa72cdee8b3a91a61",
+  "bd64d8d1cea64c2c921c09a3c4f0da4b",
+  "605d2b05d399434a80d21b59b2417586",
+  "6a8b9eca9a394743a5b238b3739211dc",
+  "ed3dc782e78f433d8256036e55dbb95c",
+  "bdeb0bcb969f497ea0e4613035f9b63e",
+  "bf598593603243a89079d7d12c14bf8d",
+  "cafc302c0c0842beb3715cd2b91d9502",
+  "10ed191b9fb54b02abe6f99a1038be9c",
+  "760a86520e774fa38927aa3176742b03",
+  "8f45325945e84701b444869bf1a26921",
+  "1444e192ca5c463e97c07020b10a1b3f",
+  "dcd4e6eaab2a4e25a472fb005b6b2a55",
+  "7c2d5e56ec034922a73446a0b514342d",
+  "1ae12febea7a40c9bffeb183e308f581",
+  "1fde3539448d47a1a2538e7a47c8a4f2",
+  "18e01eb58a644a008c886e7ec32095da",
+  "140af349fb4d4156a580ef0c594dde55",
+  "29fd3d9571c143389387c58b6c3aa1f8",
+  "878ab14f23a24027858198136d9838f0",
+  "8a6bd866a8ec4b84926a83aaff22af8b",
+  "848e8c348ea849b29e216c6f25cf3068",
+  "15558dc76ff34a70a569c5b8fd83bca3",
+  "d2e742b4351a4abba6535491b8689964",
+  "768573e90e9f4ea7a27fbd90495aab4c",
+  "8bce9221c07a4bd1be99c2c131cb5a0d",
+  "653ee550fcb549ada6b62de78daac25a",
+  "bd18ec67455a443495d8f7969cb03335",
+  "02324ccb33834d5d955e0b0bd3ec1d4b",
+  "fe50b1db59934359a5d881f70e8ebd91",
+  "9daac0c49a9149a3847f5d8cc4a82991",
+  "780f3ceaee014728842ef9c7f07837c6",
+  "d8029f16aff34c98a02b75d8c26fb236",
+  "6c7d1f9ad8c440009bf85e60b443bb78",
+  "1ef8bb194ae5457a8278aec367c3b331",
+  "82c15e8714834c59a137be678704496d",
+  "507d155865d6450da2b75d7db636436c",
+  "6754d444e16e4374a1c59d0bcef01a72",
+  "0353b500b2ab4de2ac77304a6e78d434",
+  "3e7259cd486247e595f78edfbc8c464d",
+  "c8e448cdbe5d4c8d90de9a757b0ee23f",
+  "4f434a315845413db3d7c58bbd76fcd4",
+  "5e51edfd652344ce98fe1f5f56254736",
+  "c7698901fa0b4e73b346935564da5a85",
+  "ca03c9f2fe554da0937ebf5f6c5c8485",
+  "36b59d61d469462c9d23d08914961e4d",
+  "0196ad9c23b048189e384328f02a7a3d",
+  "78db2115b07c4176894207f6a33b758d",
+  "a6b7c0ba9d764e37be5eed7e53460492",
+  "4063cf197a554dae9258d279cfa0f9cc",
+  "e3cf3d441ee84a06b15a9897047fd4ef",
+  "64d7332f992b44e7b751656534bd91e2",
+  "cf9aaba7b5c2423ba82c3e605b7c1697",
+  "188a3f8a39dd4ea5b879df8d0daca537",
+  "c46910e65dbe443da8ed9f0896d1b0f1",
+  "4fb9cb3defc5422594a532b671ee8155",
+  "f8f2c0a4243d41e2916e8b87c6619add",
+  "f14f5d01737842d9b3bbdffff7410bd5",
+  "d236633df374459b9b76815d844d8833",
+  "28613e6999884a1e821329a0a64c7c92",
+  "48465b734415484ca61c8d728dbcdfb6",
+  "2689035e044b43d7b5726eeb7633df76",
+  "a15b26d36f99410c9cc84a5fd6357bac",
+  "ea37f7b95530462e96cee25e4a092a3f",
+  "96afed65b1594aa79bba3d5d2ba04494",
+  "21393059309441d6ac3a23beb40b30e7",
+  "b5333d000a5743aaaa5762d3a8896943",
+  "1639f8f782ff48318f3e2cd9831bae2d",
+  "98b88f0cd1d443ddac31f30d0604c2d7",
+  "67e50ec29f6c45f6885edb73d756ae0f",
+  "03b45c4a3ca34982819dff0849fcbbea",
+  "ae896da133734d6790f7df79ee9a930d",
+  "81e88b2bfee0435ca67814415795c85a",
+  "230dd3229e164431b30e3ca12c0d9859",
+  "f615987e46f14b478c585a98c4c7d55e",
+  "44e304f641234ae18347c84f7c4a8ae2",
+  "19ceddf469d14f949e0abc71f520d90d",
+  "bd4fe0450f9740a9b9d6f3a7448933ac",
+  "6830f9d8e41443c188f175e706a785ba",
+  "46607332ccd24e06acd2a08f067da1dc",
+  "b92f58af9e29445d9f0f149a21dc7766",
+  "79ca37b88de6436f83f1ba1697f2c0f5",
+  "cd557e2844fa48f7ace6aa33b3f4c460",
+  "a7544da225ef4c03b5053f9aa3ccdd37",
+  "455b1872b4ca4943ad6cbe2764294d0b",
+  "dc5c32f8de684710a6a359ccf0d67504",
+  "0483e534ce0f43bb94677f764c6e6ff6",
+  "e3158cc29f6749c888a63257f5277905",
+  "15d2d6981c0f41659c32b19e9cf2de0c",
+  "97d010079c0c4d7298446649c0227e4c",
+  "969c63039266408d93571e5aa6463dfe",
+  "3869e7ab026d40869faf82db22ddbb62",
+  "c281436ba0d642c4a16a4d004af4274d",
+  "566a4607306e4805a69c4d4b6da643c0",
+  "3681651888074a1180580f6aaed66b9b",
+  "f2e9762d8e9d4554ac35b8ec848a71a8",
+  "3428ba5043ef46bbb66b5434171a0ab8",
+  "4c1651b2a91e476f8f5e16230919ee56",
+  "ec613cd87afe4c0ab8601877682a4af4",
+  "687c50d6354543bb9fbdd6f84cf0151c",
+  "e676776232594ef99df3d4088bc5699b",
+  "8602b5d0fddb47deb3d1bc014ac61183",
+  "e6a24e1b32ec4c9091998c6ab5738e79",
+  "61d8e2a8d0ea4432850e3b9e07063eae",
+  "3f4b1685740b4aecbfad7f4b5c871088",
+  "76edcb535ae94b9d870b2a8e8ff995d1",
+  "4b15abb6bfbc40b681adfda2812bace9",
+  "2469b81d72c646f59b9ba168c1a0f777",
+  "8455059659704879b202a0113c1fc474",
+  "a92374923a3642c3ad04a384f2154164",
+  "16aa2bbaedfb4158a906658db81baaf6",
+  "8ccb2b65250a47d095ff0a745b719b7c",
+  "3a69348980fe4e98af6a3f47c36a917d",
+  "df821d3385ae498d85b87c85411b08f9",
+  "6106f33158f844d08110f045681c42c7",
+  "21ed7a05200242eba66f75c0942b9d86",
+  "d7457f81bfa54356b3dc734bd0e4fcdd",
+  "453588f0358c47cd9bfc51890268c45b",
+  "c23b346414574e86b25988f4ad6f1f88",
+  "564ea99292d14aa4ab31826cbfa21816",
+  "33bee6e068a844a686fb7d1b1f90b69d",
+  "04c8f5f4ffa3441e8c9b9640aa15d5e3",
+  "131f9cd37a6840d89ab244d7c52a74ee",
+  "884100c001a347e58a010b38eb43dd47",
+  "a4ed1532031e4e2c941c3aa4daebcd9c",
+  "1a2aa8e102b342b28e9300777449fe2f",
+  "e9461e0c007840e0a6fb5c891da83713",
+  "f5a61faa76ec4ce7bac8156aa9949569",
+  "6dd205b452964e568c6f1fc97b921e4a",
+  "429d4ec24e754e7585de0509b20584f8",
+  "54c344c674a44cd7b84b83449c3e0921",
+  "6aaa161969484f14becde5d7c2df8a39",
+  "d98aba7fef11467a854fcd73b1482a9c",
+  "54ac9372a1234b07bb9b923552fef601",
+  "fbbf6b4d57ee41e9b07c258aaad84534",
+  "f49ea97489cf43c79e2d24dbd20cedb2",
+  "9ee5783af1d04a10bd907ea4f214d7d5",
+  "e0330dc5377e49f8a8e1fe080eba8b9c",
+  "c6b9996b8d674c9fa3b4b7494dc3ea7c",
+  "f135e1e74fa748d398d6b21ce6c36fb3",
+  "36b4bd8f1d55400195e35aa853c1151f",
+  "e890acdf78ef40ec8fc399198618a672",
+  "26df4d63dcd04a01b567a1c2086ec7ee",
+  "92cd4adb4c97492a9b8fbe119daba726",
+  "d83810bcbfbf4ee4b659d32cb0fb11f7",
+  "04b329cdd0d74f5986c5551d92f9ee1c",
+  "871767609b7e4a66a614cdd126ce430a",
+  "a7dd79d760d2404881b10f11be1e42ce",
+  "0f336302d6584865a64d21b5cce44188",
+  "dbbb85b7638b4297ac8b3879b0501736",
+  "0a74e939512b44cab35cf1f62776a1bf",
+  "f402ca95e62848298e2045dcdc95951d",
+  "c63ee3b6373f492fbccaaf684a142f82",
+  "5fc1a04c1400403fab855c5b4f955107",
+  "125a14aaae2a4f42ab3227007f1ce187",
+  "9db4167cdda341e8a5bec21d584cd128",
+  "7d458390d75746348b4d712b6dffbd22",
+  "dbebf3e7349f44f39ca4ad2db5c7cd31",
+  "cb7a4dd2869e47ac9d6b4a3a49e08650",
+  "b03e582f96314df5b44ca8019251f8ce",
+  "6c50d9687165495db915a10d9ebc6863",
+  "e598b5768d48463dabbaf66ec31116a7",
+  "faa5400a6603461badad49df1484aa29",
+  "8aff52394fd84cacb0d67b0a0c4bd8f0",
+  "43149f319da04167b106393a0a0dcc33",
+  "4849e84de80d45648db007e58f3fe686",
+  "27351217760247168a42c298e8a3b741",
+  "af9ca01c541a4769b2fde32b5d833fce",
+  "6a8d61457e634ae8b1e06a213e61475a",
+  "32206e831924411d955ceb5077fc0de4",
+  "60eb963f4fd046ef8b1b335e94bdc5b3",
+  "cc35288aaab9423d93451141a625a10a",
+  "922583d823fb47ddb14161c1b40fb95d",
+  "9b75d4a56b124d9fa9e7c16bbf311f62",
+  "c30cbc75a4444003b99765afc60ad8ff",
+  "0f4080aeff1548d79a03f2737c2a7ef1",
+  "5fbb357f42a54e31bf5a2b7abc67a14a",
+  "9eea5ada9076474c9dfda496509b9ef6",
+  "bc650db0721d4a83bb55e476eb743bf2",
+  "38f3393ece624f00b9202cd16e4fae5d",
+  "7640fbbcde534404983bf51717c8ee65",
+  "d4b80ba02cb044f18e1064dd4ee33741",
+  "95ddd2490a244ff0a883e57504c8b449",
+  "f63a2d66f7854646beecac1b72768d2e",
+  "0e820fdb173b425da2aca227398a3cbe",
+  "5e945a203f0e466589091ecb2576013f",
+  "9e728991999a46afb030acf85f8b24fa",
+  "cf2d49bdb9a8460aa7318fb6689b6196",
+  "b13e490bacf94dd3870b78ca03798e10",
+  "02939cac0f964468a4887be07a485da1",
+  "c85dfc670435434ba397bf89c9283903",
+  "c0696b660da34877a502743f21444094",
+  "ee1e1b5522bd45a2a6c131ec4432a196",
+  "85ae2946b5ee4792a800ea253fbe3ba9",
+  "13348721cf9643cb98305a92948993cf",
+  "7a2ba5b3ffc847cd9ffb6e6bb1ed265b",
+  "b6432ba5a419444bb10bd405a1c4cf2c",
+  "d80b4a9452a74c98af8ebc0fa294b494",
+  "b05c00ea1a6748e8b6230b13d078439d",
+  "a007c3f6e3c54ec98b865a3b68b66ca3",
+  "791864c9e78a405db330891d013a0b31",
+  "a03fbde26c9043d3b5ef2d577cb53e4c",
+  "7529ad6b767a4b13bee96f38d9650f77",
+  "83f3757553cc4c46893f35aa731735aa",
+  "f5813b15db6b499b9b44222b451221d0",
+  "8a544defe0a74e7cb612d59a1ff03900",
+  "8a4cfaa0e52548afae825a5c74f24ef0",
+  "61a2a9ef594c44ad95d3cf5367a55764",
+  "7c7ddf9ee5ec4972841ad4a25086ad2e",
+  "08bfe96fc5c84cf0bb62ed1d1c6f5b46",
+  "5203e517637d4c848860e72df3915995",
+  "b915499aec1f42d88d10163b4b55e3ba",
+  "4456b81e9dba4e60ba0b3020e49826dd",
+  "1161735293a144bab2933e357291ee82",
+  "9b538bfe25494984b587bee9307af0d3",
+  "aa226cfb2f2544b0b33eb0e987a714ff",
+  "faee0cf03f9b45009e867aa0da42265a",
+  "26d29fcb507c466d8d227cd4302cc30e",
+  "1f660d1e72b644f6bfa83d6a407967c2",
+  "b91d397733fc45fd8089e9da23892d92",
+  "0d02780cb80a4fafab4a78e11896db01",
+  "92c7290b44e14201825573de2ac3158a",
+  "0709cf3297074ac7a027f998d04a4ebf",
+  "d87f9763720b43d59de0f2213b71b641",
+  "c68049b725144bf0b580818c681cfd62",
+  "2b4c7d1f2d7249bfb6a6e614a88a9f51",
+  "41f3822aaa0442dbbfd6ba8bd55fa9ea",
+  "f375d266f94b4d67ad52ae91d33c54b3",
+  "419bc9de8f3f47b0bc0814c3f562cb6c",
+  "099ff0cd6d1543049ab9a3ebce894b30",
+  "c1dab9d3aa4e4ad4b39b67121b564a15",
+  "bc154d0f3e69436a8645d2c716e23fca",
+  "795a6ffacf4948728ae88ebbaa167c5e",
+  "bb78252d95624373b28cbebdf1c40d8d",
+  "ad46cbb83c754bbe9ea2a56bdac390f4",
+  "cc60fc3ab1dd44f68e60b34b8ecd2866",
+  "cf3180ac7f0342c0af13ee9f083f907d",
+  "00d2da031b35445f8ea60702bc87314c",
+  "8d840edea613427d8d42a11f7abf4f15",
+  "c1fc8cbff11b48ce893ac9d01fdfd1a1",
+  "7a0fb72e9600472d9917900f67f32339",
+  "697c02bd08a5437989baea224bfb5cc7",
+  "d5ab8c312222472f88a191a4b63e4899",
+  "47316743ff81466b9a802995e64dca42",
+  "1c967072cf254311ac4ba1bc280dde6e",
+  "a8ac93cb00a84b68ba02e11c47b5d7c3",
+  "3ec02e748b06452cad43e9ffcd041c84",
+  "36f0634b07b547bfaba46033970573f3",
+  "515b183281eb41d696fd375c7dbfbfdc",
+  "dd4be2671d7943748da9aa7ac3b739bb",
+  "1dc0de5f90004dc0af472979ac59e232",
+  "152e43a5fdc3478b816c72a66d87d097",
+  "739a61fa5a884f25b2c76a6f6fd376ee",
+  "36c8994126e04eaa9307de8a17c698ee",
+  "4e88a63812dd4afab2803dfe22ec0d45",
+  "f4aea4b4840d4b3cb218eb4eaf73b3f5",
+  "7ef7e9e3e2e34e0e9b01d0fa1a3a8208",
+  "3d6d5d75a1b4471e8a332c1234df90f2",
+  "1b3af454691c4e57a2db9eea784ed625",
+  "b9abd47d354e4f5094f6e2604979a198",
+  "5752756d857f49afa4b9fbe6c5da92da",
+  "1d2743b297574b6c8951a8fe305c6020",
+  "55b0cba82acb4cae842c640abf18d570",
+  "86a79b27d16349498ec680e1bdeb6a18",
+  "883874022926442eb1d59ebfbc2ee3ef",
+  "391e250c55304fc69b34816e9efa2c2b",
+  "e6f4b073c1b641a0b251b48c5f18d1fc",
+  "09dba0a88b69458a9e5ec551390407af",
+  "0c6dd761328a40a48b393f58707ffe5e",
+  "b1b698cd57864a76bae56bb0644eda76",
+  "393745cbc3254005833883cde532014d",
+  "dbf0f5a9972a45698772885b6148834d",
+  "83e7df399eae4d2882a11b18475b8b23"
+ ]
+}

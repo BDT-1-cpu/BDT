@@ -1,0 +1,418 @@
+{
+ "_help": "Per-tour extras that are NOT in the playbook. Image values are Wix media IDs (the 32-character code after 588d17_ in the Wix image address). Videos use the Vimeo number (vimeo.com/<number>) or a 'youtube' ID. Leave any field empty (\"\" or []) and that part of the page simply hides. rc_images / leaderboard_images may also be file paths (relative to tour_media) – those images are built into the page.",
+ "year": 2006,
+ "strapline": "MALLORCA MAYHEM",
+ "hero": {
+  "id": "0e81799395514026a772af17fbcb3c52",
+  "caption": "2006 Tourists"
+ },
+ "venue": {
+  "map_query": "Sallès Hotels Marina Portals, Ctra. Andratx, 07181 Portals Nous, Spain",
+  "map_zoom": 16,
+  "blurb": ""
+ },
+ "captains": {
+  "BH": {
+   "id": "c2bbcfa9abbe42e59c80a93db935d3f0"
+  },
+  "RT": {
+   "id": "a6d175967cb44be7a057be99beb21ef6"
+  }
+ },
+ "accommodation": {
+  "name": "Hotel Marina Portals",
+  "blurb": "Home for BDT 2006 – 16 tourists, with Santa Ponsa II, Son Termens and Royal Bendinat on the golf schedule.\n\nA hotel in Portals Nous, south-west of Palma, now run as Sallés Marina Portals. Every room has a terrace, many looking over the pool and gardens, and guests can use the Posidonia Spa.",
+  "photos": [
+   {
+    "id": "81937034e5e2461aaf3abebbf087729b",
+    "caption": ""
+   },
+   {
+    "id": "83ec176b17364d1cb3d6cb51c34224f2",
+    "caption": ""
+   },
+   {
+    "id": "0827ac2e54714b3ab67a487bb24c9ca0",
+    "caption": ""
+   },
+   {
+    "id": "3524ba74c2c8455895596092ecaf3c1e",
+    "caption": ""
+   },
+   {
+    "id": "769bb90acdbd4fd5a33d66ee1187c1c5",
+    "caption": ""
+   },
+   {
+    "id": "24a06d5d87744bf19008a0cb0e0d3b8c",
+    "caption": ""
+   },
+   {
+    "id": "2b1ac35b139e46b3bcf6c33bfef5fa9b",
+    "caption": ""
+   },
+   {
+    "id": "b7089d6470f045159a573f23b93e5f54",
+    "caption": ""
+   },
+   {
+    "id": "eb418cfb17fe41a2b38e16dc24021b38",
+    "caption": ""
+   },
+   {
+    "id": "4666b99158534796a4604251350141e6",
+    "caption": ""
+   },
+   {
+    "id": "ee87709022c5435ab5ab79c66b0a8cf1",
+    "caption": ""
+   },
+   {
+    "id": "27ed3b8d0a964423ba70f57a5f14bffd",
+    "caption": ""
+   },
+   {
+    "id": "ed0f611e08594ce78f23e05ef0da2c62",
+    "caption": ""
+   },
+   {
+    "id": "f10faef24cd54ec08fffd0e02ce9d5f0",
+    "caption": ""
+   },
+   {
+    "id": "087da2b5ab024b658ed343fbcec685a9",
+    "caption": ""
+   },
+   {
+    "id": "9588818cc40b4cee838c657beb6e0b2f",
+    "caption": ""
+   },
+   {
+    "id": "ece82a9f69694847b41ed465febf6e94",
+    "caption": ""
+   },
+   {
+    "id": "713224171362473e957ca68440654f12",
+    "caption": ""
+   },
+   {
+    "id": "68123ae491114d5083f7074bbc08e65b",
+    "caption": ""
+   },
+   {
+    "id": "f9396fa3e20a43d5a3ad050acbdb0f37",
+    "caption": ""
+   },
+   {
+    "id": "ded377edd95f4f04b1af0944ec656242",
+    "caption": ""
+   },
+   {
+    "id": "afce1ccdfafd473dabd9a01d2230f9bf",
+    "caption": ""
+   },
+   {
+    "id": "6da69eb332fd4b99a3d864cfaca793ca",
+    "caption": ""
+   },
+   {
+    "id": "0ccee818649e43c38c2088da01b9f835",
+    "caption": ""
+   },
+   {
+    "id": "41080e79ddcc436fb9209b01b78f0023",
+    "caption": ""
+   },
+   {
+    "id": "de33823571884bd3a0fe30381bcb46b6",
+    "caption": ""
+   },
+   {
+    "id": "e1bca507a8014d19a75e51f42850e6ea",
+    "caption": ""
+   },
+   {
+    "id": "495460708ba847cebe7f533f24972f38",
+    "caption": ""
+   },
+   {
+    "id": "567a3d0569674d3b920638454e4f6ac2",
+    "caption": ""
+   },
+   {
+    "id": "4e410de70c2f4a01818742f97993e3aa",
+    "caption": ""
+   },
+   {
+    "id": "6b44d58ed28d44c7b38cf096b389d6bf",
+    "caption": ""
+   }
+  ],
+  "where": "Portals Nous · Mallorca · Spain",
+  "facts": [
+   "Rooms with terraces",
+   "Pool and garden views",
+   "Posidonia Spa",
+   "Restaurant"
+  ],
+  "link": "https://www.hotelmarinaportals.com/en/rooms"
+ },
+ "itinerary_images": [
+  {
+   "id": "148fa563947c485cb3476fab0d28eafb",
+   "caption": ""
+  }
+ ],
+ "itinerary_extra": {},
+ "team_photos": {
+  "BH": "520fe3db9e3d448ea7762eb1f767e0fe",
+  "RT": "ff3793d14aa342c2a2bd4e06fea2aec3"
+ },
+ "team_announcement": [],
+ "rc_images": [
+  "boards/BDT_2006_RyderCup_1.jpg",
+  "boards/BDT_2006_RyderCup_2.jpg",
+  "boards/BDT_2006_RyderCup_3.jpg"
+ ],
+ "leaderboard_images": [
+  "boards/BDT_2006_Leaderboard_1.jpg",
+  "boards/BDT_2006_Leaderboard_2.jpg"
+ ],
+ "summary": {
+  "banner": "7f3daf36c394469a81cb752f116c65b7",
+  "title": "",
+  "text": "",
+  "link": "https://www.bigdogstour.com/post/bdt-2006-tour-summary-mallorca-mayhem"
+ },
+ "video_sections": [
+  {
+   "title": "Photo Slideshow",
+   "items": [
+    {
+     "vimeo": "420384939",
+     "title": "BDT 2006 Slideshow",
+     "thumb": "https://i.vimeocdn.com/video/895609026-9b9e89b420647cf4d3c36183753ba208f9b15d9a480909ed286a81b2a45dcd32-d_640?region=us"
+    }
+   ]
+  },
+  {
+   "title": "Tour clips",
+   "items": [
+    {
+     "vimeo": "623763389",
+     "title": "Picko Gringo",
+     "thumb": "https://i.vimeocdn.com/video/1266055204-810ffa80245c75c926d7a83eabb5f1819de4fb943215cb4e8_640?region=us"
+    },
+    {
+     "vimeo": "623763265",
+     "title": "Purlo Ticket To Ride",
+     "thumb": "https://i.vimeocdn.com/video/1266054847-232389fce62457d527d88d550fadd859f63b9356d3591163c_640?region=us"
+    },
+    {
+     "vimeo": "623763610",
+     "title": "Smelly Blower",
+     "thumb": "https://i.vimeocdn.com/video/1266055640-f8f6a2d457838e73437843a9b0216fb448cd652b70f6dcd18_640?region=us"
+    }
+   ]
+  }
+ ],
+ "gallery": [
+  "1a409f5704cf4053b5a480dbb57168cf",
+  "4b72b4c6e30440c7958dfee5a6b17626",
+  "b8fe2a4a94834bccb4ef30faba0c7958",
+  "7bd9ad704a5e450b875e10e3ed44eced",
+  "7b3a160a17814fb8b00b102f29f63ff7",
+  "d3a285d0341e4e74a7c268a6bc94ede6",
+  "27d2f8da33c84fc7baaede6e2cc927e7",
+  "6106b69673854600b99d4c3bd1d2c862",
+  "166169c5b52140deb65a425cb684c821",
+  "c9e58eb7c5084d86913ff55366d26bb8",
+  "c920a19612724c8aaf4c080bf83084d3",
+  "0ceeffe0823e460d9569d0ef076d2a01",
+  "1355acca4bb54dd58b1f598d08651201",
+  "385d16975c1347caab4398b1a63b4343",
+  "d615e30b0d704e31b5edebc1509dc138",
+  "248b3fdc9fb4413bbe9d6b8a6a0769ba",
+  "0e81799395514026a772af17fbcb3c52",
+  "a1359280d3f742bd9f00010c6eb460a0",
+  "49e94ac5c47449d0986b7060391e8a77",
+  "ba590d0d7f434b07b19a1db54ea0bd75",
+  "68e26fac3ade49d58f603649d7ea4ebd",
+  "abba8c5dfcae42fcaf2322e97b453d2a",
+  "9f398d8f6da649028e0af0fb2925ce89",
+  "8637de74aa9243b8a48c72009af97273",
+  "fcd22ba759944aad8a872be8544b8cf9",
+  "1e4d1478690a4361b975aede3fced6de",
+  "09683648aeb64c589f11a96184b42b64",
+  "40f2fec26fd44125b3907f67a2109a8b",
+  "0bb2d958baa84fa5baafd7216389c5ea",
+  "d32d4d7cf7274b8ab3db7d56a0f098c4",
+  "903352c97a2e47109dc49965a6614f21",
+  "2e017181cbe04942b43b396114c5908d",
+  "f64807d546804fbbb6aeb7304bfa67e8",
+  "10100552f1734f79bc335e53f0871790",
+  "9f8d5f12304c4ca3aae9096129a23c1c",
+  "0e5e399107894f4d9b31aad1c341fc4b",
+  "549d7a95f3914a41bf3ffadc06c1ec0b",
+  "be5308a42d8546e1a9393315aa1b4814",
+  "aa9080aa4fbf4bb8845b1af7507ac74b",
+  "9b03c3c434b646b393682aab7ae17769",
+  "0632ef84e5404580bbe8bb80bb7df993",
+  "4ae45b638aea42048b035b84e2109059",
+  "367e8263af2c41f199b17020202cb222",
+  "5795591a696f43ad8259483d1e3f57b1",
+  "31b62cedc8754420b44e61ff8f3b67ee",
+  "2b52ad34845e44e3a277e91681ae88a2",
+  "a29e763c5b334339aa04843d468bbc5e",
+  "6fc19453c03e4610954c5eee6d0441c6",
+  "4d306cf77c664da5b919976576a7602c",
+  "5b2dfabb914d4598a9050ace32182a07",
+  "1e5b053df759449ba80a80c522a05d92",
+  "17bd93579559439294e9025f044d5127",
+  "dbebb0f5b1f8479798bbdf5d943d2141",
+  "90dc91b101a04d7484fcb5603a21dae8",
+  "305309b9c8c6419a965d77341bcfc2ea",
+  "29c8569b19214aaf99c8b7d917c354f7",
+  "061b9fd956f944ff867888bcf6046d9d",
+  "af38ac8711714f5182c76201f92ac2b0",
+  "2cafd5cabda24a0f8f70f16c0907b6e5",
+  "7b1ad84289c342579d77f4523b38c113",
+  "f8603204b76941c9b2574cd05ebdf403",
+  "56cd8ace2ad9419cad43c468af3e8cc0",
+  "c3c281d0806d4acc8ae4b33ab8f2f942",
+  "f1452e95e5fc4f1b857159fe76844702",
+  "22be1575e19646b6bdd3fddea1aa58c7",
+  "8b79d0cee9ac48eeaa671054de59c94e",
+  "2aad854405184b3d9d9bca3c603d5328",
+  "2b2ea88744e14ddd91d6e7839f2fb347",
+  "d33d4af12f25486595480b72458da472",
+  "2c0b6f6cc33b446b8f0aadc5b1f468c6",
+  "402e5e52d69f41019d047dc4098454c3",
+  "8ebf6dc5078c4003bc39c43a709b242d",
+  "5cab1aa9d0534d23a894bddbd8f082b4",
+  "24f53278dd7442fca607a5f1e8ed2f8b",
+  "fce8e3d9e9414178a68760090d762e5f",
+  "055f499c88944f539df9e697fbcbd42a",
+  "e116c614d362405db70935aa7e31072e",
+  "c2d65d05b53b48c4804a8b04b20353be",
+  "3a7603c322ce4468ad23741e541c19a7",
+  "f42340f7a415419281bf6cacd74ece9a",
+  "db09341306fa41c5862ab6f7c1299361",
+  "60c3958502184665acedb54dca183102",
+  "68228576a2c34f98a4c0538ace64f156",
+  "4cc662f78e7d4727b0fe2eb7a8366d60",
+  "e9bf1e9b6867430895bc604ac528c2e1",
+  "ec8cfdcef36745c0869c73da914030e7",
+  "6f79899e957a4baf95c4fcb748aa3b8c",
+  "9577daea13ed4b13906cf45208fd524b",
+  "9f1a8dd96aec4a7a99f50a33ba2d23cc",
+  "f2d463bc723341a59003c0c32be0b00e",
+  "f2e2d8d3c77243e3bc8b0ddf5bd8cc54",
+  "dbd8857c444f4f52bff00cd1ab6c2c16",
+  "20e6d58cd2fa4c73af65f67dc695c466",
+  "997ac5cc037748edaac6ba3c9992090b",
+  "0d04ea47b5494659bc469ad397db5721",
+  "90cfe728074340be8b017cdf5e755ef0",
+  "1c8f1f5292e94be8a95c36d21c8c3d8d",
+  "124c6fb3b2594e8da547e68ca58f6a34",
+  "8c9c817ca77b44c9aafbd052b6278136",
+  "1202cc84842d4cb68ef4bff4cfd64e95",
+  "026a091500424e45b40cfd9e7527cc5b",
+  "4810682209f546a7ac129a700abbfdd7",
+  "053cb9cb235e42df81fcd917baa1ea1f",
+  "f9d70d91a6b447ef9dada3cdaed76074",
+  "1db86fd20f584b95a27406277bd28949",
+  "1de22d83d5cc4702af720948564efac3",
+  "aea57be5440345bfbf56fbe8a91bc310",
+  "87f17d5b2b57410d8187a1fe14c1a198",
+  "9bf739a168524d82a71a6155289aa616",
+  "8c2d0f5b36854937b34b424214df2b4b",
+  "d5b9f240d2e940e995eab8a07086fdb0",
+  "f3763f3324e04ae69e74bf2f36000cd2",
+  "e5219bdd531946aa861e07d5e6b04bdb",
+  "ff2f1d396064467fa6603b490c8b7155",
+  "d567f0753c514189bef3bed41c627c64",
+  "2565bf9388104514acb7699ab560fb86",
+  "b13dff121a714193bc9739b9f032b5c1",
+  "ccf5640a20b84fadac2c03e4a76f985a",
+  "d87a878a38dc4467906234c2b4487559",
+  "74e79a3772a443258be9620c8a6ff121",
+  "e5c4eeaa519941b99ac030fefc666efa",
+  "ec710c0c884f4d249fcbdb877aa7df79",
+  "d05196e553034263b347e3e3803375f9",
+  "0a698b57181b4aac9ea014db8f5f6935",
+  "f2b9eaaf87894c15b901c0e047beae66",
+  "8afd0c3ed8cb4687aa1bcd50b679082a",
+  "be170c4fa02e443b850a37c00729ac4f",
+  "d5244bc9a11040e1a00063460fc9a752",
+  "9232a9c832fe4d3b9a9342c2f7ea819d",
+  "81f96d40a3df40da81046610687b67ce",
+  "d329a7107f3b46509594b9c1f1d769f0",
+  "660e87e151de4b1ca65f2ef56f9ff5eb",
+  "21aab26541fa45ca87aa7a41722932c8",
+  "075ff3e9c1d44d438b64eee2e9d4b1d9",
+  "5f6525b2c9104274b2a80216a3ae7bb8",
+  "062aa6cbadf9460b9522a42093a103ce",
+  "0e0e32640e6740ea8254b89a9ea10b7b",
+  "b56e8eda6af04d16838804465a6bb007",
+  "cc074272483a40fb92b847a0bcc2feba",
+  "29ef625c99f54780b5057e920141475a",
+  "ed021d434a67404ba66297ea2d05d547",
+  "ad41e6f69b5a479099b41cfcf8cf1fd0",
+  "c3bb231db7ca418292c0feaa079ba3f0",
+  "996c44844009477dbfbbdbe6133df4dc",
+  "e1d19de5612643418a5edce1520bb94f",
+  "cd7b52f0deca49f3aea5b8f6c6429c86",
+  "73859853ac834d728eb0f2ced5d7d09d",
+  "237afe7e6c8a4a01a3d3f8965b9ca67d",
+  "dde6588f90a94d189c3cf712fdfd8ffe",
+  "3f98ee09c3f6404ea1174179371e436b",
+  "9d74ef29381b4302a22e8f1f35f0dc3e",
+  "45a45e239e574225a678e1a1f6eb4fc3",
+  "e78954b99d8e4524933b823657d57e8d",
+  "fd86d689f6af4aeca001e64a4eb14ffe",
+  "fe10285e563845cfb1eb40cb923d19c3",
+  "fe927e1d2be74ac886393c8bb8941ea5",
+  "93868f51054443e18f1c2a2fd4df6e5e",
+  "fb24705952264887a3aacbeb0e7827f6",
+  "a3fa5587c7ba4df1bd19cf5c05c63d7b",
+  "80370c936a7a42eb811d9bf5f8deadb9",
+  "a4dbc117e4884847879854ffe62d1831",
+  "6bdd24855bd24e86a146a2cf68d9ec13",
+  "5aa271e5fb8b43b8a30e8e1826992d15",
+  "af2d0c9ba93249adb56032cc1446dbc2",
+  "35faaf62f84a4c3c965ddcd90676621c",
+  "838a8ffc5a97426abbe425a487b340e2",
+  "735832b71a8e4828bf4b3fbbce3a6d03",
+  "a84b9a9cfb874a13b198163a405d13ce",
+  "31e31475dbb642e09387aa41d203b81e",
+  "77280052ab4f4c37aa57093e95176961",
+  "355f7fc739044fd9b2063b586919a2db",
+  "e66d74a66e604a7ca71c38faa0a34248",
+  "4a40681057c645d29473b1881a6519cc",
+  "c98696d77aab4eb98eb197effd6bff3c",
+  "d9f1ca5e10de4f4a912c599238c09c64",
+  "e74731af2d654c63803e7e492eb833f6",
+  "b5cc548d7e434da997cfe6356e02a7c6",
+  "77e346f926c74328b5384c736b0c4262",
+  "e63dc968abb84e86ad7019358aea2994",
+  "74c2bc347e9f4ab08af1db7631e536f3",
+  "5dc54d2404b34254b2bb82e50116c3bb",
+  "148d02963b1441d2ae44fabe4c9ca3c0",
+  "c25aba1f94294a52a3fb6d291abb8c2e",
+  "8cca327408de41579cc7f0dae18cdfbc",
+  "fe64db11de8149cd826d8f2d5e89a9ef",
+  "a67a47ed74b548b6856f47bbf7ccdb40",
+  "7ebacec0da6045d684d495c0c45594a5",
+  "38989a1409274306b71aa13012fb626f",
+  "a67735e1c69647cdbe86096193af32a7",
+  "d4c504343e094edeb428f7f7447b1222",
+  "a10f66a2b94f470faa80a576c36c4db7",
+  "076e404c84394644b4971f0764c2dab6",
+  "277e507f643e40bd87e5d04e631e8827",
+  "a6beaf9dfcc74e9daed626ccb0590c08",
+  "e082267c038844b08fbad67797d094cd",
+  "5efd23fda0954655899259f285fda655",
+  "f642246699a442008ed3b26d4f9c97d9"
+ ]
+}

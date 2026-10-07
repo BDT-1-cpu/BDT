@@ -1,0 +1,801 @@
+{
+ "_help": "Per-tour extras that are NOT in the playbook. Image values are Wix media IDs (the 32-character code after 588d17_ in the Wix image address). Videos use the Vimeo number (vimeo.com/<number>) or a 'youtube' ID. Leave any field empty (\"\" or []) and that part of the page simply hides. rc_images / leaderboard_images may also be file paths (relative to tour_media) – those images are built into the page.",
+ "year": 2025,
+ "strapline": "MARVELLOUS MARRAKECH",
+ "hero": {
+  "id": "21e9a1af685f4fdfb63e05d63a230cb9",
+  "caption": "The 2025 Kennels"
+ },
+ "venue": {
+  "map_query": "31.672,-7.964",
+  "map_zoom": 14,
+  "blurb": ""
+ },
+ "captains": {
+  "BH": {
+   "id": "02f2956fa3f346e8a5c9cfded6fa2baf"
+  },
+  "RT": {
+   "id": "a6b64c7b809841359014542bfc143600"
+  }
+ },
+ "accommodation": {
+  "name": "Villa Safi",
+  "blurb": "Home for “Marvellous Marrakech” – the dogs swapped hotel life for a private estate in the Palmeraie, about 15 minutes from the centre of Marrakech and half an hour from the airport. Assoufid, Ourika and Fairmont Royal Palm made up the three rounds.\n\nVilla Safi has 18 en-suite bedrooms set in more than two hectares of gardens planted with olive and palm trees. There are two outdoor pools (one heated), an indoor hot tub, a hammam, massage room, gym and tennis court, all looked after by a full staff of chefs, housekeepers and security.",
+  "photos": [
+   {
+    "id": "6681640f07f143f8beac31e411728bdb",
+    "caption": ""
+   },
+   {
+    "id": "321d31f78299467c9a0129608e567327",
+    "caption": ""
+   },
+   {
+    "id": "21e9a1af685f4fdfb63e05d63a230cb9",
+    "caption": ""
+   },
+   {
+    "id": "4f6a1d958f6d40eaa729c8ba7f8dadf2",
+    "caption": ""
+   },
+   {
+    "id": "3d3f4b9b5d424defbce8641cb6509cac",
+    "caption": ""
+   },
+   {
+    "id": "3f65e1b6ea6f4a859601b240f31ce9e2",
+    "caption": ""
+   },
+   {
+    "id": "dfe68e218ed44788813705f1216808e7",
+    "caption": ""
+   },
+   {
+    "id": "6a87e6412e8a4776aa389e9b03b4c1a5",
+    "caption": ""
+   },
+   {
+    "id": "831788cd5734462a95648ae7ed092e47",
+    "caption": ""
+   },
+   {
+    "id": "d71fe69fd9e24a0f8f9c4d81758511e0",
+    "caption": ""
+   },
+   {
+    "id": "bbc0c096285a423b913ab277ea18e6cc",
+    "caption": ""
+   },
+   {
+    "id": "e7ab9b3a59cf4990a14c2e03f5deffa1",
+    "caption": ""
+   },
+   {
+    "id": "8c98810697b8458e8e58e4c594754405",
+    "caption": ""
+   },
+   {
+    "id": "4a5ab9659d3c47f4bc916223dd2f7c36",
+    "caption": ""
+   },
+   {
+    "id": "b1d28a0b6e184a4ab22a85e530f9770c",
+    "caption": ""
+   },
+   {
+    "id": "06661a56e965477fa890bd845f3eef6a",
+    "caption": ""
+   },
+   {
+    "id": "90f57efb0e27466eb968ff33c3247529",
+    "caption": ""
+   },
+   {
+    "id": "6b9b956db31a4deba408d1b6f58dca07",
+    "caption": ""
+   },
+   {
+    "id": "09dd96b9109e42648232fcb75596f6c7",
+    "caption": ""
+   },
+   {
+    "id": "cfd5085ed7df45f2a066b1dde7e3a37d",
+    "caption": ""
+   },
+   {
+    "id": "779ffd30eb904972bfbfa4d148a3af80",
+    "caption": ""
+   },
+   {
+    "id": "c2ff458a670c47aea88d6313213b9b4a",
+    "caption": ""
+   },
+   {
+    "id": "b0e394d5a3794177ac5cd540b9fe12f7",
+    "caption": ""
+   },
+   {
+    "id": "c9f72a71c3f04797b4307033de090c95",
+    "caption": ""
+   },
+   {
+    "id": "f78860024e624b2b9146e1be52b9b38f",
+    "caption": ""
+   },
+   {
+    "id": "cec36e6178784dd5b894064a2f26cb78",
+    "caption": ""
+   },
+   {
+    "id": "cbf1ef6510344378a5c7e24d5b7fd792",
+    "caption": ""
+   },
+   {
+    "id": "5b9bec49ba224ebbb8acc1d7c869fed2",
+    "caption": ""
+   },
+   {
+    "id": "3554909c39b548fe860c9a5462c456b4",
+    "caption": ""
+   },
+   {
+    "id": "b111c0487bf44d89857ff31b43b313be",
+    "caption": ""
+   },
+   {
+    "id": "51834ca243444cc491ecf74736f607ac",
+    "caption": ""
+   },
+   {
+    "id": "16470e535f1e4cffa8be66ad375fa887",
+    "caption": ""
+   },
+   {
+    "id": "0cec242671474381bc002256fb6e044c",
+    "caption": ""
+   },
+   {
+    "id": "bc421ed697ee4b3d951b897225b385a5",
+    "caption": ""
+   },
+   {
+    "id": "2e83bb13e17f44b999b1108720f0597d",
+    "caption": ""
+   },
+   {
+    "id": "9dde1cfaf0c54e7ab14dc28c93e738e4",
+    "caption": ""
+   },
+   {
+    "id": "2e61308d89a04431abbc628e102ce979",
+    "caption": ""
+   },
+   {
+    "id": "e388150c69974982a00c53eab022751a",
+    "caption": ""
+   },
+   {
+    "id": "a58f542b3d794966a25a2f234e913260",
+    "caption": ""
+   },
+   {
+    "id": "8b9b3dc210084a34a5590d7878fedab3",
+    "caption": ""
+   },
+   {
+    "id": "b0b48ea8838c43f4b504af65d3a16a46",
+    "caption": ""
+   },
+   {
+    "id": "6544f36502024968967b0a5d299a0480",
+    "caption": ""
+   },
+   {
+    "id": "9461790b41ab4ce587568096c4fbf253",
+    "caption": ""
+   },
+   {
+    "id": "ca1cdfa7ec17429b8ac20c1d5597ca8e",
+    "caption": ""
+   },
+   {
+    "id": "aee91e096627424c960b0bebb11473bd",
+    "caption": ""
+   },
+   {
+    "id": "43edf75b2df249ce8f486997c73bf5f3",
+    "caption": ""
+   },
+   {
+    "id": "405eeae8d2da439787378a8f6119e85a",
+    "caption": ""
+   },
+   {
+    "id": "8d52bea229964d55b2a58133ce3bf638",
+    "caption": ""
+   },
+   {
+    "id": "9575f7caca9c4d1790894c033b6f740f",
+    "caption": ""
+   },
+   {
+    "id": "c6bc99b08e1e4f5093831a6ef9f613ef",
+    "caption": ""
+   },
+   {
+    "id": "bc2a417d725b491c991236dd515c422f",
+    "caption": ""
+   },
+   {
+    "id": "b4ddebd76e9e4cd392e74f0fe0c2232e",
+    "caption": ""
+   },
+   {
+    "id": "768c117bbaa049dbb61fefcda2e3c8a7",
+    "caption": ""
+   },
+   {
+    "id": "be72f36e25ff463d873509462751cb14",
+    "caption": ""
+   },
+   {
+    "id": "ee3ed03415e24c2e96ca8a1340a5ff03",
+    "caption": ""
+   },
+   {
+    "id": "58b2007da8454fe0a98023e28f39171b",
+    "caption": ""
+   },
+   {
+    "id": "d59e8c1005cc4a3cbe4adae1a26656b3",
+    "caption": ""
+   },
+   {
+    "id": "57853fbe30104be5b545d077be5fc49d",
+    "caption": ""
+   },
+   {
+    "id": "de774d1cb0d84d2994dd23c108eeaf81",
+    "caption": ""
+   },
+   {
+    "id": "56db6002888e495c85cc7ff19eb5e667",
+    "caption": ""
+   }
+  ],
+  "where": "Palmeraie · Marrakech · Morocco",
+  "facts": [
+   "18 bedrooms",
+   "2 hectares of gardens",
+   "2 pools & hammam",
+   "Tennis court",
+   "Medina 15 mins"
+  ],
+  "link": "https://amaselections.com/morocco/holiday-villa-rentals-marrakesh/marrakesh/villa-safi"
+ },
+ "itinerary_images": [
+  {
+   "id": "7ef721c68523403f9018122419ca672d",
+   "caption": ""
+  },
+  {
+   "id": "e7f11d22220b4d21901f73ceae7111d7",
+   "caption": ""
+  },
+  {
+   "id": "6796ddb5eec14d578fbf0925d725984d",
+   "caption": ""
+  },
+  {
+   "id": "0097988165be4d528519fc85d295ce3b",
+   "caption": ""
+  },
+  {
+   "id": "9afd53b1450f4fe7b58639d58da2a88c",
+   "caption": ""
+  },
+  {
+   "id": "ce8cd90ce49f48e489dc26ceffb97263",
+   "caption": ""
+  },
+  {
+   "id": "37a51438667d4d78adba81e2ed862941",
+   "caption": ""
+  }
+ ],
+ "itinerary_extra": {},
+ "team_photos": {
+  "BH": "982fb4dc61f54aee9107834f764ea38f",
+  "RT": "6e7c8dd94dbf4c568816b0f6082bcc29"
+ },
+ "team_announcement": [
+  {
+   "vimeo": "1081787907",
+   "title": "BDT 2025 Story So Far",
+   "thumb": "https://i.vimeocdn.com/video/2092227684-d9178cf0951dab9c30709caa8b65131e9f887294dc34124e2990c056a21c801c-d_295x166?region=us"
+  },
+  {
+   "vimeo": "1077902223",
+   "title": "BDT 2025 Team Announcement",
+   "thumb": "https://i.vimeocdn.com/video/2008024534-b40c914871f7fcfe9c5b3fadcec90c5278349535b9ac5ca23ecc2244fd7b3ea4-d_295x166?region=us"
+  }
+ ],
+ "rc_images": [
+  "boards/BDT_2025_RyderCup_1.jpg",
+  "boards/BDT_2025_RyderCup_2.jpg",
+  "boards/BDT_2025_RyderCup_3.jpg"
+ ],
+ "leaderboard_images": [
+  "boards/BDT_2025_Leaderboard_1.jpg",
+  "boards/BDT_2025_Leaderboard_2.jpg",
+  "boards/BDT_2025_Leaderboard_3.jpg"
+ ],
+ "summary": {
+  "banner": "c76c29b9a90f485aaae24358efa2330b",
+  "title": "",
+  "text": "",
+  "link": "https://www.bigdogstour.com/post/bdt-2025-tour-summary-marvellous-marrakech"
+ },
+ "video_sections": [
+  {
+   "title": "Photo Slideshow",
+   "items": [
+    {
+     "vimeo": "1140572794",
+     "title": "BDT 2025 - Day I Review - Reduced",
+     "thumb": "https://i.vimeocdn.com/video/2087637423-cadce7a1e7686575cc9ed9ed6d68efd4c498e3580bf641ff8fbe3d8eda10f9d5-d_295x166?region=us"
+    },
+    {
+     "vimeo": "1140572586",
+     "title": "BDT 2025 - Day II Review - Reduced",
+     "thumb": "https://i.vimeocdn.com/video/2087636925-f282b79bfd2d5f65bf4ce1ee1d4aece75ba4ca5bd77145c820ecda3c3cf13cae-d_295x166?region=us"
+    },
+    {
+     "vimeo": "1140572648",
+     "title": "BDT 2025 - Day III Review - Reduced",
+     "thumb": "https://i.vimeocdn.com/video/2087637762-77f984f2a451e9bc60fe6b41de585048ba2ebc467514a17cd68cfab8b9207d58-d_295x166?region=us"
+    },
+    {
+     "vimeo": "1140572732",
+     "title": "BDT 2025 - Day IV Review - Reduced",
+     "thumb": "https://i.vimeocdn.com/video/2087637318-340e0e1b0ce235bed36b0311507816f959fea573731f4fb52c4b0f93ebbadb2f-d_295x166?region=us"
+    }
+   ]
+  }
+ ],
+ "gallery": [
+  "7dccf0aa3cec41b6ae3fff2882fa0767",
+  "ebe0a4d185244685af3475225b32d129",
+  "64380eeb36d043e58da77306897b814d",
+  "3847f3f5124e452dbd23cec73f2c66fb",
+  "cfc9b076b3414261b69a4458d604d35c",
+  "47ed5a5b7a714744a5d7669b47d59d0f",
+  "27787291f14e44d798636ade1ee1e630",
+  "0fb3815c9e3e4c959253893093f42fe0",
+  "bce9121fa414432bbd2c2973f23cfd24",
+  "f50eec10804348529a9049e119685498",
+  "8529eee07ef44ebca2a935e4419d65e0",
+  "2de6c07358b341e586c6663c76d1f966",
+  "8303c92c695749e5b973454bdf847942",
+  "7ba41e65447a469283233fba2670f202",
+  "e654b20286494bb2b8762b35d07b660d",
+  "221f513a6d3c45a79a02abcd05d3be8d",
+  "3e74335b9f014932885047e0d1e86d0f",
+  "f7871fc235374324b7ad76891cffb9bf",
+  "11929d3d991a468aa0d4e1a593ab9b6c",
+  "0d0340e6d2bc4a9cb7b9331946ea4a63",
+  "a47485f5e9bb430c80b0e2ce7d5db2a1",
+  "93814e41c0ce4226b07b5d4fbc3a2d8b",
+  "d37606085c0f433b821baf8080d93d19",
+  "cc1736ba95f746b89635979c3f646f6d",
+  "49fda978a5984852bff452a5e5dbc1ec",
+  "66a07a1409fc481b9f25276ccd85879e",
+  "c0b1df00cd614cbb8a63d106ad1a3eeb",
+  "57dfb02688574060bc3211268b8ef70d",
+  "254e3aede27a4a75af7ba8650c66d80f",
+  "accbe64c6e964172bd435a096101b932",
+  "b1ff7629a24c4d28bc95cf1af69dd8b4",
+  "c48ed6fb165048c392d65920850ada85",
+  "ae58128499db4e32a87f27c370ba6ae7",
+  "d2b54539148840adbd547d0e89ddccc1",
+  "c812bf16aae4498e833e4eb8225dc21a",
+  "378f93e23be0437199bfe0036f8d9cb8",
+  "03e6a6b77e2a428f90e4d67e623c0979",
+  "5157aa8002084efbb7abf78bb412fe64",
+  "b5c7890438414cf5b2609b3371469d2d",
+  "084137b735bf4deab50a6df22ae9afa6",
+  "4ef6da44288e4c37880199dde73fbd8b",
+  "06e66dbcb48341cdaff3834ecd303626",
+  "16c9c349cf3343eb9875f637f58b4418",
+  "8122c68ab68e48459ae70ee2cface69a",
+  "1d179ea1f95245319130bcf1d890a172",
+  "dd22e97133904deab0887b31a9ea6030",
+  "7d611406e5ef499e8e5957f120fa4f09",
+  "823bedfe73b14a368717fcd4fb523a98",
+  "5060817ae4204371924b7888e82a3cef",
+  "854c4c13a65346acad4cd0a6413f8743",
+  "488a5fe7f7e74753bca99d146ba5fe78",
+  "9d08b81a97d341d392c3a20f0f4a6959",
+  "c024f6680a75492ebf25af075ce17999",
+  "3ae8e40dea274443a803af654eb9bdf9",
+  "18dd3214279e40dc8914ef841b7109eb",
+  "01245907e298486f8f4604ce27d087f1",
+  "46ddf983979647acbc164b63fa8dfc82",
+  "5a7255fb3bfe4714a119cba8ece97443",
+  "ad5d7c170d1f4889aaa1083c64a11f6e",
+  "ba9f710fa1c0445ebd8d98a1ee72a0af",
+  "2c1e23c247e84728a9cc98640fbc91ed",
+  "15c36051ee4a4d69909daf45ca129ecb",
+  "90ddac603fbf4b6e84f81d3a1baff6e5",
+  "924673e052964ace8b472cbeb4b9754f",
+  "5736e579c5f44c3a9c0df86a0bc14336",
+  "44fe629393cd4832832cac193aff3c3c",
+  "6a90b4be0ef24c3daad77bf7c8cdaef8",
+  "a52f69fd96b940c2a0b0507a7d7289bb",
+  "f41451c2a9454dc3b2afe266b18b74d2",
+  "38d9f67c5a074d99a62a0d3529abf85a",
+  "1a9ae10c2add4ebb8833a59380c1117b",
+  "a13a9fa820c94ac8b0e81255faebb0e3",
+  "0ffccba40dbe43af9fdf238612a47e35",
+  "06f754b7dbfa4471aa6a8d7e02ced52c",
+  "a8c98d0a4a0d45eb8304bfda512f9781",
+  "130c5cc9f22240bf9dd1fdf60734d4f5",
+  "72fbdc58bc31437f92e860f9ebcce8ac",
+  "e81e1cdfe8c9444b85cc422da6efd412",
+  "d92090330b864b19bd6b605e88fe7373",
+  "4ccd78ea468d4173804907249ecd9172",
+  "ca2c508b069849a6acda23f2c50b6a7a",
+  "54057c4d149240369cd5aa3c7f6ab4f6",
+  "e13fe1dd82f04e14b894b60c90b1ec17",
+  "b2a196d89b18478cbe360d6b57a7796c",
+  "0da08fc5f3e64db5ada83f1c1b220b9d",
+  "fb6d3553bfc547b7bed52d531677cd37",
+  "c363916aa6b54617bcaca3ab98b5bf85",
+  "ea130130536f438fa954063e99d43d06",
+  "d839f0f0af44487b8e0b4245077d951f",
+  "393deea6bd2a484db223f1aeffdf4235",
+  "a9236d47912f481cad0f7d56b2895fad",
+  "370342c7c61a410688fb15f311c8643e",
+  "bad9395433c94d37ace9a2d3ca46a25b",
+  "4a5ebfb5f04b448b90a6893a0c211faa",
+  "d788c36960cf4d3d80aaaa8d36a3dc93",
+  "6c61b9e4e3b34f0398f63a071f927229",
+  "251d136df36940b9b37fd1381aa04970",
+  "a302a279482247cf8a803701238d6057",
+  "93553ca88e81433ab4f25a4004238332",
+  "8dbc44a3d2754dae96a85037e81f3af7",
+  "fbeec915a5444e9d8c82a2078e0f5d97",
+  "b11ce49491ae468cba6cda20dc4903ce",
+  "ed6bcc4366c04e508d5bde0fbc65df30",
+  "24cd59a321934074bee915415bdd643e",
+  "ea9c75a8bcb2478a937c013460aa3f16",
+  "8c4262cdb1a74cd1af39d598f30e56fd",
+  "6f1b8b9a9a72470aaf1d27ef13ee6c85",
+  "8196feb8f5da441697e0cade8591aeba",
+  "a281e3ca8ad44bfeae9dce67611f95d5",
+  "4c5f03be1a4a46dd837115ae14264ae4",
+  "b3a92e8ce2a24b2f90a2f135fafe7181",
+  "7fe5ec0897984165869dc6e499fc90c1",
+  "dd8dc5cbf0654093bf57183979b03a5d",
+  "160ac30ca0de4f089dffde43242e6cfc",
+  "d209eebe56a245b1bc9608d59ad21e46",
+  "918dcc7771a1497aaedc113c9348e42f",
+  "9b0cd665571d4d439684ec2a065d3d16",
+  "103372ca81b74733831e1174a953426a",
+  "85414499359441c4852a53562813d68f",
+  "ac507ea72fdc409696c776ddb3454279",
+  "a35edfe323da408a8273d23311497e4f",
+  "291cfc4c532f4b53a8a12959c1b11347",
+  "495128bb75224c3d92fbf50b3cad13d6",
+  "9aea0c04088b4579ac28b1fbce49c040",
+  "5cc849593fc54880aa4911a6d6ad1402",
+  "1c319d765da643fe9e4e193afc9d998f",
+  "b447f342c44f498a9501a810c1b3f54c",
+  "0017aaa70c3e4e52959fc580ae734d23",
+  "8cb9bf57c3a146bc93c963bb6bc71b31",
+  "84f89b6940164093bd711b7b4a5fc787",
+  "296f517d5bcc4ab4a3f9a5827ce6de2f",
+  "1c065f2a00e34be58eaa52839fe56bf7",
+  "5a7d0f7678b440c1bf5465278feb17a9",
+  "3af2e725f54547d0ab9002201b45cdfb",
+  "e5b0d8dc954f45469597ae6c9182325b",
+  "ba3d14bc1530489598e39c228f119c7d",
+  "28a3b153e394459da08166c453a8299f",
+  "1e98a81ccf2a4d31a3e2c2d9239a3e79",
+  "d420134439f24ac6b38a812c6c90ccf5",
+  "d03c00c37ca94b8c8871f65ee68b1a65",
+  "95e222050846454db61ddfb5d950cec7",
+  "4400319098c342c097f355b86e9d7cbf",
+  "c6e013e29cbc4a58a56b70aaa768b91c",
+  "33175e36ef734473ae41df42b377aa29",
+  "8a369df656964bed9a755a4d62dffe66",
+  "b084e4d59cdd4cc29120ec213d0292d0",
+  "0031097599ff41f19b6dcecdef1a500f",
+  "c85d72851ebf4434b103c01cb317f850",
+  "5eb22390c5a6416187fff660acacb4d9",
+  "bead46a979004d998eb32e13c652d11b",
+  "c522b458bb6143248113f08e877164ed",
+  "cab16e403ea14a6592c4e3c917bd7fbd",
+  "5448ef58c1f547d8931fc9ebe8ff22ad",
+  "d19f6679f46c4d9caf8fcab6f2a35a57",
+  "a31ef48eeda14555b4332b2a945e6782",
+  "21c7b6260e99492b96279656bc4cfe35",
+  "42ddf8b0181347d09c165922403a3201",
+  "0a434e1e1f774f588da4ef357bbf69b8",
+  "ccf444970e8b414fb645da49090b78bb",
+  "89e34f123090449c89801b2f72f51c03",
+  "2fab0c1d607947cf90013326ea41ab7a",
+  "589e4d3bd47c49ebb7e995cbf432a795",
+  "5a1de205bdc94fc18da8631c85ede7b2",
+  "93ea9f0189244d92ad97dff47b26666d",
+  "c2db891f2ec042248bb2645aa6126d8a",
+  "68c767416d3c4a42b29354b7997717f4",
+  "0e9ae4f7622b4504b112f422b15e2d09",
+  "af938f1acc8d44edac580c51c170982f",
+  "8a382843cfca4c889acb04b22bebd4b8",
+  "49883aa427ff4f80aca92929f938716c",
+  "530aa0b9fa5d440782082db593c418bf",
+  "f694d5ff686e4ab79d2b33a430e75b70",
+  "fea1298ac59e4f53a4612f2cdc85f682",
+  "ec1e1aef70ba40dfabdb7a6bf8f8b449",
+  "d8f2878baaac4a7bb77fdc9424bd27e1",
+  "74485e0db6674b2db913c4134c51682b",
+  "02d868d907d34d1ebe48016185ab0260",
+  "8ff9374e67244291840fcd796a997602",
+  "1769ce00bfdb4b5a956ff4a7af1e54f2",
+  "ff8f15a0cdd544d98b3236582a978350",
+  "cd9bcead18ee4b27b3fdf74758ab4eac",
+  "1d8c8d282da6469e844a57382c22694c",
+  "1df56679fe5542038fd7cb88551634fe",
+  "aa2d9ad91a2848118a81113bcaf210ec",
+  "ade8635c03fd4b1fb95a50a093c53bd8",
+  "77418e7714544ec59ec89cdd3987a475",
+  "70da2de9b48c419e8ccc00de5dc0b750",
+  "775c2f72afea477b8ec9dd48e125156c",
+  "8764f1a287f246ed930b459b3f3f3e34",
+  "6d93ed91ecd64916a52b932a74b3915c",
+  "33dbaef8d96c4bae9468d0a07b64f96c",
+  "dbd364c5f4b64e37af785f52d3c9b119",
+  "4c61af8d7225451eb5153f9dcdd8fde0",
+  "02a9c1a868744bf8832b1b14bd8ddb44",
+  "d10bf4ecafb14800a6aeb98209938a95",
+  "72c92bece1004f3a98cc71fd57592cfd",
+  "bcea023eef394b1c877d8ddc5eb35ac1",
+  "8fe528cdcbde43e6b1c70123112a4b47",
+  "c48c9160980146a7b0efa5213012c730",
+  "88b940bd585e415384b9b563dea2a854",
+  "cd3a041bd6eb42df9e4ebe788aa4985c",
+  "e81d4636d0cd4dee962191cd094f97cc",
+  "43637f9a6172473c93e7f501a765480d",
+  "599375d96cbd4abaac8445da5c90c080",
+  "3edf8ba959484888a7d3a90dd45fb344",
+  "0a31a376036e4641a54777a66f057aee",
+  "f6cf79c2416d4851920548365c1ece70",
+  "a29c336ecb27412bba10a270075727de",
+  "5109f3d49ba1461a8c2375431d98139a",
+  "98ae291f7cce49a4a25fa38aa9ed76c7",
+  "11e451b52f094249b447fd3f39e593ca",
+  "1a0b2ab5690e42c1b8d153d8f154f83f",
+  "4fc6bf04d0524f4695dbc96503e05ade",
+  "c5d3c5211bee43d98366f4be2239f3b2",
+  "dd006992c14b4d40948f91c6fa0734f9",
+  "914576aaf48044a58eb6e849242c3f7e",
+  "478c289e625a46fcb1b062429fe457b9",
+  "0b378d01c74d4cb79c7f06125479b5b2",
+  "ee2f7df82a894ff8b3a5f045ed097988",
+  "a99d6e672abe4c968aa17ec445c3573d",
+  "13f47c7bb05f47d5985ae147967092a8",
+  "fa1866cb22a24b7d8eb8f63c341cac1c",
+  "bf21a85431eb44a5bc0b20d3a4f71bd3",
+  "77152d5cb3794cf19aa7b3b911ed9b9f",
+  "f9cd7a5ed1f04e72b50fa41dd97b3d86",
+  "a3eff311d3c541ad84192e7bcaa4d499",
+  "09bee777e32e498bacea06f575af0ca1",
+  "9d146713bc254e0c839362f865043464",
+  "7399725df0a6417ba358c2c4f944d189",
+  "89dd3e0d7d3b4b2e893e62e7a177b4fc",
+  "41998cfa956b41398ba1ea0cd924934a",
+  "718b343e54e14636a9e23d6422be28d1",
+  "d89ad228d3b94278aea64ae12e932ce8",
+  "88dbed5a895f453f850bf168b668dcc6",
+  "3a5187e752df4b92ba270f8a5bb723d3",
+  "06a62e2e4be342fab64822a44e7f16a6",
+  "c1c570a540914853a6d7e14e9c202cbd",
+  "51306862819147958a34ccd73458d5a9",
+  "1cc87d2de2954eac9e34c2ca88e679ff",
+  "5470c7152b93476bbd6aa3467cf64205",
+  "68417dbea7b44cffa29622d8b92cdde9",
+  "cff453164f27431cb20d89d73761bf44",
+  "692e086550aa4e4ea371ba41680117be",
+  "9f2411491f82413f92518ab8dda35aa2",
+  "75fed7e3f5bf427eb2c70a4029a35e52",
+  "2fa01d182f934998bdafce7cb6136156",
+  "f246f57ef45240ae968fef6504640770",
+  "7c5024aedff3457c976c06a9d0340326",
+  "bbe5d40cb71b47b6a1d5eeeba89b9f89",
+  "56b02b97ad424a5ea4f89115116b34a9",
+  "d3ab81223daf4f5486a4e6b0be8df262",
+  "994d87b2cd7c44cab47392a686335ae9",
+  "d4c56fad654f41539eded25df6f9372e",
+  "9e682d4a56dc4d7c833ebb6161e94ca7",
+  "d5127f026271488daa6e4b5add731fe0",
+  "118d8de11b8e41e088caf1071fea40c9",
+  "3f818475bdc34b46b43b27d56c3d5b31",
+  "e6abe24efb0146faba3d791c94fa63fa",
+  "b43e92e8a69141468a36f20c006dd53c",
+  "61632cfc794a44e98ec62f8b5c11168d",
+  "2be90a73a7f3434885c20e175efcd00d",
+  "40afa81d0bd946af8565de326b35ded7",
+  "ade60fab33624139ae24a2983c2ccd55",
+  "978f00e8da9844a799b2792dc865a28f",
+  "a27ebe152482439e9a755e767e21fde0",
+  "43ad8c632dcb439fa0b55ba59b176ac8",
+  "826dd7d6a0fd4f7891ff4a40e0c98c76",
+  "b8f576edbeef4b85ae57ed6a6170519e",
+  "560e24978621436f8a2e8c72d5fa7236",
+  "69b03fd20d4e452aaa38ee2b81422800",
+  "c630f7ea325649f3afd1c91411a6ed5d",
+  "762a345793394e5184a5f9c17c0585ed",
+  "be231203f34d4aa085c9b25d261f087d",
+  "fd7b93463e9545bda3c8b4caa700d227",
+  "8145aa42f600480fa6009366a9b676d6",
+  "73abf19403204b2d908a1de71682952b",
+  "c536540f553341298e9de6940c14cba7",
+  "f640b0758b7a41dc942a9c850dff6dca",
+  "99a47a83934641d1b4b2a71577342c3e",
+  "6acd2a330f684dbea9af3e1dfc806849",
+  "110d433a02bd47d1b083d8cb4fb28816",
+  "117433d75ed84b34b5b08b7d2b6a3089",
+  "8847a6fb70c7413fadbebe4db147a23c",
+  "651aa14ead5f4ace930c5949c83668ed",
+  "462db8803c9d486b8f662140d25f667c",
+  "4ff3df09ff764cc29e9ac9fedea8fe43",
+  "40f185954b104b3d847883504a85764f",
+  "6005049a5d024b0a9dbc58cf79dc22f7",
+  "ffb029dd5e7c4f22912484f6baf352bd",
+  "79be8519dfa846978fbd61644fd884b7",
+  "04c7d821781f4ff38c39a6ae282bd514",
+  "aac120ff5a79411994bd8d8c1bc47931",
+  "abc54cbcb09545779ae86f9c8a64cbbf",
+  "6b088cc8265c4dcdbbe07adebd65248b",
+  "e097bcdb4bad4cff84e846d8bb256232",
+  "b3cf2447384c44e287d03049e1a47208",
+  "2c2ee8746397482bb6b0fbaed8c1efaa",
+  "bade768980144210a1dc1fe062dbbc1f",
+  "ea3188fdd5ff47f58eaedf00c415660f",
+  "ff461a637e784a96b38ad212afd8c2de",
+  "f50ca0d60e1a4aa19ef656fe266e8c54",
+  "a94abe5b067f4c2b9d51d8c93e23c489",
+  "0f71fb8c933244928cfc4dd784a65de0",
+  "381019017f094fbd9f6e4b50bc751bde",
+  "1ff52a0d4b6c42f9902ed89789515d9c",
+  "774fa0979d2d44ba9d2670b4268c856f",
+  "e74959225a01471f9f6d1d552f7307de",
+  "5ef71b98a6474251af5cfb64242d770c",
+  "69d32b2985484cf99f472d3507d74fcd",
+  "92ceafe3e016415db6ec43eb38900356",
+  "04d1aba5b9af4e599c82ad516e5ebf61",
+  "09aa8c6f97b44fb3b1447cfca2a85d73",
+  "3e1f6f23f4b8426d94d43a61f0f9c22d",
+  "6550335abbd148328cd296ae032b0013",
+  "bedbaecbbd1d4be182ba2a5461ff1c44",
+  "dc81b76019db4e44851e1dad03e0f073",
+  "44fe024bd27f4e8f94417c1b5543d355",
+  "d6893bab39424484b5a15d877d4ff7a0",
+  "b94666a029ba48dda1c64d6a80fc56b3",
+  "6859638e6fca4b9bb6791ef371e2d644",
+  "7ee736f67c734505a8227928f29cd75d",
+  "4fa9c0fb1bff4ba48822acfabd61f9cf",
+  "a427cc9338bf4121a1e8f74463e70eb7",
+  "3a497914554f42ac921b046fed3feb26",
+  "2bc65bbc3f85464a8cc34aa9e834bdb2",
+  "8a15886a76f949b7b83b6af5331ed0bb",
+  "247e65a02e444db4ac2a9be574e722eb",
+  "ad507e09650f4ff2a9f8b578596f46e9",
+  "16af5b61295049af8a1b06aa6ad4212f",
+  "c9c1c9ea65734c6cac6d36ddd34a2f6d",
+  "f47cd6caf31944d186bdd7182557b46f",
+  "99df7fae8fcb4413a78f52fc54fb2c6c",
+  "0f12582aa0f5466cb0307a175ee94ce3",
+  "66476eb3134d41a8aafca14ffaf48702",
+  "7df5815f9cf64227893459c4da5a2113",
+  "bc288da65af844209d2ed1fb9f3bf473",
+  "086efc2d4e82433c882d465486033f8b",
+  "6c48bee1b61c4b35913a41cc06f13cd3",
+  "85c701251906491781b379b2c7b332b7",
+  "a4992eae5716491da2f1beb158bd2c27",
+  "bf67648033c248e28dcd1d278faa8ddb",
+  "d767addf6ca24d00bb9f34d7e648e56a",
+  "84367bd9c99043c6b2640dbb530c0a5d",
+  "9fb20d29c9364b17b44ea632e915292f",
+  "2f09ce7efe5946769a52bec4dd0a0fd9",
+  "21d4752efa784588ab6dd42546695801",
+  "8b5620b051be4dfdb9e2be0e8ddeee33",
+  "4ec7242a2e8945809ad51e4ff437ee44",
+  "72cb23ae1ea542e096871186abfd2a29",
+  "5942452124c8429dbe811043675808b0",
+  "4324688fe8d847c690b3d540a03b45b1",
+  "cbd9fbcf77044ae7adba085fe278e946",
+  "113f3882662f42b9b1c070c420a1bb2e",
+  "8ebd33bfa7824b5fb0b5c2af75219501",
+  "9a5e0fd68fee4c768eebc8f4da1dacc2",
+  "552a16c6a1dc4761bd26a82e5f4edd3d",
+  "2b5be45d7b7f4cb6ba2db9f3972c2670",
+  "ce7f867ff3ff4775a375d5078ca6f405",
+  "48ddc9231e26471d842cbfbfcc2f4a0b",
+  "1f338f3d85e642a0a0d582be73d076ab",
+  "3fb6b7133ef34b578ee8855566385826",
+  "56382f043ef84abe8b247d1aae31f493",
+  "29751b12418b4df2a3de4e4564fc62b9",
+  "2a6c9466a08047408d26aa69240e25ce",
+  "de8307cf46cc4a03a25d6135d7863d92",
+  "82625d2d8c2e44cdb808351627035ab0",
+  "d88e69e6d23141e1819c3903ca387a80",
+  "18c44d5ee1dd4286b5bb9589491780e4",
+  "4734b1d90d51476e9da74c871fc98acb",
+  "a049fa892e59493e9b287d8050d17558",
+  "43ce3969129e465fb24a24f003e72f43",
+  "efc6f5699bf34e88a537661dbde05d4a",
+  "3600468b809949baa81a256b7846974c",
+  "ceff98731f2d4ad0a12c57cfd9a924b6",
+  "1fccc8a7a2554a5982aaf1c6d7436c45",
+  "b7dd833bc30045f186a453c074eb80cc",
+  "4255425b1a9a45a58e869a09123446f0",
+  "430341024cba43578c96296f4dabc00f",
+  "57457f13dcf54cb09865cfd67a658c09",
+  "c5929d26063944979fcc879f80ff9462",
+  "bb9a4d34f9e244fca52f0a168f5426d3",
+  "508e242bad1d4171aa2d0654f86e49b3",
+  "0a2664f5843944f99c96b270d81e9506",
+  "1a670f8cfefa4bc9be07db84785071d9",
+  "01bf434592f74238b267c5df6ee02cd1",
+  "9a57c03a2cd549a591eedade3679a0da",
+  "f9c1d096795343fb9bfb5d1f92d5f6f2",
+  "d375d1ef66cd4f2c85640f7be915995f",
+  "5e05ad391af143d9b3094c3917d169d7",
+  "523c8479acd240529cc9f0df5124f4d6",
+  "d7fd426a89a64d7d8e530f4ae8aa8482",
+  "7c297f5215174ad6acbcf057926a7fb9",
+  "f546e8bbbf734781bcc3d782f21a1bef",
+  "8797c5da84f245c394edd51dd9586ab7",
+  "02eb6b53e4504f1683ba45f111e24c3c",
+  "e33d82026fa74dae97b3d255e0fd945a",
+  "2ee1d9fee7f248e4a617371696684bf3",
+  "1a9ed9fbf0c544d5b8c591eb1ca385c6",
+  "fde86e1d2203427eaba0f85e08cfa1ff",
+  "1679af9777a04080a862cb4bfc555cdd",
+  "7632bbf3e0e64e33a3d55f834ffc4912",
+  "a911c973469b4ac4a00dc4d03c02ee4f",
+  "a4f64f25b4404069a9b3c6166ae1c98d",
+  "e68edecb99be446bbfe04536969c2752",
+  "43522d1ec28e4b588cd3a27e3f8c7358",
+  "8ea1806906c042c8be358a9734078083",
+  "da8dde0839bd43f78bdc56c8f39cca9a",
+  "a9b54fb06c0c4507b85d006971ad5fd5",
+  "00ba2f32e07044eca322f7528ac65a99",
+  "7732bfe37f0242fdb5823dd32038628f",
+  "55d7b1c772bc45ff80dc1d7469f9ab26",
+  "2db57c1acb1a436db99d20822f708bb0",
+  "bb26f752a8d84c13860993f94fcc470d",
+  "21c1bc9f54db4ff7bbbd020945799807",
+  "563d3c786fa04b0889c421111db33b8d",
+  "481f66306e8b469cb272e900918aa347",
+  "e97686b5cdf64bd686ca3f633fda5e46",
+  "c89e827cf2f448aa8ca75501d964098a",
+  "1399d71e0ccf48b59bf7671e6b5c1c95",
+  "ce10a078404a4eac97b8e8adffa37dfa",
+  "f0af8c1c0e03495aa4b06b7039e35274",
+  "688f40a4764a4531b2aac11cacec3785",
+  "4ef42d74dc11442ba3709780a9f82fa3",
+  "1d4d6b0a765048b691299a2803196786",
+  "03976f61e5a0464988226c1392090846",
+  "e403d0b3b5594f1c9eebd63e7ede9e56",
+  "08168a3a8502476b8b659cc6d6a49e85",
+  "777bd2a9c75e465985e59862ecbce1b7",
+  "dd2700e6d909421aab32f93ab789c5e4",
+  "764fcb6791254c0589df64a774a80011",
+  "25f7908ece444e57ac738a209b5a1b82",
+  "23da243767c946f19f21eabe6fb45b42"
+ ]
+}

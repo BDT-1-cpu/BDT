@@ -1,0 +1,221 @@
+{
+ "_help": "Per-tour extras that are NOT in the playbook. Image values are Wix media IDs (the 32-character code after 588d17_ in the Wix image address). Videos use the Vimeo number (vimeo.com/<number>) or a 'youtube' ID. Leave any field empty (\"\" or []) and that part of the page simply hides. rc_images / leaderboard_images may also be file paths (relative to tour_media) – those images are built into the page.",
+ "year": 2003,
+ "strapline": "IT'S A LITTLE BIT FUNNY",
+ "hero": {
+  "id": "1763038928a74b0f9dfbab433351ffa1",
+  "caption": "Cracking Barnets"
+ },
+ "venue": {
+  "map_query": "37.6048079,-0.8078447",
+  "map_zoom": 15,
+  "blurb": ""
+ },
+ "captains": {},
+ "accommodation": {
+  "name": "La Manga Golf Bungalows",
+  "blurb": "Home for BDT 2003 – 11 tourists, with La Manga North and La Manga West on the golf schedule.\n\nAccommodation at La Manga Club, a 1,400-acre resort that opened in 1972 in south-east Spain. The resort has three 18-hole golf courses (North, South and West), 28 tennis courts and a large residential community.",
+  "photos": [
+   {
+    "id": "0f9829c09f6546eb8f0bbf6406073b6c",
+    "caption": ""
+   },
+   {
+    "id": "4925d179d6da47c7b79aa34be125d212",
+    "caption": ""
+   },
+   {
+    "id": "84f6bcb0c1c448b8b9cf0f1ea44e0a61",
+    "caption": ""
+   },
+   {
+    "id": "f55d0e04be124726baec46739f572cb3",
+    "caption": ""
+   },
+   {
+    "id": "0fb3cf1754354a7c8b237cbc8b031fc4",
+    "caption": ""
+   },
+   {
+    "id": "5807b4a1311e4240a6b10caf2825f2ad",
+    "caption": ""
+   },
+   {
+    "id": "b67cf95fa57a45b7ba52ae615173b1c0",
+    "caption": ""
+   },
+   {
+    "id": "21bd84f272fb4bacb9e04a15349628c5",
+    "caption": ""
+   },
+   {
+    "id": "35d40862bcf240f8bd5733f1f2f8640c",
+    "caption": ""
+   },
+   {
+    "id": "689b2475fa8549c885db7d6a8266de66",
+    "caption": ""
+   },
+   {
+    "id": "e2af1b7b7125408e861236899d4f26c3",
+    "caption": ""
+   },
+   {
+    "id": "5fa685225bd743dca30d987201d8c037",
+    "caption": ""
+   },
+   {
+    "id": "9c7741299ee54ee184a4760ae6ac84bf",
+    "caption": ""
+   },
+   {
+    "id": "d104132fab2b4ecf90435bc1273f5cdc",
+    "caption": ""
+   },
+   {
+    "id": "431d8c3911884c109cc2fb30d06cf0aa",
+    "caption": ""
+   },
+   {
+    "id": "94788574bc1e48688c06b5d7268c7b38",
+    "caption": ""
+   },
+   {
+    "id": "3bce812a1f874159a3723d29ed6421c9",
+    "caption": ""
+   },
+   {
+    "id": "5f33467507a64c7da4cce492110c7f27",
+    "caption": ""
+   },
+   {
+    "id": "a8bd80532d184d2fb0c10c1f140fabd4",
+    "caption": ""
+   },
+   {
+    "id": "531c61bf31804c9e8ac21889a32be4da",
+    "caption": ""
+   },
+   {
+    "id": "b5183248129e4e9f9fb7eccb6fbcd3e2",
+    "caption": ""
+   },
+   {
+    "id": "a1d95f6bfe7b4a3db9592546c886569d",
+    "caption": ""
+   },
+   {
+    "id": "60ef6423f3734c3884cad2d0b2daa035",
+    "caption": ""
+   },
+   {
+    "id": "40186bf619f84dd88af358ec08546084",
+    "caption": ""
+   },
+   {
+    "id": "e58622b78dc445c0802d3ef97b928c2a",
+    "caption": ""
+   },
+   {
+    "id": "65520c6d7c4f4df6b8a6e5f7980b9eb1",
+    "caption": ""
+   }
+  ],
+  "where": "La Manga Club · Cartagena, Murcia · Spain",
+  "facts": [
+   "Three 18-hole courses",
+   "1,400-acre resort",
+   "Opened 1972",
+   "28 tennis courts"
+  ],
+  "link": "https://www.lamangaclub.com/"
+ },
+ "itinerary_images": [],
+ "itinerary_extra": {},
+ "team_photos": {},
+ "team_announcement": [],
+ "rc_images": [],
+ "leaderboard_images": [
+  "boards/BDT_2003_Leaderboard_1.jpg"
+ ],
+ "summary": {
+  "banner": "b5fc8229e6894e12bf9370033ebfe099",
+  "title": "",
+  "text": "",
+  "link": "https://www.bigdogstour.com/post/bdt-2003-tour-summary-it-s-a-little-bit-funny"
+ },
+ "video_sections": [
+  {
+   "title": "Photo Slideshow",
+   "items": [
+    {
+     "vimeo": "420384291",
+     "title": "BDT 2003 Slideshow",
+     "thumb": "https://i.vimeocdn.com/video/895736741-766062664b5b35e58ae1ff185f7d10e4d659b289cd5a619c9f14b9f6c9a66d5b-d_640?region=us"
+    }
+   ]
+  }
+ ],
+ "gallery": [
+  "55ac50103df54864aadab28f5365c5c0",
+  "528244425724457384263b7da3d491fa",
+  "d02d0273549544e1afdeb968753d4179",
+  "35d40862bcf240f8bd5733f1f2f8640c",
+  "689b2475fa8549c885db7d6a8266de66",
+  "d104132fab2b4ecf90435bc1273f5cdc",
+  "531c61bf31804c9e8ac21889a32be4da",
+  "32a5361124714d0a83346bfc0001d227",
+  "656b3607460d4701846e955bdd92508f",
+  "1763038928a74b0f9dfbab433351ffa1",
+  "5f33467507a64c7da4cce492110c7f27",
+  "94788574bc1e48688c06b5d7268c7b38",
+  "6078f2555e3c4e2e9f1bbe8bd2722b5e",
+  "c6aba1bfaa4f409f92774affeea2e4f1",
+  "6d8c57fffe6b4f40ae3d93dbc8ad7651",
+  "08b8391decc44ca4aa2bb93abd4d4d5f",
+  "b8197ccc74704022b6d272ea37068032",
+  "0b0054bc0705454ba6d14ad5a801d928",
+  "d9aa5dce405b4f39824038810fe2c906",
+  "6211fdc4beaf4f38a7ff839c7f1ed7f3",
+  "29b98b278c1c42bab14b250d7fddb90b",
+  "f072c7eb5beb4afa8aad1ed9afd94f19",
+  "a5c112be2568465abde175dd7b70ed84",
+  "b33d2947207d49589a7c8c8ce14cf1ec",
+  "4960eeb32e6c4180988bb6742f435209",
+  "a13610494d8048dea19f385cb162ff09",
+  "9c635990601f4408a0efeaa65062e1c4",
+  "3bce812a1f874159a3723d29ed6421c9",
+  "a8bd80532d184d2fb0c10c1f140fabd4",
+  "aded5f6776644e078b9624b5695e1f41",
+  "e2af1b7b7125408e861236899d4f26c3",
+  "7f1101aa834b42e7a6ec8f12b95bd1ef",
+  "e32c3ed2c4d8483e93ebaf3352e21129",
+  "d28b1d865d164dac903cb15ff5259af3",
+  "7fa53cb1685d46ddaef1a27fc06fa4f0",
+  "ee593f2867a74a0bbaa525bccb5f8810",
+  "dbe6470c6c954ea18e9e9b04c69efa3f",
+  "ebf44e39d8b94f959577b473a8249809",
+  "f473b9442464442aa0cc592b5e926b4d",
+  "c84913711cc94646b16bcb089b8a0dff",
+  "cb22bae7e0934f398b75bafaa5c790a8",
+  "d398918ed27f48b1b5e6df663469b04b",
+  "e2b61fbc33504367a7e3a58e4da68993",
+  "1af173d6d32b49ba9df96477bcf062d1",
+  "b38c702e5d464d8ea3e4a8ab52e37ef2",
+  "e92502b9b2c7404785e600945932ca6a",
+  "431d8c3911884c109cc2fb30d06cf0aa",
+  "00c02807da2e4d1691617aab50d8cea2",
+  "63286e3ac37445d98ce96338b6030139",
+  "9c7741299ee54ee184a4760ae6ac84bf",
+  "5fa685225bd743dca30d987201d8c037",
+  "b5183248129e4e9f9fb7eccb6fbcd3e2",
+  "a1d95f6bfe7b4a3db9592546c886569d",
+  "60ef6423f3734c3884cad2d0b2daa035",
+  "40186bf619f84dd88af358ec08546084",
+  "e58622b78dc445c0802d3ef97b928c2a",
+  "65520c6d7c4f4df6b8a6e5f7980b9eb1",
+  "4b462b12165e4e918c0786dfae097513",
+  "70cf798bd8b24dd090c31b00e253aaed",
+  "6ac96da0ed0d437cbcdae2115f5c7164"
+ ]
+}

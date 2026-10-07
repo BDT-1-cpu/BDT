@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en"><head><meta name="robots" content="noindex, nofollow"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+
+<meta name="theme-color" content="#081310">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>BDT Scorer</title>
+<style>
+:root{--bg:#050B09;--card:#0f2219;--card2:#163326;--line:rgba(240,197,102,.18);--gold:#F0C566;--ink:#F4F1E4;--soft:#A9BAAE;--bh:#ff4747;--rt:#7c90ff;--ok:#7bd88f;--warn:#ffb454}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+header{position:sticky;top:0;z-index:5;background:#081310;border-bottom:1px solid var(--line);padding:10px 14px calc(8px) 14px}
+header h1{margin:0;font-size:18px;letter-spacing:.04em;color:var(--gold)}
+header .sub{font-size:12.5px;color:var(--soft)}
+.score{float:right;font-weight:800;font-size:18px;margin-top:2px}.score .b{color:var(--bh)}.score .r{color:var(--rt)}
+nav{display:flex;gap:6px;overflow-x:auto;padding:8px 14px;background:#081310;border-bottom:1px solid var(--line);position:sticky;top:58px;z-index:4;scrollbar-width:none}
+nav button{flex:none;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:8px 14px;font:600 14px inherit;font-family:inherit}
+nav button.on{background:var(--gold);color:#111;border-color:var(--gold)}
+main{padding:14px 14px 120px;max-width:720px;margin:0 auto}
+section{display:none}section.on{display:block}
+h2{font-size:17px;margin:18px 0 8px;color:var(--gold)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px;margin:10px 0}
+label.f{display:block;font-size:13px;color:var(--soft);margin:8px 0 4px}
+input,select,textarea{width:100%;font:16px inherit;font-family:inherit;color:var(--ink);background:#0a1812;border:1px solid var(--line);border-radius:10px;padding:10px}
+textarea{min-height:70px}
+.row{display:flex;gap:8px;align-items:center}.row>*{flex:1}
+.hint{font-size:13px;color:var(--soft);margin:6px 0}
+.warn{font-size:13.5px;color:var(--warn);margin:6px 0}
+.btn{display:inline-block;border:0;border-radius:12px;padding:12px 16px;font:700 15px inherit;font-family:inherit;background:var(--gold);color:#111}
+.btn.sec{background:var(--card2);color:var(--ink);border:1px solid var(--line)}
+.btn.small{padding:8px 12px;font-size:14px}
+.btn.del{background:transparent;color:var(--soft);border:1px solid var(--line);padding:6px 10px;font-size:13px}
+.seg{display:flex;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.seg button{flex:1;border:0;background:#0a1812;color:var(--ink);padding:10px 4px;font:600 14px inherit;font-family:inherit}
+.seg button.on.b{background:var(--bh);color:#fff}.seg button.on.r{background:var(--rt);color:#fff}.seg button.on.h{background:var(--gold);color:#111}.seg button.on{background:var(--gold);color:#111}
+.pl{display:flex;align-items:center;justify-content:space-between;padding:8px 2px;border-bottom:1px solid rgba(255,255,255,.05)}
+.pl:last-child{border-bottom:0}
+.pl .n{font-weight:600}.pl .n small{display:block;color:var(--soft);font-weight:400;font-size:12px}
+.pick{display:flex;gap:4px}.pick button{width:44px;border:1px solid var(--line);background:#0a1812;color:var(--soft);border-radius:8px;padding:7px 0;font:700 13px inherit;font-family:inherit}
+.pick button.on.b{background:var(--bh);color:#fff;border-color:var(--bh)}.pick button.on.r{background:var(--rt);color:#fff;border-color:var(--rt)}
+.match .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;font-weight:700}
+.side{border-left:4px solid var(--bh);padding-left:8px;margin:6px 0}.side.rt{border-color:var(--rt)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}.chips button{border:1px solid var(--line);background:#0a1812;color:var(--ink);border-radius:999px;padding:6px 10px;font:600 13px inherit;font-family:inherit}
+.chips button.on{background:var(--gold);color:#111}
+.sc{display:grid;grid-template-columns:1fr 84px;gap:8px;align-items:center;padding:4px 0}
+.sc input{text-align:center;font-weight:700}
+.b{color:var(--bh)}.r{color:var(--rt)}
+table{width:100%;border-collapse:collapse;font-size:14.5px}th,td{padding:7px 4px;border-bottom:1px solid rgba(255,255,255,.06);text-align:left}th{color:var(--soft);font-weight:600;font-size:12.5px}
+td input{padding:6px;text-align:center;width:60px}
+pre{white-space:pre-wrap;word-break:break-word;background:#0a1812;border:1px solid var(--line);border-radius:10px;padding:10px;font-size:13px;max-height:340px;overflow:auto}
+.saved{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);background:var(--card2);border:1px solid var(--line);padding:6px 12px;border-radius:999px;font-size:13px;color:var(--soft);opacity:0;transition:opacity .3s}
+.saved.on{opacity:1}
+</style></head><body>
+<header><div class="score" id="cup"></div><h1>BDT SCORER</h1><div class="sub" id="where"></div></header>
+<nav id="nav"></nav>
+<main>
+<section id="setup"></section>
+<section id="r1"></section><section id="r2"></section><section id="r3"></section>
+<section id="finish"></section>
+<section id="send"></section>
+</main>
+<div class="saved" id="saved">Saved on this phone</div>
+<script>
+/* ---------- tour set-up (BDT 2027 – Mallorca) ---------- */
+const TOUR={year:2027,place:'Mallorca, Spain',location:'Mallorca',country:'Spain',dates:'28 Apr – 2 May 2027',start:'2027-04-28',end:'2027-05-02',accommodation:"Possessió de s'Horta",
+ rounds:[{r:1,course:'Alcanada',full:'Alcanada',day:'Thu 29 Apr',fmt:'Fourball'},{r:2,course:'Pula Golf',full:'Pula Golf',day:'Fri 30 Apr',fmt:'Fourball'},{r:3,course:"Vall d'Or",full:"Vall d'Or",day:'Sat 1 May',fmt:'Singles'}]};
+/* course = short name used in the Playbook; full = name shown on the Courses page; day = the day it was played */
+const PLAYERS=[["Adam G","Adam Gobat"],["Adam T","Adam Thornton"],["Ash","Ashley Hurst"],["Bean","Damian McNeela"],["Boggy","Neil Thornton"],["Boysie","Greg Boyes"],["BT","Brendan Taylor"],["Buysai","David Bryson"],["Buzz","Mark Clarkson"],["Charlie","Charlie Parish"],["Coxy","David Cox"],["DT","Damian Taylor"],["Fred","Frederic Doyhamboure"],["Gav","Gavin Neilan"],["Glenn","Glenn Rhea"],["Harbo","Paul Harben"],["Hulmey","Andrew Hulme"],["Hursty","James Hurst"],["Jules","Jules Panter"],["Kenners","Nick Kenyon"],["Kezza","Ian Kerrigan"],["Knoxy","Anthony Knox"],["Langers","Nick Langdon"],["Langrish","David Langrish"],["Little","Ciaran Little"],["Lordy","Richard Lord"],["Marcus","Marcus Haigh"],["Marshy","Daniel Marsh"],["Oli D","Oli Drinkwater"],["Oli G","Oli Gregory"],["Ollie Gobat","Ollie Gobat"],["Paddy","Paul Dineen"],["Picko","David Pickering"],["Purlo","Stuart Purling"],["Ravo","David Raven"],["Rick","Rick Sell"],["Rob","Rob Parish"],["Robbo","Nick Roberts"],["Rufus","Rufus Gobat"],["Steve","Steve Darley"],["Tom","Tom Lawrance"],["Tully","Dan Tully"],["Tyzzer","Damian Tyzzer-Smith"]];
+const RECENT=new Set(['Adam T','Ash','BT','Bean','Boysie','Buysai','Buzz','Charlie','DT','Gav','Harbo','Hulmey','Hursty','Kenners','Kezza','Knoxy','Langers','Little','Marshy','Oli G','Paddy','Ravo','Rob','Robbo','Rufus','Steve','Tom','Tully']);
+const TROPHIES=[['Big Dog','Individual Stableford champion (Green Jacket)'],['2nd','Runner-up'],['3rd','Third place'],['Shitzu','Last place'],['Great Dane',''],['St Bernard',''],['Xolo','Dubious handicap'],['Rottweiler',''],['Poodle',''],['Cheat',''],['Seve & Olly',''],['Goblat',''],['Duncan Goodhew',''],['Elton Ravo Prize','Song performed off tour']];
+const MARGINS=['1UP','2UP','2&1','3&2','4&3','5&4','6&5','A/S'];
+const KEY='bdt-scorer-'+TOUR.year;
+
+/* ---------- state ---------- */
+const blank=()=>({v:1,year:TOUR.year,scorer:'',newPlayers:[],team:{},cap:{BH:'',RT:''},
+ shirts:{BH:{colour:'',logo:''},RT:{colour:'',logo:''}},rounds:TOUR.rounds.map(r=>({r:r.r,course:r.course,fmt:r.fmt,rainedOff:false,matches:[],scores:{}})),
+ hcp:{},positions:{},trophies:TROPHIES.map(t=>({t:t[0],w:[''],why:''})),notes:'',updated:''});
+let S;try{S=JSON.parse(localStorage.getItem(KEY))||blank()}catch(e){S=blank()}
+if(!S.shirts)S.shirts={BH:{colour:'',logo:''},RT:{colour:'',logo:''}};
+if(!S.hcp)S.hcp={};
+let tab='setup';
+const $=id=>document.getElementById(id);
+const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const allPlayers=()=>[...PLAYERS,...S.newPlayers.filter(p=>p.short).map(p=>[p.short,p.real||p.short])];
+const full=n=>(allPlayers().find(p=>p[0]===n)||[n,n])[1];
+const teamOf=n=>S.team[n]||'';
+const squad=t=>allPlayers().map(p=>p[0]).filter(n=>S.team[n]===t);
+let saveT=null;
+function save(){S.updated=new Date().toISOString();try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}
+ const s=$('saved');s.classList.add('on');clearTimeout(saveT);saveT=setTimeout(()=>s.classList.remove('on'),900);head()}
+
+/* ---------- Ryder Cup points ---------- */
+function pts(){let b=0,r=0;S.rounds.forEach(R=>{if(R.rainedOff)return;R.matches.forEach(m=>{const v=+m.value||1;if(m.res==='BH')b+=v;else if(m.res==='RT')r+=v;else if(m.res==='H'){b+=v/2;r+=v/2}})});return[b,r]}
+const fr=v=>{const w=Math.floor(v),f=v-w;return (w||!f?w:'')+(f===.5?'½':f===.25?'¼':f===.75?'¾':'')};
+function head(){const [b,r]=pts();$('cup').innerHTML=`<span class="b">${fr(b)}</span> – <span class="r">${fr(r)}</span>`;
+ $('where').textContent=`BDT ${TOUR.year} · ${TOUR.place} · ${TOUR.dates}`}
+
+/* ---------- nav ---------- */
+const TABS=[['setup','Setup'],['r1','Round I'],['r2','Round II'],['r3','Round III'],['finish','Finish'],['send','Send to Paul']];
+function nav(){$('nav').innerHTML=TABS.map(([k,l])=>`<button data-k="${k}" class="${k===tab?'on':''}">${l}</button>`).join('')}
+$('nav').onclick=e=>{const b=e.target.closest('button');if(!b)return;tab=b.dataset.k;draw();window.scrollTo(0,0)};
+
+/* ---------- setup ---------- */
+function drawSetup(){
+ const opts=t=>'<option value="">Choose…</option>'+squad(t).map(n=>`<option ${S.cap[t]===n?'selected':''}>${esc(n)}</option>`).join('');
+ const L=allPlayers().slice().sort((a,b)=>(RECENT.has(b[0])-RECENT.has(a[0]))||a[0].localeCompare(b[0]));
+ const nb=squad('BH').length,nr=squad('RT').length;
+ $('setup').innerHTML=`
+ <div class="card"><label class="f">Your name (who is scoring)</label><input id="scorer" value="${esc(S.scorer)}" placeholder="e.g. Paddy"></div>
+ <h2>Teams <span class="hint">· <span class="b">${nb} Bloodhounds</span> · <span class="r">${nr} Retrievers</span></span></h2>
+ <p class="hint">Tap <b class="b">B</b> or <b class="r">R</b> for everyone on tour. Last year's tourists are listed first.</p>
+ <div class="card">${L.map(([n,f])=>`<div class="pl"><div class="n">${esc(n)}<small>${esc(f)}</small></div><div class="pick" data-n="${esc(n)}"><button class="b ${teamOf(n)==='BH'?'on':''}" data-t="BH">B</button><button class="r ${teamOf(n)==='RT'?'on':''}" data-t="RT">R</button></div></div>`).join('')}</div>
+ <h2>Captains</h2>
+ <div class="card"><div class="row"><div><label class="f b">Bloodhounds</label><select id="capB">${opts('BH')}</select></div><div><label class="f r">Retrievers</label><select id="capR">${opts('RT')}</select></div></div></div>
+ <h2>Playing handicaps</h2>
+ <div class="card">${[...squad('BH'),...squad('RT')].map(n=>`<div class="sc"><span class="${teamOf(n)==='BH'?'b':'r'}">${esc(n)}</span><input type="number" inputmode="numeric" min="0" max="54" data-hcp="${esc(n)}" value="${S.hcp[n]??''}"></div>`).join('')||'<span class="hint">Pick the teams first.</span>'}
+ ${Object.keys(S.hcp).filter(n=>!S.team[n]).map(n=>`<div class="sc"><span>${esc(n)} <small class="hint">(pulled out)</small></span><input type="number" inputmode="numeric" min="0" max="54" data-hcp="${esc(n)}" value="${S.hcp[n]??''}"></div>`).join('')}
+ <p class="hint" style="margin:10px 0 6px">Someone was due to tour but pulled out and was given a new handicap? Add them here:</p>
+ <select id="addpo"><option value="">Add someone who pulled out…</option>${allPlayers().map(p=>p[0]).filter(n=>!S.team[n]&&!(n in S.hcp)).sort().map(n=>`<option>${esc(n)}</option>`).join('')}</select></div>
+ <h2>Tour shirts</h2>
+ <div class="card">${['BH','RT'].map(t=>`<label class="f ${t==='BH'?'b':'r'}">${t==='BH'?'Bloodhounds':'Retrievers'} shirt colour</label><input data-sh="${t}" data-k="colour" value="${esc(S.shirts[t].colour)}" placeholder="e.g. Red, white and black"><label class="f">Logo wording (use / for a new line)</label><input data-sh="${t}" data-k="logo" value="${esc(S.shirts[t].logo)}" placeholder="The Big Dogs Tour / Mallorca 2027 / The ${t==='BH'?'Bloodhounds':'Retrievers'}">`).join('')}</div>
+ <h2>First-timers</h2>
+ <div class="card">${S.newPlayers.map((p,i)=>`<div class="row" style="margin-bottom:6px"><input data-np="${i}" data-k="short" placeholder="Short name" value="${esc(p.short)}"><input data-np="${i}" data-k="real" placeholder="Full name" value="${esc(p.real)}"><button class="btn del" data-delnp="${i}">✕</button></div>`).join('')}
+ <button class="btn sec small" id="addnp">+ Add a first-timer</button><p class="hint">Once added they appear in the team list above.</p></div>`;
+ $('scorer').oninput=e=>{S.scorer=e.target.value;save()};
+ $('capB').onchange=e=>{S.cap.BH=e.target.value;save()};$('capR').onchange=e=>{S.cap.RT=e.target.value;save()};
+ $('setup').querySelectorAll('.pick').forEach(p=>p.onclick=e=>{const b=e.target.closest('button');if(!b)return;const n=p.dataset.n,t=b.dataset.t;
+  S.team[n]=S.team[n]===t?'':t;if(!S.team[n])delete S.team[n];['BH','RT'].forEach(k=>{if(S.cap[k]&&S.team[S.cap[k]]!==k)S.cap[k]=''});save();drawSetup()});
+ $('setup').querySelectorAll('[data-np]').forEach(i=>i.onchange=()=>{S.newPlayers[+i.dataset.np][i.dataset.k]=i.value.trim();save();drawSetup()});
+ $('setup').querySelectorAll('[data-delnp]').forEach(b=>b.onclick=()=>{const p=S.newPlayers[+b.dataset.delnp];if(p&&p.short)delete S.team[p.short];S.newPlayers.splice(+b.dataset.delnp,1);save();drawSetup()});
+ $('setup').querySelectorAll('[data-hcp]').forEach(x=>x.onchange=()=>{const v=x.value.trim();if(v==='')delete S.hcp[x.dataset.hcp];else S.hcp[x.dataset.hcp]=+v;save()});
+ $('addpo').onchange=e=>{const n=e.target.value;if(!n)return;S.hcp[n]=null;save();drawSetup()};
+ $('setup').querySelectorAll('[data-sh]').forEach(i=>i.onchange=()=>{S.shirts[i.dataset.sh][i.dataset.k]=i.value.trim();save()});
+ $('addnp').onclick=()=>{S.newPlayers.push({short:'',real:''});save();drawSetup()};
+}
+
+/* ---------- a round ---------- */
+function drawRound(i){
+ const R=S.rounds[i],T=TOUR.rounds[i],el=$('r'+(i+1)),single=R.fmt==='Singles';
+ const sel=(t,v,k,mi)=>`<select data-m="${mi}" data-k="${k}"><option value="">${t==='BH'?'Bloodhound':'Retriever'}…</option>${squad(t).map(n=>`<option ${v===n?'selected':''}>${esc(n)}</option>`).join('')}</select>`;
+ const used={};R.matches.forEach(m=>[...m.bh,...m.rt].forEach(n=>{if(n)used[n]=(used[n]||0)+1}));
+ const dup=Object.keys(used).filter(n=>used[n]>1&&!R.matches.some(m=>+m.value===.5&&[...m.bh,...m.rt].includes(n)));
+ let rb=0,rr=0;R.matches.forEach(m=>{const v=+m.value||1;if(m.res==='BH')rb+=v;else if(m.res==='RT')rr+=v;else if(m.res==='H'){rb+=v/2;rr+=v/2}});
+ const players=[...squad('BH'),...squad('RT')];
+ el.innerHTML=`
+ <div class="card"><div class="row"><div><b>${esc(R.course)}</b><div class="hint">${T.day}</div></div><div style="text-align:right;font-weight:800;font-size:20px"><span class="b">${fr(rb)}</span> – <span class="r">${fr(rr)}</span></div></div>
+  <label class="f">Format</label><div class="seg" data-fmt><button class="${!single?'on':''}" data-v="Fourball">Fourballs</button><button class="${single?'on':''}" data-v="Singles">Singles</button></div>
+  <label class="f">Course (if it changed)</label><input id="course${i}" value="${esc(R.course)}">
+  <label class="f"><input type="checkbox" id="rain${i}" ${R.rainedOff?'checked':''} style="width:auto;margin-right:6px">Round rained off / abandoned</label></div>
+ ${players.length?'':'<p class="warn">Pick the teams on the Setup page first.</p>'}
+ <h2>Ryder Cup matches</h2>
+ ${dup.length?`<p class="warn">Playing in more than one match: ${dup.map(esc).join(', ')}. Fine for a solo player's two half-point singles – set Value to ½ on both.</p>`:''}
+ ${R.matches.map((m,mi)=>`<div class="card match"><div class="top"><span>Match ${mi+1}</span><button class="btn del" data-del="${mi}">Remove</button></div>
+  <div class="side"><div class="row">${sel('BH',m.bh[0],'bh0',mi)}${single?'':sel('BH',m.bh[1],'bh1',mi)}</div></div>
+  <div class="side rt"><div class="row">${sel('RT',m.rt[0],'rt0',mi)}${single?'':sel('RT',m.rt[1],'rt1',mi)}</div></div>
+  <label class="f">Result</label><div class="seg" data-res="${mi}"><button class="b ${m.res==='BH'?'on':''}" data-v="BH">Bloodhounds</button><button class="h ${m.res==='H'?'on':''}" data-v="H">Halved</button><button class="r ${m.res==='RT'?'on':''}" data-v="RT">Retrievers</button></div>
+  <label class="f">Margin</label><div class="chips" data-mg="${mi}">${MARGINS.map(x=>`<button class="${m.margin===x?'on':''}">${x}</button>`).join('')}</div>
+  <div class="row" style="margin-top:8px"><input data-m="${mi}" data-k="margin" placeholder="or type it, e.g. 7&6" value="${MARGINS.includes(m.margin)?'':esc(m.margin)}"><div class="seg" data-val="${mi}" style="flex:.8"><button class="${+m.value!==.5?'on':''}" data-v="1">Value 1</button><button class="${+m.value===.5?'on':''}" data-v="0.5">½</button></div></div>
+  <input data-m="${mi}" data-k="note" placeholder="Note (optional)" value="${esc(m.note||'')}" style="margin-top:8px"></div>`).join('')}
+ <button class="btn" id="addm${i}">+ Add a match</button>
+ <h2>Stableford scores</h2>
+ <p class="hint">Points for everyone who played. Leave blank if they didn't finish the round.</p>
+ <div class="card">${players.map(n=>`<div class="sc"><span class="${teamOf(n)==='BH'?'b':'r'}">${esc(n)}</span><input type="number" inputmode="numeric" min="0" max="60" data-sc="${esc(n)}" value="${R.scores[n]??''}"></div>`).join('')||'<span class="hint">No players yet.</span>'}</div>`;
+ el.querySelector('[data-fmt]').onclick=e=>{const b=e.target.closest('button');if(!b)return;R.fmt=b.dataset.v;save();drawRound(i)};
+ $('course'+i).onchange=e=>{R.course=e.target.value.trim()||T.course;save()};
+ $('rain'+i).onchange=e=>{R.rainedOff=e.target.checked;save();drawRound(i)};
+ $('addm'+i).onclick=()=>{R.matches.push({bh:['',''],rt:['',''],res:'',margin:'',value:1,note:''});save();drawRound(i)};
+ el.querySelectorAll('[data-del]').forEach(b=>b.onclick=()=>{if(confirm('Remove this match?')){R.matches.splice(+b.dataset.del,1);save();drawRound(i)}});
+ el.querySelectorAll('select[data-m],input[data-m]').forEach(x=>x.onchange=()=>{const m=R.matches[+x.dataset.m],k=x.dataset.k;
+  if(/^(bh|rt)\d$/.test(k))m[k.slice(0,2)][+k[2]]=x.value;else m[k]=x.value.trim();save();if(k!=='note')drawRound(i)});
+ el.querySelectorAll('[data-res]').forEach(s=>s.onclick=e=>{const b=e.target.closest('button');if(!b)return;const m=R.matches[+s.dataset.res];m.res=b.dataset.v;if(m.res==='H')m.margin='A/S';else if(m.margin==='A/S')m.margin='';save();drawRound(i)});
+ el.querySelectorAll('[data-mg]').forEach(s=>s.onclick=e=>{const b=e.target.closest('button');if(!b)return;R.matches[+s.dataset.mg].margin=b.textContent;save();drawRound(i)});
+ el.querySelectorAll('[data-val]').forEach(s=>s.onclick=e=>{const b=e.target.closest('button');if(!b)return;R.matches[+s.dataset.val].value=+b.dataset.v;save();drawRound(i)});
+ el.querySelectorAll('[data-sc]').forEach(x=>x.onchange=()=>{const v=x.value.trim();if(v==='')delete R.scores[x.dataset.sc];else R.scores[x.dataset.sc]=+v;save()});
+}
+
+/* ---------- finish ---------- */
+function totals(){const P=[...squad('BH'),...squad('RT')];const rained=S.rounds.filter(R=>R.rainedOff).length;
+ return P.map(n=>{const s=S.rounds.filter(R=>!R.rainedOff).map(R=>R.scores[n]);const done=s.length&&s.every(v=>v!=null);
+  let tot=done?s.reduce((a,v)=>a+v,0):null;if(done&&rained===1&&s.length===2)tot=Math.round(tot*3/2);return{n,s:S.rounds.map(R=>R.scores[n]),tot}})}
+// suggested finishing positions from the totals (ties share the higher place), overridden by anything typed in
+function ranked(){const L=totals().sort((a,b)=>(b.tot??-1)-(a.tot??-1));let pos=0,prev=null;L.forEach((x,k)=>{if(x.tot==null){x.sug='';return}if(x.tot!==prev){pos=k+1;prev=x.tot}x.sug=pos;});L.forEach(x=>x.pos=S.positions[x.n]??x.sug);return L}
+function autoPlacings(L){const at=p=>L.filter(x=>+x.pos===p).map(x=>x.n);const placed=L.filter(x=>x.pos!==''&&x.tot!=null);if(!placed.length)return;
+ const last=Math.max(...placed.map(x=>+x.pos));
+ [['Big Dog',1],['2nd',2],['3rd',3],['Shitzu',last]].forEach(([t,p])=>{const T=S.trophies.find(x=>x.t===t);if(T&&(T.auto||!T.w.some(Boolean))){const w=at(p);if(w.length){T.w=w;T.auto=true}}})}
+function drawFinish(){
+ const L=ranked();autoPlacings(L);
+ const [b,r]=pts();const P=[...squad('BH'),...squad('RT')].sort();
+ const opt=v=>'<option value="">Winner…</option>'+[...P,...allPlayers().map(p=>p[0]).filter(n=>!P.includes(n)).sort()].map(n=>`<option ${v===n?'selected':''}>${esc(n)}</option>`).join('');
+ $('finish').innerHTML=`
+ <div class="card" style="text-align:center"><div class="hint">Ryder Cup</div><div style="font-size:30px;font-weight:800"><span class="b">${fr(b)}</span> – <span class="r">${fr(r)}</span></div>
+  <div class="hint">${b>r?'<b class="b">Bloodhounds win</b>':r>b?'<b class="r">Retrievers win</b>':'Halved – the holders retain'}</div></div>
+ <h2>Final positions</h2><p class="hint">Suggested from the Stableford totals – ties share the higher place (4, 4, 6). Change any that were decided on countback.</p>
+ <div class="card"><table><tr><th>Player</th><th>I</th><th>II</th><th>III</th><th>Total</th><th>Pos</th></tr>
+ ${L.map(x=>`<tr><td class="${teamOf(x.n)==='BH'?'b':'r'}">${esc(x.n)}</td>${x.s.map(v=>`<td>${v??'–'}</td>`).join('')}<td><b>${x.tot??'–'}</b></td><td><input type="number" inputmode="numeric" data-pos="${esc(x.n)}" value="${S.positions[x.n]??x.sug}"></td></tr>`).join('')}</table></div>
+ <h2>Trophies</h2><p class="hint">Big Dog, 2nd, 3rd and Shitzu fill in from the final positions – change them if needed. Give the reason for every award; it goes on the website.</p>
+ ${S.trophies.map((t,ti)=>`<div class="card"><b>${esc(t.t)}</b>${(TROPHIES.find(x=>x[0]===t.t)||[])[1]?`<span class="hint"> · ${esc(TROPHIES.find(x=>x[0]===t.t)[1])}</span>`:''}
+  ${t.w.map((w,wi)=>`<div class="row" style="margin-top:6px"><select data-tw="${ti}" data-wi="${wi}">${opt(w)}</select>${wi?`<button class="btn del" data-twdel="${ti}" data-wi="${wi}">✕</button>`:''}</div>`).join('')}
+  <button class="btn sec small" data-twadd="${ti}" style="margin-top:6px">+ Joint winner</button>
+  <input data-why="${ti}" placeholder="Reason / story" value="${esc(t.why)}" style="margin-top:6px"></div>`).join('')}
+ <h2>Anything else</h2><div class="card"><textarea id="notes" placeholder="New nicknames, stash handed out, anything for the write-up…">${esc(S.notes)}</textarea></div>`;
+ $('finish').querySelectorAll('[data-pos]').forEach(x=>x.onchange=()=>{const v=x.value.trim();if(v==='')delete S.positions[x.dataset.pos];else S.positions[x.dataset.pos]=+v;save()});
+ $('finish').querySelectorAll('[data-tw]').forEach(x=>x.onchange=()=>{const T=S.trophies[+x.dataset.tw];T.w[+x.dataset.wi]=x.value;T.auto=false;save()});
+ $('finish').querySelectorAll('[data-twadd]').forEach(b=>b.onclick=()=>{S.trophies[+b.dataset.twadd].w.push('');save();drawFinish()});
+ $('finish').querySelectorAll('[data-twdel]').forEach(b=>b.onclick=()=>{S.trophies[+b.dataset.twdel].w.splice(+b.dataset.wi,1);save();drawFinish()});
+ $('finish').querySelectorAll('[data-why]').forEach(x=>x.onchange=()=>{S.trophies[+x.dataset.why].why=x.value.trim();save()});
+ $('notes').onchange=e=>{S.notes=e.target.value;save()};
+}
+
+/* ---------- checks + send ---------- */
+function problems(){const p=[];const nh=[...squad('BH'),...squad('RT')].filter(n=>S.hcp[n]==null);if(nh.length)p.push(`No handicap for ${nh.join(', ')}`);['BH','RT'].forEach(t=>{if(!S.cap[t])p.push(`No ${t==='BH'?'Bloodhounds':'Retrievers'} captain chosen`)});
+ ['BH','RT'].forEach(t=>{if(!S.shirts[t].colour)p.push(`No ${t==='BH'?'Bloodhounds':'Retrievers'} shirt colour`)});
+ S.newPlayers.forEach(x=>{if(x.short&&!x.real)p.push(`First-timer ${x.short} has no full name`)});
+ S.rounds.forEach(R=>{if(R.rainedOff)return;const nm='Round '+['I','II','III'][R.r-1];
+  R.matches.forEach((m,i)=>{const need=R.fmt==='Singles'||+m.value===.5?1:2;if(m.bh.slice(0,need).some(x=>!x)||m.rt.slice(0,need).some(x=>!x))p.push(`${nm} match ${i+1}: a player is missing`);if(!m.res)p.push(`${nm} match ${i+1}: no result`);else if(!m.margin)p.push(`${nm} match ${i+1}: no margin`)})});
+ return p}
+function summary(){const [b,r]=pts();const L=[];
+ L.push(`BDT ${TOUR.year} results – ${TOUR.place}`);L.push(`Scored by ${S.scorer||'?'} · ${new Date(S.updated||Date.now()).toLocaleString('en-GB')}`);L.push('');
+ L.push(`RYDER CUP: Bloodhounds ${fr(b)} – ${fr(r)} Retrievers`);L.push(`Captains: ${S.cap.BH||'?'} (BH) v ${S.cap.RT||'?'} (RT)`);
+ L.push(`Bloodhounds: ${squad('BH').join(', ')}`);L.push(`Retrievers: ${squad('RT').join(', ')}`);
+ S.newPlayers.filter(x=>x.short).forEach(x=>L.push(`First-timer: ${x.short} = ${x.real}`));
+ const hc=[...squad('BH'),...squad('RT')].filter(n=>S.hcp[n]!=null);if(hc.length)L.push('Handicaps: '+hc.map(n=>`${n} ${S.hcp[n]}`).join(', '));
+ const po=Object.keys(S.hcp).filter(n=>!S.team[n]&&S.hcp[n]!=null);if(po.length)L.push('Handicaps (pulled out): '+po.map(n=>`${n} ${S.hcp[n]}`).join(', '));
+ ['BH','RT'].forEach(t=>{const h=S.shirts[t];if(h.colour)L.push(`${t==='BH'?'Bloodhounds':'Retrievers'} shirt: ${h.colour}${h.logo?' – "'+h.logo+'"':''}`)});
+ S.rounds.forEach(R=>{L.push('');L.push(`ROUND ${['I','II','III'][R.r-1]} – ${R.course} (${R.fmt})${R.rainedOff?' – RAINED OFF':''}`);
+  R.matches.forEach((m,i)=>{const bh=m.bh.filter(Boolean).join(' & '),rt=m.rt.filter(Boolean).join(' & ');const w=m.res==='BH'?'BH':m.res==='RT'?'RT':'Halved';
+   L.push(`${i+1}. ${bh} v ${rt}: ${w}${m.res&&m.res!=='H'?' '+m.margin:''}${+m.value===.5?' (½ pt)':''}${m.note?' – '+m.note:''}`)});
+  const sc=Object.entries(R.scores).sort((a,b)=>b[1]-a[1]);if(sc.length)L.push('Stableford: '+sc.map(([n,v])=>`${n} ${v}`).join(', '))});
+ const T=ranked().filter(x=>x.tot!=null).sort((a,b)=>(+a.pos||99)-(+b.pos||99)||b.tot-a.tot);
+ if(T.length){L.push('');L.push('FINAL POSITIONS');T.forEach(x=>L.push(`${x.pos||'?'}. ${x.n} ${x.tot}`))}
+ const tr=S.trophies.filter(t=>t.w.some(Boolean));if(tr.length){L.push('');L.push('TROPHIES');tr.forEach(t=>L.push(`${t.t}: ${t.w.filter(Boolean).join(' & ')}${t.why?' – '+t.why:''}`))}
+ if(S.notes.trim()){L.push('');L.push('NOTES');L.push(S.notes.trim())}
+ return L.join('\n')}
+const packet=()=>{const final={};const RL=ranked();autoPlacings(RL);RL.forEach(x=>{if(x.pos!=='')final[x.n]=+x.pos});return summary()+'\n\n--- BDT DATA (for Claude, please leave as is) ---\n'+JSON.stringify(Object.assign({},S,{final,tour:{location:TOUR.location,country:TOUR.country||'',start:TOUR.start,end:TOUR.end,accommodation:TOUR.accommodation,days:TOUR.rounds.map(r=>r.day),courses:TOUR.rounds.map(r=>r.full||r.course)}}))+'\n--- END ---'};
+function drawSend(){const p=problems();
+ $('send').innerHTML=`<h2>Send to Paul</h2>
+ ${p.length?`<div class="card"><b class="warn">Still to fill in</b>${p.map(x=>`<div class="warn">• ${esc(x)}</div>`).join('')}<p class="hint">You can still send – Paul will check it.</p></div>`:'<p class="hint" style="color:var(--ok)">Everything looks complete.</p>'}
+ <p class="hint">Sends the results as a message. Paul checks them, then they go into the Playbook and onto the website. Nothing is published from this page.</p>
+ <div class="row" style="flex-wrap:wrap"><button class="btn" id="share">Share…</button><button class="btn sec" id="copy">Copy</button><button class="btn sec" id="dl">Save as file</button></div>
+ <h2>Preview</h2><pre>${esc(summary())}</pre>
+ <h2>Hand over to another scorer</h2>
+ <p class="hint">Send them the message above; they paste it here to carry on from where you left off.</p>
+ <textarea id="imp" placeholder="Paste a BDT results message here"></textarea><button class="btn sec small" id="doimp" style="margin-top:6px">Load it</button>
+ <h2>Start again</h2><button class="btn del" id="reset">Clear everything on this phone</button>`;
+ $('share').onclick=async()=>{const text=packet();if(navigator.share){try{await navigator.share({title:`BDT ${TOUR.year} results`,text});return}catch(e){if(e.name==='AbortError')return}}copy(text)};
+ $('copy').onclick=()=>copy(packet());
+ $('dl').onclick=()=>{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([packet()],{type:'text/plain'}));a.download=`BDT_${TOUR.year}_results.txt`;a.click()};
+ $('doimp').onclick=()=>{const t=$('imp').value;const m=t.match(/--- BDT DATA[^\n]*\n([\s\S]*?)\n--- END ---/);try{const d=JSON.parse(m?m[1]:t);if(d.year!==TOUR.year||!d.rounds)throw 0;if(confirm('Replace what is on this phone with the pasted results?')){S=d;save();draw()}}catch(e){alert("That doesn't look like a BDT results message.")}};
+ $('reset').onclick=()=>{if(confirm('Clear all results on this phone? This cannot be undone.')&&confirm('Really clear everything?')){S=blank();save();tab='setup';draw()}};
+}
+function copy(text){(navigator.clipboard?navigator.clipboard.writeText(text):Promise.reject()).then(()=>alert('Copied – paste it into WhatsApp or an email to Paul.')).catch(()=>{const t=document.createElement('textarea');t.value=text;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();alert('Copied – paste it into WhatsApp or an email to Paul.')})}
+
+function draw(){nav();document.querySelectorAll('main section').forEach(s=>s.classList.toggle('on',s.id===tab));head();
+ if(tab==='setup')drawSetup();else if(tab[0]==='r')drawRound(+tab[1]-1);else if(tab==='finish')drawFinish();else drawSend()}
+draw();
+</script>
+</body></html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en"><head><meta name="robots" content="noindex, nofollow"><script id="bdt-guard">(function(){var alone;try{alone=window.top===window.self}catch(e){alone=false}if(!alone||location.protocol==='file:'||/^(localhost|127\.|\[::1\])/.test(location.hostname))return;try{window.stop()}catch(e){}document.documentElement.innerHTML='\x3chead>\x3cmeta charset="utf-8">\x3cmeta name="viewport" content="width=device-width,initial-scale=1">\x3cmeta name="robots" content="noindex, nofollow">\x3ctitle>Big Dogs Tour\x3c/title>\x3c/head>\x3cbody style="margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#050B09;color:#F4F1E4;font:16px/1.5 system-ui,sans-serif;text-align:center;padding:24px;box-sizing:border-box">\x3cp>This page is part of the Big Dogs Tour website.\x3cbr>\x3ca style="color:#F0C566" href="https://www.bigdogstour.com">Go to www.bigdogstour.com\x3c/a>\x3c/p>\x3c/body>';})();</script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Big Dogs Tour</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050B09;--card:#0d1f17;--gold:#F0C566;--gold2:#C99A3D;--ink:#F4F1E4;--soft:#A9BAAE;--line:rgba(240,197,102,.14);--bh:#ff2a2a;--rt:#5b72ff}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 Archivo,system-ui,sans-serif}
+a{color:inherit;text-decoration:none}
+/* hero */
+.hero{position:relative;min-height:620px;display:flex;align-items:flex-end;overflow:hidden;background:#1b1530}
+.hero img.ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,11,9,0) 35%,rgba(5,11,9,.55) 68%,var(--bg) 100%)}
+.hin{position:relative;z-index:2;display:flex;align-items:flex-end;gap:24px;width:100%;max-width:1180px;margin:0 auto;padding:0 32px 40px}
+.crest{width:130px;flex:none;filter:drop-shadow(0 8px 20px rgba(0,0,0,.7))}
+.kick{font:14px Anton,Impact,sans-serif;letter-spacing:.16em}.kick .b{color:var(--bh)}.kick .v{color:var(--gold)}.kick .r{color:#8a9cff}
+h1{margin:4px 0 0;font:clamp(46px,8vw,104px)/.9 Anton,Impact,sans-serif;text-transform:uppercase;background:linear-gradient(100deg,#FBF7E9 10%,var(--gold) 55%,#FBF7E9 90%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 2px 12px rgba(0,0,0,.6))}
+.sub{font:clamp(15px,2.2vw,24px) Anton,Impact,sans-serif;letter-spacing:.14em;color:var(--gold);text-transform:uppercase;margin-top:10px}
+.stripe{height:4px;background:linear-gradient(90deg,#FF0000 0 50%,#000080 50%)}
+/* body */
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px}
+.memo{display:flex;align-items:center;gap:16px;margin:28px 0 0;padding:16px 20px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(100deg,rgba(240,197,102,.08),rgba(240,197,102,0) 70%)}
+.memo b{font:12px Anton,Impact,sans-serif;letter-spacing:.18em;color:var(--gold);white-space:nowrap}
+.memo span{color:var(--soft);font-size:14px}
+.row{display:grid;grid-template-columns:1.25fr 1fr;gap:18px;margin-top:28px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+.lab{font:600 11px Archivo,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.cuphd{display:flex;align-items:baseline;justify-content:space-between;gap:10px;flex-wrap:wrap}.cuphd .lab{white-space:nowrap}.lab2{font:600 11px Archivo,sans-serif;letter-spacing:.08em;color:var(--soft);white-space:nowrap}
+.duel{position:relative;display:grid;grid-template-columns:1fr 1fr;margin-top:14px;border-radius:16px;overflow:hidden;box-shadow:0 12px 30px -16px rgba(0,0,0,.8)}
+.duel .side{padding:16px 18px 14px;min-width:0}.duel .bh{background:linear-gradient(110deg,#d10000,#6e0000)}.duel .rt{background:linear-gradient(250deg,#3550f0,#0f1a8c);text-align:right}
+.duel .s{display:block;font:64px/0.95 Anton,Impact,sans-serif;color:#fff;text-shadow:0 3px 14px rgba(0,0,0,.35)}
+.duel b{display:block;font:20px/1.1 Anton,Impact,sans-serif;letter-spacing:.04em;text-transform:uppercase;color:#fff;margin-top:6px;white-space:nowrap}
+.duel small{display:block;font:600 12px Archivo,sans-serif;color:rgba(255,255,255,.85);margin-top:4px;white-space:nowrap}
+.duel .tro{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:84px;height:84px;border-radius:50%;background:radial-gradient(circle,#173a2a,#08130e 70%);border:2px solid rgba(240,197,102,.7);display:grid;place-items:center;box-shadow:0 6px 20px rgba(0,0,0,.55)}
+.duel .tro img{height:62px;width:auto;filter:drop-shadow(0 2px 4px rgba(0,0,0,.6))}
+.dots{display:flex;gap:4px;margin-top:14px}.dots i{flex:1;height:8px;border-radius:3px}.dots i.b{background:#d10000}.dots i.r{background:#3550f0}.dots i.hv{opacity:.55}
+.holders{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:12px;padding:10px 14px;border-radius:12px;background:rgba(255,255,255,.04);border:1px solid var(--line)}
+.holders span{font:600 11px Archivo,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}.holders b{font:22px Anton,Impact,sans-serif;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap}
+.cup .foot{margin:10px 0 0;color:var(--soft);font-size:12px}
+@media(max-width:760px){.duel{overflow:visible;margin-top:34px}.duel .bh{border-radius:16px 0 0 16px}.duel .rt{border-radius:0 16px 16px 0}.duel .side{padding:20px 12px 12px}.duel .s{font-size:50px}.duel b{font-size:15px}.duel small{font-size:10.5px}.duel .tro{top:0;width:58px;height:58px}.duel .tro img{height:40px}.holders span{white-space:nowrap}}@media(max-width:350px){.duel b{font-size:13px}.duel .side{padding-left:10px;padding-right:10px}.lab2{font-size:10px}.holders b{font-size:19px}}
+.cup .score{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;margin-top:14px;border-radius:14px;overflow:hidden}
+.cup .score div{padding:14px 16px}.cup .s{font:44px/1 Anton,Impact,sans-serif}
+.cup .bh{background:linear-gradient(90deg,#c80000,#7a0000)}.cup .rt{background:linear-gradient(270deg,#2a3fe8,#0f1a96);text-align:right}
+.cup .h{background:#0a1712;text-align:center}.cup .h .s{color:var(--gold);font-size:34px}
+.cup small{display:block;font:600 11px Archivo;letter-spacing:.12em;text-transform:uppercase;opacity:.85;margin-top:4px}
+.cup p{margin:14px 0 0;color:var(--soft);font-size:14px}
+.latest{display:flex;flex-direction:column;justify-content:space-between}
+.latest .t{font:30px/1 Anton,Impact,sans-serif;text-transform:uppercase;margin-top:8px}
+.latest .w{margin-top:8px;color:var(--soft)}.latest .w b{color:#8a9cff}
+.btn{display:inline-block;margin-top:16px;padding:10px 18px;border-radius:999px;background:linear-gradient(100deg,var(--gold),var(--gold2));color:#14210F;font:14px Anton,Impact,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+.nums{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:18px}
+.nums div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 10px;text-align:center}
+.nums b{display:block;font:34px/1 Anton,Impact,sans-serif;color:var(--gold)}.nums i{font-style:normal;font-size:12px;color:var(--soft);letter-spacing:.08em;text-transform:uppercase}
+h2{font:30px Anton,Impact,sans-serif;text-transform:uppercase;margin:34px 0 0;letter-spacing:.01em}h2 em{font-style:normal;color:var(--gold)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:14px 0 40px}
+.tile{position:relative;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 16px 14px;transition:.15s}
+.tile:hover{border-color:var(--gold);transform:translateY(-2px)}
+.tile b{display:block;font:20px Anton,Impact,sans-serif;text-transform:uppercase;letter-spacing:.03em}
+.tile span{font-size:13px;color:var(--soft)}
+.tile.nx{grid-column:span 2;background:linear-gradient(120deg,rgba(240,197,102,.32),var(--card) 75%);border-color:rgba(240,197,102,.45)}.tile.nx b{color:var(--gold)}
+.tile.bh{background:linear-gradient(135deg,rgba(200,0,0,.35),var(--card) 70%)}.tile.rt{background:linear-gradient(135deg,rgba(42,63,232,.4),var(--card) 70%)}
+@media(max-width:760px){
+ .hero{min-height:560px}.hero img.ph{object-position:46% 50%}
+ .hin{flex-direction:column;align-items:flex-start;gap:10px;padding:0 18px 26px}.crest{width:78px}.kick{font-size:11px}
+ .wrap{padding:0 16px}.row{grid-template-columns:1fr}.nums{grid-template-columns:repeat(2,1fr)}.nums div:last-child{grid-column:1/-1}
+ .grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.tile{min-width:0;padding:14px 12px 12px}.tile b{font-size:17px;overflow-wrap:anywhere}.tile span{font-size:12px}.memo{flex-direction:column;align-items:flex-start;gap:4px}.cup .s{font-size:34px}.cup .score div{padding:12px 10px}.cup small{font-size:9.5px;letter-spacing:.06em}.card{padding:18px 16px}
+}
+{{VARCSS}}</style></head><body>
+{{HEROBLOCK}}
+<main class="wrap">
+ <div class="row">
+  <div class="card cup"><div class="cuphd"><span class="lab">The Big Dogs Ryder Cup</span><span class="lab2">All-time · {{CUPS}} cups since {{Y0}}</span></div>
+   <div class="duel"><div class="side bh"><span class="s">{{HB}}</span><b>Bloodhounds</b><small>{{WB}} won · {{RB}} retained</small></div>
+    <div class="tro"><img src="{{RCT}}" alt="The Big Dogs Ryder Cup"></div>
+    <div class="side rt"><span class="s">{{HR}}</span><b>Retrievers</b><small>{{WR}} won · {{RR}} retained</small></div></div>
+   <div class="dots" aria-label="Cup holders year by year">{{DOTS}}</div>
+   <div class="holders"><span>Cup holders</span><b style="color:{{HCOL}}">{{HOLDERS}}</b></div>
+   <p class="foot">Counts each cup won outright or retained after a halved match.</p></div>
+  <div class="card latest"><div><div class="lab">Latest tour</div><div class="t">BDT {{LY}} · {{LLOC}}</div>
+   <div class="w">{{LRES}}</div></div><a class="btn" href="{{LLINK}}" target="_top">See the {{LY}} tour →</a></div>
+ </div>
+ <div class="nums">{{NUMS}}</div>
+ <h2>Explore the <em>Tour</em></h2>
+ <div class="grid">{{TILES}}</div>
+</main>
+</body></html>

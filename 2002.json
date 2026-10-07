@@ -1,0 +1,130 @@
+{
+  "_help": "Per-tour extras that are NOT in the playbook. Image values are Wix media IDs (the 32-character code after 588d17_ in the Wix image address). Videos use the Vimeo number (vimeo.com/<number>) or a 'youtube' ID. Leave any field empty (\"\" or []) and that part of the page simply hides. rc_images / leaderboard_images may also be file paths (relative to tour_media) – those images are built into the page.",
+  "year": 2002,
+  "strapline": "THE INAUGURAL TOUR",
+  "hero": {
+    "id": "588d17_65b6b1926db44a658e1009f319f81d88~mv2_d_2144_1232_s_2.jpg",
+    "caption": "The Inaugural Tourists with Uncle Howard"
+  },
+  "venue": {
+    "map_query": "Puerto Banús Beach Apartments, Av José Banús, 29660 Marbella, Spain",
+    "map_zoom": 16,
+    "blurb": ""
+  },
+  "captains": {},
+  "accommodation": {
+    "name": "Marbella House",
+    "blurb": "Home for BDT 2002 – 7 tourists, with La Cala and Atalaya Park on the golf schedule.",
+    "photos": [
+      {
+        "id": "d1ca0d9084814f8593eb93d4ade46e39",
+        "caption": ""
+      },
+      {
+        "id": "53804e99aff640fdb83ba4cac353efbb",
+        "caption": ""
+      },
+      {
+        "id": "4d10a8a61f90405c92609d398c19838c",
+        "caption": ""
+      },
+      {
+        "id": "7dfd88f8e6af4b308ba24742f1ab01e0",
+        "caption": ""
+      },
+      {
+        "id": "f5ffcd88ee58490cbc4f191f876ce707",
+        "caption": ""
+      },
+      {
+        "id": "39d0cdb6f7844772b5ff1cf58a548705",
+        "caption": ""
+      },
+      {
+        "id": "1d829883bc0244c88658871ec16b8523",
+        "caption": ""
+      },
+      {
+        "id": "9c368cf1c0c54e44ae1c5b1857351f68",
+        "caption": ""
+      },
+      {
+        "id": "f5f5ebc70dd24987bd10644de0eb743c",
+        "caption": ""
+      }
+    ],
+    "where": "Marbella · Spain",
+    "facts": [],
+    "link": "https://puerto-banus-beach-apartments.andalucia-hotels.com/en/"
+  },
+  "itinerary_images": [],
+  "itinerary_extra": {},
+  "team_photos": {},
+  "team_announcement": [],
+  "rc_images": [],
+  "leaderboard_images": [
+    "boards/BDT_2002_Leaderboard_1.jpg"
+  ],
+  "summary": {
+    "banner": "d9fb59e6905b49929fddb74693381165",
+    "title": "",
+    "text": "",
+    "link": "https://www.bigdogstour.com/post/bdt-2002-tour-summary"
+  },
+  "video_sections": [
+    {
+      "title": "Photo Slideshow",
+      "items": [
+        {
+          "vimeo": "420361386",
+          "title": "BDT 2002 Slideshow",
+          "thumb": "https://i.vimeocdn.com/video/895578839-13c456e939cdb946f2387e52e2c3070c1dd0e876ef8b2846cfe69d0047e96387-d_640?region=us"
+        }
+      ]
+    }
+  ],
+  "gallery": [
+    "bbdf4faf0b614051bf01b1dd9b4f24f1",
+    "74f2593a0d3c4c81b24af367efccbc32",
+    "4f5a3f2bb965418ab93512e81be2d8cd",
+    "292023573ec0417dbce914e510850162",
+    "f5c8b4f65cff4641b82ace3d797dd6a1",
+    "9cb6e6f92b194e3b81e0b76161d978bd",
+    "c99bac267bc7456ba11be3d5fa5d7279",
+    "f5ffcd88ee58490cbc4f191f876ce707",
+    "7afa1da22fb44acbb1fc33b48daabaa4",
+    "35e774fcb1644dce9684af4f52e6f16e",
+    "d9fb59e6905b49929fddb74693381165",
+    "4fb5eef9417c471695ae75451f3661e1",
+    "33d9385ff49a482b98d8f27fe662d103",
+    "06bb584b1160452593aae5b0a803e373",
+    "eada5bfc40a94082ad1700e09a78756f",
+    "f1ed879bd95e471a962c82c77e5c8ac6",
+    "f8762802fe724e8aaf30267ff29d3bbc",
+    "3014738c05e14cf782f813ed17289af1",
+    "02493f34e1574fb9ae8346e2b6425f01",
+    "65b6b1926db44a658e1009f319f81d88",
+    "372d9c7431704ddc8e5a838c7dfbfd97",
+    "9a0f642ded344feba43e1c21b0910a4a",
+    "25424e5ccfa44e2ab3fee5e3f8720b7e",
+    "ab22c921502e45bf9f46b8c66cff6ba3",
+    "9bd7a35ca35e4b92be32703d3a5998a7",
+    "919a597d266046b68c63626074efdf75",
+    "12a06b9aaace447382f75767d581814f",
+    "fbf9a824f94c4df29935c55dbbe7012e",
+    "99bff5b06c7b42d5978877ceba1fe568",
+    "0f1094ffb8dc487e9f3ee2f6762250ca",
+    "acc5bd272e304ba1b41fcdc50ff1623a",
+    "ff510f4dcc39490bbb5b40e44bafd6a9",
+    "1d829883bc0244c88658871ec16b8523",
+    "d1ca0d9084814f8593eb93d4ade46e39",
+    "53804e99aff640fdb83ba4cac353efbb",
+    "9c368cf1c0c54e44ae1c5b1857351f68",
+    "7dfd88f8e6af4b308ba24742f1ab01e0",
+    "4d10a8a61f90405c92609d398c19838c",
+    "39d0cdb6f7844772b5ff1cf58a548705",
+    "877fa8c571934271a836ab91add95a04",
+    "dcbfd29d3405422f96a1631ed5bc5ff3",
+    "267b692074f34b459e3eb3a623c39329"
+  ]
+}

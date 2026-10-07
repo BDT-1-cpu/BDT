@@ -1,0 +1,107 @@
+{
+ "_help": "Statement photo (Wix file name incl. 588d17_ prefix and extension) and page link for each tour; optional nick.",
+ "site": "https://www.bigdogstour.com",
+ "tours": {
+  "2002": {
+   "img": "588d17_ff510f4dcc39490bbb5b40e44bafd6a9~mv2.jpg",
+   "link": "/bdt-2002"
+  },
+  "2003": {
+   "img": "588d17_2de5215e1ad94f95a3626b04a076070e~mv2.jpg",
+   "link": "/bdt-2003"
+  },
+  "2004": {
+   "img": "588d17_51f63e9b7dcf400b9a6417da5b3f9a93~mv2.jpg",
+   "link": "/bdt-2004"
+  },
+  "2005": {
+   "img": "588d17_ff46ea6d39284a59a5954629e6f8e5ce~mv2.jpg",
+   "link": "/bdt-2005"
+  },
+  "2006": {
+   "img": "588d17_81937034e5e2461aaf3abebbf087729b~mv2.jpg",
+   "link": "/bdt-2006"
+  },
+  "2007": {
+   "img": "588d17_436059d4442647d4b6b61947343e94d5~mv2.jpg",
+   "link": "/bdt-2007"
+  },
+  "2008": {
+   "img": "588d17_d1a036ab45384e568892c0cf32b1f09f~mv2.jpg",
+   "link": "/bdt-2008"
+  },
+  "2009": {
+   "img": "588d17_2a36b5ecc4004a9884511c33c7398bbe~mv2.jpg",
+   "link": "/bdt-2009"
+  },
+  "2010": {
+   "img": "588d17_5c6dd08c205c4e92a53a653a1d67562c~mv2.jpg",
+   "link": "/bdt-2010"
+  },
+  "2011": {
+   "img": "588d17_f3a18186f93e4717a12497af4ccd46e6~mv2.jpg",
+   "link": "/bdt-2011"
+  },
+  "2012": {
+   "img": "588d17_a4640fc432ec40e3a5f86f8e96885ee5~mv2.jpg",
+   "link": "/bdt-2012"
+  },
+  "2013": {
+   "img": "588d17_df2540a129da4fd091fc2725ac394b15~mv2.jpg",
+   "link": "/bdt-2013"
+  },
+  "2014": {
+   "img": "588d17_56d108dcb9db47e883caa82de8e71452~mv2.jpg",
+   "link": "/bdt-2014"
+  },
+  "2015": {
+   "img": "588d17_7efdf99274094916890392eb3fffbd1f~mv2.jpg",
+   "link": "/bdt-2015"
+  },
+  "2016": {
+   "img": "588d17_b2d3f2b73ad0430db712cd23aafcd86d~mv2.jpg",
+   "link": "/bdt-2016"
+  },
+  "2017": {
+   "img": "588d17_dd28916fc93f475b80d41987072bd2d7~mv2.jpg",
+   "link": "/bdt-2017"
+  },
+  "2018": {
+   "img": "588d17_64ed880936574b9eac4dd325e43acfb1~mv2.jpg",
+   "link": "/bdt-2018"
+  },
+  "2019": {
+   "img": "588d17_6d83a5d8db574724923368bf38760ff5~mv2.jpg",
+   "link": "/bdt-2019"
+  },
+  "2020": {
+   "img": "588d17_fa605851fc4940609ec8e82f251d4050~mv2.jpg",
+   "link": "/bdt-2020"
+  },
+  "2021": {
+   "img": "588d17_b07799fa5502460f86f8bb8e2825f22c~mv2.jpg",
+   "link": "/bdt-2021"
+  },
+  "2022": {
+   "img": "588d17_89181048d19f412ebcbf0e4647d1deed~mv2.jpg",
+   "link": "/bdt-2022"
+  },
+  "2023": {
+   "img": "588d17_de86e02634284ff1a224d1476ea2a035~mv2.jpg",
+   "link": "/bdt-2023"
+  },
+  "2024": {
+   "img": "588d17_2ae12117f2e745438fb4be7b2d6c47af~mv2.jpg",
+   "link": "/bdt-2024",
+   "nick": "Belek Big Dogs (Again!)"
+  },
+  "2025": {
+   "img": "588d17_c76c29b9a90f485aaae24358efa2330b~mv2.jpg",
+   "link": "/bdt-2025"
+  },
+  "2026": {
+   "img": "588d17_0a864bb1ff5044828fe8b71c2c88dd57~mv2.jpg",
+   "link": "/bdt-2026"
+  }
+ }
+}

@@ -1,0 +1,2356 @@
+{
+ "Statistics.html": {
+  "Players": {
+   "0": {
+    "sheet": "Players",
+    "row": 1,
+    "cols": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "n": 43,
+    "extent": "until_blank",
+    "fmt": [
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "",
+     "",
+     "",
+     ""
+    ]
+   }
+  },
+  "Tours": {
+   "0": {
+    "sheet": "Tours",
+    "row": 1,
+    "cols": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     15,
+     18
+    ],
+    "n": 25,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "",
+     "str",
+     "str",
+     "str",
+     "str",
+     "",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str"
+    ]
+   }
+  },
+  "RC Matches": {
+   "0": {
+    "sheet": "RC Matches",
+    "row": 1,
+    "cols": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ],
+    "n": 417,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "",
+     "str",
+     "round2",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     ""
+    ]
+   }
+  },
+  "Individual": {
+   "0": {
+    "sheet": "Individual",
+    "row": 1,
+    "cols": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "n": 382,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "",
+     "",
+     "",
+     "",
+     "str"
+    ]
+   }
+  },
+  "RC Results": {
+   "0": {
+    "sheet": "RC Results",
+    "row": 14,
+    "cols": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21
+    ],
+    "n": 25,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "round2",
+     "round2",
+     "round2",
+     "round2",
+     "",
+     "",
+     "round2",
+     "round2",
+     "str",
+     "str",
+     "round2",
+     "",
+     "round2",
+     "round2",
+     "round2",
+     "round2",
+     "round2",
+     "round2",
+     "str",
+     ""
+    ]
+   },
+   "1": {
+    "sheet": "RC Results",
+    "row": 4,
+    "cols": [
+     1,
+     2,
+     5
+    ],
+    "n": 5,
+    "extent": "until_blank",
+    "fmt": [
+     "str",
+     "round2",
+     "round2"
+    ]
+   }
+  },
+  "Results Summary": {
+   "0": {
+    "sheet": "Results Summary",
+    "row": 4,
+    "cols": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "n": 25,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str"
+    ]
+   }
+  },
+  "RC Records": {
+   "0": {
+    "sheet": "RC Records",
+    "row": 24,
+    "cols": [
+     1,
+     12,
+     13
+    ],
+    "n": 15,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "round2"
+    ]
+   },
+   "1": {
+    "sheet": "RC Records",
+    "row": 24,
+    "cols": [
+     1,
+     9,
+     10
+    ],
+    "n": 15,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "round2"
+    ]
+   },
+   "2": {
+    "sheet": "RC Records",
+    "row": 24,
+    "cols": [
+     1,
+     19,
+     20
+    ],
+    "n": 15,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "round2"
+    ]
+   },
+   "3": {
+    "sheet": "RC Records",
+    "row": 24,
+    "cols": [
+     1,
+     2,
+     3
+    ],
+    "n": 15,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "round2"
+    ]
+   },
+   "4": {
+    "sheet": "RC Records",
+    "row": 24,
+    "cols": [
+     1,
+     16,
+     17
+    ],
+    "n": 15,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "round2"
+    ]
+   },
+   "5": {
+    "sheet": "RC Records",
+    "row": 24,
+    "cols": [
+     1,
+     5,
+     6
+    ],
+    "n": 15,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "round2"
+    ]
+   },
+   "6": {
+    "sheet": "RC Records",
+    "row": 62,
+    "cols": [
+     1,
+     12,
+     13
+    ],
+    "n": 15,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     ""
+    ]
+   },
+   "7": {
+    "sheet": "RC Records",
+    "row": 62,
+    "cols": [
+     1,
+     9,
+     10
+    ],
+    "n": 15,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     ""
+    ]
+   },
+   "8": {
+    "sheet": "RC Records",
+    "row": 62,
+    "cols": [
+     1,
+     16,
+     17
+    ],
+    "n": 15,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     ""
+    ]
+   },
+   "9": {
+    "sheet": "RC Records",
+    "row": 62,
+    "cols": [
+     1,
+     2,
+     3
+    ],
+    "n": 15,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     ""
+    ]
+   },
+   "10": {
+    "sheet": "RC Records",
+    "row": 62,
+    "cols": [
+     1,
+     5,
+     6
+    ],
+    "n": 15,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     ""
+    ]
+   },
+   "11": {
+    "sheet": "RC Records",
+    "row": 62,
+    "cols": [
+     1,
+     19,
+     20
+    ],
+    "n": 15,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     ""
+    ]
+   },
+   "12": {
+    "sheet": "RC Records",
+    "row": 5,
+    "cols": [
+     1,
+     12,
+     13
+    ],
+    "n": 15,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     ""
+    ]
+   },
+   "13": {
+    "sheet": "RC Records",
+    "row": 5,
+    "cols": [
+     1,
+     9,
+     10
+    ],
+    "n": 15,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     ""
+    ]
+   },
+   "14": {
+    "sheet": "RC Records",
+    "row": 5,
+    "cols": [
+     1,
+     2,
+     3
+    ],
+    "n": 15,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     ""
+    ]
+   },
+   "15": {
+    "sheet": "RC Records",
+    "row": 5,
+    "cols": [
+     1,
+     5,
+     20
+    ],
+    "n": 15,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     ""
+    ]
+   },
+   "16": {
+    "sheet": "RC Records",
+    "row": 5,
+    "cols": [
+     1,
+     2,
+     17
+    ],
+    "n": 15,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     ""
+    ]
+   },
+   "17": {
+    "sheet": "RC Records",
+    "row": 5,
+    "cols": [
+     1,
+     5,
+     6
+    ],
+    "n": 15,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     ""
+    ]
+   },
+   "18": {
+    "sheet": "RC Records",
+    "row": 119,
+    "cols": [
+     1,
+     2,
+     3
+    ],
+    "n": 80,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "str"
+    ]
+   },
+   "19": {
+    "sheet": "RC Records",
+    "row": 119,
+    "cols": [
+     11,
+     12,
+     13
+    ],
+    "n": 46,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "str"
+    ]
+   },
+   "20": {
+    "sheet": "RC Records",
+    "row": 119,
+    "cols": [
+     4,
+     5,
+     6
+    ],
+    "n": 24,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "str"
+    ]
+   },
+   "21": {
+    "sheet": "RC Records",
+    "row": 119,
+    "cols": [
+     8,
+     9,
+     10
+    ],
+    "n": 25,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "str"
+    ]
+   },
+   "22": {
+    "sheet": "RC Records",
+    "row": 43,
+    "cols": [
+     1,
+     9,
+     10
+    ],
+    "n": 15,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     ""
+    ]
+   },
+   "23": {
+    "sheet": "RC Records",
+    "row": 43,
+    "cols": [
+     1,
+     16,
+     17
+    ],
+    "n": 15,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     ""
+    ]
+   },
+   "24": {
+    "sheet": "RC Records",
+    "row": 43,
+    "cols": [
+     1,
+     5,
+     6
+    ],
+    "n": 15,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     ""
+    ]
+   },
+   "25": {
+    "sheet": "RC Records",
+    "row": 43,
+    "cols": [
+     1,
+     19,
+     20
+    ],
+    "n": 15,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     ""
+    ]
+   },
+   "26": {
+    "sheet": "RC Records",
+    "row": 43,
+    "cols": [
+     1,
+     12,
+     13
+    ],
+    "n": 15,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     ""
+    ]
+   },
+   "27": {
+    "sheet": "RC Records",
+    "row": 43,
+    "cols": [
+     1,
+     2,
+     3
+    ],
+    "n": 15,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     ""
+    ]
+   },
+   "28": {
+    "sheet": "RC Records",
+    "row": 100,
+    "cols": [
+     1,
+     12,
+     13
+    ],
+    "n": 15,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "round2"
+    ]
+   },
+   "29": {
+    "sheet": "RC Records",
+    "row": 100,
+    "cols": [
+     1,
+     5,
+     6
+    ],
+    "n": 15,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     ""
+    ]
+   },
+   "30": {
+    "sheet": "RC Records",
+    "row": 100,
+    "cols": [
+     1,
+     2,
+     3
+    ],
+    "n": 15,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     ""
+    ]
+   },
+   "31": {
+    "sheet": "RC Records",
+    "row": 100,
+    "cols": [
+     1,
+     9,
+     10
+    ],
+    "n": 15,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "round2"
+    ]
+   },
+   "32": {
+    "sheet": "RC Records",
+    "row": 81,
+    "cols": [
+     1,
+     12,
+     13
+    ],
+    "n": 15,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     ""
+    ]
+   },
+   "33": {
+    "sheet": "RC Records",
+    "row": 81,
+    "cols": [
+     1,
+     5,
+     6
+    ],
+    "n": 15,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     ""
+    ]
+   },
+   "34": {
+    "sheet": "RC Records",
+    "row": 81,
+    "cols": [
+     1,
+     9,
+     10
+    ],
+    "n": 15,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     ""
+    ]
+   },
+   "35": {
+    "sheet": "RC Records",
+    "row": 81,
+    "cols": [
+     1,
+     2,
+     3
+    ],
+    "n": 15,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     ""
+    ]
+   },
+   "36": {
+    "sheet": "RC Records",
+    "row": 81,
+    "cols": [
+     1,
+     19,
+     20
+    ],
+    "n": 15,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     ""
+    ]
+   },
+   "37": {
+    "sheet": "RC Records",
+    "row": 81,
+    "cols": [
+     1,
+     16,
+     17
+    ],
+    "n": 15,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     ""
+    ]
+   }
+  },
+  "RC Points": {
+   "0": {
+    "sheet": "RC Points",
+    "row": 4,
+    "cols": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     32,
+     33,
+     34,
+     35,
+     36
+    ],
+    "n": 43,
+    "extent": "until_blank",
+    "fmt": [
+     "str",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "round2",
+     "",
+     "round2",
+     "round2",
+     ""
+    ]
+   }
+  },
+  "RC Points Leaderboard": {
+   "0": {
+    "sheet": "RC Points Leaderboard",
+    "row": 4,
+    "cols": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5
+    ],
+    "n": 43,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "round2",
+     "",
+     "round2",
+     "round2"
+    ]
+   }
+  },
+  "Head to Head": {
+   "0": {
+    "sheet": "Head to Head",
+    "row": 4,
+    "cols": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40,
+     41,
+     42,
+     43,
+     44,
+     62,
+     63,
+     64,
+     65,
+     66
+    ],
+    "n": 43,
+    "extent": "until_blank",
+    "fmt": [
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ]
+   }
+  },
+  "Partnerships": {
+   "0": {
+    "sheet": "Partnerships",
+    "row": 6,
+    "cols": [
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23
+    ],
+    "n": 8,
+    "extent": "until_blank",
+    "fmt": [
+     "str",
+     "",
+     "",
+     "",
+     "",
+     "round2",
+     "round2"
+    ]
+   },
+   "1": {
+    "sheet": "Partnerships",
+    "row": 6,
+    "cols": [
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31
+    ],
+    "n": 14,
+    "extent": "until_blank",
+    "fmt": [
+     "str",
+     "",
+     "",
+     "",
+     "",
+     "round2",
+     "round2"
+    ]
+   },
+   "2": {
+    "sheet": "Partnerships",
+    "row": 26,
+    "cols": [
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23
+    ],
+    "n": 12,
+    "extent": "until_blank",
+    "fmt": [
+     "str",
+     "",
+     "",
+     "",
+     "",
+     "round2",
+     "round2"
+    ]
+   },
+   "3": {
+    "sheet": "Partnerships",
+    "row": 26,
+    "cols": [
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31
+    ],
+    "n": 10,
+    "extent": "until_blank",
+    "fmt": [
+     "str",
+     "",
+     "",
+     "",
+     "",
+     "round2",
+     "round2"
+    ]
+   },
+   "4": {
+    "sheet": "Partnerships",
+    "row": 6,
+    "cols": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "n": 83,
+    "extent": "until_blank",
+    "fmt": [
+     "str",
+     "",
+     "",
+     "",
+     "",
+     "round2",
+     "round2"
+    ]
+   },
+   "5": {
+    "sheet": "Partnerships",
+    "row": 6,
+    "cols": [
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ],
+    "n": 91,
+    "extent": "until_blank",
+    "fmt": [
+     "str",
+     "",
+     "",
+     "",
+     "",
+     "round2",
+     "round2"
+    ]
+   }
+  },
+  "Stableford": {
+   "0": {
+    "sheet": "Stableford",
+    "row": 4,
+    "cols": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     28,
+     29,
+     30,
+     31
+    ],
+    "n": 43,
+    "extent": "until_blank",
+    "fmt": [
+     "str",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "round2",
+     ""
+    ]
+   }
+  },
+  "Stableford R1": {
+   "0": {
+    "sheet": "Stableford R1",
+    "row": 4,
+    "cols": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     28,
+     29,
+     30,
+     31
+    ],
+    "n": 43,
+    "extent": "until_blank",
+    "fmt": [
+     "str",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "round2",
+     ""
+    ]
+   }
+  },
+  "Stableford R2": {
+   "0": {
+    "sheet": "Stableford R2",
+    "row": 4,
+    "cols": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     28,
+     29,
+     30,
+     31
+    ],
+    "n": 43,
+    "extent": "until_blank",
+    "fmt": [
+     "str",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "round2",
+     ""
+    ]
+   }
+  },
+  "Stableford R3": {
+   "0": {
+    "sheet": "Stableford R3",
+    "row": 4,
+    "cols": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     28,
+     29,
+     30,
+     31
+    ],
+    "n": 43,
+    "extent": "until_blank",
+    "fmt": [
+     "str",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "str",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "round2",
+     ""
+    ]
+   }
+  },
+  "Round Averages": {
+   "0": {
+    "sheet": "Round Averages",
+    "row": 4,
+    "cols": [
+     9,
+     10,
+     11
+    ],
+    "n": 10,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "round2"
+    ]
+   },
+   "1": {
+    "sheet": "Round Averages",
+    "row": 4,
+    "cols": [
+     9,
+     13,
+     14
+    ],
+    "n": 10,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "round2"
+    ]
+   },
+   "2": {
+    "sheet": "Round Averages",
+    "row": 4,
+    "cols": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "n": 63,
+    "extent": "until_blank",
+    "fmt": [
+     "str",
+     "",
+     "str",
+     "str",
+     "round2"
+    ]
+   }
+  },
+  "Stableford Leaderboards": {
+   "0": {
+    "sheet": "Stableford Leaderboards",
+    "row": 5,
+    "cols": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "n": 43,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "",
+     "",
+     "round2"
+    ]
+   },
+   "1": {
+    "sheet": "Stableford Leaderboards",
+    "row": 5,
+    "cols": [
+     7,
+     8,
+     9,
+     10,
+     11
+    ],
+    "n": 43,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "",
+     "",
+     "round2"
+    ]
+   },
+   "2": {
+    "sheet": "Stableford Leaderboards",
+    "row": 5,
+    "cols": [
+     14,
+     15,
+     16,
+     17,
+     18
+    ],
+    "n": 43,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "",
+     "",
+     "round2"
+    ]
+   },
+   "3": {
+    "sheet": "Stableford Leaderboards",
+    "row": 5,
+    "cols": [
+     21,
+     22,
+     23,
+     24,
+     25
+    ],
+    "n": 43,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "",
+     "",
+     "round2"
+    ]
+   }
+  },
+  "Placings": {
+   "0": {
+    "sheet": "Placings",
+    "row": 4,
+    "cols": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     28,
+     29,
+     30,
+     31
+    ],
+    "n": 43,
+    "extent": "until_blank",
+    "fmt": [
+     "str",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "round2",
+     ""
+    ]
+   },
+   "1": {
+    "sheet": "Placings",
+    "row": 88,
+    "cols": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     28,
+     29,
+     30,
+     31
+    ],
+    "n": 43,
+    "extent": "until_blank",
+    "fmt": [
+     "str",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "round2",
+     ""
+    ]
+   }
+  },
+  "Placings Leaderboard": {
+   "0": {
+    "sheet": "Placings Leaderboard",
+    "row": 5,
+    "cols": [
+     0,
+     1,
+     2,
+     3,
+     4
+    ],
+    "n": 43,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "",
+     "",
+     "round2"
+    ]
+   },
+   "1": {
+    "sheet": "Placings Leaderboard",
+    "row": 5,
+    "cols": [
+     7,
+     8,
+     9,
+     10,
+     11
+    ],
+    "n": 43,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "",
+     "",
+     "round2"
+    ]
+   }
+  },
+  "Individual Records": {
+   "0": {
+    "sheet": "Individual Records",
+    "row": 5,
+    "cols": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "n": 50,
+    "extent": "until_blank",
+    "fmt": [
+     "str",
+     "",
+     "str",
+     ""
+    ]
+   },
+   "1": {
+    "sheet": "Individual Records",
+    "row": 5,
+    "cols": [
+     5,
+     6,
+     7,
+     8
+    ],
+    "n": 39,
+    "extent": "until_blank",
+    "fmt": [
+     "str",
+     "",
+     "str",
+     ""
+    ]
+   },
+   "2": {
+    "sheet": "Individual Records",
+    "row": 100,
+    "cols": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "n": 128,
+    "extent": "until_blank",
+    "fmt": [
+     "str",
+     "",
+     "str",
+     ""
+    ]
+   },
+   "3": {
+    "sheet": "Individual Records",
+    "row": 100,
+    "cols": [
+     5,
+     6,
+     7,
+     8
+    ],
+    "n": 54,
+    "extent": "until_blank",
+    "fmt": [
+     "str",
+     "",
+     "str",
+     ""
+    ]
+   }
+  },
+  "Handicaps": {
+   "0": {
+    "sheet": "Handicaps",
+    "row": 4,
+    "cols": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     25,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32
+    ],
+    "n": 43,
+    "extent": "until_blank",
+    "fmt": [
+     "str",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ]
+   }
+  },
+  "Age Records": {
+   "0": {
+    "sheet": "Age Records",
+    "row": 5,
+    "cols": [
+     1,
+     2,
+     4,
+     5
+    ],
+    "n": 15,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "",
+     "str"
+    ]
+   },
+   "1": {
+    "sheet": "Age Records",
+    "row": 5,
+    "cols": [
+     1,
+     8,
+     10,
+     11
+    ],
+    "n": 15,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "",
+     "str"
+    ]
+   }
+  },
+  "Caps": {
+   "0": {
+    "sheet": "Caps",
+    "row": 4,
+    "cols": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "n": 43,
+    "extent": "until_blank",
+    "fmt": [
+     "str",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ]
+   }
+  }
+ },
+ "Trophies.html": {
+  "Players": {
+   "0": {
+    "sheet": "Players",
+    "row": 1,
+    "cols": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "n": 43,
+    "extent": "until_blank",
+    "fmt": [
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "",
+     "",
+     "",
+     ""
+    ]
+   }
+  },
+  "Trophies": {
+   "0": {
+    "sheet": "Trophies",
+    "row": 1,
+    "cols": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "n": 309,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "str",
+     "str"
+    ]
+   }
+  },
+  "Trophy Hauls": {
+   "0": {
+    "sheet": "Trophy Cabinet",
+    "row": 4,
+    "cols": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     22,
+     23
+    ],
+    "n": 43,
+    "extent": "until_blank",
+    "fmt": [
+     "str",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ]
+   }
+  },
+  "Trophy Winners": {
+   "0": {
+    "sheet": "Trophy Winners",
+    "row": 4,
+    "cols": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ],
+    "n": 25,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str",
+     "str"
+    ]
+   }
+  },
+  "Green Jacket": {
+   "0": {
+    "sheet": "Green Jacket",
+    "row": 4,
+    "cols": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "n": 25,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "",
+     "str",
+     "str",
+     "str",
+     "str"
+    ]
+   }
+  },
+  "Shitzu": {
+   "0": {
+    "sheet": "Shitzu",
+    "row": 4,
+    "cols": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "n": 25,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "str",
+     ""
+    ]
+   }
+  },
+  "Poodle": {
+   "0": {
+    "sheet": "Poodle",
+    "row": 4,
+    "cols": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "n": 25,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "str",
+     "str"
+    ]
+   }
+  },
+  "Rottweiler": {
+   "0": {
+    "sheet": "Rottweiler",
+    "row": 4,
+    "cols": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "n": 25,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "str",
+     "str"
+    ]
+   }
+  },
+  "Cheat": {
+   "0": {
+    "sheet": "Cheat",
+    "row": 4,
+    "cols": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "n": 25,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "str",
+     "str"
+    ]
+   }
+  },
+  "Bandit": {
+   "0": {
+    "sheet": "Bandit",
+    "row": 4,
+    "cols": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "n": 25,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "str",
+     "str"
+    ]
+   }
+  },
+  "Seve & Olly": {
+   "0": {
+    "sheet": "Seve & Olly",
+    "row": 4,
+    "cols": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "n": 25,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "str",
+     "str"
+    ]
+   }
+  },
+  "Duncan Goodhew": {
+   "0": {
+    "sheet": "Duncan Goodhew",
+    "row": 4,
+    "cols": [
+     0,
+     1,
+     2
+    ],
+    "n": 25,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "str"
+    ]
+   }
+  },
+  "Elton Ravo Prize": {
+   "0": {
+    "sheet": "Elton Ravo Prize",
+    "row": 4,
+    "cols": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "n": 25,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "str",
+     "str"
+    ]
+   }
+  },
+  "Great Dane": {
+   "0": {
+    "sheet": "Great Dane",
+    "row": 4,
+    "cols": [
+     0,
+     1,
+     2
+    ],
+    "n": 25,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "str"
+    ]
+   }
+  },
+  "St Bernard": {
+   "0": {
+    "sheet": "St Bernard",
+    "row": 4,
+    "cols": [
+     0,
+     1,
+     2
+    ],
+    "n": 25,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "str"
+    ]
+   }
+  },
+  "Goblat": {
+   "0": {
+    "sheet": "Goblat",
+    "row": 4,
+    "cols": [
+     0,
+     1,
+     2
+    ],
+    "n": 25,
+    "extent": "until_blank",
+    "fmt": [
+     "",
+     "str",
+     "str"
+    ]
+   }
+  }
+ }
+}

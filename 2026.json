@@ -1,0 +1,524 @@
+{
+ "_help": "Per-tour extras that are NOT in the playbook. Image values are Wix media IDs (the 32-character code after 588d17_ in the Wix image address). Videos use the Vimeo number (vimeo.com/<number>) or a 'youtube' ID. Leave any field empty (\"\" or []) and that part of the page simply hides. rc_images / leaderboard_images may also be file paths (relative to tour_media) – those images are built into the page.",
+ "year": 2026,
+ "strapline": "\"TIME FLIES\"",
+ "hero": {
+  "id": "1cf21a8a4356472ba0b5b37bb08c08db",
+  "caption": "The 2026 Kennels"
+ },
+ "venue": {
+  "map_query": "6338 E Clinton St, Scottsdale, AZ",
+  "map_zoom": 17,
+  "blurb": ""
+ },
+ "captains": {
+  "BH": {
+   "id": "d92b5622e44e4d6c94a0041ad042909e"
+  },
+  "RT": {
+   "id": "d640235b6980445d92489de4ebbb826b"
+  }
+ },
+ "accommodation": {
+  "name": "Two neighbouring villas",
+  "blurb": "Home for BDT 2026 – 22 tourists, with Troon North, Grayhawk and We Ko Pa on the golf schedule.\n\nTwo neighbouring private homes, 6338 E Clinton St and 6337 E Desert Cove Ave, booked together through Heirloom.",
+  "photos": [
+   {
+    "id": "0a864bb1ff5044828fe8b71c2c88dd57",
+    "caption": ""
+   },
+   {
+    "id": "b8378a48f7e1460f8bc3ba13f287524e",
+    "caption": ""
+   },
+   {
+    "id": "569d373239ce4126b5f207d1baf7febf",
+    "caption": ""
+   },
+   {
+    "id": "65fce37edaaf49c18821b5c546f3535d",
+    "caption": ""
+   },
+   {
+    "id": "3847b69c0d454cb8b0889c75e5424dad",
+    "caption": ""
+   },
+   {
+    "id": "cf1f1bdb37bb400baa3d5186a3d47bb3",
+    "caption": ""
+   },
+   {
+    "id": "f385de9ed9bd463b84fc5998a996d102",
+    "caption": ""
+   },
+   {
+    "id": "d6a396cf4a2f49e99843c5ccb437a150",
+    "caption": ""
+   },
+   {
+    "id": "f930c4127a6e4e3fb4325e4dffa58daf",
+    "caption": ""
+   },
+   {
+    "id": "5caa424eda2e4a5bbe9a82dae9a0f62d",
+    "caption": ""
+   },
+   {
+    "id": "1cf21a8a4356472ba0b5b37bb08c08db",
+    "caption": ""
+   },
+   {
+    "id": "76df58a5265647d189955cb83a1d1ac5",
+    "caption": ""
+   },
+   {
+    "id": "ed0d53efa9034268ab89f0d82c6c3a70",
+    "caption": ""
+   },
+   {
+    "id": "9ed1fda7077a4a248035623c233b0608",
+    "caption": ""
+   },
+   {
+    "id": "1b6a4a908288460eab1213da2077dc9e",
+    "caption": ""
+   },
+   {
+    "id": "c30098e4f46b4e49950b9c847c6fc69f",
+    "caption": ""
+   },
+   {
+    "id": "81a427ede9064178807de0fd3db78489",
+    "caption": ""
+   },
+   {
+    "id": "682920f50ccd40e8bce3ecdf8fd65604",
+    "caption": ""
+   },
+   {
+    "id": "e92aaa9c027948508690f595df787a75",
+    "caption": ""
+   },
+   {
+    "id": "9e6224661d9e40478e3c9acf507b5d95",
+    "caption": ""
+   },
+   {
+    "id": "e8271ce5009b4c56a550b9cec19e7054",
+    "caption": ""
+   },
+   {
+    "id": "741d137742684038acbe6cda895978f5",
+    "caption": ""
+   },
+   {
+    "id": "c224968641564fa1bc9d7e2ad09c5236",
+    "caption": ""
+   },
+   {
+    "id": "02ab580b65a04a4da1d79cc6d2d3e775",
+    "caption": ""
+   },
+   {
+    "id": "59d5eadfd3144b2b8fffcbe1cfc7311c",
+    "caption": ""
+   },
+   {
+    "id": "1e5eead922e841869fd708fab1662300",
+    "caption": ""
+   },
+   {
+    "id": "14f2a80ac2a14db6a01be183f3ca0b5e",
+    "caption": ""
+   },
+   {
+    "id": "c5616373c4684c258324a1c686d11d81",
+    "caption": ""
+   },
+   {
+    "id": "2405599a60954051aa1a51b0227804a2",
+    "caption": ""
+   },
+   {
+    "id": "453b13e682c943f69f03c8cb537b4e53",
+    "caption": ""
+   },
+   {
+    "id": "5369bc5815bb4538a5b20e1e69dc29a5",
+    "caption": ""
+   },
+   {
+    "id": "b35069bb074a48409a1bcfcf10791f22",
+    "caption": ""
+   },
+   {
+    "id": "8c038c43f7b7422c8d9d4a84289d7068",
+    "caption": ""
+   },
+   {
+    "id": "c7f26c80c81242fda451d43530bdac5b",
+    "caption": ""
+   },
+   {
+    "id": "dfa6296a9dfd42988445269878ccfa26",
+    "caption": ""
+   },
+   {
+    "id": "b7af6b9509d6477b9fec6229f12707ed",
+    "caption": ""
+   },
+   {
+    "id": "aa8db7c606cd47d4b99e173492a1380f",
+    "caption": ""
+   },
+   {
+    "id": "5f7045136f464c63bb15d291862cbe0d",
+    "caption": ""
+   },
+   {
+    "id": "6c025d3fb0d54ec8ade4d5960289f33d",
+    "caption": ""
+   },
+   {
+    "id": "9fb35749ad144ae8962b9da79a02e236",
+    "caption": ""
+   },
+   {
+    "id": "9a5adf4d7a81442ba9e5c0399eeba3c5",
+    "caption": ""
+   },
+   {
+    "id": "52e791c3486a4d1c9706c55c4908c002",
+    "caption": ""
+   },
+   {
+    "id": "103cf27e46e346eabe31944994fbec1c",
+    "caption": ""
+   },
+   {
+    "id": "0fdd60536e0c416da2cf6321b866f1f4",
+    "caption": ""
+   },
+   {
+    "id": "d3df00dbb8a345e6a1d64e26f19c2b36",
+    "caption": ""
+   },
+   {
+    "id": "2919cb049da543f58ed0a3322b61edd1",
+    "caption": ""
+   },
+   {
+    "id": "8431f5c2a54043dfa1d7b31125052940",
+    "caption": ""
+   },
+   {
+    "id": "1223b0499cbd4c0589f88c89f4dca2a3",
+    "caption": ""
+   },
+   {
+    "id": "363949c475434e8699fc2a3f23433d24",
+    "caption": ""
+   },
+   {
+    "id": "27afc86b213241c5b5b42112c762d3b5",
+    "caption": ""
+   },
+   {
+    "id": "c30750612a9544e1ba7dec8824a62497",
+    "caption": ""
+   },
+   {
+    "id": "bbe3637fae5f47ce868f9ff68d4b0278",
+    "caption": ""
+   },
+   {
+    "id": "cf5204162d034937b18bc8ccab8757ba",
+    "caption": ""
+   },
+   {
+    "id": "eacfae779e7f4164b19a7a97c1645f7f",
+    "caption": ""
+   },
+   {
+    "id": "057d6a4c8a3247efb1511288e1caa1a5",
+    "caption": ""
+   },
+   {
+    "id": "dc0fb8868ca84e0d9d7c1a9bccd0dadb",
+    "caption": ""
+   },
+   {
+    "id": "6d0b50c6156c400890314962ac8f5682",
+    "caption": ""
+   },
+   {
+    "id": "b7f0dfacae1a41b488a54db034102470",
+    "caption": ""
+   },
+   {
+    "id": "305543651b48434cab45f162b8d68d42",
+    "caption": ""
+   },
+   {
+    "id": "e7e7071343aa4eb79a12c309ec565af5",
+    "caption": ""
+   },
+   {
+    "id": "48dd131804234cbba1d911e2a6771dc2",
+    "caption": ""
+   },
+   {
+    "id": "0bf3f1a66ec44a268adb3d3baa811e3f",
+    "caption": ""
+   },
+   {
+    "id": "767c9dac42234bf3a70b87986921c9fc",
+    "caption": ""
+   },
+   {
+    "id": "a06a56b9976e4d90976f544360fc47af",
+    "caption": ""
+   },
+   {
+    "id": "640168900a4c4b94a872b3819bbe12bc",
+    "caption": ""
+   },
+   {
+    "id": "023fea8f456c412785e18da7b627e8df",
+    "caption": ""
+   },
+   {
+    "id": "7caf2cdd3dda42c6a66dcc0012aa48e8",
+    "caption": ""
+   },
+   {
+    "id": "4ddcb84d9add47bfbcdfc7ae560ba62a",
+    "caption": ""
+   },
+   {
+    "id": "f2a3ae3f5f5846b4a988a35f4e486c22",
+    "caption": ""
+   },
+   {
+    "id": "3e46ed51351d458e878e03d27ef1ffa8",
+    "caption": ""
+   },
+   {
+    "id": "6eae1555e8a94387b4ad578d232be3e6",
+    "caption": ""
+   },
+   {
+    "id": "1eea9306f7ef403a915b84858e666dac",
+    "caption": ""
+   },
+   {
+    "id": "9f873b4a2d7a4f3dbb681fe81a69a444",
+    "caption": ""
+   },
+   {
+    "id": "4738e5adecd34dc99cb5e2a78a56dd28",
+    "caption": ""
+   },
+   {
+    "id": "1a662af519da41aeb7af0ff849ef3a8d",
+    "caption": ""
+   },
+   {
+    "id": "15f9db9644094d21bdc303ca948fdfd9",
+    "caption": ""
+   },
+   {
+    "id": "2f535fb3f7994d7e93ac735d5c43ce27",
+    "caption": ""
+   },
+   {
+    "id": "358f6bd013c14320ae4a48d86f25fc89",
+    "caption": ""
+   },
+   {
+    "id": "e321ce23beb14a92a23eee40d58126c2",
+    "caption": ""
+   },
+   {
+    "id": "30e6f1796266418ca9b7b2a0d325e8ee",
+    "caption": ""
+   },
+   {
+    "id": "1ba96abb6d1a4b6fb262c20ee2c238b3",
+    "caption": ""
+   },
+   {
+    "id": "bb56e5d53b774ad7853b2c795ad3a673",
+    "caption": ""
+   },
+   {
+    "id": "a1aeae74f45c48509ee79fbe49d76f3e",
+    "caption": ""
+   },
+   {
+    "id": "bbc18b96589e4a6a8798b4b3af2e094a",
+    "caption": ""
+   },
+   {
+    "id": "ed0c28ca112144f09256eacd64bd616d",
+    "caption": ""
+   },
+   {
+    "id": "a1cd288cc1d2407193d3a01d2deefa54",
+    "caption": ""
+   },
+   {
+    "id": "12466fab67a9409b993695f2fc6476bd",
+    "caption": ""
+   },
+   {
+    "id": "feb9130b0e4c4d34a49ca980b83e83e7",
+    "caption": ""
+   },
+   {
+    "id": "e876558f2ae04a33bc94a11560743d1a",
+    "caption": ""
+   },
+   {
+    "id": "720c61a5c4584e50958e222bec5e12b9",
+    "caption": ""
+   },
+   {
+    "id": "dbaf8426987e4809b2bb6d20395e11f8",
+    "caption": ""
+   },
+   {
+    "id": "578333343990430eb0ed2a4476579727",
+    "caption": ""
+   },
+   {
+    "id": "6a623223d6f948fa8fe700348f80ca71",
+    "caption": ""
+   },
+   {
+    "id": "5e2c3dcb882f4b5bbbb00734c52c4046",
+    "caption": ""
+   },
+   {
+    "id": "81043ee099ff4f3e8ac5c6960f2fde23",
+    "caption": ""
+   },
+   {
+    "id": "b93a6579552b488d99d4f4aadca7137f",
+    "caption": ""
+   },
+   {
+    "id": "785df0da3bb24d31b5b3b7c1a86a3d99",
+    "caption": ""
+   },
+   {
+    "id": "db7b6d31ffd347de9b595cd7b5858b82",
+    "caption": ""
+   },
+   {
+    "id": "242c5a9983534f79a0b9a5e11681e386",
+    "caption": ""
+   },
+   {
+    "id": "d7937e68ae3b4655a6058b5de5cffb5c",
+    "caption": ""
+   },
+   {
+    "id": "de29ebb11b05472ea7126da725d1338e",
+    "caption": ""
+   },
+   {
+    "id": "670d52fd2bc24ac48580c2a82fef2d17",
+    "caption": ""
+   },
+   {
+    "id": "ec1685b2ef0843cd919dcbe8235e371f",
+    "caption": ""
+   },
+   {
+    "id": "2e96801d885547df84ee2a9239084cf7",
+    "caption": ""
+   },
+   {
+    "id": "861126b1a6a04ffcbaefe701fa16f7ab",
+    "caption": ""
+   }
+  ],
+  "where": "Scottsdale · Arizona · USA",
+  "facts": [
+   "Two neighbouring homes"
+  ],
+  "link": "https://stayloom.guestybookings.com/en/properties/68277c106de219001366db78"
+ },
+ "itinerary_images": [
+  {
+   "id": "b5d13b36a128476a8edcbbecae39e009",
+   "caption": ""
+  },
+  {
+   "id": "9309e37cb40146f7a16b49f9a4ab647f",
+   "caption": ""
+  },
+  {
+   "id": "58fa4476db7c4392967f2b21e2832c95",
+   "caption": ""
+  },
+  {
+   "id": "0e30cee8b46a4410aa3eab129ed76822",
+   "caption": ""
+  },
+  {
+   "id": "dfb78faca112458ebd9f273bc5378124",
+   "caption": ""
+  },
+  {
+   "id": "d3ca12b4a2674b45ad6a4a5a2fa40d65",
+   "caption": ""
+  },
+  {
+   "id": "2c5591e37c214c54b62382291b1b7279",
+   "caption": ""
+  },
+  {
+   "id": "6c0821c487c84cf4b8fa00a4f16ed189",
+   "caption": ""
+  }
+ ],
+ "itinerary_extra": {},
+ "team_photos": {
+  "BH": "982fb4dc61f54aee9107834f764ea38f",
+  "RT": "6e7c8dd94dbf4c568816b0f6082bcc29"
+ },
+ "team_announcement": [
+  {
+   "vimeo": "1182975342",
+   "title": "BDT 2026 Team Announcement",
+   "thumb": "https://i.vimeocdn.com/video/2145702409-51fcb79046a5a872701b966b33643f9bdbb99704c7ba51fbaffce72483cb5c63-d_640?region=us"
+  },
+  {
+   "vimeo": "1182975271",
+   "title": "BDT 2026 Story So Far",
+   "thumb": "https://i.vimeocdn.com/video/2145704657-431fb98b4d7c61dac14a3d80ff16ede7ff362fa3d06acdf7d0a4300095ba797b-d_640?region=us"
+  }
+ ],
+ "rc_images": [
+  "boards/BDT_2026_RyderCup_1.jpg",
+  "boards/BDT_2026_RyderCup_2.jpg",
+  "boards/BDT_2026_RyderCup_3.jpg"
+ ],
+ "leaderboard_images": [
+  "boards/BDT_2026_Leaderboard_1.jpg",
+  "boards/BDT_2026_Leaderboard_2.jpg",
+  "boards/BDT_2026_Leaderboard_3.jpg"
+ ],
+ "summary": {
+  "banner": "c76c29b9a90f485aaae24358efa2330b",
+  "title": "",
+  "text": "",
+  "link": ""
+ },
+ "video_sections": [],
+ "gallery": [],
+ "gallery_placeholder": "The 2026 photos are being sorted and will be added here shortly.",
+ "video_placeholder": true
+}

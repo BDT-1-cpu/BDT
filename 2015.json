@@ -1,0 +1,384 @@
+{
+ "_help": "Per-tour extras that are NOT in the playbook. Image values are Wix media IDs (the 32-character code after 588d17_ in the Wix image address). Videos use the Vimeo number (vimeo.com/<number>) or a 'youtube' ID. Leave any field empty (\"\" or []) and that part of the page simply hides. rc_images / leaderboard_images may also be file paths (relative to tour_media) – those images are built into the page.",
+ "year": 2015,
+ "strapline": "Made in Malmö",
+ "hero": {
+  "id": "e6c0b93a8eb04b37a251ea79679a45f6",
+  "caption": "2015 Tourists"
+ },
+ "venue": {
+  "map_query": "Barsebäck Golf & Country Club, Klubbhusvägen 5, 246 55 Löddeköpinge, Sweden",
+  "map_zoom": 15,
+  "blurb": ""
+ },
+ "captains": {
+  "BH": {
+   "id": "c2bbcfa9abbe42e59c80a93db935d3f0"
+  },
+  "RT": {
+   "id": "21ae86e6514641f986d0919ffd42eeb4"
+  }
+ },
+ "accommodation": {
+  "name": "Chalets on the golf course, Barsebäck",
+  "blurb": "Home for BDT 2015 – 15 tourists, with PGA National Lakes Course, Barseback Masters and Barseback Donald Steel on the golf schedule.\n\nChalets on the course at Barsebäck Golf & Country Club, founded in 1969 on the Öresund coast north of Malmö. The club has two 18-hole courses, Ocean and Pine, plus a nine-hole course. It hosted the 2003 Solheim Cup and has staged the Scandinavian Masters ten times.",
+  "photos": [
+   {
+    "id": "68b6b9668ef6436283f4c32e95a777dd",
+    "caption": ""
+   },
+   {
+    "id": "5712ff2a5a6e4f59838fcc0eff869267",
+    "caption": ""
+   },
+   {
+    "id": "d3ae08a2ba5646aeb2c6c9ba9f3f435e",
+    "caption": ""
+   },
+   {
+    "id": "29370935cf534c4db6329e19f5902072",
+    "caption": ""
+   },
+   {
+    "id": "c130289a598f4856853e36b505789898",
+    "caption": ""
+   },
+   {
+    "id": "ac49dc2b46d647e9bcab7432526cd373",
+    "caption": ""
+   },
+   {
+    "id": "2e7e9beb7c994fd2ade7c1c70b3b85ce",
+    "caption": ""
+   },
+   {
+    "id": "1336d2ef0b6d4e0c8c272f41f7445dcf",
+    "caption": ""
+   },
+   {
+    "id": "00d59afc76f0469aa9ae400b78529cb4",
+    "caption": ""
+   },
+   {
+    "id": "96b43a813c6743a4a5067e32b7636f4b",
+    "caption": ""
+   },
+   {
+    "id": "bada60aed7ba401c999be56517363ae3",
+    "caption": ""
+   },
+   {
+    "id": "a8e99ad5319d46f0a486439cc6478b4c",
+    "caption": ""
+   },
+   {
+    "id": "68232b8331314bf8982df0a1990aaed6",
+    "caption": ""
+   },
+   {
+    "id": "af280d1883e64d33b495147a01f02eae",
+    "caption": ""
+   },
+   {
+    "id": "2af74efe626f4e63bbf394e34032c719",
+    "caption": ""
+   },
+   {
+    "id": "1462e5fb89d14049b10fe2801748b9d8",
+    "caption": ""
+   }
+  ],
+  "where": "Barsebäck · near Malmö · Sweden",
+  "facts": [
+   "Ocean and Pine courses",
+   "2003 Solheim Cup venue",
+   "Scandinavian Masters host",
+   "Öresund coast",
+   "Founded 1969"
+  ],
+  "link": "https://www.barseback.com/en/accommodation/"
+ },
+ "itinerary_images": [
+  {
+   "id": "37262ab881734ee0b2f46449ed39ea5f",
+   "caption": ""
+  }
+ ],
+ "itinerary_extra": {},
+ "team_photos": {
+  "BH": "dfe49373266e463eb109e6ce7743e28a",
+  "RT": "6f68219c50c44d359802cf4fc85d506a"
+ },
+ "team_announcement": [
+  {
+   "vimeo": "414778437",
+   "title": "BDT 2015 Team Announcement",
+   "thumb": "https://i.vimeocdn.com/video/887994470-8e1ea28ecff4b59fa57df22400ddec19bd051dbe38ec30779ce18ea7e7cde269-d_640?region=us"
+  }
+ ],
+ "rc_images": [
+  "boards/BDT_2015_RyderCup_1.jpg",
+  "boards/BDT_2015_RyderCup_2.jpg",
+  "boards/BDT_2015_RyderCup_3.jpg"
+ ],
+ "leaderboard_images": [
+  "boards/BDT_2015_Leaderboard_1.jpg",
+  "boards/BDT_2015_Leaderboard_2.jpg"
+ ],
+ "summary": {
+  "banner": "2307149d24cb410289c9809342b34f86",
+  "title": "",
+  "text": "",
+  "link": ""
+ },
+ "video_sections": [
+  {
+   "title": "Photo Slideshow",
+   "items": [
+    {
+     "vimeo": "422918454",
+     "title": "BDT 2015 Slideshow",
+     "thumb": "https://i.vimeocdn.com/video/899185294-f833b04e67424dec1bc526fd13d1f12d9ae9b0fae04a036441ced8b39a6124e1-d_640?region=us"
+    }
+   ]
+  },
+  {
+   "title": "Tour clips",
+   "items": [
+    {
+     "vimeo": "414910396",
+     "title": "Boysie Sparring No Sound",
+     "thumb": "https://i.vimeocdn.com/video/888182777-8ec7a08d3dbecd9775b0509a48714e94df4d0b094576d880a0b30a5c73bbff3b-d_640?region=us"
+    },
+    {
+     "vimeo": "414918216",
+     "title": "Harbo Sparring No Sound",
+     "thumb": "https://i.vimeocdn.com/video/888187568-7d52d2d1fad62049ce61a629be4da8c0a212c9cb1a4422f4317e3f8b87e57661-d_640?region=us"
+    },
+    {
+     "vimeo": "414852629",
+     "title": "Boysie Sparring",
+     "thumb": "https://i.vimeocdn.com/video/888140454-b1c732de2d4a0a7232dc84f0bcb543bda71b9deb82fa775325a4e0a7e5fee601-d_640?region=us"
+    },
+    {
+     "vimeo": "415092893",
+     "title": "Harbo Sparring",
+     "thumb": "https://i.vimeocdn.com/video/888437655-9d5e6f770fa41de2afeb5196f315afd02d2b2d4a6f9808544f5300f920c56ca6-d_640?region=us"
+    },
+    {
+     "vimeo": "414858084",
+     "title": "Boysie High Five",
+     "thumb": "https://i.vimeocdn.com/video/888102517-d0805b10c0528d614a480f46379f4bd38c4d5d18320d1cf6d3d4a6455c765860-d_640?region=us"
+    },
+    {
+     "vimeo": "410797707",
+     "title": "Boysie Presents Ash Flashley",
+     "thumb": "https://i.vimeocdn.com/video/882592391-6aa28275ebb55ee8a8569544095f20f4a1e46fd20feab668344d05d1568e5f7c-d_640?region=us"
+    },
+    {
+     "vimeo": "414842907",
+     "title": "Malmo Weather",
+     "thumb": "https://i.vimeocdn.com/video/888082341-e7f0caddc5e3ad106b77a2a051b3e72daa89c6b9b103b57de6ac23c4c528bb95-d_640?region=us"
+    },
+    {
+     "vimeo": "410779057",
+     "title": "Bouncing Dogs",
+     "thumb": "https://i.vimeocdn.com/video/882567051-f2e5522d50884f78802130d612f35b8885e76a89619ca6208ccaba53fec14092-d_640?region=us"
+    },
+    {
+     "vimeo": "410779389",
+     "title": "Just can't get enough",
+     "thumb": "https://i.vimeocdn.com/video/882567641-183009db208e73f43db019187d7a4df09fd1b34d95a718debf4a49f60e36f1b9-d_640?region=us"
+    },
+    {
+     "vimeo": "410779447",
+     "title": "Walking on Sunshine",
+     "thumb": "https://i.vimeocdn.com/video/882567534-25f0bedf866f2f70b1a020b8db573b1afba17953ce0aaa77568695ddfa352b1f-d_640?region=us"
+    }
+   ]
+  }
+ ],
+ "gallery": [
+  "508c2d047dc445229228c519b8296bec",
+  "bec60ad2932e442cb5acda9d4f602856",
+  "f9737caea46f47e49444cba0bff427aa",
+  "f50ef9c292d848f0baad0f8b3ab8eeca",
+  "ce563bc060f74f159dea458c68c21aa7",
+  "c538410027cd4a62aa66e70234e2c852",
+  "d1aeb6c564784c6981aa2e4eefdbf134",
+  "8628e4a19c53448dbf3e2bbd4b78c59b",
+  "673fee09f8f746f290d30d4d17d1d0f5",
+  "05294b824a794ca9be98a7e05b25870d",
+  "e4c0602f0f814f0eb88199175ee3e21e",
+  "96ab5dd19734410ab05a4fd756977414",
+  "85f7d5086c3c4f43b35e5431764e8fe2",
+  "a1d5171cd41e4da58340241dabefad9b",
+  "2a85d3ca3d944ffcb0a909582403e5c9",
+  "2257f91c7f754c7bb192bad4aaa5ecaa",
+  "3729efde0c48406ebafef4ffd6fe8964",
+  "b6b5366196f2456687b1a7717c1d0af6",
+  "292f5aed59414d71b72523a1782533e1",
+  "bdb86d9243214787b1c5583a8851d6d6",
+  "9da6bf7424014d41913588e9c8aea737",
+  "123de29704524c7cac25e0b4248ac01b",
+  "a202208809404ffe9ff0010c5690c899",
+  "3ddf0d39cf6f48f8867fbf1653045604",
+  "d1b10db8abee4f43b5ef269e6dfc832c",
+  "30ff3358705b43718e9877781d73ef0f",
+  "cfc0129a34cd4015afd7ce7c600cbd7c",
+  "20464ab25076478bbfd21cefef2fa307",
+  "0e1c6f4e2c384fc9b53e7492055bd74f",
+  "22b8dfb0f4cd49e5ab93ca5395b80117",
+  "76e1807236f64385897bf3b8b07e04d6",
+  "570f36271cf4470ea4d0a154c3dd9119",
+  "bdc5c7a23af247b6876edb9d06084950",
+  "2a669e49033e448a99411efeaf3a1913",
+  "bfd4644e7b98457e990f9f1c933ae269",
+  "e19300fad1ed4f0bbe10c81362dadc21",
+  "92dcd39fc95942178ec74f7a80cd247e",
+  "b22b76adcda0474e918b5b72a5ab284c",
+  "8b5b99f112944b3fb44902042e1bb9b9",
+  "4e82a65079bf4a3f8015031c5ff38cd6",
+  "ed8925095d214d649a5776b15e833d08",
+  "2ea83295c00d4c7fa5f31f4d642b690a",
+  "ea252cf17fb24846a6f9a283fadd8e83",
+  "28e89c39cf2646b6a99a152c31e5c638",
+  "3875cace751d4820bd5a353359897b45",
+  "1634a77389154ddba58017af18dad887",
+  "9eadd46a22e546a199246bf5fc37f7c5",
+  "7709ccc007ec4fcdbf42e18802cbf818",
+  "1ccd69f85ce443aa986ace5822ade258",
+  "bd9b177c5f1f42ddb156e3fe7ed2e912",
+  "4fabc61afbce4ada904cfdf3fae8be44",
+  "ab044bf2160348e789616f61da22e2c1",
+  "98948e3732914934bcdfaf48a25a8968",
+  "555a3224e411461ea6a1cbb540f58717",
+  "f7148fc1ef1c42ed97fb7fb145bced9d",
+  "417ebd2432694eebaa8824fff8a5d03d",
+  "09bd3743b7b042aeb8f77f5fff78a4d1",
+  "701ab4f5a42b45199ac6e1380627e940",
+  "f2b43ec9d4ea4a108c20857058e3d1e1",
+  "39f6d0c584eb41449a9c86f5e50dd037",
+  "08569e36ae8b4561a18f2e3022a9af4a",
+  "989f21673c044c14b10a731dd04afdf7",
+  "5df6949d881e4ce3a757efa4f3104f01",
+  "a9892b9027624f7b89682f3b15f9788f",
+  "ad0c7753fd0c47b290297b072041ce8f",
+  "dc52c0a8b0ed4651a32b2a6882306c49",
+  "dad8345bc74442dd89f8c85b35d2f4dc",
+  "7b53eb90bcda4f5d98a60f6cec9e49ba",
+  "4f2d8e574dee4b7893952e9e25e5435c",
+  "8b2fe4a8d7f84b86a69702087f00e317",
+  "07ef42a967db4febba4c61c147861b04",
+  "7996c37603e043c59a390c3d30cbee2d",
+  "473c08cfc22444ae94dbedd0717f271e",
+  "ce65ce8b9e8742c1999f705dd254c931",
+  "3f90221ba3954798873c718feb5cead9",
+  "af5fa500c77e40d796a8534a0d84954f",
+  "dac0c0ffb7ce4df1a8feb39d12a66d2a",
+  "7858547dec1d47c5bad26cfea834cee8",
+  "78f7b6b112684b1ea6affc0c60e98320",
+  "0eedd43a99814f608f1d9731d2b9ba9e",
+  "ed2ce692510b4f1a811cd677c627adeb",
+  "8ad398733ff14ac5a206a2960d0e6e73",
+  "5277cf1f47af4b33b7c42432f1663494",
+  "1bc36e1576fb4ed5b7809ac955d65e63",
+  "bbf988b6e4f941dca57f6368c627c47f",
+  "d0f06c6b92564cc4ad259669762fa844",
+  "b2fe7d86dee04de9a361e074fe0f7bc0",
+  "8bd58d51d39049719e91fd61b92c14cf",
+  "8a699910715c44de894bc513bc2e9643",
+  "9cd6ef3b727b44b3bf6cd24e2a62d9b7",
+  "a7484b821efc463f94da74d73344a4b3",
+  "f339c1ccbd97455788b216a9a6f97ab9",
+  "fe6d1556821c4dcbb6d95382d3cece73",
+  "b8807b6c5110436a8f4b74327f93e056",
+  "138dbec9291e497994ada27dc86b3d75",
+  "16c6284390264b33a99f56467dadde3d",
+  "8cace43abc9e4eebba3290358d8c4533",
+  "61c3381c12094b6a8dfd1875b3833b45",
+  "52d3f2fec84c429db1dd4af12f8296b3",
+  "cfacd7fb92314491b685859cb1592f37",
+  "394d725644d34092a45e113536737dff",
+  "be416abd7a674193814f729c4978e62c",
+  "b1ddb9a02a154e3b9d625bd36b49f8ee",
+  "e0c6025dcb414668aaf85ce6d5d5637d",
+  "87f9628c764f458bb34f798cd27d5028",
+  "81dab9adce7342e2a0eac373cd8abfa3",
+  "c214669e22034daa94967eab528adcad",
+  "763ba964741e4901af45d7761621be25",
+  "2e0658338eb84020b011c908120da9a4",
+  "3ca089de86cc476db4b886a3d609e9ed",
+  "84ed8a83094947e2af6570163ba55f9d",
+  "e109e4068bd7421c9bcb847fd6b9d204",
+  "df82cd7e3a964fc5a52541aab89543ec",
+  "4b6d0b95b17e48799117829f0f5f0605",
+  "2315ac4153ad4c2aaeab5aabf1d99d9b",
+  "f8e2131cf801465596ecd9a72a255254",
+  "d0c10db35153414dbd831014ee4e26a4",
+  "93bc60706a774558b20a13a40f17471e",
+  "f8e0802e54954ad3afba3d29f7444593",
+  "8347c7294abf48e0959b10f9e3e26c22",
+  "00a3682308584df8bf43b575a71661d6",
+  "2f0193b052904c6fa038930a598e9ad8",
+  "5788e9c23e644ffc867e2bc58e4d3c6a",
+  "2383a2c118df4592808edee37d7ee035",
+  "38bc55267ebc4e15a5db583a3b378b66",
+  "515d0da93dfb42e896c654c46262b8ff",
+  "2ed173a5c0d94371807f233a61525962",
+  "0b39f40c8ad8483fa865dc22613b4aa2",
+  "148eb55aa3544f079cf0b24b7ebbecf9",
+  "82b541b4512443e4a7d36220bb5c787a",
+  "38c33dc0369843898978f06f41b7e2e5",
+  "c2971be0e22945cdb98ffd474d24d4ff",
+  "ff82135e9d5143d0ab4cafc07495eb7b",
+  "0efc20e2db5d4058ba19a539db49b9a7",
+  "ea17ec28300c4657ab81541359375b84",
+  "c9517b4f4b174ee9bb52a128b015e194",
+  "b0340123c2f74edd909feeb21ff3873f",
+  "ccf613c0b9e44268ac1432cf21a8efb7",
+  "94dbfb3b33e64e1ea80e3322e9d6e3dc",
+  "37ad9417a19f4b18a55f9fe062e25812",
+  "e0f424a4f44e42488c43ca6dde247465",
+  "c6870f41233740db9d1eba22bcce4ef7",
+  "4073703be6094a4b8126ee9c8c881017",
+  "44ad0c92f8d249beb90b9a7e65c5a45a",
+  "474c9a12465c4b368482c13e1b3c3da5",
+  "87d60572bd1a421d914cef97134dfbe9",
+  "e9a2e4e76ba7419d909dd20448c6ed63",
+  "58b6b4dbe6f04adeae2675aad1836b97",
+  "a73bf9a82e0c4a98af69dfb4083276fe",
+  "c1c191128e0a437198d96cac0a2b51f3",
+  "2d0e4987d29749ee8d3a1b6099d98813",
+  "e6c0b93a8eb04b37a251ea79679a45f6",
+  "dd34ec54baca4ae9b6f0abf4fb934c85",
+  "e589867208454b46adf737c5e74ad66b",
+  "e062ca44dd964fe292b94e91eff7b1ed",
+  "6a7ba443574e4cee808447952d82ee87",
+  "383bf3731a94420e9203fe77ce6446d9",
+  "7871fb844fcb48fb98266c28c268716a",
+  "de11acd9b7bf4e08a6d5c502eb9b0205",
+  "de2936c80bc342319c32e9c53c627d75",
+  "fa562af7d56142fe8b8f7a279ca410b9",
+  "d6a10cf74e444f2c936b7e55c596559c",
+  "1d968b6c4cd14c1cbe7db30fb2f01943",
+  "1dca178eb8bd4f64b5e8eedfa12d2b82",
+  "0562e1d9b92e4160ab408c0e31adac25",
+  "817ea146604f4475bd856db8cababfc5",
+  "d20d7b97d5a745bc85c3e5398fbecc10",
+  "4b8e44df774146208b1b93ab0fe65c31",
+  "166146a8b1ed4845b9ccae5b1ebf823e",
+  "3801964b5c8849f38fbb5ed138f26f64",
+  "cead210e40fd467dbbe8b482c6f4f47b",
+  "112ad8940f43412eae49df79e3702b27",
+  "36963a0018684f65ac21792f19ec8ce5",
+  "25b93298fa53445c9ec91e93b66a8c89",
+  "f4fc30610743410e924de53d541e6555",
+  "8a1f86f5cfbe4065b046794e07d95482",
+  "91a1632b7e9446458d8fff5f067c760f",
+  "4a133037f0fb4413a1e32527739b76b4",
+  "ffea04d5fc134d7685dc1228d23a0c1e",
+  "e7ab5b16451d49aab17cd1f2de938959",
+  "265a50862b1744c181a196cabbd74baf"
+ ]
+}

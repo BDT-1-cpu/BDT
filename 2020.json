@@ -1,0 +1,460 @@
+{
+ "_help": "Per-tour extras that are NOT in the playbook. Image values are Wix media IDs (the 32-character code after 588d17_ in the Wix image address). Videos use the Vimeo number (vimeo.com/<number>) or a 'youtube' ID. Leave any field empty (\"\" or []) and that part of the page simply hides. rc_images / leaderboard_images may also be file paths (relative to tour_media) – those images are built into the page.",
+ "year": 2020,
+ "strapline": "THE CORONA TOUR",
+ "hero": {
+  "id": "dd7e9a1a5b6345608ef61fee2160a662",
+  "caption": "2020 Tourists"
+ },
+ "venue": {
+  "map_query": "The Belfry Hotel & Resort, Sutton Coldfield",
+  "map_zoom": 15,
+  "blurb": ""
+ },
+ "captains": {
+  "BH": {
+   "id": "89794163916a43598207cef0900dfa93"
+  },
+  "RT": {
+   "id": "89efa563c6b54847a010ebe403a5bcb9"
+  }
+ },
+ "accommodation": {
+  "name": "The Belfry Hotel & Resort",
+  "blurb": "Home for BDT 2020 – 16 tourists, with PGA National and Brabazon on the golf schedule.\n\nA countryside golf resort near Birmingham with three courses: the Brabazon, the PGA National and the Derby. The Brabazon has hosted the Ryder Cup four times and is home to the British Masters. The resort also has a spa and a leisure club with a pool.",
+  "photos": [
+   {
+    "id": "32b0fa5b16fb4604976d4db6a66ec990",
+    "caption": ""
+   },
+   {
+    "id": "97e8cbcd4ded4099a366edd1cae9aa41",
+    "caption": ""
+   },
+   {
+    "id": "8047f546bef2483e9edc642468fb2613",
+    "caption": ""
+   },
+   {
+    "id": "d50af19c9aa04ca29d433a5394dd7c15",
+    "caption": ""
+   },
+   {
+    "id": "765a8e009d3c42bd9e1324dc8353e31a",
+    "caption": ""
+   },
+   {
+    "id": "15105038b0a54eba97a7964007ab19b0",
+    "caption": ""
+   },
+   {
+    "id": "8ffbeef3d1654b978f66dd47cafb80a6",
+    "caption": ""
+   },
+   {
+    "id": "8d4d0de9333e4558b6d06eb494ceb05e",
+    "caption": ""
+   },
+   {
+    "id": "d3a946107acb4e1087f5b1e35c542c35",
+    "caption": ""
+   },
+   {
+    "id": "671f7e83e327420298c22d1b8b8599d1",
+    "caption": ""
+   },
+   {
+    "id": "a36972d92d6f45e19919c9b06cc3ae4d",
+    "caption": ""
+   },
+   {
+    "id": "356a68b3060f477f905542c3c1a34c96",
+    "caption": ""
+   },
+   {
+    "id": "64a3f08e8243452fb9881ebde94a8a47",
+    "caption": ""
+   }
+  ],
+  "where": "Sutton Coldfield · Warwickshire · England",
+  "facts": [
+   "Three courses",
+   "Brabazon: four Ryder Cups",
+   "British Masters venue",
+   "Spa",
+   "Leisure club with pool"
+  ],
+  "link": "https://www.thebelfry.com/"
+ },
+ "itinerary_images": [
+  {
+   "id": "3d1836f5282a4d00be077cd3398b6c97",
+   "caption": ""
+  }
+ ],
+ "itinerary_extra": {},
+ "team_photos": {
+  "BH": "ec1c563eb1b94634bc585a9464d15fdc",
+  "RT": "edc60bfb2a1c4547a30663ec009c6ac0"
+ },
+ "team_announcement": [
+  {
+   "vimeo": "464031208",
+   "title": "BDT 2020 Team Announcement",
+   "thumb": "https://i.vimeocdn.com/video/967803672-f0be7de2eca39bbc90963659bdeee8f0f3bd72cd5c0035fce25650011ecacaff-d_640?region=us"
+  }
+ ],
+ "rc_images": [
+  "boards/BDT_2020_RyderCup_1.jpg",
+  "boards/BDT_2020_RyderCup_2.jpg",
+  "boards/BDT_2020_RyderCup_3.jpg"
+ ],
+ "leaderboard_images": [
+  "boards/BDT_2020_Leaderboard_1.jpg",
+  "boards/BDT_2020_Leaderboard_2.jpg"
+ ],
+ "summary": {
+  "banner": "bf545025f836475ba3ac2d1c1fc15b93",
+  "title": "",
+  "text": "",
+  "link": "https://www.bigdogstour.com/post/bdt-2020-tour-summary"
+ },
+ "video_sections": [
+  {
+   "title": "Photo Slideshow",
+   "items": [
+    {
+     "vimeo": "507107433",
+     "title": "BDT 2020 Slideshow",
+     "thumb": "https://i.vimeocdn.com/video/1049727706-6721158606b2107594625d87e64ee5e1b961bf970ae9a68c3858eca8bb2da6ff-d_640?region=us"
+    }
+   ]
+  },
+  {
+   "title": "Tour clips",
+   "items": [
+    {
+     "vimeo": "508955325",
+     "title": "OC Watching BT Lockdown Video",
+     "thumb": "https://i.vimeocdn.com/video/1053365631-f35596317a3dabfc2ecf6df3c5841e13126de6c3877b092e68def8debdb0e787-d_640?region=us"
+    },
+    {
+     "vimeo": "508956255",
+     "title": "Who Is Your Captain!",
+     "thumb": "https://i.vimeocdn.com/video/1053369658-10003a252d71d14e60ef1498d524b830fe603ca465c6427d6a0512e0bfb07090-d_640?region=us"
+    },
+    {
+     "vimeo": "509961439",
+     "title": "Ravo Boysie Pairing Day I",
+     "thumb": "https://i.vimeocdn.com/video/1055664832-19548210d63c5541f1af701fbfecbf0ccdbf2dd66e75c4b3844ed0da0901050a-d_640?region=us"
+    },
+    {
+     "vimeo": "508956052",
+     "title": "Robbo BT Pairing Day I",
+     "thumb": "https://i.vimeocdn.com/video/1053366877-d99c39c5f791d32fe760543d39217db04f5c5524fb7694c428c6c38c53caa049-d_640?region=us"
+    },
+    {
+     "vimeo": "508954623",
+     "title": "Chuckle Brothers Pairing Day I",
+     "thumb": "https://i.vimeocdn.com/video/1053368162-ec540332ea5163637d2291b53e03723a4869663018ab032b5f592547346032b8-d_640?region=us"
+    },
+    {
+     "vimeo": "508955229",
+     "title": "Monkey Harbo Pairing Day I",
+     "thumb": "https://i.vimeocdn.com/video/1053365483-24ec77063c8022d9e345e373bd52dba4a48a08572f9463ae03473a7526065a20-d_640?region=us"
+    },
+    {
+     "vimeo": "508954481",
+     "title": "Buzz Langers Pairing Day I",
+     "thumb": "https://i.vimeocdn.com/video/1053364068-bb1817cfa5dc63e12252a1a2a741c7bb93290d7f989c92fbdbb5cf8cd57ab640-d_640?region=us"
+    },
+    {
+     "vimeo": "508955411",
+     "title": "Oli G Knoxy Pairing Day I",
+     "thumb": "https://i.vimeocdn.com/video/1053365964-795ae01c45a3d5a203a5588e8530fd5e8f9d8e049516c85a41d74b9c7a28a337-d_640?region=us"
+    },
+    {
+     "vimeo": "509725265",
+     "title": "Non-Tourists Best Wishes",
+     "thumb": "https://i.vimeocdn.com/video/1055216912-eabf05f1dccf688c8bc40f6f27f510f757b68bbc128c521d746763264f4eacc0-d_640?region=us"
+    },
+    {
+     "vimeo": "509886892",
+     "title": "BT OC Snotting",
+     "thumb": "https://i.vimeocdn.com/video/1055523741-dab8a300881d4be7706eef041972a6e06397709db933fe09edfb11207b789fb7-d_640?region=us"
+    },
+    {
+     "vimeo": "508954151",
+     "title": "BT Pie'n'ear Gag",
+     "thumb": "https://i.vimeocdn.com/video/1053363587-ff7e15dd333be539c51bdd949505929edf993227137d9a5a03cfbf03e3089f7b-d_640?region=us"
+    },
+    {
+     "vimeo": "508955062",
+     "title": "Duncan Goodhew Challenge",
+     "thumb": "https://i.vimeocdn.com/video/1053365143-27e6f17fe6b2e98675b05703400212f20ff7640f4cc6968474125ed9fcba336c-d_640?region=us"
+    },
+    {
+     "vimeo": "509960310",
+     "title": "Tully Hits The Ollie Ball",
+     "thumb": "https://i.vimeocdn.com/video/1055662456-05dbe49b337a218d7ddc7f9e8142489822834b4eba37097f83a933bc67958766-d_640?region=us"
+    },
+    {
+     "vimeo": "509961808",
+     "title": "Knoxy First Tee",
+     "thumb": "https://i.vimeocdn.com/video/1055665234-4b9929d2c3cf39719e7a044701abd46dec2c358952ef5f2713e89b454687e1f0-d_640?region=us"
+    },
+    {
+     "vimeo": "509960810",
+     "title": "Ollie G First Tee",
+     "thumb": "https://i.vimeocdn.com/video/1055663364-fabef36ad8581d3c4084b843cfbe65a0a0539b40c0c57bb783b230431ad9a503-d_640?region=us"
+    },
+    {
+     "vimeo": "508955803",
+     "title": "Ravo Feeding BT",
+     "thumb": "https://i.vimeocdn.com/video/1053366093-dbfc7ed0a9da4ecb3a8935212ae07ff46bd761756880600b6945fc34c530fa73-d_640?region=us"
+    },
+    {
+     "vimeo": "509958178",
+     "title": "Ravo Ladies Tee",
+     "thumb": "https://i.vimeocdn.com/video/1055658262-7b032a9ef83b5a097ed66973856451976d1b5c38cc2c8b2c30928d995df2f9c4-d_640?region=us"
+    },
+    {
+     "vimeo": "509962675",
+     "title": "Harbo Long Putt",
+     "thumb": "https://i.vimeocdn.com/video/1055667035-ef5ba3cdbe14709fc5b5e09d9eb862fdc96db72d970151a616a7de1461c5a3b8-d_640?region=us"
+    },
+    {
+     "vimeo": "508954084",
+     "title": "BT Bunker 10th Brabazon",
+     "thumb": "https://i.vimeocdn.com/video/1053390991-fbf9b170b0fab8ee154a19cfb604a0751040b82ca21570ac29c61982c2d662a5-d_640?region=us"
+    },
+    {
+     "vimeo": "509959377",
+     "title": "Buzz Ladies Tee",
+     "thumb": "https://i.vimeocdn.com/video/1055660785-bd791d89fc1d5f250b7a1da1c93fc388c8f058215b6f36c30424be1a4d5b1ef0-d_640?region=us"
+    },
+    {
+     "vimeo": "508954850",
+     "title": "Day II Pairings",
+     "thumb": "https://i.vimeocdn.com/video/1053365115-58c21276d14fa1e45ab91322800976d5230e96280e37fb706f3424c87925ee02-d_640?region=us"
+    },
+    {
+     "vimeo": "508955858",
+     "title": "Ravo v Knoxy 18th Brabazon",
+     "thumb": "https://i.vimeocdn.com/video/1053366706-faaa8c9ee5c146056e2f38a135d96f05b2694aeb46f609cfdba989e93ba04eee-d_640?region=us"
+    },
+    {
+     "vimeo": "509966647",
+     "title": "Day III Singles Stablefords",
+     "thumb": "https://i.vimeocdn.com/video/1055674916-d7025bcd6932c6653f99af223c16c1215c42834fc71ea03dc98468c479933989-d_640?region=us"
+    },
+    {
+     "vimeo": "509955716",
+     "title": "Singles Match Results",
+     "thumb": "https://i.vimeocdn.com/video/1055653206-553b54bdae413ff494fd9d6d549f1dde462f604aa1a9804124536a4a7ead981c-d_640?region=us"
+    }
+   ]
+  }
+ ],
+ "gallery": [
+  "33fdc5c0c11a4e9486c845965bfe7620",
+  "ca7bbfda48034b6eb583fbc480dce71e",
+  "9bafaa64c6bb41c6b8b6f98531f393c4",
+  "f3cf931854824243b50ce689f67ff38e",
+  "fbb25cec2c804c409fb954630a45958b",
+  "63b41a0ebe7548709288ca4846ba9937",
+  "1756e440070249e3a45c4ddbd90700e2",
+  "6dbbb319b0f147998aec8bf63e112986",
+  "be62dca63d5e4f5a92955272db730c34",
+  "a149ff0509bf40d7aabc8bc20f8008cd",
+  "c850a195b6c946afacae24699d477d17",
+  "5b88993b41364ef4a67ba8bc809198b6",
+  "4e6fc875e968419b8aa3c51c8c7791ca",
+  "6f31860f254f48b9ba98df99082b286d",
+  "c96c83365ded40b0a3fa39d1e57f3dcc",
+  "fdf54b2492214198a7e4ef90813e1f10",
+  "d1deb63d9f004a6cb9ab226d9208a1c8",
+  "1a9e3b8aef0f4bd5bfceadb7b20e5666",
+  "756ac7b88e6d44a5926326d720609923",
+  "ff51b23bac9d498da443c34870adbdbd",
+  "23c64813bc6a48a39cb04bfb99f0126e",
+  "9047d93e9a2c49ae9e5de6ceaf37afa7",
+  "4f662ecacce742179312d870fbdc8b6e",
+  "2bb707a630d841b5ae485e6516bd766b",
+  "e6362e6321d84bb797282f36687e4f91",
+  "a49486df2be74dfd91a68d5ee6f9a9d6",
+  "6770ea6aa46e4ae58c582a052f2e47a0",
+  "fd8006b9db264063bc0232b703c38eb6",
+  "af879a4737644951b6fd8f45f9f52112",
+  "b060098483a14aefa264d63d636becc2",
+  "75447ddb6435468889f6eccbcc749018",
+  "24829b957310414cbf15356618f3d6d4",
+  "6397d60369374a45862cfef4d4e3dd1b",
+  "29f79f2e819b48ebac68831d802536ac",
+  "7706493de3084e6cbcfa25edf6ec7ad2",
+  "95994c171cc24f19b7f07213a45674c4",
+  "e041415d2e894a3a8f5e840a16cb21de",
+  "02596fd09e0a4fd8829caef796c73971",
+  "6acaeb19b7834bf5accd7274ecf1954d",
+  "0ac70e86b74441bfaa54e2765080c871",
+  "bc16c27a1ab049148e3e22cc83954af1",
+  "e245c5ae4c9f42c88ebec5936083b5c5",
+  "590337c8cda54d3d88dcb021cecf0268",
+  "97d8b0d457b74235b7f8fba0732ecf1d",
+  "ae1417e1d6714183ae58d7dfc59ce8b5",
+  "5fa5da4ddfa9481da075210c918fa843",
+  "55ebcf56a1e74f32bc0d44ca74e96afd",
+  "40e0dc5a8a3643f99cfd469ed379b1a6",
+  "07833a8206c54199b4f2462be910d5e5",
+  "5dec4e6383db413ba8f32cfcd800e663",
+  "dc061b7072574a7fb783b9230916b51d",
+  "61f97bbfd2444792859fba2f9be96ee1",
+  "24aebef3698e44ebbd69c603adb240d3",
+  "34dc6e779f1d4fb69e992045007ee23d",
+  "b3cbc936e5dc4415bfe0a3605e44b53a",
+  "97866e5d44af40eda3d0ca81d58dab80",
+  "762003e5c0b24d41840a4a84f165c062",
+  "5eb8dd08f2744ba09ed96a5ccbaa0164",
+  "6b4174464cf141d49ddba88a6fc08f7b",
+  "9cef61eff9e94ea88b4cf47a76d6ab5c",
+  "6b73ad2c7d314110b1d1232dcca4bacd",
+  "061c0222c3c74f919028e9a65dec266d",
+  "b030428823d04d58892b9302a5ee8e59",
+  "37d9bdecc67b4c969d19a70c2a683073",
+  "cd59307f545543c995317a6150b44f17",
+  "c946810abd944fb2adc0a5f7274519aa",
+  "f9906aa7c20942da9da6d68d674f6de2",
+  "ec10f401f87046ddaa9021845fe071d0",
+  "8bb988f0213c406786fc65b3ce2a343e",
+  "cafa4eff9af24e3fa27286583feb870a",
+  "58ae4f7710b54685a4f93a2fce0283a4",
+  "b4e06668e47e4643b6c94c78f333ae7d",
+  "79361615706c482485c9210752c5aa24",
+  "98ed0b20d1064e7aa6d97b9b0a2a16df",
+  "77ebc7b0e91a4984b2d9a054f2f000ca",
+  "dd7e9a1a5b6345608ef61fee2160a662",
+  "354f4c82fbcd4498952c6007224544c2",
+  "b5949547ef0744819c4d5d38c019b297",
+  "5fe61d1227ea4eb4bd8b05a8c5961e4f",
+  "cdd0254ff4ba4eb89478202cc70c9cb4",
+  "12105f943cd94ee7be10559307f4e1f5",
+  "ebceeef133a24814a344600b432f1191",
+  "73a5d47c772a4c6da903184c754707f5",
+  "83fc13df0b42456b8712831654ea3435",
+  "41ea0d4da25a4329a9444ebbffb9e1ab",
+  "c4a15a0894af40b1a4b55d10d5ecd17d",
+  "9cdf0938883e46dd93b6428805c929f6",
+  "89e354b5325440ecbe31a354c310c8e9",
+  "f624c14a69af4c8388c1bb32607f2a27",
+  "a6630fd4e04f439ca2e4660e955b7310",
+  "785a97ee9a194878aac50389978876f1",
+  "bdd98ac7c8c54aa790e9b50ba96eda4e",
+  "338488cbe67d4a5db11eb24232ca2073",
+  "f71d3c320c4a4a9eba8e56a47ebb9ab4",
+  "c3dd6234302b458487a751f65ffd0d6d",
+  "22831b1323ac49a2849de172096365a5",
+  "3545823796e3474cb095a721f6eb6b31",
+  "4b0def94207f49818d84273309bb612b",
+  "9a9362dad9c04f4696c644ddf2137645",
+  "205253ae6cd14580a630d270902c3798",
+  "600ec29929664f0db3028d3f1ccf6988",
+  "70112c75d5d24b3fa7de8a784dd84100",
+  "2019b8a30a1c4eeb9d77eb3cc93dc1ee",
+  "ecdaaaf5ea4447c194dbf9653d57801d",
+  "90aedfd125384702a9cf66c23337afac",
+  "aabaa5be37564ec8a719718e88005484",
+  "0de6247094b549738fa50dc3f75cb519",
+  "77624528637444f8ac3db3b928232d6c",
+  "c401bd00dd664864be89bbe9d51b113b",
+  "ca85c79b02834c5cae2b7b849c4f6cc2",
+  "9b7e23bccf8440d4ab309f135dfdc240",
+  "fe82c1d851e24d17bd8f6601bea6c823",
+  "8e14dafcc72e4268849a653036958a60",
+  "7bf47d74a9084e108df27e2663794966",
+  "1c0450b66ac140fb9930a47a8a831ee8",
+  "ba6bf13b1b78452c9924f6080c1e1397",
+  "9efc50309fc1489883faa003f01cb1de",
+  "d6b584985ba64a3a8b757d2dfb78ddb0",
+  "d6686e9a0b414dd0ba14c6fceab18827",
+  "df2f9206ed224c59af440ce3fe0b4f8a",
+  "29a702c114be4e9ca493d76fc7cb0d6c",
+  "8708158a40dc4eecb5fa197520a647c6",
+  "57f58a42c2b04e4493cd993a92bb7598",
+  "ae009607d10640a284cdc44131d112b6",
+  "8110f8184fa24f3385322dec3026192d",
+  "b90806294e1342a7ad122314253dd200",
+  "141996de026540e0bce056757c380aa1",
+  "0d74d7c051d44aecaa3dc21f2c3acbde",
+  "b0486833300c4a698f021bfffce649c6",
+  "eeb01ae6878e44419eb751fabb791ac7",
+  "932a2b1b94ea408a9fe9fd88a01c370e",
+  "63c23ba4e6d3417d87498e24548787c2",
+  "d93c7c0e0cf740298e91a102b4bae17f",
+  "b5fd29359d3848e0b43f175a59315ec4",
+  "47cf33f0210443bc8445593daf4dbba4",
+  "316a54d5c3834438bf7b3e34144e3add",
+  "2e4cda1ae66542168d67c57b763968ef",
+  "c71da7f3b379446d8e9f9b6ddce487d1",
+  "528677bda82b4970aca634b73b133e1e",
+  "13cccc47ea1e41b1a0230dda28b3176a",
+  "54b956b725a54f35ba106f81850d062e",
+  "00b00d5ff6984f7e8aeb570e5b629b59",
+  "fb2f8d7041a945adb1aae3157530f7a5",
+  "a929d65ace2548e3882433cf8638f4ad",
+  "4ee7a0604cff4e02856e02843c478b7a",
+  "d42dbb872a2f4d8f93b9c0ff4494fc43",
+  "b6b80494f50e4f1cbd6be0dd739d7384",
+  "260973705ff24966add600d10cfa72e9",
+  "0bf9126bdbbe4887bc7e9f0bc7d56b92",
+  "ff6662feb3e84c32ad5fdb1a939d817a",
+  "5c2618de03a54309b3a215f588f9cfee",
+  "b8458da4ee21473bb6c4258960a069eb",
+  "3a448d59b9c04441b5cc4f619b8cb3bc",
+  "0ccccda7a423445fb131ca7688dc6889",
+  "cfeaf7c059af4d879677fc6c7ce7e3e1",
+  "9e022f2523ad4883ad80d01647695926",
+  "b3499648b3204a98a8f29802e2576dfa",
+  "b706d425be234e5ca07296fdeaa047f6",
+  "5c7eb28d30b346fdbb826696c7c154d8",
+  "58cfeddb63244449b26517a066f5b8c0",
+  "708f331aefa54dcc93ceee9b6b08193f",
+  "0b1c865acc464265b4606a389154c941",
+  "beaa8e281f8a47a0bfed85130801ba1e",
+  "8a661b5d68d74b3193e79dddd80561ba",
+  "53cdb46658bd40f4b036070285edcfc9",
+  "a4ded76b086f4648a466c64aced0a5cd",
+  "8f6c599a3bcc4553b9e2a04e2203603f",
+  "b5fc40ede76a4c48a5cd7818f4beadbd",
+  "c08a2f1ec5d541d09492948721c0ce88",
+  "133bda51290f4187811989df6b6cbdcb",
+  "3f88d1b749a44da2a53911852eacf52a",
+  "c06da7c5f1bd43c4b298effe6d811ccc",
+  "ea34b94e7b22400d92246c22550a290b",
+  "063a6925059a4ae08fe83c6c9e5f7bb4",
+  "6278e9480ebf479da5f4ca1e98dd19bd",
+  "64b517111a7749938fc42ccf8adf984d",
+  "c45f9fabbe404784b9700bf5b2e36507",
+  "8477d0c2f9ec46f39c74068949f3e78a",
+  "7c3594622f834c789027eb4bb33112e9",
+  "b14068f3e43d47b8a3176c1e94ee99a2",
+  "3a21bde0347a4532a7509c92d1e7301a",
+  "ea6b3d7e06044712ac5d2017d38d3e6c",
+  "f577445394b141a8a9228c81fb034b29",
+  "7fad016ab3dd47dfb5b47b7a327d594b",
+  "ef10aebfa1a1463cae8267c08446d532",
+  "01a9fa654f1f47ab84f5274aca963d53",
+  "8e8ff9cc07db450e830f2f4b8df953bb",
+  "ef2977d296544e96a69cbc25cc6019c8",
+  "d319df6874e4441d9f0609171d650533",
+  "ead4060abbdf465293eeb7c6f8e77426",
+  "daa70e1f381641448933cd0b06ea0bb6",
+  "cd0f7272cfa04aab9eca5547ee0fb84d",
+  "1942f87ff9034dc1a347318aa358aea3",
+  "53afc0dd7bc844aca0c6460778cd1926",
+  "e4b2a91157b14fa58785a95275991ac1",
+  "e8527175e30a4038ab9818baa0863481",
+  "12622e33e3ae4a7da8659aef223db420",
+  "f3155e3bcdee4f989a6df3ef4fb94e23",
+  "f9d0160bcfe14d12843f6572a50509c0"
+ ]
+}

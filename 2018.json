@@ -1,0 +1,654 @@
+{
+ "_help": "Per-tour extras that are NOT in the playbook. Image values are Wix media IDs (the 32-character code after 588d17_ in the Wix image address). Videos use the Vimeo number (vimeo.com/<number>) or a 'youtube' ID. Leave any field empty (\"\" or []) and that part of the page simply hides. rc_images / leaderboard_images may also be file paths (relative to tour_media) – those images are built into the page.",
+ "year": 2018,
+ "strapline": "VALENCIA VOYAGE",
+ "hero": {
+  "id": "c4dbbbbff4b744aabe6fddab4b9d3fc9",
+  "caption": "2018 Tourists"
+ },
+ "venue": {
+  "map_query": "Hotel Primus Valencia, Carrer de Menorca 22, 46023 València, Spain",
+  "map_zoom": 16,
+  "blurb": ""
+ },
+ "captains": {
+  "BH": {
+   "id": "97622bc6fc664a5a92fa212fe85e896b"
+  },
+  "RT": {
+   "id": "7337838a7ab94a0fbd8bce40bf5dd0ce"
+  }
+ },
+ "accommodation": {
+  "name": "Hotel Primus Valencia",
+  "blurb": "Home for BDT 2018 – 16 tourists, with El Saler, El Bosque and La Galiana on the golf schedule.\n\nA four-star hotel in Valencia, about 600m from the City of Arts and Sciences and close to both the beach and the city centre. It has an outdoor pool, a spa and a fitness centre.",
+  "photos": [
+   {
+    "id": "0135e59bbaf24bf0b27765f1bea65f7c",
+    "caption": ""
+   },
+   {
+    "id": "1f476207811f4e398517084f02d34219",
+    "caption": ""
+   },
+   {
+    "id": "3291abfbc34b44ccba2f3b11e2a7ed77",
+    "caption": ""
+   },
+   {
+    "id": "1e3841692de6402b98f00dd77ac0b4a9",
+    "caption": ""
+   },
+   {
+    "id": "744c002ab3b3469f92891a5c766e593c",
+    "caption": ""
+   },
+   {
+    "id": "02aab5291bda4b07b1d59f3f473f9f57",
+    "caption": ""
+   },
+   {
+    "id": "11a8832dca464a18826e418f4811f4da",
+    "caption": ""
+   },
+   {
+    "id": "01446310749048c388b375b7f7a4b509",
+    "caption": ""
+   },
+   {
+    "id": "176d4da6b6264997b74e9f399e400f33",
+    "caption": ""
+   },
+   {
+    "id": "078e4e0fefc741f683245edd20506870",
+    "caption": ""
+   },
+   {
+    "id": "483c558fa05e49338cd22805aaaf45d7",
+    "caption": ""
+   },
+   {
+    "id": "df59b93fed8d48e6a6c513da231cd224",
+    "caption": ""
+   }
+  ],
+  "where": "Valencia · Spain",
+  "facts": [
+   "Four-star",
+   "600m from City of Arts and Sciences",
+   "Outdoor pool",
+   "Spa and gym"
+  ],
+  "link": "https://hotelprimusvalencia.com/en/"
+ },
+ "itinerary_images": [
+  {
+   "id": "d9fa9112d40d44dfaf886d8daa73d6d5",
+   "caption": ""
+  }
+ ],
+ "itinerary_extra": {},
+ "team_photos": {
+  "BH": "8281a54932204a55b0aae7f75a4897f7",
+  "RT": "955221eb8cfa450aa7712ef604aed8ff"
+ },
+ "team_announcement": [
+  {
+   "vimeo": "342138604",
+   "title": "BDT 2018 Team Announcement",
+   "thumb": "https://i.vimeocdn.com/video/790948500-9c287d2e05b2f99b5813004a15993565d49d621c3a9e6132d2baef51c2adbbed-d_640?region=us"
+  }
+ ],
+ "rc_images": [
+  "boards/BDT_2018_RyderCup_1.jpg",
+  "boards/BDT_2018_RyderCup_2.jpg",
+  "boards/BDT_2018_RyderCup_3.jpg"
+ ],
+ "leaderboard_images": [
+  "boards/BDT_2018_Leaderboard_1.jpg",
+  "boards/BDT_2018_Leaderboard_2.jpg"
+ ],
+ "summary": {
+  "banner": "297b350144f3449ca6d67ccd65b7743d",
+  "title": "",
+  "text": "",
+  "link": ""
+ },
+ "video_sections": [
+  {
+   "title": "Photo Slideshow",
+   "items": [
+    {
+     "vimeo": "425196478",
+     "title": "BDT 2018 Slideshow",
+     "thumb": "https://i.vimeocdn.com/video/902940382-ca538508d94de3a98e4e4b93c3621c2e5f3fb9edcec673b54f37281b9a2a3d2a-d_640?region=us"
+    }
+   ]
+  },
+  {
+   "title": "Tour clips",
+   "items": [
+    {
+     "vimeo": "417350696",
+     "title": "Ash Drive",
+     "thumb": "https://i.vimeocdn.com/video/891550243-b51579f206b28c4a4d41f0e008d69a9a0d165f00ae91e52cb2d463db680f5997-d_640?region=us"
+    },
+    {
+     "vimeo": "417356252",
+     "title": "Ash Warm Up",
+     "thumb": "https://i.vimeocdn.com/video/891553068-658fa7984729a51d2982264df0dfe812073e0a41c96aebd7c59a0e9e6dadde87-d_640?region=us"
+    },
+    {
+     "vimeo": "417366569",
+     "title": "Ash Warm Up II",
+     "thumb": "https://i.vimeocdn.com/video/891567015-1e811ea030dbe4f8431571512b46111f9ae9de22b13b52fcb518b1ace2dd2892-d_640?region=us"
+    },
+    {
+     "vimeo": "417366603",
+     "title": "Big Dog & Little Dog",
+     "thumb": "https://i.vimeocdn.com/video/891567039-872fb9512ca1d22fb30c0d43bfc2f9cb572aac60ff9b8d3ca89ca9aa0414f711-d_640?region=us"
+    },
+    {
+     "vimeo": "417366638",
+     "title": "Boysie Day I Shitzu",
+     "thumb": "https://i.vimeocdn.com/video/891567112-ab59891bd9bb55d402350c76bbfd05d73478ff4022fea29a5db08c74e6a30fb4-d_640?region=us"
+    },
+    {
+     "vimeo": "417366681",
+     "title": "Boysie Ladies Tee",
+     "thumb": "https://i.vimeocdn.com/video/891567132-7454487cbb9337c85d54e0d194831e859db772e088eead61be50254cbe804061-d_640?region=us"
+    },
+    {
+     "vimeo": "417366707",
+     "title": "Boysie MILES Right",
+     "thumb": "https://i.vimeocdn.com/video/891567343-a41525a188e33a9fc93598744d858fa4748ae40f8b6ea5ccfd353dcc1f93d144-d_640?region=us"
+    },
+    {
+     "vimeo": "417366734",
+     "title": "BT Drive",
+     "thumb": "https://i.vimeocdn.com/video/891567234-8e8062ffec94d9b6204042952ed6915323d1a1e25742799a07133f6b90551bac-d_640?region=us"
+    },
+    {
+     "vimeo": "417366763",
+     "title": "BT First Tee",
+     "thumb": "https://i.vimeocdn.com/video/891567314-4e95155b65d848f75f5c71bd91811de803f59d46437a58c9aeecf1cbc365292c-d_640?region=us"
+    },
+    {
+     "vimeo": "417366802",
+     "title": "BT Suspicious Minds",
+     "thumb": "https://i.vimeocdn.com/video/891567336-86a471feb3b4719917a52adbacf3b906b04e53e8da94a50246bb65cdc94d04bc-d_640?region=us"
+    },
+    {
+     "vimeo": "417366835",
+     "title": "Buzz Ladies Tee",
+     "thumb": "https://i.vimeocdn.com/video/891567530-9130f813e08b0d1dd74e379456b6a9af508cf597e5836e205a68a172544fded7-d_640?region=us"
+    },
+    {
+     "vimeo": "417356322",
+     "title": "Club",
+     "thumb": "https://i.vimeocdn.com/video/891553233-3ab7feed9a9a37e1e7b73bca74324bf8c4ba6f3035209e3be5daae65accfcc66-d_640?region=us"
+    },
+    {
+     "vimeo": "417356287",
+     "title": "Club II",
+     "thumb": "https://i.vimeocdn.com/video/891553158-9d5f3f81fbae3b6e116efee78de6649a89104ec3db5bda1a43d6e2c42c649e61-d_640?region=us"
+    },
+    {
+     "vimeo": "417366873",
+     "title": "Day II Pairings",
+     "thumb": "https://i.vimeocdn.com/video/891567608-24f016329fd85fd36783ae9e7894f0639007c155ac58d61b11e2fc634ccd59c2-d_640?region=us"
+    },
+    {
+     "vimeo": "417356369",
+     "title": "Day II Results",
+     "thumb": "https://i.vimeocdn.com/video/891553230-19df2aef4a262c9d66062b07950a6eb4f62dcde2780d8e8f25b4f02f9af0cb74-d_640?region=us"
+    },
+    {
+     "vimeo": "417366911",
+     "title": "Flower of Scotland",
+     "thumb": "https://i.vimeocdn.com/video/891567560-de82d5116e12266a1e4457b9fa2890f86a2f75eb857e0ae03a93a958eae73dde-d_640?region=us"
+    },
+    {
+     "vimeo": "417366948",
+     "title": "Fred Avoiding Shitzu",
+     "thumb": "https://i.vimeocdn.com/video/891567841-bf9697796c951f3dd6731bc124bb333d9712e79b6c3f390352affe50f6b19e12-d_640?region=us"
+    },
+    {
+     "vimeo": "417366998",
+     "title": "Fred Marseillais",
+     "thumb": "https://i.vimeocdn.com/video/891567695-80cde3fc0fc1da83c015dc2c21ff543569dabf1ef335e001e0e934962dc0644b-d_640?region=us"
+    },
+    {
+     "vimeo": "417367119",
+     "title": "Fred Necking",
+     "thumb": "https://i.vimeocdn.com/video/891567884-d83a6c8b5403c6071acea8789fe3e3d2abc3101a9ba1e4159445200bacf6cf3e-d_640?region=us"
+    },
+    {
+     "vimeo": "417367049",
+     "title": "Fred Necking Can",
+     "thumb": "https://i.vimeocdn.com/video/891567833-1951b314c5926ad1fec31d2028aaff57f8fad2477a354f08f5d053bb490f5941-d_640?region=us"
+    },
+    {
+     "vimeo": "417367146",
+     "title": "Fred Top Off Bus",
+     "thumb": "https://i.vimeocdn.com/video/891567914-21d0781c3d17e492c936b4e37817b709f46d0ba8e3252e990dc65bf39b1cea00-d_640?region=us"
+    },
+    {
+     "vimeo": "417367175",
+     "title": "Hulmey Drive",
+     "thumb": "https://i.vimeocdn.com/video/891567983-932903a227548afa5622a345c04e5c4f290b8ffceee1a1283c6f91937dd39d31-d_640?region=us"
+    },
+    {
+     "vimeo": "417367222",
+     "title": "Ireland's Call",
+     "thumb": "https://i.vimeocdn.com/video/891568162-3b665df81d5d3697c5291489a562afd65cbea004a71b2d9f6c863bc33ef6be89-d_640?region=us"
+    },
+    {
+     "vimeo": "417367262",
+     "title": "Langrish Drive",
+     "thumb": "https://i.vimeocdn.com/video/891568274-d4ccb9fd300fbc542d36a7c2a50637723542147c9943cf687355deb1f35eefe1-d_640?region=us"
+    },
+    {
+     "vimeo": "417367390",
+     "title": "Little Necking",
+     "thumb": "https://i.vimeocdn.com/video/891568340-fb0bda0da4e2562529d6dcd04edf5ce1b3c184028daa948132e2410185ac22b7-d_640?region=us"
+    },
+    {
+     "vimeo": "881282780",
+     "title": "Marshy Drive",
+     "thumb": "https://i.vimeocdn.com/video/1748751570-70b48b92a5f202469fd252f5e869130e718cd6e897de20e4bd07f48e9e5b516b-d_640?region=us"
+    },
+    {
+     "vimeo": "417367438",
+     "title": "Marshy Airport Down In One",
+     "thumb": "https://i.vimeocdn.com/video/891568380-ff50ae99109b55cb1495b1df76f537926b746cbbf38ab9fe95c33b289d02385b-d_640?region=us"
+    },
+    {
+     "vimeo": "417367464",
+     "title": "Marshy Neck & Hulmey Briefs",
+     "thumb": "https://i.vimeocdn.com/video/891568433-671e278262aac831c870c2f11b7561d494cada16e9a6242f27d98248f8c22f6b-d_640?region=us"
+    },
+    {
+     "vimeo": "417365964",
+     "title": "Marshy Welsh Anthem",
+     "thumb": "https://i.vimeocdn.com/video/891566258-9f0d07aa681ec2fa7e2ca6c935e60b28970de5a2d7775de6b98ab5e5e4cc54a6-d_640?region=us"
+    },
+    {
+     "vimeo": "417365993",
+     "title": "Monkey Drive",
+     "thumb": "https://i.vimeocdn.com/video/891566291-5d1d916a22aaa205fc02332c7f41a4809f7b708c7e5a2468e357bd9446f06df5-d_640?region=us"
+    },
+    {
+     "vimeo": "417356101",
+     "title": "Monkey Langers",
+     "thumb": "https://i.vimeocdn.com/video/891552890-151c690a81db94c3b80208f3a43a33bf833725b73d2da2eb6742d6353161388f-d_640?region=us"
+    },
+    {
+     "vimeo": "417356169",
+     "title": "Night Out",
+     "thumb": "https://i.vimeocdn.com/video/891553071-1cacdf6de0ec23a2967447424da6ff860cdb24c9b75b7e54070c70b5e9f37d41-d_640?region=us"
+    },
+    {
+     "vimeo": "417356130",
+     "title": "Night Out II",
+     "thumb": "https://i.vimeocdn.com/video/891552891-5d434e1b455912213077523cd095391bfd1a326e5a1d8425e3642b0097baf9bc-d_640?region=us"
+    },
+    {
+     "vimeo": "417366079",
+     "title": "Ravo Drive",
+     "thumb": "https://i.vimeocdn.com/video/891566499-7295aeb64088a9380c7a375eaa207dcf6e229cbbf871a6f1e3d477144b08fd35-d_640?region=us"
+    },
+    {
+     "vimeo": "417366022",
+     "title": "Ravo Drive II",
+     "thumb": "https://i.vimeocdn.com/video/891791099-0d6f88d2a69339ca54377394387b846b8b4925b882647395e10cadef7ae02670-d_640?region=us"
+    },
+    {
+     "vimeo": "417366118",
+     "title": "Ravo Hazard",
+     "thumb": "https://i.vimeocdn.com/video/891566469-9c6646e88c80dec039b5bcd8199b5c52ec5a1ce0ab2fd200ac41abc7fb2b60e1-d_640?region=us"
+    },
+    {
+     "vimeo": "417366148",
+     "title": "Ravo Ladies Tee",
+     "thumb": "https://i.vimeocdn.com/video/891566559-ed06e7f5aedad443812dabe2a4837cacd0d3a01ef04af895fbcfa3b118467bcf-d_640?region=us"
+    },
+    {
+     "vimeo": "417366260",
+     "title": "Ravo Snoring",
+     "thumb": "https://i.vimeocdn.com/video/891566707-e5a47fcd34a972cf70ef0591a4077235724aa36f24e97f053b356ec4a6e886e9-d_640?region=us"
+    },
+    {
+     "vimeo": "417366296",
+     "title": "Rufus Moves",
+     "thumb": "https://i.vimeocdn.com/video/891566839-d5658955dc7ed09c1d2b1b1f5f4c46a4c1d97387c1fb6cea0358473974d1665b-d_640?region=us"
+    },
+    {
+     "vimeo": "417366328",
+     "title": "Rufus Necking Can",
+     "thumb": "https://i.vimeocdn.com/video/891566783-af9f419781634314b1d31cef0d5330e715f5fa28ef1efaa4caceebc2c1c0818a-d_640?region=us"
+    },
+    {
+     "vimeo": "417366388",
+     "title": "Singles Line-Up",
+     "thumb": "https://i.vimeocdn.com/video/891566804-bf76931a235e97f45a96fcaa96028b93773294f3ebcd5feb852fa3bf253db5a9-d_640?region=us"
+    },
+    {
+     "vimeo": "417366434",
+     "title": "Swing Low",
+     "thumb": "https://i.vimeocdn.com/video/891566923-378e36c184b85ba43d7fb2e2e2b7f75e5600355ceba40a40a794a330117cd15d-d_640?region=us"
+    },
+    {
+     "vimeo": "417366481",
+     "title": "Top Three Day I",
+     "thumb": "https://i.vimeocdn.com/video/891566990-a806be8c49cdd1f7ecf8788effe6706e2d5248589b8ed3252851298e46775a45-d_640?region=us"
+    },
+    {
+     "vimeo": "417366539",
+     "title": "Used to Work In Chicago",
+     "thumb": "https://i.vimeocdn.com/video/891567024-2c544203e3eead05ef5dbeb1fb943246c40857486b3325ba4b8a3206674c327c-d_640?region=us"
+    },
+    {
+     "vimeo": "417356216",
+     "title": "Vid To Rufus Arrival",
+     "thumb": "https://i.vimeocdn.com/video/891553032-0c346af677f3923d16ea8ed38e8b53298ff9f89334d3cfa3678a5d6afaf0f81c-d_640?region=us"
+    }
+   ]
+  }
+ ],
+ "gallery": [
+  "08a3edfb7147422cb3a7beb68be0cf92",
+  "739581091f4f407baba62d5673b5c81b",
+  "aa6da0158bda4cbaafd1639b4f4c03ac",
+  "80e10c601dcb4f9991201e3b212a7341",
+  "6dee6eeee519439ca0cf8ef5100c022a",
+  "0dd6e4471ca14a05b6d99fb37d9a066c",
+  "d295d6d749c84cdf88fdeefad69e7a05",
+  "e34860231e0e46bca5daf9d718ca37d7",
+  "d688f0ed3b1646f8ad00c93ee09249fa",
+  "ef2395e278cd4fafa34d044928752799",
+  "0b0080ad40ec48398dd703cf3bae144c",
+  "ff20951e83b043caae4194fa943a3836",
+  "7bf721b5d17b4f2bbd3deb6cd4578b39",
+  "f138bdd2ba23450cb7c908f6e9bad76b",
+  "0d041857df3e469d8d5f777c0e4c53da",
+  "6975570ee3a24508aed7056a615426b5",
+  "0825f1e784d441a2a30407a8834c2ed8",
+  "ffafdcd364a642458b31b41409f929f0",
+  "9c29da739fb24c43b3056470baf0336c",
+  "8f580941ed3a4190953a7aed34a5d572",
+  "abf928253a5648449f00dccd25baabcb",
+  "bd67f163fc00481c81d73a8c608b3837",
+  "43447318f6de46549aecae4db0f9e102",
+  "498d8985c03b486dbc34241d4a198fa8",
+  "f74747996b0e4e4097f9e97b880a5829",
+  "6051d7e207cb44d2a1cade20425c030c",
+  "51286f514a35443682c865e1c57b8afb",
+  "aafec36961c14ad6a499b0f08975d45d",
+  "2999f82c603c4d5c80d7ffcd0c7188d0",
+  "f970dfc6059f4ebda230fc7be99e8cda",
+  "1f3829d9a252495abf59cbc38ad25863",
+  "14a4df90600142edab7bee864e0ebb3d",
+  "b07df48d351d4deaa1e37a4078069fbb",
+  "4e186831423841e8a0b7184445471c3b",
+  "9123dd05c91648039a8397bfecb9af5f",
+  "bb95e76a243447389130efaf6e12e556",
+  "8e27fe77ae214f2582067755b4fb3d2a",
+  "3e99219a2cf640b491f5b2c47065b505",
+  "a14474d8e8324133825a3a76326c0917",
+  "1cf28d834327498ca441493fd4dc94cb",
+  "b90f66bb1fad4cb6812bb9286eaa7de3",
+  "bf313d33bda74bf7b0b88074c96bcd67",
+  "bc955139afc54de8b1dfdd7bf966739c",
+  "4a0fa220d9814cada8a8a8b5943ff7d0",
+  "e2427d50ef0b4be4a85761060bd547f9",
+  "222e4b4898b74b7db264c3b1b225f86f",
+  "49615ed23bc54519a635943cad26c48f",
+  "c2c6d2759d6d4924a049e618818c95c8",
+  "bf1d34b932ba4fd0a480ea2c05a31dd8",
+  "1ed5ba15b8b944e08d3da06392d62644",
+  "ef1b5374cd584761a844f35beefb68b8",
+  "de2c8924850642afa015b14adb3ba049",
+  "48f1ab84965a4d45a13abc367d274eeb",
+  "f308bf29a6974540a5ce09075cd889b3",
+  "6eb003ecb9e64416996a9aa580c26d90",
+  "d35a5fe2026c42c889657e3d608ea572",
+  "09f38388e02e430cad41df897c9305a6",
+  "de18693f79bc4165a397bf0f532ee76a",
+  "043ab3c017ba4006a5c2411881ae6cc0",
+  "fb6f5da37376460487d88808d9ea60b3",
+  "5eb7a247fdc24171be4f797927cfdf89",
+  "c4dbbbbff4b744aabe6fddab4b9d3fc9",
+  "f2c2130df3b64c02be761f10dcda72c1",
+  "536c8ad9c98548c685b2b9f6f4ee152b",
+  "19922f50da3c4d238eb99b9761fc4c25",
+  "dfb0b8bb987543b686f489cad6bbbbe7",
+  "3dfc010eb126432a874343ac1b8f3bd1",
+  "283a9e7b5586413eade246cdf6ef88bb",
+  "33f313e2ad2c445dbd24653fe45bf3b2",
+  "c35ed73e71cf47eda09088d61689661c",
+  "a0c359ab2a854634982b9a6e8d7723b8",
+  "2870d99fc3b2493baa622ef293d93b70",
+  "a1005546af494bf49ad5c69d611fce95",
+  "e430a07f6ed1414197ca80ebd46dc32b",
+  "deab707554d04c51bcf66b46e5e046c2",
+  "59ae7be2a5094f0691d42e3b49086092",
+  "244704585d6c43ae82680a6bfcb63719",
+  "2f42a834a2d04ac48033320f2fde3a19",
+  "67c25dfccfa5458282526985665fb1a4",
+  "b2d5c879ea744c328969447b2ef0d0fb",
+  "b131274c71a645b0ac557b6257c341ba",
+  "007d18e31dc44c16866fa87bb393dd5b",
+  "b48da18a448a445395ef7150a3f163be",
+  "b5fe8032ba8c45ec9fccb9358e1eba2b",
+  "45bd9607454a447cbcc24c4afcd7e22c",
+  "040f523196014e3c90e8c6fe8d3e951e",
+  "74d6bb35a699444bb7f09b1f9d349891",
+  "8bb78ed0fa164febb1ed08ad3bfa8b4e",
+  "67be14bf714c445297d2bad938309289",
+  "9b900c77cfb247f7a51d89b04ff36e2c",
+  "11bafd00327444f49e4bbbf17ede5904",
+  "186f79ecbdd74468b6df39c516713e1a",
+  "4722e6ef35c14a238b92f8f85ab8cf14",
+  "acda612e82e44422bdd50fc9dc9b3f13",
+  "997cce7da5c248acac8a3728382d1047",
+  "4968fd12707245c597e83770407b1ffc",
+  "ad10120b13264a31b35df001927c09a4",
+  "aca372ffe9ec429483834dbbbbe71eb2",
+  "cdb05d372bc844a88d7c9e84db26ffa6",
+  "a62b5960960042b4b120199605a761fc",
+  "36b952bb1f7d43218cd890f63d958bc8",
+  "a8924daa957847e0943a27b776a44620",
+  "1f3b1be319af422ea00a82f2b60b3a3f",
+  "9b93c8c36663490b8fa98da015933678",
+  "6091186e3e804215abe9abd22e95177f",
+  "00f1d1bf0e7c431f8c2094a314858f35",
+  "3b9080da04f243fc93bffadcb013c9f5",
+  "7f9d5853fb8544a9beb540119f8ad876",
+  "70a4fdfa1d9242f9895ba3c811af2262",
+  "1b54185db45847fc838314322d1ac981",
+  "006eb03e38494991b09499590c757013",
+  "5482c2048ed0439cb6ce5f39b65fd514",
+  "823922ed61a047e89af4be9fb7bd93c5",
+  "4f7c968bdbc94b96a382bf2b3328c29c",
+  "729eecf41ac242898973c31c06fc1794",
+  "392289d248b149c9b3f4b3d80a4de0e6",
+  "3fd783ba36704195b4d751c4bb38055a",
+  "363722e4080642ff937e30175aeac62a",
+  "70ad588f56724e798d28138522ca371a",
+  "f9e4aae99eb342b79b1030e40de5c17c",
+  "4ef8dde97bbf444580de715fce7da95a",
+  "d89b3d6c6c4c4959a801d8d762827293",
+  "32b8595250d84a8f8fd09ad108cc3144",
+  "3a9289d9ce7b47f2b1bf31e22aed840f",
+  "b00e4908848544fe9b7f5fc5148a31f4",
+  "5272a2787caa4186a76f249b99df5629",
+  "105fada6c7724c529e89e3c821fcedb6",
+  "192861a520204dfda146b4f5cfa2cd10",
+  "ca9808f0bd6e4059ae992d62088efe5d",
+  "5d45b28eef0d4e948bd9829e9461f00a",
+  "b936ce038f0d46f3befd7afc5896748a",
+  "edaff0a9d03d461d8771a374a32b2bc2",
+  "a7d1665bd59443c09fa67b0b3deadd74",
+  "a699107eec044d81a331c01481d74c44",
+  "4e708fdb820e4fcf8ccc67d0b8b4c78b",
+  "5237b0b9a4cb4193a1579d146b538108",
+  "dceb9c3a857f4b62ba6779e75755e9e6",
+  "666b543154e84c47a46e2ccd2f3bc3f1",
+  "8e9b5de5c67e4277910fdeb7ac11a3b0",
+  "76acbcaf03b540f3bf65886ed26f40c2",
+  "f3b6aeebdf57488ebdad485537cf3863",
+  "0115dfdebc20430c8ed687de04236edb",
+  "5aa9dbdbe58541d093b516673026b8cf",
+  "20a8c0fe6c08449394696de5f66b695f",
+  "4848816ef4d9483a82ba9f603fb17d65",
+  "3d30c91e947b4e9bb48196f703bf6630",
+  "03cbe8f4457f40ff96ddf29aa947e478",
+  "1d0a6194f4304fd1ba2c0fee5927393f",
+  "e5640f20def94191aedfb2a4620a064b",
+  "3f12047003d742fea9770703ab59576c",
+  "821013f6d5164264bfc09686b6503044",
+  "32e6625b546d4b1eb44842a8d161b4e6",
+  "7a363f157ad04d5888d3d75c98b480d7",
+  "f7fc93852c2e4a899d68fff3c9d20d38",
+  "ec8fd0c841cd4c6a8a6e450b183c9deb",
+  "302cf8c1db6f4d22ac52bf399e13e229",
+  "a207145f2cbc4b91bc977f98e01d3bac",
+  "94762702d14341fbafd08af7002cd9f9",
+  "945911ca9267452a8eb781a90ce4ebf7",
+  "b371b34c238d4b3db21e6980da69516e",
+  "5f7f209111624cb6821e6090804231f9",
+  "3464cbeb12714fe38b82bd42d1cdbf90",
+  "60974e1a89574869b778c07ee0f56633",
+  "c689273142b648de8f0e017a2284dbbc",
+  "f2f5d9ff52f94035b54f7a162d4f8bff",
+  "747e7a8fbac345508c13f636d7906e0b",
+  "55b0214db6454d39ac9b12d174628cf4",
+  "3e994c677ae042f0be76fde16e26f55b",
+  "e296bdb883ba49a4b40090a372b5d237",
+  "730954097a5a4e4dbac0eeea77d4ca8b",
+  "986845bac89a49e6b89ff625c1229a30",
+  "ee0135b951494a3899cfb965f6967287",
+  "fe28b43419db4280a2d9efedb2c889e4",
+  "f1bb196206e442e9aec6674a163e3578",
+  "948be7fd2bcc403c8a8267299da7d0ff",
+  "649adf584c6e430b95505001223a1885",
+  "d483500848d74798ba29231d39f2d2f6",
+  "612f4983fe684c379c9788c68f3ccdf8",
+  "fb3f29f17c744d34a2075355c556154f",
+  "597bae9583d444bf97744edc9562dc9a",
+  "635e693f7664444b983e1d25ad5d96ff",
+  "f2946253ad914c9bb40c53ecc5697753",
+  "d33dd6aa1db3462c8013a9a4d201085f",
+  "7cdb77d8072944fd8236642d1f357964",
+  "ba3055c090604d67a60aabe867e4110d",
+  "9e3e25c7759349f88ca21cffc243cf71",
+  "f4831289ba744b4dafc82c2abf0579d9",
+  "142e13318f474d60811859ce4100a2e3",
+  "ddf9edef09664143b7f68b9cf2ab1cf0",
+  "6360689afe03439dbd77668e853bca83",
+  "da310924e909496596af614f9af3068a",
+  "bfdae13090f7416895aa5d12ec0e2de5",
+  "3d60821ae3a24661bd00937f46bb5413",
+  "37ed618a261a4cdda26fd5b556983f4d",
+  "f7cfacd770394caa97b2963db14b9d4b",
+  "bcc9d3408b6e48e3be50bf0de1081f0f",
+  "d54f506fe40d41d092116e045cae9b8f",
+  "2dc19d109523466393cc19ddbc36328e",
+  "1f6f25e07b514516b134eff362c5056c",
+  "01057d00b62a4211b4db06c798716233",
+  "5cd6c082ae994783847a8a00d5e73ac4",
+  "f824f37ef8ae4f13bb00558fea3aa95a",
+  "cae64efd5ab549159852025a0bfcc488",
+  "f9555594be0b46b5a2e5729ecfd1e2bd",
+  "e4cea422f022475f87e3fdbf81d3dce1",
+  "b8a73b7f72a3487fb6a075d4910e4a6a",
+  "7bfed079cc794c029605369b93e67be8",
+  "a1c30cf3b7ae49099c1533732b80b2e6",
+  "773fac8b0ffe43c594396750155bff52",
+  "6b955c496a9b4963a1e1953d8b3865e8",
+  "d7bf9bd22fa5492c94a147821718f918",
+  "0f45b819ac6f4a35a05ccefa58d0aee8",
+  "c6ff10c23d1c4846b9643270f411ced3",
+  "a6249d587cd9495c981962aade090632",
+  "efd7ca039f604238bd666d6c32e0ca22",
+  "5c3d751c4889449db58fc0707430ad9f",
+  "2ea02b6697a948669b6e0f4df00d4f36",
+  "ce0853ad2652426f9023c198ec310dff",
+  "61380e7364aa4c008cc8383f7943feb1",
+  "3b32c364f7b54a909d0bae135144939b",
+  "9611a08ff7454b1b85758897292c460a",
+  "6cf16caca9644b1b9e035d7674242309",
+  "9c5f5f7256f2449ebaef333065062c3e",
+  "63fbb6fb2aba4a3098ce89046de73b9e",
+  "f379baab543741d59866f39b4e1629fb",
+  "d9e32e3832274087abf5a06dc95c9106",
+  "32029d13e13c48e2a2ae1362597cfcdd",
+  "f975f0bfde094c2ab40aac6c2526310f",
+  "cdd21752b8c346a894bfe67a759ec4d8",
+  "25b7a976c202438b94ac49956f0754dd",
+  "1011788f49504152ac97abaa75e060dc",
+  "7cc6e9428b9d4d179ee9fad5761450f5",
+  "c1f6c1c4c8174c49b36fdfef844bd9d6",
+  "8f50ae9a62cc4512bc155b05668bc376",
+  "38181a1a6e6e4a079076b53ef46ce2bd",
+  "cc0bfd4228244dcaa253cd9802d97cca",
+  "7ba7c2edbf4b4909bda53a675c1ea41b",
+  "a7462f50cc654350b3a17a85aca37d76",
+  "e993087b022a4193837e13e546d2a980",
+  "0b5961250e8b474d90d1cdc344206e0f",
+  "dc5bdc262d52444eb6ad5c0efd45f8e6",
+  "d6af4f35ac31472ca4233cbab39fc48e",
+  "7479ba2f84ba4b4ba45174f262f2d4c6",
+  "5bc7545ada7b4e59adc13add87cfd567",
+  "d1520ef771964f3e952426651ad11e4f",
+  "76c05c0cc313448494c9826b08e223a9",
+  "6ef28b1c23084ed2a7b1f8eb506f257e",
+  "0a8beea2f82043a0ae39336270d7421b",
+  "167889eb093445c290dfe279a7fc7a7a",
+  "c89c6f4aad5845fb88a8fcc5f7ebdddb",
+  "abc1bb78715342d2ae505f6cb5dc05d9",
+  "5c34ea5a2f024e359ed9fe5f6b04b58e",
+  "afea621aac894150b0a85da5e420272d",
+  "9bb46067e2aa402ba965db2be51f3ea2",
+  "04555562560749e68e355f7a59c28c9e",
+  "63ce594e2ff64aeaac5799e614e6a8fe",
+  "900783dd414943b595096b4389c89996",
+  "3bc9423a299042f8a6d9da4031ea880f",
+  "532174a8994946869c0e0def273fe93c",
+  "99c12b92b48d480ab3798ebbe704cfe0",
+  "319eeafa2fba423f947bd96878fed964",
+  "9cdbc18f2baa4e6f8978922876a698c9",
+  "20d57fbcb48f4208ac9cf16f512215ba",
+  "f8e36caec1ca44e5a6620c10edde83b2",
+  "bca9d34b76d349c095ec9a81e39f255a",
+  "df0615f143db45a9b8c111b69a638f5a",
+  "39cab38878af4100b05793b871a4c5c6",
+  "1c4cdad02d9e47aab5956802e0ba029a",
+  "00b2b7a458b74fe098fb685f06e44ee4",
+  "60cd55a2b5a54f23a0912b0fdf2157ad",
+  "76c153e525c548e9b92c6de7431ce871",
+  "a5a33eb2c7bc49278ca238ea39393ce6",
+  "a47ffaadf2f04146978e43559be13de4",
+  "4b3ac359b41c4612900e9c8be8a0fadf",
+  "604250d0f5214bb48836455fb001815b",
+  "f81f27f178a448d4a46471fc9518c09c",
+  "afddc831b0a147539e585d2d877bda86",
+  "f621379b2bae4a44a880400e59e90934",
+  "59cec25039e14b30be2adb19a89425a6",
+  "990ebce99277498b841f734a5834edf3",
+  "593bc676e22c4311b3f9aeb1347e96b7",
+  "302eb490d0294cfcb6f13380732266a7",
+  "2163562474fb4f52941f7f1bc42f04d0",
+  "323c5ec547ba45a3be4401b022802cec",
+  "cc5918e44f7946969ae2f3ff9322a81f",
+  "45fd7cbaa7b844a88baf4437a5f88040",
+  "e1580561c4f54bfdb0e8bbdd7a828348",
+  "57be0fb1178b44fb8f40efbeacd757cf",
+  "371f6a7661354be19a83277d14c04dc9",
+  "c4680d81c6d6489a8d9d47a4a87e90d0",
+  "9c6f5b6eec494d4fad4c20052e0acd6e",
+  "da607fdc09b1474ba6312aab000888ba",
+  "407e40ca5e8442cd8507aa2619b0685b"
+ ]
+}

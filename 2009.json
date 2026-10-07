@@ -1,0 +1,616 @@
+{
+ "_help": "Per-tour extras that are NOT in the playbook. Image values are Wix media IDs (the 32-character code after 588d17_ in the Wix image address). Videos use the Vimeo number (vimeo.com/<number>) or a 'youtube' ID. Leave any field empty (\"\" or []) and that part of the page simply hides. rc_images / leaderboard_images may also be file paths (relative to tour_media) – those images are built into the page.",
+ "year": 2009,
+ "strapline": "AKA VALE DO LOBES",
+ "hero": {
+  "id": "6c5e9c6b6bf44c12bbaa910a2f319009",
+  "caption": "2009 Tourists"
+ },
+ "venue": {
+  "map_query": "Dona Filipa Hotel, Av. do Mar, Vale do Lobo, 8135-034 Almancil, Portugal",
+  "map_zoom": 16,
+  "blurb": ""
+ },
+ "captains": {
+  "BH": {
+   "id": "97622bc6fc664a5a92fa212fe85e896b"
+  },
+  "RT": {
+   "id": "d118ecaac9a24dc8a2a998ed1c680c4e"
+  }
+ },
+ "accommodation": {
+  "name": "Dona Filipa Hotel",
+  "blurb": "Home for BDT 2009 – 16 tourists, with San Lorenzo and Quinta do Lago North on the golf schedule.\n\nA five-star hotel in Vale do Lobo, in the Algarve's 'Golden Triangle', about 200m from the beach and around 15 minutes from Faro airport. It has an outdoor pool with sea views, a spa and tennis courts, and runs a golf shuttle to nearby courses.",
+  "photos": [
+   {
+    "id": "d0c73c2458d243e697d17d1d6075a746",
+    "caption": ""
+   },
+   {
+    "id": "21e924efc3174cc68b7824fbfcc8716f",
+    "caption": ""
+   },
+   {
+    "id": "1f6e6c8d13ee4b0d9545ae2cce173144",
+    "caption": ""
+   },
+   {
+    "id": "7d8759f639f0478cb01a0b8f88f70fea",
+    "caption": ""
+   },
+   {
+    "id": "0ec3e954fd7042f2854c3acccdcede84",
+    "caption": ""
+   },
+   {
+    "id": "9e068c0b2d5247859cf705fab0f380ef",
+    "caption": ""
+   },
+   {
+    "id": "e09a20c445f149c1a47005d060a426f7",
+    "caption": ""
+   },
+   {
+    "id": "b808d7730c8b45f699e5297a1fd1fb51",
+    "caption": ""
+   },
+   {
+    "id": "7ed2925d6e3640c092d1002ebb1ef4c4",
+    "caption": ""
+   },
+   {
+    "id": "a21be582df564fea82b2104659a203e4",
+    "caption": ""
+   },
+   {
+    "id": "94a2eaee7b3245eca2c54725504a7a7e",
+    "caption": ""
+   },
+   {
+    "id": "2c9dc6c115b84f59808f941f200096a9",
+    "caption": ""
+   },
+   {
+    "id": "028034a8673b479b93b9b7e4ae676b7d",
+    "caption": ""
+   },
+   {
+    "id": "df91d05e49e24f8c8564e4c1dbd3b933",
+    "caption": ""
+   },
+   {
+    "id": "6982e07d22ef4e25b7898b9bd172a371",
+    "caption": ""
+   },
+   {
+    "id": "364dc9f8cc0b42fc81cf05919502064b",
+    "caption": ""
+   },
+   {
+    "id": "e8138dfbf8f34b81910338cf00938840",
+    "caption": ""
+   },
+   {
+    "id": "da5e20e659db45ea814bf3c052c2a731",
+    "caption": ""
+   },
+   {
+    "id": "9ec86fa562714ee5a32890665c8f342e",
+    "caption": ""
+   },
+   {
+    "id": "34469db846b04d2a9668e1a47d2e28a2",
+    "caption": ""
+   },
+   {
+    "id": "c360f0973fef4504932717e1fdce9f65",
+    "caption": ""
+   },
+   {
+    "id": "b7bd18843ca74f15ac235fbd584e70dc",
+    "caption": ""
+   },
+   {
+    "id": "18d20f4a0de047c0b1a4f3160521c0aa",
+    "caption": ""
+   },
+   {
+    "id": "fb1b0343804042db93abf3a050ebdcdd",
+    "caption": ""
+   },
+   {
+    "id": "1fba68478ed249bfbdf561c374ba3f39",
+    "caption": ""
+   },
+   {
+    "id": "c6e2aa2a3836403ea215875c18e00458",
+    "caption": ""
+   },
+   {
+    "id": "69ecae9f39eb49089e4e95325ef58a4f",
+    "caption": ""
+   },
+   {
+    "id": "8fa0eaf744244952a4b0510e37009943",
+    "caption": ""
+   },
+   {
+    "id": "3280ebe53c4a45918ec2d3bdb3e0edc0",
+    "caption": ""
+   },
+   {
+    "id": "c39cb18c2ca54a2fb9dc2f57cfeab763",
+    "caption": ""
+   },
+   {
+    "id": "dae5bd299aa7490fac17090800e333aa",
+    "caption": ""
+   },
+   {
+    "id": "63b9d434220c4d43a86ab19533216c5a",
+    "caption": ""
+   },
+   {
+    "id": "a3f3db0b759a4d6cbe4408cd9c61927e",
+    "caption": ""
+   },
+   {
+    "id": "d7bfeec3747349abb6a140f71d4b30b9",
+    "caption": ""
+   },
+   {
+    "id": "4992e0b2e3e24ee78b8f45c1a8275431",
+    "caption": ""
+   },
+   {
+    "id": "48df6e03c3b249329370e69f7bcf7621",
+    "caption": ""
+   },
+   {
+    "id": "fa76ac82502b412f8113595af70486e0",
+    "caption": ""
+   },
+   {
+    "id": "085c41292ed546ff97efa3e62077c16d",
+    "caption": ""
+   },
+   {
+    "id": "cdde1ca606964532814186d71aa3fb85",
+    "caption": ""
+   },
+   {
+    "id": "4fc499e37638485484da691839ad71e8",
+    "caption": ""
+   },
+   {
+    "id": "f9644e129f254f49888c45e50b33b42a",
+    "caption": ""
+   },
+   {
+    "id": "c425eef70cbe4695b0425ee48b0725d6",
+    "caption": ""
+   },
+   {
+    "id": "25972c0b0fd14cf9931d15181759c638",
+    "caption": ""
+   },
+   {
+    "id": "78eef516487a4d9bad99b5e546f4986e",
+    "caption": ""
+   }
+  ],
+  "where": "Vale do Lobo · Algarve · Portugal",
+  "facts": [
+   "Five-star",
+   "200m from the beach",
+   "Outdoor pool with sea views",
+   "Golf shuttle",
+   "Tennis courts"
+  ],
+  "link": "https://www.donafilipa-hotel.com/"
+ },
+ "itinerary_images": [
+  {
+   "id": "7da7ba9e602c43b1ad2955684032c7ef",
+   "caption": ""
+  },
+  {
+   "id": "eb706b65df9849f2bcc4222e01c4ea4f",
+   "caption": ""
+  },
+  {
+   "id": "bf108c5b70c04077879eae9135ced6fd",
+   "caption": ""
+  },
+  {
+   "id": "2a96cea5c9aa43a59df2dba7748ec506",
+   "caption": ""
+  },
+  {
+   "id": "055f9828361a4c8db219d4b0d7d37246",
+   "caption": ""
+  },
+  {
+   "id": "6a870e076f134b2cb49f97ef5c254647",
+   "caption": ""
+  }
+ ],
+ "itinerary_extra": {},
+ "team_photos": {
+  "BH": "c34a5181d4a245b081dc2925b89b10f7",
+  "RT": "8bb8c7c7c72f44bda35b0003c013e890"
+ },
+ "team_announcement": [],
+ "rc_images": [
+  "boards/BDT_2009_RyderCup_1.jpg",
+  "boards/BDT_2009_RyderCup_2.jpg",
+  "boards/BDT_2009_RyderCup_3.jpg"
+ ],
+ "leaderboard_images": [
+  "boards/BDT_2009_Leaderboard_1.jpg",
+  "boards/BDT_2009_Leaderboard_2.jpg"
+ ],
+ "summary": {
+  "banner": "0d131f16c598436882179ef2e4a2f023",
+  "title": "",
+  "text": "",
+  "link": ""
+ },
+ "video_sections": [
+  {
+   "title": "Photo Slideshow",
+   "items": [
+    {
+     "vimeo": "421022865",
+     "title": "BDT 2009 Slideshow",
+     "thumb": "https://i.vimeocdn.com/video/896543828-c939c12b3fc1fab239f6759837c78779ce4da2bd3de27b6708760f10eed3f9fe-d_640?region=us"
+    }
+   ]
+  },
+  {
+   "title": "Tour clips",
+   "items": [
+    {
+     "vimeo": "412406374",
+     "title": "Ash Swimming with Crocodile",
+     "thumb": "https://i.vimeocdn.com/video/884789048-3c791176581f7680271481a791e5a03dc9353104cbd1fc9a04a345bb540211e4-d_640?region=us"
+    },
+    {
+     "vimeo": "412405919",
+     "title": "Boggy Ash Biters",
+     "thumb": "https://i.vimeocdn.com/video/884788037-3d510ff4380380e922c5c5c62a02ac41c9e2d3111c7e185801e5e7f53446095e-d_640?region=us"
+    },
+    {
+     "vimeo": "412405964",
+     "title": "Boggy Swim",
+     "thumb": "https://i.vimeocdn.com/video/884788064-f3e16cb6be78e1d8d41f0e8a4cad15e2b7fc1143a7dfcdfec15ef0d56756aff6-d_640?region=us"
+    },
+    {
+     "vimeo": "412405549",
+     "title": "Duncan Goodhew Start",
+     "thumb": "https://i.vimeocdn.com/video/884787503-fb56687fc7ce3e84c58901d19c905d3be6e7c52bd9b412655f86ed1791a930a5-d_640?region=us"
+    },
+    {
+     "vimeo": "412405514",
+     "title": "Duncan Goodhew Finish",
+     "thumb": "https://i.vimeocdn.com/video/884787500-37fb5bc5d2baf948f26a7ecfc6a968a38ac822359b1fd38334271c4abeecffe2-d_640?region=us"
+    },
+    {
+     "vimeo": "412405332",
+     "title": "Captains Pick Vid",
+     "thumb": "https://i.vimeocdn.com/video/884787422-8abda06b6b75c724c27b126f814e6a624b50e602b2082eecc497c651fe41694b-d_640?region=us"
+    },
+    {
+     "vimeo": "412405773",
+     "title": "Knoxy OC",
+     "thumb": "https://i.vimeocdn.com/video/884787900-d19660f831a7858c99892dcb4a5b4b62683b9e8128cf06f4d9baa6cc033ff049-d_640?region=us"
+    },
+    {
+     "vimeo": "412405133",
+     "title": "Boggy Presents Sundogs at OC",
+     "thumb": "https://i.vimeocdn.com/video/884787081-4ef39bee19f727e8d699de674583c94765cd811c6eb98bea126ec2a7f1146c94-d_640?region=us"
+    },
+    {
+     "vimeo": "412405432",
+     "title": "Coxy Don't Let The Sun",
+     "thumb": "https://i.vimeocdn.com/video/884787314-d1012ab9a568794c02a356847a6c0e021ca423539927fe531df8f405bd242147-d_640?region=us"
+    },
+    {
+     "vimeo": "412405403",
+     "title": "Coxy Dance",
+     "thumb": "https://i.vimeocdn.com/video/884787455-9d3d8560699011a8e730e5705996fd468513e08d2026b7be5884fb8f94eafbe7-d_640?region=us"
+    },
+    {
+     "vimeo": "412405574",
+     "title": "Hey Jude",
+     "thumb": "https://i.vimeocdn.com/video/884787617-a9965af776623ffa114a15916dcabdbca2518ae1b3d466af9e6cb3daaa461c56-d_640?region=us"
+    },
+    {
+     "vimeo": "412405471",
+     "title": "Dancing Dogs",
+     "thumb": "https://i.vimeocdn.com/video/884787512-3d5c6868706fc5218c1bc77ff895c6b4e123dd90bc938bc03188078757632bd1-d_640?region=us"
+    },
+    {
+     "vimeo": "412405666",
+     "title": "Knoxy Coxy Terrible Don't Let The Sun",
+     "thumb": "https://i.vimeocdn.com/video/884787643-750cacb2b24596251123549ee347b82740e89b8a7da67eb4a956ae1cd3d2654e-d_640?region=us"
+    },
+    {
+     "vimeo": "412405711",
+     "title": "Knoxy Don't Let The Sun",
+     "thumb": "https://i.vimeocdn.com/video/884787920-3ab28ef95e28078c065272ea54aacebb9d8faf97ec74020e864f44f6ecdcf735-d_640?region=us"
+    },
+    {
+     "vimeo": "414744050",
+     "title": "Little Red Red Love",
+     "thumb": "https://i.vimeocdn.com/video/887946040-1c88d7500866326f5a2f654a517c916502c6498b506d13f8b80d5ee605d6435c-d_640?region=us"
+    },
+    {
+     "vimeo": "414765591",
+     "title": "Ravo Your Song",
+     "thumb": "https://i.vimeocdn.com/video/887974957-272759a23a2a54a2f0c88bfdb253d6d88ce60ed388f85ae3bededa3506b12c5f-d_640?region=us"
+    },
+    {
+     "vimeo": "412406214",
+     "title": "Sweet Caroline",
+     "thumb": "https://i.vimeocdn.com/video/884788299-eb40dc2fef713f7f16efef0543ce73b7f25ca9cbc5264092e2bc92d10f5fdc41-d_640?region=us"
+    },
+    {
+     "vimeo": "412406277",
+     "title": "Take Me Home Country Road",
+     "thumb": "https://i.vimeocdn.com/video/884854467-12a806ee14174a0077504afcac88f44593d6963e07809412139add26f0c445a1-d_640?region=us"
+    },
+    {
+     "vimeo": "412405227",
+     "title": "Brown Eyed Girl",
+     "thumb": "https://i.vimeocdn.com/video/884787079-60aee1ea7e5c7441e76511e5c0dbb5bc68852254215b586946c6f35edbd09697-d_640?region=us"
+    },
+    {
+     "vimeo": "412406106",
+     "title": "Band Sing Red Red Love to Little",
+     "thumb": "https://i.vimeocdn.com/video/884788242-359dc14091413f2e87947c918da61352d2fc7eb31b586bfdae0c26dddb384804-d_640?region=us"
+    },
+    {
+     "vimeo": "412405811",
+     "title": "Little Drive",
+     "thumb": "https://i.vimeocdn.com/video/884787812-4b99c8453c0bf17526fdd8961a041c08d8e509e8936d1abfab604f9eb84a7299-d_640?region=us"
+    },
+    {
+     "vimeo": "412406317",
+     "title": "Retrievers Sing We Are The Champions",
+     "thumb": "https://i.vimeocdn.com/video/884788451-6413bf3b955d1e52fc49d8f4f5e1f30b783228fe513aa359d4527d6748ae6375-d_640?region=us"
+    },
+    {
+     "vimeo": "414907274",
+     "title": "BT Suspicious Minds",
+     "thumb": "https://i.vimeocdn.com/video/888173701-39a6fb81c92e3ed0f4b697bfbf75159c783cbcd62b92d7d4898e9688cba0e2a7-d_640?region=us"
+    },
+    {
+     "vimeo": "412405189",
+     "title": "Boysie Suspicious Minds",
+     "thumb": "https://i.vimeocdn.com/video/884787159-b913b99c0b1929a9972f1c92332371e7a878da4e530a154616e7d5cd5d2211b2-d_640?region=us"
+    },
+    {
+     "vimeo": "412406174",
+     "title": "Robbo versus Monkey",
+     "thumb": "https://i.vimeocdn.com/video/884788329-82efecea500b7c8920da1b8c2db567baba4b84fc666bf92a72f695273bb1e121-d_640?region=us"
+    },
+    {
+     "vimeo": "412405076",
+     "title": "Charlie with Paddy Smashed",
+     "thumb": "https://i.vimeocdn.com/video/884787144-3821b825aff1c0ae29332315b00dde15d2124749832d904f5f87ff19ddb29da7-d_640?region=us"
+    }
+   ]
+  }
+ ],
+ "gallery": [
+  "1b075958bb164664b51cceb7a0748026",
+  "b33f99ed2b05480295726fec3bf74a6c",
+  "c090cc77fcea46019f71a8b824021d54",
+  "92dd01885bc344a98a7834484e05b1d1",
+  "eb6e779ecf614cc1967d1cfefa19bd89",
+  "d23fb1e8c7a947a19f1aadf780e6dfa5",
+  "4d908551b7214f3c95d8a3444d4624e5",
+  "70c8c2f202a24560b555f66b87540024",
+  "bbae5adbf095492195592e38a008f9a8",
+  "ab00206454604aa19870298dcd67df80",
+  "8839a9653a2e418b891b4f1a15545b22",
+  "3a107689a08f45fa9bd21de94e9d95e2",
+  "70112093c5bf4590b0fb3997860ae1f5",
+  "7b2b6821560642689327b1e76cbf82e5",
+  "12bcf610b92b4a5c856637dede42d9d1",
+  "cfde35260ec44063aaa07eb3a14f594c",
+  "2d548c3edc4b484bab892ba5a629df5a",
+  "cf70126aa8354322914fa6c007e018ec",
+  "500e8b121b7d42038d7e62b79ba824d2",
+  "5e93e256f7ad45339af3f889bc34fcfc",
+  "ad4c23bbf1914eadbc5b9a20df4b5df2",
+  "a3a3e991a7fc4bec84f6fa54a0c0189f",
+  "37ca0ac60c35405f99b593c4c9226176",
+  "b860bbf3e8324c0487adaa91b9744db7",
+  "5af4ca76525946a3826d91a5d76626c1",
+  "f4309c404d734fa58a1b4098bdd8ceaf",
+  "d6808f320feb46f7bc9374c94c39c61a",
+  "1eefbdfd1dbb4ac68cc7a991b0c71016",
+  "56d66c2625364578a9b0aafdde610b87",
+  "aba62ce2cd8a453793b25da10d6b8268",
+  "43af6d3ea28347ffac765598a2616177",
+  "d6b9bc8fc7564809acf619c53e37dfe7",
+  "cbc297b799334cad9fca86f08af22e4d",
+  "db8a5381d0b34efbb52d62cedbf4d090",
+  "67c1fb1c0ae6494f81dc4dc7d31fcd4e",
+  "72aecadf9d664649a51126d8fadf6cfe",
+  "3b6843667ac44dae90bda4f73842495c",
+  "0f3a46647d444c93ad5883cb8852ea6d",
+  "f14e0c149a1041d69ad68cb426750e31",
+  "c00a712bc84c4d95bfe594ac2470c69b",
+  "b0527b52b6474f0c8d50d2b7c8c8f919",
+  "3165f07b8cc14d01b4fe6df2becbcbd9",
+  "b8b974c25d7b4faeb8c36b10e5b81993",
+  "bcfeb313e69a4889bbf98c8d474b2da2",
+  "85185ab66aac4d4991c21f2d0d8a5173",
+  "3c59b9e5e66d4973b10752d3897c1ba7",
+  "336f2ba9a1874bb7b0804e17fcd86886",
+  "a72c9d8d20dd4aa39cdc9dac39fd6772",
+  "63074514fc2846789a80e32f52ae8f65",
+  "2ddd5bfc76b94574a6f922bcff7144a4",
+  "0ec2186bbb8742608a4f2396efb7f871",
+  "e1473699abae442f9d4978c56a628f2b",
+  "4f9549472d094da8b17aee79db8306dc",
+  "ad662ecc2d14417b8caf784d043f4786",
+  "0b1c026c45544a51a7d1fbb78e21ec68",
+  "6fda18c0476b410593ed7eabf146b67d",
+  "42bbb85eccfa46e88151eb08f34b8d9d",
+  "1dae23738e624c7f962090401358c55e",
+  "59dbe40e722541c89251aa9de3de71f0",
+  "2a7bbf0b0fff49d6a1fbd7b034c71aed",
+  "88e93153b32d4cfbb68dab03bba6c964",
+  "66977d675e1348d2adb72845c192cc7d",
+  "65dce2134e1549779974c7eb7175d255",
+  "765b88d549434066b1c6fb60d5f9795b",
+  "4051eb1451c34a8b87fbf9e6831e8381",
+  "4a4a1b7a510a49889c7559bf7e19a3f1",
+  "d60d1a4b680f49ccb2d6efef2c8fb75b",
+  "58de13a8431d4a83afc5d62ba1b11f70",
+  "fca9020b03be44d591e3b110d603275f",
+  "2077cc121d04482b82c0d84e78046d0e",
+  "d32fd819d26844f19a1379e314c2062c",
+  "e8d9ac3fbc654bb19b67538ca0ce9d98",
+  "3a39f7499e6e4358935afdf2359de117",
+  "cbf601f5df8c47a895779fe38ca77e88",
+  "d177edcd638448678c719ea2ebb45a06",
+  "ad2bac1b5fa84ab8a055aa832bd9cccf",
+  "d1a23c2c25cb4e42b075e138913eff21",
+  "7e4a31176b5a4d95b15f79f2283107a5",
+  "d6946cdfaee74435a15a418a12d09779",
+  "30bf1044a1824521847d0f9e76fabe8f",
+  "28ce3e64372b4ec1bc4dbd91999e174c",
+  "f5be4f2eb6164ba5b0d0a65e9f64763e",
+  "2de6ddc057b441c8a46ff2e4bfe78876",
+  "8c8434c43d944ea88b87fb0cb7e9d385",
+  "842e6f07580645029f40a9afc6e30e04",
+  "7804b65a680a4964988a9db0a3fe10f2",
+  "67360f79cdd84a048487336b0eb6c918",
+  "226ea625daf549be883ec7d0e45f2382",
+  "bc229310eb0348189d3d8d208c68a7c4",
+  "02f0404e95a845afbd44f64fd31817f8",
+  "ff1b52259b6549fcb43328537281dd95",
+  "542360d167e84e5385e0fd46ee56a2f6",
+  "77b0748db76147ee980f2464a54abfed",
+  "6b3d4bc9d46547fb877669b968d19038",
+  "e28b0bdfe38349c59a88d39465cdbd1a",
+  "8aa5bf43338a4a4d810760dc24b722bf",
+  "73d40c0507a6447aa8f9e4fcd287df70",
+  "b0d53f4454d348c29797dfbad637ae26",
+  "70053d99394e467c8b00a400e9fe4930",
+  "905d349ae34e42c79d205d8763d99470",
+  "627a58ecd69e4a6fb4ff20029afbe8e2",
+  "2922f2c985fa4a118bf01c3050f77c33",
+  "2b9dbfb293384393a11719cc816947ba",
+  "03b08ca844b34a52964f0db22365fbf8",
+  "1eef3349a40148548c42de20b057e5d6",
+  "6db5b1e68f9542348944751b5881aa06",
+  "a48280396dd448d5919acd8908c48a2f",
+  "b0fecdb68d8c41c49f4a7b8083c1d44d",
+  "220378269d8143d79d1bcd9016125e30",
+  "0c303b0f5a5a4dbe9e2850aa4bd09368",
+  "8ec4af6a81d3437c8e9f3935ab0bb6f5",
+  "717cf3f0f3d44f5081e177a538374bb7",
+  "6d780dd8675640b08d3ccd987e3c3004",
+  "3a3289a0fb4d473e88e8cdcf10df6c6b",
+  "4e2550e4aa1e493f9357685a15a2f844",
+  "741591a3bef446aeb346bb74a842029a",
+  "a1a7dc30631644e89e4e96d97d384aa6",
+  "6dc4d6eed77441a1bf82e89f44b19be3",
+  "0ca635554afb4d8a9811368debc65c2e",
+  "ea7f2d9c872549f5adfdba1e4a3f5693",
+  "da72ba164f8f4881a2ff8452f6ac62f8",
+  "b3fb51e4e8b84f51a891463b4cae9e55",
+  "5bfe1fed8cd548eeb75488de38bbe011",
+  "fa4cbd665d9242c49818d39ffad02758",
+  "6c5e9c6b6bf44c12bbaa910a2f319009",
+  "fe59bdae620344019b311383131fcb27",
+  "2723c284ceb54f67936884d6b3ce08de",
+  "bea7d58eb6884c3f9bdb06793a0221d6",
+  "a063bc81585b4ab481e86b97c180c06b",
+  "58b94df9724b4a93b5ff3ac041bbb365",
+  "31417b45fb6f428b8b6ea7c85642d42f",
+  "fb5ac4f659eb407686508ad369a8f227",
+  "426e51e4d21a4f25b06791d0f35e46e7",
+  "cdc4bb62eed141069e30256c87a80ce9",
+  "71203c98d4424b47a840076497c01f72",
+  "337b6ea2de51490eb53ced698f0c61b3",
+  "ded73efcb9aa46a2b684605b27f04dc7",
+  "8e694dd28a9944169772da78a264d0f7",
+  "a232dd1d318049c6aa0ec65ef1d5aa1e",
+  "f0d1f35e51794d19ae68ad0984129ac9",
+  "01a3ed746b3942d09de9a6cfd5edf781",
+  "6f6973a107c34ca5b79057a1564f2026",
+  "499283c2f86a41e994e69f4730a79165",
+  "55de13ac56014e09923eb7caa45eccb9",
+  "1bd9d6a00a2142758b70041e3bb2b2c4",
+  "1b0848bba15548a2a6bf5fab408992d1",
+  "779cfa4c414f40da8f250aa49e991b2f",
+  "52fda1f6fd7343cea64dc048f005c768",
+  "26dc0bd1012747f2bfb7ea36cbae26fd",
+  "8dce4c80a6f84da2b0ac72fa5d8f81c1",
+  "9d05b0a6a9d04af9911eac21cc6644a6",
+  "45efc8242a2f4d55b511a4eec8ee687c",
+  "db5bc13d17c944eba8aa17df57fe23f7",
+  "dde60b7ab86b4b129df8d0f75a4dae0d",
+  "167931b5aa4e4bce86c90c0d5fd4fb85",
+  "5fe3bd9ec76b4926bf97dcf99c98d6ab",
+  "f75049959042408e833a25dded9529b1",
+  "a7d4a00a80e24b33a4683577c7ae209c",
+  "c7a42fd52fd84e97a6e14ab2858c06e8",
+  "965aa30a7870461b83273501e35a8123",
+  "e881788f423940d083303a99f9d8d4f7",
+  "21c6bfce23594cd58b60c6b74ae12a77",
+  "32321488ba21409d8f0a674dbeaf160e",
+  "40cb885258f44e40a3930f5a7cd984e5",
+  "712606eb5fea48288269b167a3aa7e96",
+  "fbd3879809f44c0bbaee8af8109e02e3",
+  "d73eb1ca48124ac78924878b0a103e70",
+  "c22cd49e9e684441b5fb28b31c809b20",
+  "2f24fa1a16904e8e89a0e553f05ba82b",
+  "e1446297a15a4c1881694d3aa209d60b",
+  "3b504a0e639b45e5b959aab814bb9e8a",
+  "e275a159c3a041fc98597c825f361da7",
+  "cfcf48839e144eacb5ebb3fd26b34257",
+  "645e0b570c4a4363a6fd1d91d693e203",
+  "161ce877095040948957a6d8b46e369b",
+  "02d9f2d12a5e423794bb2cf14b5fea6a",
+  "4bfcc6e1d65e4dc0b9a13ad4978d695c",
+  "02ef865896324151bbea4b0029b74260",
+  "cd7ed8bf99f549b8b40b721ec136d7a3",
+  "8e144fc0f57b4dcfa77fc52428969b78",
+  "eee6b92c676d4a0abf5b9838e85757fa",
+  "68151acfe47d4c13a01828e342c030e1",
+  "f8ae61c8f0ba472bbc6042b41405db48",
+  "049001819e1e4a2b94b37e753a95ffe0",
+  "798d7a8f87d44908b186bbc4ee81598d",
+  "0362783799ce440c87a45396d268a197",
+  "660b6789f42049f28540536a167d5252",
+  "8a095e7f50844883897bb38ec4afaaeb",
+  "21c299cf0e4b457f969f5d1aa6386d1f",
+  "523f070482a14587a9cd816c712884bf",
+  "3f9cf07944a34e868748f09a6c528f89",
+  "790f49696a034ebf9901dd970df79085",
+  "036380046eb8489f83fcc1fee07a557e",
+  "373658c8ce05409986d35a3dde8f0cc4",
+  "bd1da75ad206492699494c1ac12fd3d7",
+  "8cbf7322a6db4ad38f8201b9f531f2f2",
+  "f819e7b3c3194ca48dee947ea1dc3494",
+  "35f904713c7746d6bb1f66e86404f80d",
+  "85aaa07722ea412b862a84110863d7b9",
+  "c87f297acf474039ba42d7d5876435ba",
+  "29d25a84aabf433fbaa684ac7baa1eeb",
+  "ccab5df5c71e4193b1801b3f197721c4",
+  "dc980432b90d47f1ba0b2d7eb17771b0",
+  "ca4dbdfdd24d4e16bd1342b34337a35a",
+  "27181742c98f4c21b1c2b417432860f8",
+  "3d37fb6a5ba146d58d374f828f745357",
+  "faa034cadda34f69a8474454ddc7d8cf"
+ ]
+}

@@ -1,0 +1,411 @@
+{
+ "_help": "Per-tour extras that are NOT in the playbook. Image values are Wix media IDs (the 32-character code after 588d17_ in the Wix image address). Videos use the Vimeo number (vimeo.com/<number>) or a 'youtube' ID. Leave any field empty (\"\" or []) and that part of the page simply hides. rc_images / leaderboard_images may also be file paths (relative to tour_media) – those images are built into the page.",
+ "year": 2010,
+ "strapline": "CORONAS IN GIRONA",
+ "hero": {
+  "id": "4bbc8ff086c54f30ac94478c7157e957",
+  "caption": "The 2010 Bandits"
+ },
+ "venue": {
+  "map_query": "Hotel Camiral, Carretera N-II Km 701, 17455 Caldes de Malavella, Spain",
+  "map_zoom": 15,
+  "blurb": ""
+ },
+ "captains": {
+  "BH": {
+   "id": "89794163916a43598207cef0900dfa93"
+  },
+  "RT": {
+   "id": "d9f33be83b384d31880765187b7d2086"
+  }
+ },
+ "accommodation": {
+  "name": "Hotel Camiral",
+  "blurb": "Home for BDT 2010 – 16 tourists, with PGA Catalunya Tour Course and PGA Catalunya Stadium Course on the golf schedule.\n\nA five-star hotel at Camiral Golf & Wellness, the resort formerly known as PGA Catalunya. It has two championship courses, the Stadium and the Tour, and a wellness centre with indoor and outdoor thermal pools. The resort will host the 2031 Ryder Cup.",
+  "photos": [
+   {
+    "id": "5a0a5bb07d154986941f3a7767acedcd",
+    "caption": ""
+   },
+   {
+    "id": "9e1438f3f18a4ed38b667cadedbc75a1",
+    "caption": ""
+   },
+   {
+    "id": "913cdb0624f5445aaf5470fddaff518e",
+    "caption": ""
+   },
+   {
+    "id": "4bc24bebcbe74f1ba046994db9921537",
+    "caption": ""
+   },
+   {
+    "id": "1b7bd78dbda8446fb3ba408e34cfdbbf",
+    "caption": ""
+   },
+   {
+    "id": "c3e85aec9a5f4125a1800d2a37bc0d80",
+    "caption": ""
+   },
+   {
+    "id": "8b54eda30bba46b2b4ad6b923a309e42",
+    "caption": ""
+   },
+   {
+    "id": "74fbddb6b8b84586ad3e50738f059202",
+    "caption": ""
+   },
+   {
+    "id": "c37536a8060c4e5b88968930720d0d7f",
+    "caption": ""
+   },
+   {
+    "id": "ce33929110fa4181bba4fa45adee263d",
+    "caption": ""
+   },
+   {
+    "id": "2ca30b3d444b4448a1af6a496a5d0a57",
+    "caption": ""
+   },
+   {
+    "id": "473e88b69efe4ad68ed6f9c8a31b9b6f",
+    "caption": ""
+   },
+   {
+    "id": "c91062a488884246b9958745cb0f5f88",
+    "caption": ""
+   },
+   {
+    "id": "6609296a2177458a928f1a84f7b0cca0",
+    "caption": ""
+   },
+   {
+    "id": "848996f5af504446b6160b0431a21cbe",
+    "caption": ""
+   },
+   {
+    "id": "ac7d54edd3224ae9bb642e839324bdc8",
+    "caption": ""
+   },
+   {
+    "id": "e235f69d53d648769c1df385809f7c27",
+    "caption": ""
+   },
+   {
+    "id": "daa726d1e68448a796fe8e501650026b",
+    "caption": ""
+   },
+   {
+    "id": "edff7bed45f64f989f3c638fe8d47923",
+    "caption": ""
+   }
+  ],
+  "where": "Caldes de Malavella · Girona · Spain",
+  "facts": [
+   "Five-star",
+   "Stadium and Tour courses",
+   "2031 Ryder Cup venue",
+   "Thermal-pool wellness centre",
+   "Formerly PGA Catalunya"
+  ],
+  "link": "https://www.camiral.com/en"
+ },
+ "itinerary_images": [
+  {
+   "id": "eb0e089b0aa74814b7a9ae1126599702",
+   "caption": ""
+  },
+  {
+   "id": "2e13b320daae435eb55ed9134baf5fd1",
+   "caption": ""
+  },
+  {
+   "id": "54b6b9b66fe44ef1a9b5ed500e5781a8",
+   "caption": ""
+  },
+  {
+   "id": "8e371426a21448acbfd71965f032ebe5",
+   "caption": ""
+  },
+  {
+   "id": "88f8fc913c1a4f49a475640888fefc15",
+   "caption": ""
+  }
+ ],
+ "itinerary_extra": {},
+ "team_photos": {
+  "BH": "b2924ac4c6a44f1c9daced47272f99a9",
+  "RT": "efc52c94d15547898e2c009b3c2dd81d"
+ },
+ "team_announcement": [],
+ "rc_images": [
+  "boards/BDT_2010_RyderCup_1.jpg",
+  "boards/BDT_2010_RyderCup_2.jpg",
+  "boards/BDT_2010_RyderCup_3.jpg"
+ ],
+ "leaderboard_images": [
+  "boards/BDT_2010_Leaderboard_1.jpg",
+  "boards/BDT_2010_Leaderboard_2.jpg"
+ ],
+ "summary": {
+  "banner": "8a5d74dd07e944f4a4159e40fca0f8bb",
+  "title": "",
+  "text": "",
+  "link": ""
+ },
+ "video_sections": [
+  {
+   "title": "Tour preview",
+   "items": [
+    {
+     "vimeo": "11665003",
+     "title": "BDT 2010 Preview DVD",
+     "thumb": "https://i.vimeocdn.com/video/170674192-5363b5c01e238f9a69933a9c94f82c08cc79394223be712a04746d27e7f5d9eb-d_640?region=us"
+    }
+   ]
+  },
+  {
+   "title": "Photo Slideshow",
+   "items": [
+    {
+     "vimeo": "422916764",
+     "title": "BDT 2010 Slideshow",
+     "thumb": "https://i.vimeocdn.com/video/899176963-da7bd261ac7e6eca956453ab9886ffeda66f33b8fd0720bd44b08feea54a68d4-d_640?region=us"
+    }
+   ]
+  },
+  {
+   "title": "Tour clips",
+   "items": [
+    {
+     "vimeo": "13966793",
+     "title": "Barking Dogs",
+     "thumb": "https://i.vimeocdn.com/video/81117828-9adea6cbf77e57d129fac214afc93a6334017f14221bc4441e3cd6a11c96fad1-d_640?region=us"
+    },
+    {
+     "vimeo": "13966840",
+     "title": "Boo...Silly Billy!",
+     "thumb": "https://i.vimeocdn.com/video/81118185-4e4cf17892a4eaad81d2050be1969c25460a4bf7cebdc267c31c5edab7fe01aa-d_640?region=us"
+    },
+    {
+     "vimeo": "13967132",
+     "title": "Eating Challenge",
+     "thumb": "https://i.vimeocdn.com/video/81121186-0bb17008f62336c77fe42fc2a1cc5bf0e3f944c1dc0df55a77faadf5de2e26ef-d_640?region=us"
+    },
+    {
+     "vimeo": "13967259",
+     "title": "I've Got a Feeling",
+     "thumb": "https://i.vimeocdn.com/video/81124282-60f349ed6daad8dbb79c5a9bfcc989950de72c77bfd42bc31cb0cd42873e065e-d_640?region=us"
+    },
+    {
+     "vimeo": "14314703",
+     "title": "Launched Dogs",
+     "thumb": "https://i.vimeocdn.com/video/83802770-636223c912fba8ea42c759ed8ec793542ea6155b48a43201b73968b7d320f7cd-d_640?region=us"
+    },
+    {
+     "vimeo": "414894065",
+     "title": "Mexican Star Jumps",
+     "thumb": "https://i.vimeocdn.com/video/888154235-62d8e13b95aeec575079b0b9b02f4b840158006ca7ebc92344167066d60518a4-d_640?region=us"
+    },
+    {
+     "vimeo": "14314957",
+     "title": "On The Tee - Boo T",
+     "thumb": "https://i.vimeocdn.com/video/83803940-4a9ad5abe4d6c3d9e863bb777fe93bdd11726b001f43c0395eaf92ac4ca9ee25-d_640?region=us"
+    },
+    {
+     "vimeo": "14319866",
+     "title": "The Monkey Parades Zoo Bar",
+     "thumb": "https://i.vimeocdn.com/video/83841822-773bcb95681b975207197b12817f950385c1b1af4cfea01b8dbd341a9fba0a2f-d_640?region=us"
+    }
+   ]
+  }
+ ],
+ "gallery": [
+  "50ee62ce6800453d9996f739b5877605",
+  "d3b9f30f474f48379a4251ffdb60faf2",
+  "f8becefb20c34f2a8e2df62cd9e45616",
+  "3b72ee630e0d44cca38a9580f2eec4f1",
+  "2fac99da986e473b9161ea4d5ecfce8e",
+  "7fe3c10ae7eb45d3bcd7a79756128fc3",
+  "24c4872777134bfdbc984600f5d22413",
+  "9b001b6d69494f66b0895a3c800ae041",
+  "7f5b13a42be9422ea76b7112625ab5be",
+  "5d56241b79554c59ba9deb00482a645f",
+  "d3c0e850c523404eb04683a5a1a49ffe",
+  "fc76ac594c8d43a8b6e1b70e97fbcbe1",
+  "ec03772b95ba40f6ac4017b2d3357ce9",
+  "12c91bc81a7f4cc8a73022121f824739",
+  "f9416b9bdd6a4d5da202b5ad9981acbf",
+  "30e706a0026c4a79ac7a3be19a8a0fe2",
+  "e2fed73db73848e6bf61c55a8a793301",
+  "05200b4e0c7748168eb69fcabebf2c2b",
+  "e59a94464bbc4aa88392e7279b71648e",
+  "04372c0218004834b7daf23721a1306a",
+  "7ce1768f7858493c9c147529e87b3aac",
+  "31518150f97c49aab80a73c8b83cd9db",
+  "a9658f3a283d46908e4e9590f0846b78",
+  "8a5ccb59366047e3b6d82dc84c08fc59",
+  "fd75e8a6b54448cfb88319a2fe8f2292",
+  "271f0ed9865d413da761df5e63ea69a0",
+  "9ca7357d5af845ba98105ee24191eda6",
+  "3a2b5817204d471a802a257dc3d35298",
+  "94872a8ab2ed4c99ab691cd57b899ac1",
+  "65aaacfa544c4214b5b45904ea535c41",
+  "ee216ed448014956b9c8d857f3641fe2",
+  "8dd9e63481614940990197cae8782fd3",
+  "f2f80791ec904862958a77871150173d",
+  "72ed52295a804fe0a386d5ea8919b1d4",
+  "aec03e4da57742cb82443f326a9d57e1",
+  "55002b2483e549ae9c0cce040f393f90",
+  "60714674988743f09ae3c14fce17c235",
+  "041a8ee61e4547c9a2ed9edcd30500c8",
+  "99506dbd12184020bbb295dc0f68f3a2",
+  "4233857f04514906acac7c973fe2b75b",
+  "75e9b590b4934714b67b23ed5ae6d234",
+  "ee5263f2f3e34a7fa04bbd757af9b571",
+  "2dfd2354253e4e92970319214ccb5ba1",
+  "c3202a79614c42a493f5e85d9457d781",
+  "27535347852c439490ef76fc60285e5c",
+  "066cee90310d47a28396dbfc1bb0de1b",
+  "6720516cacf6434094183016bd80838f",
+  "5e77704b0c9047738875072c16d9a537",
+  "19b74c11c95348668455d65e7de39136",
+  "f75bfd83fe1643939717484c75f4d989",
+  "b041e96e4c264a5d9b5f23cd143bad26",
+  "5eec011cbd2c4404842aea62f90b09e2",
+  "834ec224671444289a57be5075fff4f8",
+  "f51bf4a716c84ce696332ab0b48dac83",
+  "60f94207451649ed9256d4fab202e698",
+  "4bbc8ff086c54f30ac94478c7157e957",
+  "2c29865cf462493eb75331d040afffba",
+  "0d68ce7380de43bf8d835357aec48f6f",
+  "63042f4b953b4f939d0fb8ab1b250b48",
+  "78a3b66a4a3846e7912785566ee5e1c7",
+  "0e5669c0a418475eabfba65254e4a607",
+  "427979589482438bbd0d5fe39d9d3bb3",
+  "1b1ffa6dfb574734967b9684bed321e9",
+  "888425a3dd254998b833cca8dae30e7d",
+  "fe5f9a76089b4fa4a647febcb484a511",
+  "7ec9319fcf424e6e94a68fa699ab01c0",
+  "30b6ba8aca0d43faa8fd5b28bc53d3d9",
+  "26e72e13600b44ef8c5af583d23b31a9",
+  "5a11a6833e884b7ca875f5d86341b99e",
+  "e353b94c197748cfa0f09859da61c5b0",
+  "504f73de90e74c7bbf5bd8b0d15f02b7",
+  "a92817b4a4304d30ba8b2339481407f8",
+  "483d1b88fb2c4a6b8b8f1f49cc2a3a46",
+  "99d7e5b1e34f4fcc88ab15ee52abbe73",
+  "34d5ce63768c4b25a8f43de1b598bb80",
+  "f69196e541d34299bec9a49154ecd41c",
+  "1400ee2a38f04436a7b6a32d890e62db",
+  "8bfbff29b827436ca0f90c730f87e872",
+  "a0169c43a9484072984213ea1a4584af",
+  "91c928d4fd384203896450e16218e42e",
+  "0379075bb0b2441a925d7cc03a065da8",
+  "5a35da74607648a3b6f409c8cd066d40",
+  "9a41be89c01a46e4b4a4120b34c570fb",
+  "4588cc4f9d594b18885d76fbe72065ca",
+  "2d7bee6f30644ff3b5f4c1f18a8e1079",
+  "838d6ee355d94ef88084bc4fe6ef6284",
+  "3ea53d62d88b4b7dbf76bb332f9a42f4",
+  "8826c202f14845da9ce58f573dda7ad8",
+  "1919222e6c96491eb181dc07d38ef7ed",
+  "80161dd0770448ffb22574f913eb4c3b",
+  "f07b2c5b81a54cf79d39a6f61140edb6",
+  "30c335386105449f953330bc7fcb36ca",
+  "67cbc11d6def4c68b75c1000f22ef888",
+  "216e25544d894f5d93051de51b081620",
+  "bca61f1ae60a4ad1be9de297a80de4ea",
+  "7428782b59e34d5397e2a4ad51f73f4a",
+  "995be91399ec405fb857feab82d1ee6b",
+  "256488d30bf54afc9feeecf37c7d1482",
+  "ecba7bb3c9714ff8bbb153a366593f13",
+  "d4280dfb831e41ea9730f33a7dfec51c",
+  "f9d7c7289c49401cb4f83e1d89259072",
+  "a59ed222558549c4ab1d7133c2772e23",
+  "b272423b19644bf8a9621229042f0135",
+  "e4da4194e5294ea49084cd62e14d4a0e",
+  "ae4184109a2e445683fa52e550250853",
+  "bc621b785ff74de494ad7d817c940e14",
+  "8d81fa21c6174a669f37ed42970f1db4",
+  "4b79b8ef26c84a668f0b5c720269e867",
+  "d0917926e5064a6b8adcb03b9111bac6",
+  "3166d7a1c7d648448233c42e921aff4d",
+  "18c6f0d5db0b47d196e5fa12898181d5",
+  "ac911695eea24281a839dc05c8b67a95",
+  "5da8303816dc46deb5d63a2b3ca458f1",
+  "d9e3db1d6d07468998ffb20c4d7ce600",
+  "752718273b464b228488328b78fdd606",
+  "0119b136f2634a7c876dde73ee83e05b",
+  "eed0a55cb32c4c928192436c562d172a",
+  "5598a1a812484bacb90a2d4909e6116a",
+  "d98e6604b7e64191b116423f48667724",
+  "232ecfe07d3a47d584658cc440537797",
+  "35373dcea23545aab347300dada924a6",
+  "54b63cf3008640bbbbc7c6d1526b0704",
+  "57c8fc6474194eb5a8a13e348bfaf9ec",
+  "ba96e4b4a24e4e85b6e71ca0a7be330b",
+  "ed217cf38263403583f048a319c85cf8",
+  "c2970d92dad94763964573172127d1e0",
+  "aa87e37508a3417c84f5fb6686b5ae32",
+  "8d096c06305e4caba5b1b1ee442938f8",
+  "5dfaf0c2f2b04b0da5949cbaad290409",
+  "e5d2dc41b2844bdf96b602f30fc12186",
+  "76a60ea4dca1432ebe4fd44faf9f3102",
+  "b07f95474c0f4979ae5e19ba0033fcc0",
+  "889e1e0e749f416f9fee597a39137e1b",
+  "2baff92e868845e5a603681071c14b68",
+  "ea345a9931134643852a29a9bc9fde92",
+  "8b84a6997d294a069219760eb56e375f",
+  "c255cad4a04d4034961597bff6547ca8",
+  "70fd17762f7a4d21a91da41710dda7c4",
+  "9e9ef45663b448d2a942b25575f2c273",
+  "3f387b90038b45db8701043fef395a17",
+  "126f6d7b0b584223b74e51d0604e6821",
+  "df0d8bfec3154ee6955a20fddcadb2d6",
+  "03c946e046e44b37abe8aae1d01ee5df",
+  "e1c9e48400854ddbabf8a3a2e8534dbd",
+  "daf45d9c290f404698a076880b986065",
+  "5f7d9bdeba1546329667c5ccdf7ae8d6",
+  "72e6445b9bb74e8ebce51884aa7757af",
+  "1c3e37248cd444939bc4c1ddb049aece",
+  "ab4f210317424469934e311e32473bc4",
+  "553e2820d4cb44a09d63b11571b3235d",
+  "19d48381eb5c4c0896af07469f53b771",
+  "b76ce56625154cbbad83f5872d6754ab",
+  "6d591f3122354446a57278f3a4c180cc",
+  "20be2c18b11a4bf8b643263f3d6e5827",
+  "1d3da097a52d43dc94ef5669ec852429",
+  "3b57c5ed28854d3597f37ac46ef723f3",
+  "0557706393fa4187977ba5ef44792bc8",
+  "8a14b9ca95cb477ba047d9088026f93b",
+  "0516a47c43b64b628942a4c0783530ef",
+  "9b9bd56360824d51a201074af3e3440c",
+  "73fc9ee877064197bbedac2543578dec",
+  "d5e2051372a04ce2b8c1989091d49107",
+  "3513ea9e81c74bc6b628b91c077bfdd6",
+  "f408579bd83d434ebef983b094a901b5",
+  "77177c6a242d4cde9b4740938f74ffb4",
+  "661975f82b8e4af0bf765222c1c84235",
+  "90053e428cda41c38286fa1f77896675",
+  "20610d70ae674ffda0198598107a5c15",
+  "8803c5c106df46459ef268f369008f7a",
+  "449b24085f8e457d9295e93d9e3a3139",
+  "e4deb70b0e8d424ead6a8bd226d79174",
+  "003cc97cca654bee8ff3134f9e858e2d",
+  "f32f231fb10b497687ab9ce8f360e74b",
+  "00976447852f4bdbad85546f35839413",
+  "d57e3dc62c3641abb585fd2076e3b9e3",
+  "56cbe60ef9344a4db754228f9d1262cc",
+  "feeb6c427a9e4d1b8c41a81956d0390a",
+  "37597b1194e24e27a4a46ce75327d262",
+  "8956cbeb70324712b9c0720be189908f",
+  "7fb6285a95a34eb6b074a982921cc678",
+  "930a8f961f194c39957bffcf6f150bbf",
+  "7b6e8d8361a8448498c1b0c0ce3a9b82",
+  "a3d3699ef40848f8b5f3cd8a816105f5",
+  "7b83f7656e26436b857316ab07528bd7",
+  "81357523937947faaeca6399717f697b",
+  "2a836eb79be243f1b8813605b4dd0ae9"
+ ]
+}

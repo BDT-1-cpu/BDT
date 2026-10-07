@@ -1,0 +1,2 @@
+Last published 2026-10-07: privacy changes - no dates of birth on the site, noindex on every page, pages blank when opened on their own.
+(Edited through the GitHub website/API to start a GitHub Pages publish - see README.)
