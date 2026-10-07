@@ -3375,10 +3375,25 @@ function buildPagedSection(el, sec){
   tabs.className = 'subpage-tabs';
   var subpageEls = [];
 
-  function activateSubpage(i){
+  function activateSubpage(i, fromTap){
     tabs.querySelectorAll('.subpage-tab').forEach(function(b, bi){ b.classList.toggle('active', bi === i); });
     subpageEls.forEach(function(sp, si){ sp.classList.toggle('active', si === i); });
-    window.scrollTo(0,0);
+    // On a phone the buttons fill the screen, so a tap scrolls down to the chosen page's heading
+    // (just below the sticky bar); otherwise the page stays at the top as before.
+    if (fromTap && window.matchMedia('(max-width:760px)').matches){
+      var target = subpageEls[i], cover = 0;
+      document.querySelectorAll('body *').forEach(function(e){
+        var cs = getComputedStyle(e);
+        if (cs.position !== 'sticky' && cs.position !== 'fixed') return;
+        // where it will sit once stuck to the top of the screen, not where it is now
+        var r = e.getBoundingClientRect(), top = parseFloat(cs.top);
+        if (isNaN(top) || top > 40 || r.height <= 0 || r.height > 260 || cs.display === 'none') return;
+        if (top + r.height > cover) cover = top + r.height;
+      });
+      window.scrollTo(0, Math.max(0, target.getBoundingClientRect().top + window.pageYOffset - cover - 10));
+    } else {
+      window.scrollTo(0,0);
+    }
   }
 
   pages.forEach(function(p, i){
@@ -3386,7 +3401,7 @@ function buildPagedSection(el, sec){
     btn.type = 'button';
     btn.className = 'subpage-tab' + (i === 0 ? ' active' : '');
     btn.textContent = p.label;
-    btn.addEventListener('click', function(){ activateSubpage(i); });
+    btn.addEventListener('click', function(){ activateSubpage(i, true); });
     tabs.appendChild(btn);
 
     var sp = document.createElement('div');
