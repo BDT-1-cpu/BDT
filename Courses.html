@@ -77,7 +77,7 @@ img{max-width:100%}
 .lb .bar{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap;justify-content:center}
 .lb .bar button{font:700 13px Archivo;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;border-radius:999px;padding:7px 14px;cursor:pointer}
 .lb .bar button.on{background:#F0C566;color:#111;border-color:#F0C566}
-.lb .x{position:absolute;top:10px;right:12px;width:40px;height:40px;border-radius:50%;border:0;background:rgba(255,255,255,.12);color:#fff;font:22px/1 Archivo;cursor:pointer}
+.lb .x{position:absolute;top:10px;right:12px;z-index:3;width:40px;height:40px;border-radius:50%;border:0;background:rgba(255,255,255,.12);color:#fff;font:22px/1 Archivo;cursor:pointer}
 .lb .nv{position:absolute;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;border:0;background:rgba(255,255,255,.14);color:#fff;font:22px/1 Archivo;cursor:pointer;z-index:2}
 .lb .nv.p{left:10px}.lb .nv.n{right:10px}
 @media(max-width:600px){.lb .fr .nv{display:none}.lb{padding:10px 6px}}
@@ -173,6 +173,7 @@ select{font:15px Archivo;padding:8px 10px;border-radius:8px;border:1px solid var
 .wkr{display:grid;grid-template-columns:90px minmax(0,1fr) 60px;gap:10px;align-items:center;font-size:14px}
 .wkr .trk{height:22px;background:#eeece6;border-radius:6px;overflow:hidden}.wkr .fill{height:100%;border-radius:6px}
 .wkr b{font:15px 'Archivo Black';text-align:right}
+@media(max-width:760px){.lb .x{top:64px}}
 </style><style id="bdt-hero-css">
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 .bdt-hero{position:relative;z-index:5;display:flex;align-items:center;min-height:300px;margin:0;padding:0;overflow:hidden;text-align:left;line-height:normal;letter-spacing:normal;background:#050B09 var(--hero,none) center 42%/cover no-repeat;box-sizing:border-box}
@@ -332,7 +333,7 @@ select{background:#10261c !important}
 
 <div class="lb" id="lb" role="dialog" aria-modal="true"><button class="x" id="lbx" aria-label="Close">×</button>
 <div class="fr" id="lbfr"><button class="nv p" id="lbp" aria-label="Previous">‹</button><img id="lbi1" alt=""><img id="lbi2" alt="" style="opacity:0"><button class="nv n" id="lbn" aria-label="Next">›</button></div>
-<div class="bar"><button class="nb" id="lbp2" aria-label="Previous">‹</button><button id="lbh" class="on">Hole photo</button><button id="lbs">Scorecard</button><button class="nb" id="lbn2" aria-label="Next">›</button></div><div class="cap" id="lbc"></div><div class="rot">Turn your phone sideways for a bigger scorecard</div></div>
+<div class="bar"><button class="nb" id="lbp2" aria-label="Previous">‹</button><button id="lbh" class="on">Hole photo</button><button id="lbs">Scorecard</button><button class="nb" id="lbn2" aria-label="Next">›</button><button id="lbfull">⤢ Full screen</button><button id="lbclose">Close ✕</button></div><div class="cap" id="lbc"></div><div class="rot">Tap Full screen, then turn your phone sideways or pinch to zoom</div></div>
 
 <button id="toTabs" aria-label="Back to tabs">↑ Tabs</button><div class="tip" id="tip"></div>
 <script>
@@ -392,7 +393,7 @@ document.getElementById('lbp').onclick=e=>{e.stopPropagation();step(-1)};documen
 document.getElementById('lbp2').onclick=()=>step(-1);document.getElementById('lbn2').onclick=()=>step(1);
 document.getElementById('lbh').onclick=()=>{sc=false;paint()};document.getElementById('lbs').onclick=()=>{sc=true;paint()};
 document.getElementById('lbfr').addEventListener('click',e=>{if(!e.target.closest('.nv')){sc=!sc;paint()}});
-const closeLB=()=>lb.classList.remove('on');document.getElementById('lbx').onclick=closeLB;lb.addEventListener('click',e=>{if(e.target===lb)closeLB()});
+const closeLB=()=>lb.classList.remove('on');document.getElementById('lbx').onclick=closeLB;document.getElementById('lbclose').onclick=closeLB;['lbx','lbclose'].forEach(id=>document.getElementById(id).addEventListener('touchend',e=>{e.preventDefault();closeLB()}));document.getElementById('lbfull').onclick=()=>{const o=R[cur],id=sc?o.b:o.t;if(!id)return;window.open(id.startsWith('LOCAL:')?D.local[id]:`https://static.wixstatic.com/media/588d17_${id}~mv2.jpg/v1/fit/w_2400,h_2400,q_90/s.jpg`,'_blank')};lb.addEventListener('click',e=>{if(e.target===lb)closeLB()});
 addEventListener('keydown',e=>{if(!lb.classList.contains('on'))return;if(e.key==='Escape')closeLB();if(e.key==='ArrowLeft')step(-1);if(e.key==='ArrowRight')step(1);if(e.key===' '||e.key==='ArrowUp'||e.key==='ArrowDown'){e.preventDefault();sc=!sc;paint()}});
 let sx=null;lb.addEventListener('touchstart',e=>{sx=e.touches[0].clientX},{passive:true});lb.addEventListener('touchend',e=>{if(sx===null)return;const dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>50)step(dx<0?1:-1);sx=null});
 
