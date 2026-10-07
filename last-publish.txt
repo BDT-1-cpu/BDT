@@ -1,2 +1,2 @@
-Last published 2026-10-07: Courses scorecard viewer - Full screen and Close buttons.
+Last published 2026-10-07: on phones, Trophies/Statistics sub-page buttons scroll to their heading.
 (Edited through the GitHub website/API to start a GitHub Pages publish - see README.)
