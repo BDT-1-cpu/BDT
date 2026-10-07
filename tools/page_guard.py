@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Adds (or refreshes) the guard at the top of every site page:
   - <meta name="robots" content="noindex, nofollow"> so search engines don't list the GitHub copies;
-  - a small script that, when a page is opened on its own (not inside bigdogstour.com or the app),
-    stops it and shows a short "go to www.bigdogstour.com" note instead.
+  - a small script that, when a page is opened on its own (not inside bigdogstour.com, and not in the BDT app,
+    which loads the pages directly and marks itself "BDTApp"), stops it and shows a short note instead.
 The phone results page (scorer.html) only gets the noindex tag, since it is opened directly on a phone.
     python3 tools/page_guard.py            (run from the repository folder; safe to run again)"""
 import glob, os, re, sys
@@ -15,7 +15,8 @@ NOTE = ('<head><meta charset="utf-8"><meta name="viewport" content="width=device
         'padding:24px;box-sizing:border-box"><p>This page is part of the Big Dogs Tour website.<br>'
         '<a style="color:#F0C566" href="https://www.bigdogstour.com">Go to www.bigdogstour.com</a></p></body>')
 GUARD = ('<script id="bdt-guard">(function(){var alone;try{alone=window.top===window.self}catch(e){alone=false}'
-         "if(!alone||location.protocol==='file:'||/^(localhost|127\\.|\\[::1\\])/.test(location.hostname))return;"
+         "if(!alone||/BDTApp/.test(navigator.userAgent)||location.protocol==='file:'||"
+         "/^(localhost|127\\.|\\[::1\\])/.test(location.hostname))return;"
          "try{window.stop()}catch(e){}document.documentElement.innerHTML='" + NOTE.replace("'", "\\'").replace('<', '\\x3c') +
          "';})();</script>")  # no literal tags inside the script, so builders looking for <title> or <head> aren't confused
 BLOCK = re.compile(r'<meta name="robots" content="noindex, nofollow">(<script id="bdt-guard">.*?</script>)?', re.S)
