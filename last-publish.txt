@@ -1,2 +1,2 @@
-Last published 2026-10-07: after the history rewrite (old versions with dates of birth removed) and repository tidy-up.
+Last published 2026-10-07: Courses scorecard viewer - Full screen and Close buttons.
 (Edited through the GitHub website/API to start a GitHub Pages publish - see README.)
