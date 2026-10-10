@@ -1,2 +1,2 @@
-Last published 2026-10-07: pages open directly in the iPhone app (page guard allows the app).
+Last published 2026-10-10: Courses Full screen opens the app's photo viewer.
 (Edited through the GitHub website/API to start a GitHub Pages publish - see README.)
