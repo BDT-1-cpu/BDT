@@ -1,2 +1,2 @@
-Last published 2026-10-11: Dog Spots loads its own photo list when opened in the app.
+Last published 2026-10-11: inside Wix, the mouse wheel stays in the page at its top or bottom.
 (Edited through the GitHub website/API to start a GitHub Pages publish - see README.)
