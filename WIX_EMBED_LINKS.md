@@ -4,6 +4,17 @@ Each Wix page has one Embed HTML box. To switch it to the hosted page: click the
 
 On the Dog Spots page keep the box ID `dogSpotsHtml` (only change its mode), so the page code can still send it the photos.
 
+## Wix layout settings (desktop, October 2026)
+
+- **Box size:** 1300 wide, centred; height to suit the screen (about 620 for small laptops, up to about 820 on a large monitor), the same on every page.
+- **Page bottom:** just below the box (5–10 px gap, never overlapping it, or the scroll bar's bottom arrow is hidden). The Wix page then has no scroll bar of its own; only the page inside the box scrolls.
+- **Page background:** `#050B09` on all pages (Page Background → Color → Apply to Other Pages). Optional team colours: Bloodhounds `#0D0202`, Retrievers `#02030A`.
+- **Strips behind the boxes:** opacity 0% (or `#050B09`).
+- **Footer:** fill opacity 0%, so each page's own background shows through.
+- After a change, open the site in a **new tab**; browsers keep the page inside the box for up to 10 minutes.
+
+The pages themselves add the dark and gold scroll bar and stop the mouse wheel spilling into the Wix page (see `tools/page_guard.py`).
+
 | Wix page | Link to paste |
 | --- | --- |
 | Home | https://bdt-1-cpu.github.io/BDT/Home.html |
