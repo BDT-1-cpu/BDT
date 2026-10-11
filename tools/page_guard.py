@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Adds (or refreshes) the guard at the top of every site page:
   - <meta name="robots" content="noindex, nofollow"> so search engines don't list the GitHub copies;
-  - a small script that keeps the mouse wheel inside the page when it is shown inside the Wix page, and,
+  - a small script that keeps the mouse wheel inside the page and styles its scroll bars when it is shown inside the Wix page, and,
     when a page is opened on its own (not inside bigdogstour.com, and not in the BDT app,
     which loads the pages directly and marks itself "BDTApp"), stops it and shows a short note instead.
 The phone results page (scorer.html) only gets the noindex tag, since it is opened directly on a phone.
@@ -18,10 +18,17 @@ NOTE = ('<head><meta charset="utf-8"><meta name="viewport" content="width=device
 # Inside the Wix page: once the page's own scroll reaches the top or bottom, stop the mouse wheel or finger
 # carrying on into the Wix page around it (only while the page is taller than its box, so a short page still
 # lets the Wix page scroll).
-CONTAIN = ("if(!alone){var f=function(){var d=document.documentElement,b=document.body,"
+# ...and gives its scroll bars the site's dark and gold look, so the box doesn't look like a separate window.
+BARS = ('html{scrollbar-width:thin;scrollbar-color:#C9A24A #0B1410}'
+        '::-webkit-scrollbar{width:10px;height:10px}::-webkit-scrollbar-track,::-webkit-scrollbar-corner{background:#0B1410}'
+        '::-webkit-scrollbar-thumb{background:#C9A24A;border-radius:6px;border:2px solid #0B1410}'
+        '::-webkit-scrollbar-thumb:hover{background:#F0C566}')
+CONTAIN = ("if(!alone){var st=document.createElement('style');st.id='bdt-bars';st.textContent='" + BARS + "';"
+           "(document.head||document.documentElement).appendChild(st);"
+           "var f=function(){var d=document.documentElement,b=document.body,"
            "v=d.scrollHeight>innerHeight+2?'contain':'';d.style.overscrollBehaviorY=v;if(b)b.style.overscrollBehaviorY=v};"
            "addEventListener('load',f);addEventListener('resize',f);document.addEventListener('DOMContentLoaded',"
-           "function(){f();try{new ResizeObserver(f).observe(document.body)}catch(e){}});return}")
+           "function(){(document.head||document.documentElement).appendChild(st);f();try{new ResizeObserver(f).observe(document.body)}catch(e){}});return}")
 GUARD = ('<script id="bdt-guard">(function(){var alone;try{alone=window.top===window.self}catch(e){alone=false}' +
          CONTAIN +
          "if(/BDTApp/.test(navigator.userAgent)||location.protocol==='file:'||"
