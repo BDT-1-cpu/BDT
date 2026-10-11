@@ -25,7 +25,7 @@ This repository is the **master copy of every page on www.bigdogstour.com**. Rea
 | Master Playbook | Paul's desktop | Private. Send it to Claude when it needs updating. |
 | iPhone app | `BDT-1-cpu/bigdogstour-app` repository | A wrapper that shows the website. Only needs a new build when the app itself changes. |
 | Dog Spots photos | Wix Media Manager | The list is cached in `dogspots.json`; refresh with `node tools/refresh_dogspots.js` after adding photos. |
-| Dog Spots page code | Wix (Dev Mode) | Copies are in `dog_spots_page_code.js` (page) and `dog_spots_backend_code.js` (backend `dogSpots.web.js`). |
+| Dog Spots page code | Wix (Dev Mode) | Copies are in `dog_spots_page_code.js` (page) and `dog_spots_backend_code.js` (backend `dogSpots.web.js`) and `dog_spots_http_function.js` (backend `http-functions.js`, which serves the same list at bigdogstour.com/_functions/dogSpots for the app). |
 
 ## Page files
 | Wix page | File |

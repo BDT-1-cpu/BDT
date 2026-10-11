@@ -187,9 +187,11 @@ try{var c0=localStorage.getItem(CK);if(c0)receive(JSON.parse(c0),true)}catch(e){
 // a saved copy of the gallery list on GitHub Pages shows the photos straight away on a first visit;
 // the Wix page's own (slower) list replaces it when it arrives, so new photos still appear
 try{fetch('https://bdt-1-cpu.github.io/BDT/dogspots.json',{cache:'no-cache'}).then(function(r){return r.ok?r.json():null}).then(function(d){if(d&&!cats.length)receive(d,true)}).catch(function(){})}catch(e){}
+// opened directly (the iPhone app): no Wix page around it to send the list, so fetch it from the site
+if(window.parent===window){try{fetch('https://www.bigdogstour.com/_functions/dogSpots',{cache:'no-cache'}).then(function(r){return r.ok?r.json():null}).then(function(d){if(d&&!d.error&&d.categories&&d.categories.length){var q=new URLSearchParams(location.search).get('category');if(q)d.start=q;receive(d)}}).catch(function(){})}catch(e){}}
 ask();var tries=0,t=setInterval(function(){if(got||++tries>40)return clearInterval(t);ask()},tries<10?250:1000);
 document.addEventListener('DOMContentLoaded',ask);
-setTimeout(function(){if(!got)$('hint').textContent='The Dog Spots gallery loads on bigdogstour.com.'},16000);
+setTimeout(function(){if(!got&&!cats.length)$('hint').textContent='The Dog Spots gallery loads on bigdogstour.com.'},16000);
 window.__dogspots=receive;
 })();
 </script></body></html>
