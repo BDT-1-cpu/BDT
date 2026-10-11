@@ -43,7 +43,7 @@ TEMPLATES = ['tour_page_template.html', 'tours_page_template.html', 'home_templa
 def guard(s, name):
     s = BLOCK.sub('', s)
     add = META + ('' if name in SKIP_GUARD else GUARD)
-    m = re.search(r'<head[^>]*>', s, re.I)
+    m = re.search(r'<head(\s[^>]*)?>', s, re.I)   # not <header>
     if m:
         return s[:m.end()] + add + s[m.end():]
     m = re.search(r'<meta charset[^>]*>', s, re.I)
