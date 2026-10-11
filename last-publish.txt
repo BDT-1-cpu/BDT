@@ -1,2 +1,2 @@
-Last published 2026-10-10: Courses Full screen opens the app's photo viewer.
+Last published 2026-10-11: Dog Spots loads its own photo list when opened in the app.
 (Edited through the GitHub website/API to start a GitHub Pages publish - see README.)
