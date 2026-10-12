@@ -123,7 +123,7 @@ T.forEach((t,i)=>t.n=i+1);
 /* featured = latest */
 (function(){const t=T[T.length-1];const r=res(t);const f=document.getElementById('feat');f.href=href(t);
   f.innerHTML=`<img src="${IMG(t.img,1600,700)}" alt=""><div class="in"><span class="tag">Latest tour · ${ord(t.n)} Big Dogs Tour</span><div class="yr">${t.y}</div><div class="loc">${FLAG(t.flag)}<span>${esc(t.loc)}</span></div>
-  <div class="meta">${t.rc?`<span class="chip ${r.cls}">${esc(r.txt)} · ${esc(t.rc.bh)}–${esc(t.rc.rt)}</span>`:''}${t.bigdog.map(b=>`<span class="chip">${b.h?`<img class="av" src="${b.h}" alt="">`:''}Big Dog: ${esc(b.n)}</span>`).join('')}</div><span class="go">View the ${t.y} tour →</span></div>`})();
+  <div class="meta">${t.rc?`<span class="chip ${r.cls}">${esc(r.txt)} · ${r.cls==='RT'?`${esc(t.rc.rt)}–${esc(t.rc.bh)}`:`${esc(t.rc.bh)}–${esc(t.rc.rt)}`}</span>`:''}${t.bigdog.map(b=>`<span class="chip">${b.h?`<img class="av" src="${b.h}" alt="">`:''}Big Dog: ${esc(b.n)}</span>`).join('')}</div><span class="go">View the ${t.y} tour →</span></div>`})();
 /* stats */
 (function(){const rc=T.filter(t=>t.rc);
   // cups count wins and retentions (a halved Ryder Cup is kept by the holders), as on Home and in the Playbook
