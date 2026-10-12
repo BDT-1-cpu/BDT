@@ -1,2 +1,2 @@
-Last published 2026-10-12: team page headings fit on iPhones; Trivia debutant/captain rings in team colours; Stash stats capitalised.
+Last published 2026-10-12: Statistics > Ryder Cup Records gains a Toughest To Beat table.
 (Edited through the GitHub website/API to start a GitHub Pages publish - see README.)
