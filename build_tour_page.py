@@ -162,6 +162,8 @@ def main():
         if r[0] != Y or not r[1]:
             continue
         sc = [r[2], r[3], r[4]]
+        if not any(isinstance(v, (int, float)) for v in sc) and r[5] in (None, '') and 'cap only' in str(r[6] or ''):
+            continue   # on tour but didn't play (e.g. Robbo 2014, Buzz 2024): counts as a cap, not in the leaderboard
         indiv.append({'p': r[1], 'r': sc, 'tot': r[7] if isinstance(r[7], (int, float)) else None, 'pos': r[5], 'team': r[8] or team_of.get(r[1], '')})
     indiv.sort(key=lambda x: (x['pos'] if isinstance(x['pos'], (int, float)) else 998 if x['pos'] else 999, -(x['tot'] or 0)))  # MC after the placed players
     # a round nobody has a score for (e.g. 2012 Round III, rained off): show the real total of the rounds
