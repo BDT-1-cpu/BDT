@@ -328,7 +328,7 @@ select,input[type=search],input[type=text]{background:#0f2219 !important;color:#
 .seg{background:#10261c !important}
 .seg.on{background:linear-gradient(100deg,#F0C566,#C99A3D) !important;color:#14210F !important}
 .cf{background:#10261c !important}
-.cf-av{background:#10261c !important;border:4px solid rgba(240,197,102,.2) !important}
+.cf-av{background:#10261c !important;border-style:solid;border-color:rgba(240,197,102,.2)}
 .tcard{background:#10261c !important;border-top:5px solid rgba(240,197,102,.2) !important}
 .tname{color:#A9BAAE !important}
 .why{color:#A9BAAE !important}
@@ -583,7 +583,7 @@ function drawMap(){const M=MAP[mapView];const byV={};[...EARLYD,...asc].forEach(
 document.getElementById('mtog').onclick=e=>{if(e.target.dataset.m){mapView=e.target.dataset.m;drawMap()}};drawMap();
 /* captain face-offs */
 const cfSeen={};document.getElementById('cfc').innerHTML=asc.map(d=>{const cb=d.bp.find(p=>p.c),cr=d.rp.find(p=>p.c);const pk=cb.n+'|'+cr.n,prev=cfSeen[pk]||[];cfSeen[pk]=prev.concat(d.y);
- const side=(p,t)=>{const k=t[0],held=d.hold===t,ring=held?col(t):'#ccc';return `<div class="cf-side ${k==='R'?'rt':''}"><div class="cf-av" style="border-color:${ring};${held?'':'filter:grayscale(.7);opacity:.75'}">${HEAD[p.n]?`<img loading="lazy" decoding="async" src="${HEAD[p.n]}" alt="">`:''}</div><div><div class="ab" style="font-size:16px">${p.n}</div><div class="${k}" style="font-weight:700;font-size:12px">${t}${held?(d.res===t?' · WON':' · RETAINED'):''}</div></div></div>`};
+ const side=(p,t)=>{const k=t[0],held=d.hold===t,ring=held?col(t):'rgba(240,197,102,.25)';return `<div class="cf-side ${k==='R'?'rt':''}"><div class="cf-av" style="border-color:${ring};${held?'':'filter:grayscale(.7);opacity:.75'}">${HEAD[p.n]?`<img loading="lazy" decoding="async" src="${HEAD[p.n]}" alt="">`:''}</div><div><div class="ab" style="font-size:16px">${p.n}</div><div class="${k}" style="font-weight:700;font-size:12px">${t}${held?(d.res===t?' · WON':' · RETAINED'):''}</div></div></div>`};
  return `<div class="cf" onclick="openYear(${d.y})">${side(cb,'Bloodhounds')}<div class="cf-mid"><div class="ab" style="font-size:24px">${d.y}</div><div class="chip" style="font-size:15px;margin:4px 0">${chip(d)}</div><div style="font-size:11px;color:#888;font-weight:600">${d.venue}</div>${prev.length?`<span class="rematch" title="Also captained against each other in ${prev.join(', ')}">REMATCH OF ${prev.join(', ')}</span>`:''}</div>${side(cr,'Retrievers')}</div>`}).join('');
 /* destinations */
 (function(){const byV={};[...EARLYD,...asc].forEach(d=>(byV[d.venue]=byV[d.venue]||[]).push(d));
@@ -785,11 +785,11 @@ document.getElementById('toTabs').onclick=()=>{const tb=document.getElementById(
   const mx=Math.max(...yrs.map(y=>byY[y].length)),big=yrs.filter(y=>byY[y].length===mx);
   const drinks=ST.filter(s=>s.c==='drink').length;
   document.getElementById('stk').innerHTML=[
-   [ST.length,'items of stash handed out'],
-   [yrs.length,`tours with stash, ${yrs[0]} to ${yrs[yrs.length-1]}`],
-   [mx,'items in the biggest haul: '+big.map(y=>`${y} ${ven(y)}`).join(' and ')],
+   [ST.length,'Items of stash handed out'],
+   [yrs.length,`Tours with stash, ${yrs[0]} to ${yrs[yrs.length-1]}`],
+   [mx,'Items in the biggest haul: '+big.map(y=>`${y} ${ven(y)}`).join(' and ')],
    [top[1],`${CATS[top[0]]} items, the most common kind`],
-   [drinks,'items to keep the drinks cold or close']
+   [drinks,'Items to keep the drinks cold or close']
   ].map(([v,k])=>`<div><div class="v">${v}</div><div class="k">${k}</div></div>`).join('');
   document.getElementById('stcat').innerHTML=`<button data-c="all">All <i>${ST.length}</i></button>`+Object.keys(CATS).map(c=>`<button data-c="${c}">${CATS[c]} <i>${cc[c]||0}</i></button>`).join('')})();
  const card=(s,cap)=>`<figure class="sti" data-i="${s.i}"><div class="simg" onclick="stZoom(${s.i},this)"><img loading="lazy" decoding="async" src="${url(s.ids[0])}" alt="${s.n}, ${s.y}"><span class="stcat">${CATS[s.c]}</span>${s.alts?`<button class="stalt" onclick="event.stopPropagation();stAlt(${s.i},this)">${s.alts[0]} ↻</button>`:''}</div><figcaption>${cap}</figcaption></figure>`;
