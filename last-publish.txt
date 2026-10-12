@@ -1,2 +1,2 @@
-Last published 2026-10-12: team pages explain players are listed in order of caps.
+Last published 2026-10-12: caps include non-playing visits (Robbo 2014, Buzz 2024).
 (Edited through the GitHub website/API to start a GitHub Pages publish - see README.)
