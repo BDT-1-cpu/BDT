@@ -67,7 +67,9 @@ The Playbook's Placings sheet has year columns up to 2027 – before the 2028 to
 - Charlie Parish's 2005 handicap is 26. Robbo's 9 and Paddy's 48 (both 2003 Round I, La Manga North) are the only 2003 scores.
 - On desktop, switching tabs or tiles changes the content without scrolling the page.
 - Every page uses the dark clubhouse style; non-selected tabs and sub-tabs have off-white text.
-- Mobile: Wix embed boxes are 560px high (section 580px); desktop boxes about 760px.
+- Wix layout: see the settings in `WIX_EMBED_LINKS.md` (desktop boxes 1300 wide, page background `#050B09`, footer 0% opacity).
+- Ryder Cup scores: usually Bloodhounds first, but where a line says a team won ("Retrievers win · …"), the winner's score comes first.
+- Ryder Cup tally counts wins plus retentions (12–11 to the Retrievers after 2026).
 
 ## Working on the site with Claude
 - **Claude Code (cloud):** start a session with this repository (and `bigdogstour-app` for the app). Ask for the change;
