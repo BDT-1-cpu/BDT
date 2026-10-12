@@ -154,6 +154,30 @@ def rc_players(book):
     return out
 
 
+TOUGHEST = 'TOUGHEST TO BEAT – Lowest loss % - Both teams'
+
+
+def toughest(book, top=15, min_tours=3):
+    """Lowest share of Ryder Cup matches lost (fourballs and singles, both teams combined), min. 3 tours.
+    Ties share a rank and are listed alphabetically."""
+    g = book.g['RC Players']
+    hdr = next(i for i, r in enumerate(g) if norm(r[0]) == 'Name' and norm(r[1]) == 'Player')
+    rows = []
+    for r in g[hdr + 1:]:
+        if norm(r[0]) == '':
+            break
+        tours, played, won, lost, halved = (norm(r[c]) for c in range(36, 41))
+        if isinstance(played, (int, float)) and played and isinstance(tours, (int, float)) and tours >= min_tours:
+            rows.append([round(lost / played * 100, 1), norm(r[1]), tours, played, won, lost, halved])
+    rows.sort(key=lambda x: (x[0], str(x[1]).lower()))
+    out, rank = [], 0
+    for i, (pct, name, tours, played, won, lost, halved) in enumerate(rows[:top]):
+        if i == 0 or pct != rows[i - 1][0]:
+            rank = i + 1
+        out.append([rank, name, f'{pct:.1f}%', played, lost, won, halved, tours])
+    return out
+
+
 def big_dogs_ryder_cup(book):
     rc = book.g['RC Results']
     rs = {norm(r[0]): r for r in book.g['Results Summary'] if isinstance(norm(r[0]), int)}
@@ -272,6 +296,15 @@ def rebuild_page(page, book, spec):
                 if key == 'Green Jacket':
                     rows = countback_notes(book, rows)
                 block['rows'] = rows
+    rec = W['sheets'].get('RC Records')
+    if rec is not None:
+        blk = next((b for b in rec['blocks'] if b.get('label') == TOUGHEST), None)
+        if blk is not None:
+            blk['headers'] = ['Rank', 'Player', 'Loss %', 'Played', 'Lost', 'Won', 'Halved', 'Tours']
+        if blk is None:   # added at the end so the block numbers in the spec stay put; the page orders the tables
+            blk = {'label': TOUGHEST, 'headers': ['Rank', 'Player', 'Loss %', 'Played', 'Lost', 'Won', 'Halved', 'Tours']}
+            rec['blocks'].append(blk)
+        blk['rows'] = toughest(book)
     if 'dashboard' in W:
         W['dashboard'] = dashboard(book)
     if 'trophyCloseness' in W:
