@@ -81,7 +81,8 @@ let loadNote='';
    #z.<base64url of deflate-compressed JSON>; no # gives a blank form for a new player */
 async function readLink(){
  const h=location.hash.slice(1);
- if(!h.startsWith('z.'))return null;
+ const name=new URLSearchParams(location.search).get('n');   // ?n=Bean: the name, also there in case the # part gets lost
+ if(!h.startsWith('z.'))return name?{n:name,a:{}}:null;
  const b=atob(h.slice(2).replace(/-/g,'+').replace(/_/g,'/'));
  const s=new Blob([Uint8Array.from(b,c=>c.charCodeAt(0))]).stream().pipeThrough(new DecompressionStream('deflate-raw'));
  return JSON.parse(await new Response(s).text());
@@ -192,6 +193,10 @@ async function copy(){const text=message();
  try{await navigator.clipboard.writeText(text)}catch(e){const t=document.createElement('textarea');t.value=text;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove()}
  toast('Copied – paste it into WhatsApp to Paul')}
 function toast(t){const e=$('toast');e.textContent=t;e.classList.add('on');setTimeout(()=>e.classList.remove('on'),1800)}
+
+/* a phone can open another player's link in a tab that already has the form open, changing only the
+   part after the # without reloading: start again from the new link */
+addEventListener('hashchange',()=>location.reload());
 
 (async()=>{
  try{const d=await readLink();if(d){P.n=d.n||'';P.a=d.a||{}}}
