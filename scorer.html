@@ -13,7 +13,7 @@
 html,body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
 header{position:sticky;top:0;z-index:5;background:#081310;border-bottom:1px solid var(--line);padding:10px 14px calc(8px) 14px}
 header h1{margin:0;font-size:18px;letter-spacing:.04em;color:var(--gold)}
-header .sub{font-size:12.5px;color:var(--soft)}
+header .sub{font-size:12.5px;color:var(--soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .score{float:right;font-weight:800;font-size:18px;margin-top:2px}.score .b{color:var(--bh)}.score .r{color:var(--rt)}
 nav{display:flex;gap:6px;overflow-x:auto;padding:8px 14px;background:#081310;border-bottom:1px solid var(--line);position:sticky;top:58px;z-index:4;scrollbar-width:none}
 nav button{flex:none;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:8px 14px;font:600 14px inherit;font-family:inherit}
@@ -46,6 +46,8 @@ textarea{min-height:70px}
 .chips button.on{background:var(--gold);color:#111}
 .chips button.pc{background:var(--card2)}.chips button.pc.b{color:#ff8a8a}.chips button.pc.r{color:#aab6ff}
 .chips button.sug{background:transparent;border-style:dashed;color:var(--soft)}
+.wr{display:grid;grid-template-columns:84px 1fr auto;gap:8px;align-items:center;margin-top:6px}.wr>span{font-weight:700;overflow-wrap:anywhere}
+.pw{display:flex;align-items:center;padding:8px 2px;font-weight:700;border-bottom:1px solid rgba(255,255,255,.05)}
 .sc{display:grid;grid-template-columns:1fr 84px;gap:8px;align-items:center;padding:4px 0}
 .sc input{text-align:center;font-weight:700}
 .b{color:var(--bh)}.r{color:var(--rt)}
@@ -195,22 +197,36 @@ const freshSugg=(st,t,i)=>{const w=wItem(st,t);return sugg(t,i).filter(s=>!s.p.e
 // a trophy marked as won stays won on that day and every day after, and fills in on the Final tab
 const SNAME={d1:'Day I',r1:'Round I',r2:'Round II',r3:'Round III'};
 function decidedAt(t,st){const D=S.decided[t];return D&&STG.indexOf(D.stage)<=STG.indexOf(st)?D:null}
+// each contender has a note of their own
+const wNote=(w,n)=>(w.notes&&w.notes[n])||'';
+const rowsOf=w=>w.p.map(n=>({n,note:wNote(w,n)}));
+const rowTxt=rows=>rows.map(r=>r.note?`${r.n} (${r.note})`:r.n).join(', ');
+let PICK=null;   // 'stage|trophy' while choosing who won
 function watchHTML(st,list,i){const P=players().slice().sort();return list.map(t=>{const w=wItem(st,t),sg=freshSugg(st,t,i),d=(TROPHIES.find(x=>x[0]===t)||[])[1],D=decidedAt(t,st);
  const top=`<b>${esc(t)}</b>${d?`<span class="hint"> · ${esc(d)}</span>`:''}`;
  if(D)return `<div class="card tw" data-t="${esc(t)}">${top}<div style="margin-top:6px;color:var(--ok);font-weight:700">Won by ${esc(D.p.join(' & '))} <span class="hint">· decided ${SNAME[D.stage]}</span></div>
-  ${D.note?`<div class="hint">${esc(D.note)}</div>`:''}<button class="btn del" data-wundo style="margin-top:6px">Undo – not decided yet</button></div>`;
+  ${D.p.filter(n=>wNote(D,n)).map(n=>`<div class="hint">${esc(n)}: ${esc(wNote(D,n))}</div>`).join('')}<button class="btn del" data-wundo style="margin-top:6px">Undo – not decided yet</button></div>`;
+ if(PICK===st+'|'+t)return `<div class="card tw" data-t="${esc(t)}">${top}<p class="hint">Who won it? Tick more than one if it's shared.</p>
+  ${w.p.map(n=>`<label class="pw"><input type="checkbox" data-pw="${esc(n)}" style="width:auto;margin:0 10px 0 0"><span class="${tcls(n)}">${esc(n)}</span></label>`).join('')}
+  <div class="shbar"><button class="btn small" data-pwok>Confirm</button><button class="btn sec small" data-pwx>Cancel</button></div></div>`;
  return `<div class="card tw" data-t="${esc(t)}">${top}
- <div class="chips">${w.p.map(n=>`<button class="pc ${tcls(n)}" data-wdel="${esc(n)}">${esc(n)} ✕</button>`).join('')}${sg.map((s,k)=>`<button class="sug" data-wsug="${k}">+ ${esc(s.l)}</button>`).join('')}</div>
- <select data-wadd style="margin-top:6px"><option value="">Add a contender…</option>${P.filter(n=>!w.p.includes(n)).map(n=>`<option>${esc(n)}</option>`).join('')}</select>
- <input data-wnote placeholder="Note – why they're in it" value="${esc(w.note)}" style="margin-top:6px">
- ${!AUTO_T.includes(t)&&w.p.length?`<button class="btn sec small" data-wwon style="margin-top:6px">✓ Mark as won by ${esc(w.p.join(' & '))}</button>`:''}</div>`}).join('')}
-function bindWatch(el,st,i,redraw){el.querySelectorAll('.tw').forEach(c=>{const t=c.dataset.t;const it=()=>{const W=editWatch(st);return W[t]||(W[t]={p:[],note:''})};
+ ${w.p.map(n=>`<div class="wr"><span class="${tcls(n)}">${esc(n)}</span><input data-wn="${esc(n)}" placeholder="Why ${esc(n)}?" value="${esc(wNote(w,n))}"><button class="btn del" data-wdel="${esc(n)}" aria-label="Take ${esc(n)} off">✕</button></div>`).join('')}
+ ${sg.length?`<div class="chips">${sg.map((s,k)=>`<button class="sug" data-wsug="${k}">+ ${esc(s.l)}</button>`).join('')}</div>`:''}
+ <select data-wadd style="margin-top:8px"><option value="">Add a contender…</option>${P.filter(n=>!w.p.includes(n)).map(n=>`<option>${esc(n)}</option>`).join('')}</select>
+ ${!AUTO_T.includes(t)&&w.p.length?`<button class="btn sec small" data-wwon style="margin-top:8px">✓ Mark as won…</button>`:''}</div>`}).join('')}
+function bindWatch(el,st,i,redraw){el.querySelectorAll('.tw').forEach(c=>{const t=c.dataset.t;const it=()=>{const W=editWatch(st);const x=W[t]||(W[t]={p:[]});if(!x.notes)x.notes={};return x};
  const on=(q,ev,f)=>{const x=c.querySelector(q);if(x)x[ev]=f};
- c.querySelectorAll('[data-wdel]').forEach(b=>b.onclick=()=>{const x=it();x.p=x.p.filter(n=>n!==b.dataset.wdel);save();redraw()});
- c.querySelectorAll('[data-wsug]').forEach(b=>b.onclick=()=>{const s=freshSugg(st,t,i)[+b.dataset.wsug];if(!s)return;const x=it();s.p.forEach(n=>{if(!x.p.includes(n))x.p.push(n)});save();redraw()});
- on('[data-wadd]','onchange',e=>{const n=e.target.value;if(!n)return;const x=it();x.p.push(n);save();redraw()});
- on('[data-wnote]','onchange',e=>{it().note=e.target.value.trim();save()});
- on('[data-wwon]','onclick',()=>{const n=c.querySelector('[data-wnote]');if(n)it().note=n.value.trim();const x=it();S.decided[t]={p:x.p.slice(),note:x.note,stage:st};save();redraw()});
+ // save any half-typed notes before the card is redrawn
+ const keep=()=>c.querySelectorAll('[data-wn]').forEach(x=>{const v=x.value.trim();if(v!==wNote(wItem(st,t),x.dataset.wn))it().notes[x.dataset.wn]=v});
+ const decide=W=>{const x=it(),notes={};W.forEach(n=>{if(wNote(x,n))notes[n]=wNote(x,n)});
+  S.decided[t]={p:W,notes,note:W.length===1?notes[W[0]]||'':W.filter(n=>notes[n]).map(n=>`${n}: ${notes[n]}`).join('; '),stage:st};PICK=null;save();redraw()};
+ c.querySelectorAll('[data-wn]').forEach(x=>x.onchange=()=>{it().notes[x.dataset.wn]=x.value.trim();save()});
+ c.querySelectorAll('[data-wdel]').forEach(b=>b.onclick=()=>{keep();const x=it(),n=b.dataset.wdel;x.p=x.p.filter(y=>y!==n);delete x.notes[n];save();redraw()});
+ c.querySelectorAll('[data-wsug]').forEach(b=>b.onclick=()=>{keep();const s=freshSugg(st,t,i)[+b.dataset.wsug];if(!s)return;const x=it();s.p.forEach(n=>{if(!x.p.includes(n))x.p.push(n)});save();redraw()});
+ on('[data-wadd]','onchange',e=>{keep();const n=e.target.value;if(!n)return;const x=it();x.p.push(n);save();redraw()});
+ on('[data-wwon]','onclick',()=>{keep();const x=it();if(x.p.length===1)decide(x.p.slice());else{PICK=st+'|'+t;save();redraw()}});
+ on('[data-pwok]','onclick',()=>{const W=[...c.querySelectorAll('[data-pw]:checked')].map(x=>x.dataset.pw);if(!W.length){alert('Tick who won it first.');return}decide(W)});
+ on('[data-pwx]','onclick',()=>{PICK=null;redraw()});
  on('[data-wundo]','onclick',()=>{if(confirm(`Mark the ${t} as not decided yet?`)){delete S.decided[t];save();redraw()}})})}
 function watchBox(st,list,i){const id='tw-'+st;const rw=()=>{const c=$(id);if(!c)return;c.innerHTML=watchHTML(st,list,i);bindWatch(c,st,i,rw)};return{html:`<div id="${id}">${watchHTML(st,list,i)}</div>`,bind:rw}}
 
@@ -360,7 +376,7 @@ function drawFinish(){
  ${L.map(x=>`<tr><td class="${tcls(x.n)}">${esc(x.n)}</td>${x.s.map(v=>`<td>${v??'–'}</td>`).join('')}<td><b>${x.tot??'–'}</b></td><td><input type="number" inputmode="numeric" data-pos="${esc(x.n)}" value="${S.positions[x.n]??x.sug}"></td></tr>`).join('')}</table></div>
  <h2>Trophies</h2><p class="hint">Big Dog, 2nd, 3rd and Shitzu fill in from the final positions, and the Great Dane and St Bernard from the play-offs – change them if needed. Give the reason for every award; it goes on the website. The last Trophy watch notes are shown as a reminder.</p>
  ${S.trophies.map((t,ti)=>{const w=wItem('r3',t.t);return `<div class="card"><b>${esc(t.t)}</b>${(TROPHIES.find(x=>x[0]===t.t)||[])[1]?`<span class="hint"> · ${esc(TROPHIES.find(x=>x[0]===t.t)[1])}</span>`:''}
-  ${w.p.length||w.note?`<div class="hint">Watch: ${esc(w.p.join(', '))}${w.note?' – '+esc(w.note):''}</div>`:''}
+  ${w.p.length?`<div class="hint">Watch: ${esc(rowTxt(rowsOf(w)))}</div>`:''}
   ${t.w.map((v,wi)=>`<div class="row" style="margin-top:6px"><select data-tw="${ti}" data-wi="${wi}">${opt(v)}</select>${wi?`<button class="btn del" data-twdel="${ti}" data-wi="${wi}">✕</button>`:''}</div>`).join('')}
   <button class="btn sec small" data-twadd="${ti}" style="margin-top:6px">+ Joint winner</button>
   <input data-why="${ti}" placeholder="Reason / story" value="${esc(t.why)}" style="margin-top:6px"></div>`}).join('')}
@@ -379,10 +395,12 @@ function drawFinish(){
 function mline(m){const bh=m.bh.filter(Boolean).join(' & ')||'?',rt=m.rt.filter(Boolean).join(' & ')||'?',h=+m.value===.5?' (½ pt)':'';
  if(m.res==='BH')return`${bh} (BH) beat ${rt} (RT) ${m.margin}${h}`;if(m.res==='RT')return`${rt} (RT) beat ${bh} (BH) ${m.margin}${h}`;
  if(m.res==='H')return`${bh} (BH) halved with ${rt} (RT)${h}`;return`${bh} (BH) v ${rt} (RT) – result to come`}
-function watchLines(st,list,i){return list.map(t=>{const D=decidedAt(t,st);if(D)return{t,names:'Won by '+D.p.join(' & '),note:D.note,won:true};
- const w=wItem(st,t);let names=w.p.join(', ');
- if(!names&&i>=0&&['Big Dog','Shitzu','Great Dane','St Bernard'].includes(t))names=sugg(t,i).map(s=>s.l).join(', ');
- return names||w.note?{t,names,note:w.note}:null}).filter(Boolean)}
+// rows of {n, note} for each trophy worth showing: the winner once decided, otherwise the contenders (or the leaders for the score-based ones)
+function watchLines(st,list,i){return list.map(t=>{const D=decidedAt(t,st);
+ if(D){const one=D.p.length===1;return{t,won:true,rows:[{n:'Won by '+D.p.join(' & '),note:one?wNote(D,D.p[0]):''},...(one?[]:rowsOf(D).filter(r=>r.note))]}}
+ let rows=rowsOf(wItem(st,t));
+ if(!rows.length&&i>=0&&AUTO_T.includes(t))rows=sugg(t,i).map(s=>({n:s.l,note:''}));
+ return rows.length?{t,rows}:null}).filter(Boolean)}
 function compLine(k,i){const [,lab,tro]=COMPS.find(x=>x[0]===k),c=S.comps[k];
  if(i<2){if(S.rounds[i].rainedOff)return'';const w=c[i];return w.w?`${lab}: ${w.w}${w.d?' ('+w.d+')':''}`:''}
  const {q,fin}=compState(k);if(!fin)return q.length===2?`${lab} play-off: ${q[0]} v ${q[1]}`:'';
@@ -390,7 +408,7 @@ function compLine(k,i){const [,lab,tro]=COMPS.find(x=>x[0]===k),c=S.comps[k];
 function textFor(st){const L=[],B=s=>`*${s}*`;
  if(st==='d1'){L.push(B(`BDT ${TOUR.year} ${TOUR.location} – Day I`));L.push(`${TOUR.arrive} · ${TOUR.accommodation}`);L.push('');
   ['BH','RT'].forEach(t=>L.push(`${TN[t]}${S.cap[t]?' (capt. '+S.cap[t]+')':''}: ${squad(t).join(', ')}`));L.push(`${TN[TOUR.holders]} hold the Ryder Cup.`);
-  const W=watchLines('d1',WATCH_D1,-1);if(W.length){L.push('');L.push(B('Trophy watch'));W.forEach(w=>L.push(`${w.t}: ${w.names}${w.note?' – '+w.note:''}`))}}
+  const W=watchLines('d1',WATCH_D1,-1);if(W.length){L.push('');L.push(B('Trophy watch'));W.forEach(w=>L.push(`${w.t}: ${rowTxt(w.rows)}`))}}
  else if(st==='final'){const RL=ranked();autoPlacings(RL);const [b,r]=pts();
   L.push(B(`BDT ${TOUR.year} ${TOUR.location} – final results`));L.push('');
   L.push(b>r?`Bloodhounds win the Ryder Cup ${fr(b)} – ${fr(r)}`:r>b?`Retrievers win the Ryder Cup ${fr(r)} – ${fr(b)}`:`Ryder Cup halved ${fr(b)} – ${fr(r)} – ${TN[TOUR.holders]} retain`);
@@ -403,7 +421,7 @@ function textFor(st){const L=[],B=s=>`*${s}*`;
   if(!R.rainedOff&&R.matches.length){L.push('');L.push(B('Matches'));R.matches.forEach(m=>L.push('• '+mline(m)))}
   const BD=board(i).filter(x=>x.tot!=null);if(BD.length&&!R.rainedOff){L.push('');L.push(B('Leaderboard'));BD.forEach(x=>L.push(`${x.p}. ${x.n} ${x.tot}${x.mv?' '+mvTxt(x.mv):''}`))}
   const C=COMPS.map(([k])=>compLine(k,i)).filter(Boolean);if(C.length){L.push('');C.forEach(c=>L.push(c))}
-  const W=watchLines(st,WATCH_R,i);if(W.length){L.push('');L.push(B('Trophy watch'));W.forEach(w=>L.push(`${w.t}: ${w.names}${w.note?' – '+w.note:''}`))}}
+  const W=watchLines(st,WATCH_R,i);if(W.length){L.push('');L.push(B('Trophy watch'));W.forEach(w=>L.push(`${w.t}: ${rowTxt(w.rows)}`))}}
  const d=(S.diary[st]||'').trim();if(d){L.push('');L.push(d)}
  L.push('');L.push('www.bigdogstour.com');return L.join('\n')}
 
@@ -461,10 +479,16 @@ function bBoard(L,title,cols,lastPos){const n=L.length;if(!n)return null;const r
 function bComps(g0,i){const L=COMPS.map(([k,lab,tro])=>{const t=compLine(k,i);return t?{lab:`${lab.toUpperCase()} · ${tro.toUpperCase()}`,lines:wrapT(g0,t.replace(/^[^:]*:\s*/,''),FB(30,700),CI-60)}:null}).filter(Boolean);
  if(!L.length)return null;const h=84+L.reduce((a,x)=>a+40+x.lines.length*40+10,0);
  return{h,draw(g,y){panel(g,y,h,i===2?'Play-offs':'On-course comps');let yy=y+104;L.forEach(x=>{tx(g,x.lab,CP+30,yy,FB(21,700),K.soft);yy+=40;x.lines.forEach(l=>{tx(g,l,CP+30,yy,FB(30,700),K.ink);yy+=40});yy+=10})}}}
-function bTile(g0,title,desc,names,note,nameCol){const nl=names?wrapT(g0,names,FB(30,700),CI-60):[],tl=note?wrapT(g0,note,FB(27,400),CI-60):[];
- const h=72+nl.length*40+tl.length*36+(nl.length||tl.length?14:0);
+// a trophy tile: one line per person in bold, their note running on after a dash and wrapping underneath
+function bTile(g0,title,desc,rows,nameCol){const L=[],dash=' – ';
+ rows.forEach(r=>{if(!r.note){L.push({n:r.n,t:''});return}g0.font=FB(30,700);const nw=g0.measureText(r.n).width;g0.font=FB(27,400);const first=CI-60-nw-g0.measureText(dash).width;
+  const out=[];let line='';r.note.split(/\s+/).filter(Boolean).forEach(w=>{const t=line?line+' '+w:w;if(g0.measureText(t).width>(out.length?CI-60:first)&&line){out.push(line);line=w}else line=t});if(line)out.push(line);
+  L.push({n:r.n,t:out[0],d:true});out.slice(1).forEach(t=>L.push({n:'',t}))});
+ const h=72+L.length*40+(L.length?14:0);
  return{h,draw(g,y){rr(g,CP,y,CI,h,18,K.panel,K.edge);tx(g,title.toUpperCase(),CP+30,y+50,FH(32),K.gold);g.font=FH(32);const tw=g.measureText(title.toUpperCase()).width;
-  if(desc)fitTx(g,desc,CP+30+tw+16,y+48,22,500,K.soft,'left',CI-tw-90);let yy=y+96;nl.forEach(l=>{tx(g,l,CP+30,yy,FB(30,700),nameCol||K.ink);yy+=40});tl.forEach(l=>{tx(g,l,CP+30,yy,FB(27,400),K.soft);yy+=36})}}}
+  if(desc)fitTx(g,desc,CP+30+tw+16,y+48,22,500,K.soft,'left',CI-tw-90);let yy=y+96;
+  L.forEach(l=>{let x=CP+30;if(l.n){tx(g,l.n,x,yy,FB(30,700),nameCol||K.ink);g.font=FB(30,700);x+=g.measureText(l.n).width}
+   if(l.t){if(l.d){tx(g,dash,x,yy,FB(27,400),K.soft);g.font=FB(27,400);x+=g.measureText(dash).width}tx(g,l.t,x,yy,FB(27,400),K.soft)}yy+=40})}}}
 function bHeading(t){return{h:56,draw(g,y){tx(g,t.toUpperCase(),CP+4,y+46,FH(40),K.gold)}}}
 function bStory(g0,text,title){const lines=wrapT(g0,text,FB(30,400),CI-60),out=[];for(let k=0;k<lines.length;k+=30){const part=lines.slice(k,k+30),h=(k?40:96)+part.length*42+10;
  out.push({h,draw(g,y){panel(g,y,h,k?'':title);let yy=y+(k?62:120);part.forEach(l=>{tx(g,l,CP+30,yy,FB(30,400),K.ink);yy+=42})}})}return out}
@@ -472,14 +496,14 @@ function bTeams(){const B=squad('BH'),R=squad('RT');if(!B.length&&!R.length)retu
  return{h,draw(g,y){panel(g,y,h,'');const c=CW/2;tx(g,'BLOODHOUNDS',CP+30,y+58,FH(36),K.bh);tx(g,'RETRIEVERS',c+16,y+58,FH(36),K.rt);
   [[B,'BH',CP+30],[R,'RT',c+16]].forEach(([L,t,x])=>{let yy=y+110;L.forEach(nm=>{fitTx(g,nm+(S.cap[t]===nm?'  (capt.)':''),x,yy,30,S.cap[t]===nm?700:600,K.ink,'left',c-CP-50);yy+=42})})}}}
 function blocksFor(st,g){const B=[];const ph=PHOTOS[st];if(ph)B.push(bPhoto(ph));
- if(st==='d1'){B.push(bTeams());const W=watchLines('d1',WATCH_D1,-1);if(W.length){B.push(bHeading('Trophy watch'));W.forEach(w=>B.push(bTile(g,w.t,(TROPHIES.find(x=>x[0]===w.t)||[])[1],w.names,w.note,w.won?K.ok:null)))}}
+ if(st==='d1'){B.push(bTeams());const W=watchLines('d1',WATCH_D1,-1);if(W.length){B.push(bHeading('Trophy watch'));W.forEach(w=>B.push(bTile(g,w.t,(TROPHIES.find(x=>x[0]===w.t)||[])[1],w.rows,w.won?K.ok:null)))}}
  else if(st==='final'){const RL=ranked();autoPlacings(RL);B.push(bCup(g,2,true));
   const T=RL.filter(x=>x.tot!=null).sort((a,b)=>(+a.pos||99)-(+b.pos||99)||b.tot-a.tot);const cnt={};T.forEach(x=>cnt[x.pos]=(cnt[x.pos]||0)+1);T.forEach(x=>{x.p=(cnt[x.pos]>1?'T':'')+x.pos;x.mv=null});
   B.push(bBoard(T,'Final positions',['I','II','III'],T.length?Math.max(...T.map(x=>+x.pos)):0));
-  const tr=S.trophies.filter(t=>t.w.some(Boolean));if(tr.length){B.push(bHeading('Trophies'));tr.forEach(t=>B.push(bTile(g,t.t,'',t.w.filter(Boolean).join(' & '),t.why)))}}
+  const tr=S.trophies.filter(t=>t.w.some(Boolean));if(tr.length){B.push(bHeading('Trophies'));tr.forEach(t=>B.push(bTile(g,t.t,'',[{n:t.w.filter(Boolean).join(' & '),note:t.why}])))}}
  else{const i=+st[1]-1;B.push(bCup(g,i));B.push(bMatches(i));const L=board(i);
   if(L.has&&!S.rounds[i].rainedOff)B.push(bBoard(L,`Leaderboard after Round ${RN[i]}`,S.rounds.slice(0,i+1).map((R,k)=>RN[k]),L.last));
-  B.push(bComps(g,i));const W=watchLines(st,WATCH_R,i);if(W.length){B.push(bHeading('Trophy watch'));W.forEach(w=>B.push(bTile(g,w.t,(TROPHIES.find(x=>x[0]===w.t)||[])[1],w.names,w.note,w.won?K.ok:null)))}}
+  B.push(bComps(g,i));const W=watchLines(st,WATCH_R,i);if(W.length){B.push(bHeading('Trophy watch'));W.forEach(w=>B.push(bTile(g,w.t,(TROPHIES.find(x=>x[0]===w.t)||[])[1],w.rows,w.won?K.ok:null)))}}
  const d=(S.diary[st]||'').trim();if(d)B.push(...bStory(g,d,st==='final'?'Last word':'Story of the day'));
  return B.filter(Boolean)}
 function paint(g,H,info,k,n){const bg=g.createLinearGradient(0,0,0,H);bg.addColorStop(0,'#0c1f16');bg.addColorStop(.5,'#07130e');bg.addColorStop(1,'#050B09');g.fillStyle=bg;g.fillRect(0,0,CW,H);
