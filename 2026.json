@@ -517,8 +517,33 @@
   "text": "",
   "link": ""
  },
- "video_sections": [],
+ "video_sections": [
+  {
+   "title": "Preview",
+   "items": [
+    {
+     "vimeo": "1237739279",
+     "title": "BDT 2026 - Time",
+     "thumb": "https://i.vimeocdn.com/video/2214619141-cc665ffc42b456590e32bb5eb326271101ae17d280505bc556ac03b6082e3fc5-d_640?region=us"
+    }
+   ]
+  },
+  {
+   "title": "Review",
+   "items": [
+    {
+     "vimeo": "1237739573",
+     "title": "BDT 2026 - The Tour In Pictures",
+     "thumb": "https://i.vimeocdn.com/video/2214620612-4f99c2d85c47918c15d612bde99a84c41dcffcf7a6cce4cdde1f6d1431ca51bb-d_640?region=us"
+    },
+    {
+     "vimeo": "1237739539",
+     "title": "BDT 2026 - The Stats Update",
+     "thumb": "https://i.vimeocdn.com/video/2214620446-9f2993c60aa5d338185618ec8eb787608257971a42c0e48ae966403003c262eb-d_640?region=us"
+    }
+   ]
+  }
+ ],
  "gallery": [],
- "gallery_placeholder": "The 2026 photos are being sorted and will be added here shortly.",
- "video_placeholder": true
+ "gallery_placeholder": "The 2026 photos are being sorted and will be added here shortly."
 }
