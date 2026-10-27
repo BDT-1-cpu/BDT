@@ -454,6 +454,7 @@
   table.data td.heat-cell.heat-hi{ color:#1A1400; }
   table.data td.heat-cell.heat-win{ box-shadow:inset 0 0 0 2px var(--gold); }
   .empty-row td{ text-align:center; color:var(--ink-dim); padding:18px; font-style:italic; }
+  .filter-empty{ grid-column:1 / -1; text-align:center; color:var(--ink-dim); padding:18px; font-style:italic; }
 
   /* a percentage column shown as a small filled bar instead of bare text -
      opts.barCols in buildTable() (Player Records' "Point %") */
@@ -1469,6 +1470,34 @@ function applyFilter(t){
   t.emptyRow.style.display = shown === 0 ? "" : "none";
 }
 
+// Card visuals (Trophy Cabinet, Closest to a Full Set, rosters, bar lists) aren't tables,
+// so the top filter box hides their cards directly: each card carries the text it
+// matches on in data-filter, and each group of cards shows a note when none match.
+function filterCard(el, text){
+  el.setAttribute('data-filter', text);
+  el.style.display = rowMatches([text], globalFilterValue) ? '' : 'none';
+  return el;
+}
+function filterGroup(el){
+  var note = document.createElement('div');
+  note.className = 'filter-empty';
+  note.textContent = 'Nothing here matches the filter.';
+  el.setAttribute('data-filter-group', '');
+  el.appendChild(note);
+  updateFilterGroup(el);
+  return el;
+}
+function updateFilterGroup(el){
+  var any = [].some.call(el.querySelectorAll('[data-filter]'), function(c){ return c.style.display !== 'none'; });
+  el.querySelector('.filter-empty').style.display = any ? 'none' : '';
+}
+function applyCardFilter(){
+  document.querySelectorAll('[data-filter]').forEach(function(el){
+    el.style.display = rowMatches([el.getAttribute('data-filter')], globalFilterValue) ? '' : 'none';
+  });
+  document.querySelectorAll('[data-filter-group]').forEach(updateFilterGroup);
+}
+
 function buildTable(label, headers, rows, opts){
   opts = opts || {};
   var scoreFormat = !!opts.scoreFormat;
@@ -2016,10 +2045,10 @@ function buildBarList(title, subtitle, items, opts){
     val.className = 'bar-value';
     val.textContent = it.value + (opts.suffix || '');
     row.appendChild(lbl); row.appendChild(track); row.appendChild(val);
-    body.appendChild(row);
+    body.appendChild(filterCard(row, String(it.label)));
     setTimeout(function(){ fill.style.width = pct + '%'; }, 30 + i * 35);
   });
-  card.appendChild(body);
+  card.appendChild(filterGroup(body));
   return card;
 }
 
@@ -2318,9 +2347,9 @@ function buildPlayerRosterVisual(sh){
     body.appendChild(stats);
 
     card.appendChild(body);
-    wrap.appendChild(card);
+    wrap.appendChild(filterCard(card, [display, real, joinName].join(' ')));
   });
-  return wrap;
+  return filterGroup(wrap);
 }
 
 function buildTrophyCabinetVisual(){
@@ -2408,9 +2437,9 @@ function buildTrophyClosenessVisual(){
       grid.appendChild(slot);
     });
     card.appendChild(grid);
-    wrap.appendChild(card);
+    wrap.appendChild(filterCard(card, p.player));
   });
-  return wrap;
+  return filterGroup(wrap);
 }
 
 // "Stableford Explorer" - a visual companion to the plain Stableford tables: a
@@ -3932,9 +3961,10 @@ function init(){
   gf.addEventListener('input', function(){
     globalFilterValue = gf.value;
     allTables.forEach(applyFilter);
+    applyCardFilter();
   });
   document.getElementById('clearFilter').addEventListener('click', function(){
-    gf.value = ""; globalFilterValue = ""; allTables.forEach(applyFilter);
+    gf.value = ""; globalFilterValue = ""; allTables.forEach(applyFilter); applyCardFilter();
   });
 
   var menubtn = document.getElementById('menubtn');
