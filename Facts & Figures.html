@@ -378,6 +378,12 @@ select,input[type=search],input[type=text]{background:#0f2219 !important;color:#
 .styears .sp4{grid-column:span 4}.styears .sp4 .kgrid{grid-template-columns:repeat(4,minmax(0,1fr)) !important}
 @media(max-width:900px){.styears{grid-template-columns:repeat(2,minmax(0,1fr))}.styears .sp3,.styears .sp4{grid-column:span 2}.styears .sp3 .kgrid,.styears .sp4 .kgrid{grid-template-columns:repeat(2,minmax(0,1fr)) !important}}
 @media(max-width:600px){.styears{grid-template-columns:minmax(0,1fr)}.styears .kyear{grid-column:auto !important}.styears .kgrid{grid-template-columns:repeat(2,minmax(0,1fr)) !important}}
+/* each year's boards wrap in rows, an unfinished last row centred */
+.styears .kgrid{display:flex !important;flex-wrap:wrap;justify-content:center;--g:12px;gap:var(--g) !important}
+.styears .kgrid>.sti{flex:0 0 calc((100% - (var(--c) - 1) * var(--g)) / var(--c));min-width:0}
+.styears .sp1{--c:1}.styears .sp2{--c:2}.styears .sp3{--c:3}.styears .sp4{--c:4}
+@media(max-width:900px){.styears .sp3,.styears .sp4{--c:2}}
+@media(max-width:600px){.styears .kyear{--c:2}.styears .kgrid{--g:8px}}
 .cf .rematch{display:inline-block;margin-top:4px;font:700 10px Archivo;letter-spacing:.05em;color:#111;background:#F0C566;border-radius:999px;padding:2px 7px}
 </style><style id="bdt-seg-fix">.seg:not(.on){color:#E6ECE7 !important}</style><style id="bdt-mobile-tabs">
 @media(max-width:760px){
