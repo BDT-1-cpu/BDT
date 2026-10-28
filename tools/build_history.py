@@ -38,7 +38,10 @@ for m in M101.values():   # a new card photo gets a new address, so phones and b
     m['v'] = int(os.path.getmtime(f'moments/thumbs/{m["n"]}.jpg')) % 100000
 # the whole book (the smaller sharing copy, ~79 MB) is too big for GitHub, so it lives in Wix Media Manager (History folder)
 BOOK_URL = 'https://588d179a-797a-48bc-9036-1ad66c69fd17.usrfiles.com/ugd/588d17_bc3e3ca5ace84aaea63e1b67df3208c2.pdf'
-BOOK_BTN = (f'<a class="m1book" href="{BOOK_URL}" target="_blank" rel="noopener">Download the whole book (PDF, 79 MB)</a>' if BOOK_URL else '')
+# a lighter copy (~33 MB, photos more compressed) for phones and WhatsApp is small enough to live here
+BOOK_SMALL = 'moments/101 Greatest Tour Moments - The Complete Book (smaller).pdf'
+BOOK_BTN = ((f'<a class="m1book" href="{BOOK_URL}" target="_blank" rel="noopener">Whole book (PDF, 79 MB)</a>' if BOOK_URL else '')
+            + (f'<a class="m1book" href="{BOOK_SMALL.replace(' ', '%20').replace('(', '%28').replace(')', '%29')}" target="_blank" rel="noopener">Smaller copy for phones (33 MB)</a>' if os.path.exists(BOOK_SMALL) else ''))
 M101_HTML = ('<div id="m101"><div class="m1intro"><h2>101 Greatest Tour Moments</h2>'
              '<p>The countdown of the 101 greatest moments in tour history, written for BDT 2026 in Scottsdale. '
              'Tap a memory to open it – the videos inside play on Vimeo or YouTube.</p>'

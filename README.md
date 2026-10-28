@@ -35,7 +35,7 @@ This repository is the **master copy of every page on www.bigdogstour.com**. Rea
 | Statistics, Trophies, Courses, Handicaps | `Statistics.html`, `Trophies.html`, `Courses.html`, `Handicaps.html` |
 | Trivia (`/trivia`) | `Facts & Figures.html` (file name kept so the Wix link doesn't change) |
 | Bloodhounds, Retrievers | `Bloodhounds.html`, `Retrievers.html` |
-| History | `History.html` – if the Moments timeline is regenerated with `build_history.py`, run `tools/build_history.py` afterwards to add the four other layouts back. That script also adds the **101 Greatest** tab: one card per memory from `moments/moments.json`, opening the phone-sized PDFs in `moments/` (thumbnails in `moments/thumbs/`). Those files come from Claude's 101 Moments build, not the Playbook. The whole-book download is the sharing copy in Wix Media Manager (History folder), linked by `BOOK_URL` in the script |
+| History | `History.html` – if the Moments timeline is regenerated with `build_history.py`, run `tools/build_history.py` afterwards to add the four other layouts back. That script also adds the **101 Greatest** tab: one card per memory from `moments/moments.json`, opening the phone-sized PDFs in `moments/` (thumbnails in `moments/thumbs/`). Those files come from Claude's 101 Moments build, not the Playbook. The whole-book download is the sharing copy in Wix Media Manager (History folder), linked by `BOOK_URL` in the script; a lighter 33 MB copy for phones sits in `moments/` (`BOOK_SMALL`) |
 | Dog Spots, Nicknames, Videos (`/videos`), Rules | `Dog Spots.html`, `Nicknames.html`, `Tour Videos.html`, `Rules, Privacy & Support.html` |
 
 ## Tour results (from 2027)
