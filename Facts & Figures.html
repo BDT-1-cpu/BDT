@@ -221,8 +221,8 @@ html,body{max-width:100%;overflow-x:clip}
 .styears .kgrid{max-width:none;grid-template-columns:repeat(auto-fill,minmax(210px,1fr))}
 .stwall{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px;background:#0b0b0b;border-radius:14px;padding:12px}
 .sti{margin:0;color:#ddd;text-align:center;transition:opacity .2s}
-.sti .simg{position:relative;border-radius:10px;overflow:hidden;cursor:zoom-in;aspect-ratio:3/2;background:#010080;border:3px solid transparent;transition:transform .15s,border-color .15s}
-.sti .simg:hover{transform:translateY(-2px);border-color:#F0C566}
+.sti .simg{position:relative;border-radius:10px;overflow:hidden;cursor:zoom-in;aspect-ratio:3/2;background:#010080;border:2px solid #F0C566;box-shadow:0 2px 10px rgba(0,0,0,.45);transition:transform .15s,border-color .15s}
+.sti .simg:hover{transform:translateY(-2px);border-color:#fff}
 .sti .simg img{width:100%;height:100%;object-fit:cover;display:block}
 .sti figcaption{font-size:13px;padding:6px 0 2px;line-height:1.35}.sti figcaption b{color:#fff}.sti figcaption span{color:#aaa;font-size:12px}
 .sti .stcat{position:absolute;top:6px;right:6px;font:700 10px Archivo;background:rgba(255,255,255,.88);color:#111;padding:2px 6px;border-radius:4px}
@@ -719,7 +719,7 @@ document.getElementById('toTabs').onclick=()=>{const tb=document.getElementById(
 /* stash */
 (function(){
  const W='https://static.wixstatic.com/media/588d17_';
- const url=(id,big)=>W+id+'~mv2.jpg'+(big?'':'/v1/fit/w_480,h_320,q_85/s.jpg');
+ const url=(id,big)=>id.includes('/')?id:W+id+'~mv2.jpg'+(big?'':'/v1/fit/w_480,h_320,q_85/s.jpg');   // a path is a board kept in this repo
  const CATS={head:'Headwear',bags:'Bags & Travel',golf:'On The Course',wear:'Clothing & Belts',drink:'Drinks Kit',gear:'Gadgets & Shades',keep:'Keepsakes'};
  const VEN={2004:'Lagos',2005:'Vilamoura',2006:'Mallorca',2007:'Dubai',2008:'Lisbon',2009:'Vale do Lobo',2010:'Girona',2011:'Miami',2012:'Marbella',2013:'Marbella',2014:'Marbella',2015:'Malmo',2016:'Mallorca',2017:'Mallorca',2018:'Valencia',2019:'Cyprus',2020:'The Belfry',2021:'Celtic Manor',2022:'Lagos',2023:'Turkey',2024:'Turkey',2025:'Marrakech',2026:'Scottsdale'};
  // [year, name, category, image ids, alt labels, title gives the year away]
@@ -790,7 +790,8 @@ document.getElementById('toTabs').onclick=()=>{const tb=document.getElementById(
   [2024,'Puma Belts','wear',['6f7449b2b456410b8126f742d476ec37']],
   [2024,'Sony Speakers','gear',['cb1b630bb94b42cca85b17f80839af0b']],
   [2025,'Shorts','wear',['da488096ae374b9482f89a262e78e423','0de708d677de4ca9bb8c5f98628a2bd5'],['Navy','Grey']],
-  [2026,'Rucksacks','bags',['fe45407c082e4618bda4f005245ab307']]
+  [2026,'Rucksacks','bags',['fe45407c082e4618bda4f005245ab307']],
+  [2026,'Nike T-Shirts','wear',['img/stash/2026-T-Shirts.jpg']]
  ].map(([y,n,c,ids,alts,give],i)=>({i,y,n,c,ids,alts:alts||null,give:!!give}));
  const byY={};ST.forEach(s=>(byY[s.y]=byY[s.y]||[]).push(s));
  const yrs=Object.keys(byY).map(Number).sort((a,b)=>a-b);
@@ -810,7 +811,7 @@ document.getElementById('toTabs').onclick=()=>{const tb=document.getElementById(
    [drinks,'Items to keep the drinks cold or close']
   ].map(([v,k])=>`<div><div class="v">${v}</div><div class="k">${k}</div></div>`).join('');
   document.getElementById('stcat').innerHTML=`<button data-c="all">All <i>${ST.length}</i></button>`+Object.keys(CATS).map(c=>`<button data-c="${c}">${CATS[c]} <i>${cc[c]||0}</i></button>`).join('')})();
- const card=(s,cap)=>`<figure class="sti" data-i="${s.i}"><div class="simg" onclick="stZoom(${s.i},this)"><img loading="lazy" decoding="async" src="${url(s.ids[0])}" alt="${s.n}, ${s.y}"><span class="stcat">${CATS[s.c]}</span>${s.alts?`<button class="stalt" onclick="event.stopPropagation();stAlt(${s.i},this)">${s.alts[0]} ↻</button>`:''}</div><figcaption>${cap}</figcaption></figure>`;
+ const card=(s,cap)=>`<figure class="sti" data-i="${s.i}"><div class="simg" onclick="stZoom(${s.i},this)"><img loading="lazy" decoding="async" src="${url(s.ids[0])}" alt="${s.n}, ${s.y}"><span class="stcat">${CATS[s.c]}</span>${s.alts?`<button class="stalt" onclick="event.stopPropagation();stAlt(${s.i},this)">${s.alts[0]} ↻</button>`:''}</div></figure>`;
  window.stZoom=(i,el)=>{const s=ST[i],k=+(el.dataset.k||0);zoom(url(s.ids[k],1))};
  window.stAlt=(i,btn)=>{const s=ST[i],box=btn.parentNode,k=((+(box.dataset.k||0))+1)%s.ids.length;box.dataset.k=k;box.querySelector('img').src=url(s.ids[k]);btn.textContent=s.alts[k]+' ↻'};
  const keep=s=>cat==='all'||s.c===cat;
