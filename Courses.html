@@ -436,7 +436,7 @@ drawTough();
  document.getElementById('best').addEventListener('click',e=>{const t=e.target.closest('[data-x]');if(t)openLB(+t.dataset.x,false)})})();
 
 /* ---------- PASSPORT ---------- */
-(function(){const col={Spain:'#b3261e',Portugal:'#1f6b3a',UAE:'#8a5a00',USA:'#1d3f8f',Sweden:'#0b5f9e',Cyprus:'#b86b00',England:'#9e1030',Wales:'#2e7d32',Turkey:'#c62828',Morocco:'#7b2d26'};
+(function(){const col={Spain:'#e5483f',Portugal:'#3fae63',UAE:'#d99a2b',USA:'#6f8cf0',Sweden:'#3d9be0',Cyprus:'#e8952e',England:'#e0405f',Wales:'#4caf50',Turkey:'#ef5350',Morocco:'#d9705f'};
  const by={};T.forEach(t=>(by[t.cty]=by[t.cty]||[]).push(t));const L=Object.entries(by).sort((a,b)=>b[1].length-a[1].length||a[1][0].y-b[1][0].y);
  document.getElementById('pp').innerHTML=L.map(([c,ts])=>{const cs=[...new Set(ts.flatMap(t=>t.rounds.map(o=>o.k)))];const locs=[...new Set(ts.map(t=>t.loc))];
   return `<div class="stamp" style="--sc:${col[c]||'#333'}"><span class="big">${ts.length}</span><div class="ct">${esc(c)}</div><div class="st">${ts.length} tour${ts.length>1?'s':''} · ${locs.map(esc).join(' · ')}</div><div class="yrs">${ts.map(t=>`<button data-y="${t.y}">${t.y}</button>`).join('')}</div><ul>${cs.map(k=>`<li>${esc(k)}${byKey[k].length>1?` <b>×${byKey[k].length}</b>`:''}</li>`).join('')}</ul></div>`}).join('');

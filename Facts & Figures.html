@@ -2,7 +2,7 @@
 <title>Big Dogs Tour – Trivia</title>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Archivo:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--red:#FF0000;--navy:#000080;--ink:#111;--muted:#6b6b6b;--bg:#f6f5f1;--card:#fff;--line:#e2e0da;--gold:#FFD400;--pr:#ffc9c9;--pn:#c7c9ef}
+:root{--red:#FF0000;--navy:#5068f2;--ink:#111;--muted:#6b6b6b;--bg:#f6f5f1;--card:#fff;--line:#e2e0da;--gold:#FFD400;--pr:#ffc9c9;--pn:#c7c9ef}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Archivo,system-ui,sans-serif}
 h1,.ab{font-family:'Archivo Black',Archivo,sans-serif}
 header{text-align:center;padding:28px 16px 8px}
@@ -411,7 +411,7 @@ select,input[type=search],input[type=text]{background:#0f2219 !important;color:#
 <div id="evh" style="text-align:center;margin-bottom:12px"></div>
 <div class="filter"><label style="font-size:14px;font-weight:600">Order by</label><select id="wpo" style="min-width:170px"><option value="tours">Most tours</option><option value="first">First tour</option><option value="az">Surname A–Z</option></select></div>
 <div class="evwrap"><div id="evs" class="evgrid"></div></div>
-<div class="legend"><span><i style="background:#FF0000"></i>Bloodhounds – won or retained</span><span><i style="background:#FFB3B3"></i>Bloodhounds – lost</span><span><i style="background:#000080"></i>Retrievers – won or retained</span><span><i style="background:#AEB3E6"></i>Retrievers – lost</span><span><i style="background:#999"></i>2002–03, individual only</span><span><b>C</b> = captain</span><span><b>Run</b> = longest unbroken streak</span></div></section>
+<div class="legend"><span><i style="background:#FF0000"></i>Bloodhounds – won or retained</span><span><i style="background:#FFB3B3"></i>Bloodhounds – lost</span><span><i style="background:#5068f2"></i>Retrievers – won or retained</span><span><i style="background:#AEB3E6"></i>Retrievers – lost</span><span><i style="background:#999"></i>2002–03, individual only</span><span><b>C</b> = captain</span><span><b>Run</b> = longest unbroken streak</span></div></section>
 
 <section class="view on" id="spot"><p class="hint">One year at a time with full line-ups. Use the year strip, the arrows or the ← → keys.</p>
 <div class="years" id="years"></div>
@@ -532,13 +532,13 @@ document.getElementById('mxt').innerHTML=mh+'</tbody>'}
  const mx=Math.max(cb,cr),y=v=>T+(H-T-B)*(1-v/mx);
  const path=k=>pts.map((p,i)=>(i?'L':'M')+x(i)+','+y(p[k])).join(' ');
  let s='';for(let v=0;v<=mx;v+=2)s+=`<line x1="${L}" x2="${W-R}" y1="${y(v)}" y2="${y(v)}" stroke="#eee"/><text x="${L-10}" y="${y(v)+4}" text-anchor="end" font-size="12" fill="#888">${v}</text>`;
- s+=`<path d="${path('cb')}" fill="none" stroke="#FF0000" stroke-width="3"/><path d="${path('cr')}" fill="none" stroke="#000080" stroke-width="3"/>`;
- pts.forEach((p,i)=>{const d=p.d,k=d.hold==='Bloodhounds'?'cb':'cr',c=d.hold==='Bloodhounds'?'#FF0000':'#000080',ret=d.res==='Halved';
+ s+=`<path d="${path('cb')}" fill="none" stroke="#FF0000" stroke-width="3"/><path d="${path('cr')}" fill="none" stroke="#5068f2" stroke-width="3"/>`;
+ pts.forEach((p,i)=>{const d=p.d,k=d.hold==='Bloodhounds'?'cb':'cr',c=d.hold==='Bloodhounds'?'#FF0000':'#5068f2',ret=d.res==='Halved';
   s+=`<text x="${x(i)}" y="${H-B+22}" text-anchor="middle" font-size="11" fill="#666" transform="rotate(-45 ${x(i)} ${H-B+22})">${d.y}</text>`;
   s+=`<circle cx="${x(i)}" cy="${y(p[k])}" r="${ret?6:5}" fill="${ret?'#fff':c}" stroke="${c}" stroke-width="${ret?3:0}"/>`;
   s+=`<rect class="hit" data-i="${i}" x="${x(i)-18}" y="${T}" width="36" height="${H-T-B+30}" fill="transparent" style="cursor:pointer"/>`});
  const top=cr>=cb;
- const gap=Math.abs(y(cr)-y(cb))<18?9:0;s+=`<text x="${W-R+10}" y="${y(cr)+5+(top?-gap:gap)}" font-size="14" font-weight="700" fill="#000080">Retrievers ${cr}</text><text x="${W-R+10}" y="${y(cb)+5+(top?gap:-gap)}" font-size="14" font-weight="700" fill="#FF0000">Bloodhounds ${cb}</text>`;
+ const gap=Math.abs(y(cr)-y(cb))<18?9:0;s+=`<text x="${W-R+10}" y="${y(cr)+5+(top?-gap:gap)}" font-size="14" font-weight="700" fill="#5068f2">Retrievers ${cr}</text><text x="${W-R+10}" y="${y(cb)+5+(top?gap:-gap)}" font-size="14" font-weight="700" fill="#FF0000">Bloodhounds ${cb}</text>`;
  const svg=document.getElementById('rs');svg.innerHTML=s;const rp=document.getElementById('rp');
  const pop=i=>{const p=pts[i],d=p.d;rp.innerHTML=`<img loading="lazy" decoding="async" class="ph" src="${I[d.y+d.hold[0]]}" alt="" onclick="openYear(${d.y})" style="cursor:pointer"><div><div class="ab" style="font-size:28px">${d.y}</div><div class="chip" style="font-size:18px;margin:6px 0">${chip(d)}</div><div style="font-weight:600">${d.note}</div><div style="color:#666;margin-top:4px">Years holding the cup: Bloodhounds ${p.cb}, Retrievers ${p.cr}</div></div>`};
  svg.querySelectorAll('.hit').forEach(r=>{r.onmouseenter=()=>pop(+r.dataset.i);r.onclick=()=>pop(+r.dataset.i)});pop(n-1)})();
@@ -578,7 +578,7 @@ function drawMap(){const M=MAP[mapView];const byV={};[...EARLYD,...asc].forEach(
  else for(let i=0;i<pins.length;i++)for(let j=pins.length-1;j>i;j--){const a=pins[i],b=pins[j];if(Math.hypot(a.x-b.x,a.y-b.y)<16){a.vs.push(...b.vs);a.ds.push(...b.ds);pins.splice(j,1)}}
  pins.forEach(p=>{p.ds.sort((a,b)=>a.y-b.y);p.label=p.eu?'Europe & Med – click to zoom in':p.vs.length===1?p.vs[0]:(p.vs.includes('Lagos')&&p.vs.length<=3)?'Algarve':p.vs.length<=2?p.vs.join(' & '):'Europe & Med'});
  const off=mapView==='world'?[]:[];let s=`<rect width="${M.W}" height="${M.H}" fill="#dbe8f0"/><path d="${M.land}" fill="#efebe0"/><path d="${M.borders}" fill="none" stroke="#fff" stroke-width="1"/>`;
- pins.forEach((p,i)=>{const last=p.ds[p.ds.length-1],c=p.eu?'#555':last.early?'#888':last.hold==='Bloodhounds'?'#FF0000':'#000080',r=p.eu?20:7+p.ds.length*2.2,left=['Valencia','Algarve','Lisbon'].includes(p.label);
+ pins.forEach((p,i)=>{const last=p.ds[p.ds.length-1],c=p.eu?'#555':last.early?'#888':last.hold==='Bloodhounds'?'#FF0000':'#5068f2',r=p.eu?20:7+p.ds.length*2.2,left=['Valencia','Algarve','Lisbon'].includes(p.label);
   s+=`<g class="pin" data-i="${i}" style="cursor:pointer"><circle cx="${p.x}" cy="${p.y}" r="${r}" fill="${c}" stroke="#fff" stroke-width="2.5"/><text x="${p.x}" y="${p.y+4}" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">${p.ds.length>1?p.ds.length:''}</text><text x="${left?p.x-r-5:p.x+r+5}" text-anchor="${left?"end":"start"}" y="${p.y+4}" font-size="14" font-weight="700" fill="#222" stroke="#efebe0" stroke-width="3" paint-order="stroke">${p.label}</text></g>`});
  const svg=document.getElementById('msvg');svg.setAttribute('viewBox',`0 0 ${M.W} ${M.H}`);svg.innerHTML=s;
  const info=document.getElementById('minfo');
@@ -638,7 +638,7 @@ const cfSeen={};document.getElementById('cfc').innerHTML=asc.map(d=>{const cb=d.
    const ever=idx.length===n,link=players.includes(nm),i0=idx[0].i,i1=idx[idx.length-1].i;
    h+=`<div class="evrow" style="${colsFull}"><div class="evn${ever?' ever':''}" ${link?`onclick="openPlayer('${nm.replace(/'/g,"\\'")}')"`:''} title="${nm}">${av(nm,22)}<span class="evnm">${ever?'★ ':''}${nm2(nm)}</span></div>
    <div class="evtrack" style="grid-column:2 / span ${n}">${band}<div class="evline" style="left:${(i0+.5)/n*100}%;width:${(i1-i0)/n*100}%"></div>${idx.map(e=>{
-     const bg=e.t==='E'?'#999':e.t==='B'?(e.good?'#FF0000':'#FFB3B3'):(e.good?'#000080':'#AEB3E6');
+     const bg=e.t==='E'?'#999':e.t==='B'?(e.good?'#FF0000':'#FFB3B3'):(e.good?'#5068f2':'#AEB3E6');
      const tip=e.t==='E'?`${nm} · ${e.y} · individual only`:`${nm} · ${e.y} · ${e.t==='B'?'Bloodhounds':'Retrievers'}${e.c?' (captain)':''} · ${e.d.note}`;
      return `<i class="${e.c?'cap':''}" style="left:${(e.i+.5)/n*100}%;background:${bg}" title="${tip}" ${e.t==='E'?'':`onclick="openYear(${e.y})"`}>${e.c?'C':''}</i>`}).join('')}</div>
    <div class="evt">${idx.length}</div><div class="evr">${best}</div></div>`});
@@ -673,9 +673,9 @@ const pname=n=>`<span style="display:inline-flex;align-items:center;gap:8px">${a
   const r2=R[1]?R.slice(0,2).reduce((s,r)=>s+(r?r[0]-r[1]:0),0):0,fin=d.hold==='Bloodhounds'?1:-1;
   const cb=R[2]&&r2!==0&&Math.sign(r2)!==fin&&!po(d)?d.hold:null;
   const W=300,H=110,px=i=>30+i*80,mx=Math.max(4,...pts.map(Math.abs)),py=v=>H/2-v/mx*(H/2-14);
-  let s=`<line x1="20" x2="${W-10}" y1="${H/2}" y2="${H/2}" stroke="#ccc"/><text x="4" y="14" font-size="10" fill="#FF0000">BH ahead</text><text x="4" y="${H-4}" font-size="10" fill="#000080">RT ahead</text>`;
+  let s=`<line x1="20" x2="${W-10}" y1="${H/2}" y2="${H/2}" stroke="#ccc"/><text x="4" y="14" font-size="10" fill="#FF0000">BH ahead</text><text x="4" y="${H-4}" font-size="10" fill="#5068f2">RT ahead</text>`;
   s+=`<polyline points="${pts.map((v,i)=>px(i)+','+py(v)).join(' ')}" fill="none" stroke="#555" stroke-width="2"/>`;
-  pts.forEach((v,i)=>{if(i)s+=`<circle cx="${px(i)}" cy="${py(v)}" r="5" fill="${v>0?'#FF0000':v<0?'#000080':'#999'}"/>`});
+  pts.forEach((v,i)=>{if(i)s+=`<circle cx="${px(i)}" cy="${py(v)}" r="5" fill="${v>0?'#FF0000':v<0?'#5068f2':'#999'}"/>`});
   ['Start','R I','R II','R III'].forEach((l,i)=>s+=`<text x="${px(i)}" y="${H+14}" text-anchor="middle" font-size="10" fill="#888">${l}</text>`);
   return {cb,html:`<div class="capc"><div style="display:flex;justify-content:space-between;align-items:center"><span class="ab" style="font-size:22px">${d.y}</span><span class="chip" style="font-size:13px">${chip(d)}</span></div><div class="rec">${d.venue}${cb?` · <span class="cbk" style="background:${col(cb)}">${cb.toUpperCase()} COMEBACK</span>`:''}</div>
   <svg viewBox="0 0 ${W} ${H+18}" style="width:100%">${s}</svg><div class="rsc">${['Round I','Round II','Round III'].map((l,i)=>`<div><span>${l}</span><b>${R[i]?`<i class="B">${fmt(R[i][0])}</i>–<i class="R">${fmt(R[i][1])}</i>`:'Rained off'}</b></div>`).join('')}</div>${po(d)?`<div class="why">${d.note}</div>`:''}</div>`}};
@@ -692,7 +692,7 @@ const pname=n=>`<span style="display:inline-flex;align-items:center;gap:8px">${a
   if(EARLYY[y]){const n=EARLYY[y].length,w=n*u/2;s+=`<rect x="${mid-24-w}" y="${yy+4}" width="${w}" height="16" fill="#bbb" rx="2"/><rect x="${mid+24}" y="${yy+4}" width="${w}" height="16" fill="#bbb" rx="2"/><text x="${mid+30+w}" y="${yy+16}" font-size="11" fill="#888">${n} players · individual only</text>`;return}
   const d=asc.find(x=>x.y===y),nb=d.bp.length,nr=d.rp.length,odd=nb!==nr;
   s+=`<g style="cursor:pointer" onclick="openYear(${y})"><rect x="${mid-24-nb*u}" y="${yy+4}" width="${nb*u}" height="16" fill="#FF0000" rx="2"/><text x="${mid-30-nb*u}" y="${yy+16}" text-anchor="end" font-size="12" font-weight="700" fill="#FF0000">${odd&&nb<nr?'<tspan fill="#b8860b">'+(nr-nb)+' short ●</tspan>  ':''}${nb}</text>
-  <rect x="${mid+24}" y="${yy+4}" width="${nr*u}" height="16" fill="#000080" rx="2"/><text x="${mid+30+nr*u}" y="${yy+16}" font-size="12" font-weight="700" fill="#8fa0ff">${nr}${odd&&nr<nb?'  <tspan fill="#b8860b">● '+(nb-nr)+' short</tspan>':''}</text></g>`});
+  <rect x="${mid+24}" y="${yy+4}" width="${nr*u}" height="16" fill="#5068f2" rx="2"/><text x="${mid+30+nr*u}" y="${yy+16}" font-size="12" font-weight="700" fill="#8fa0ff">${nr}${odd&&nr<nb?'  <tspan fill="#b8860b">● '+(nb-nr)+' short</tspan>':''}</text></g>`});
  const svg=document.getElementById('sqs');svg.setAttribute('viewBox',`0 0 ${W} ${H}`);svg.innerHTML=s;
  const un=asc.filter(d=>d.bp.length!==d.rp.length).map(d=>d.y);document.getElementById('sqn').innerHTML=`<b>Uneven teams:</b> ${un.join(', ')}. In these years some singles had to be played instead of fourballs. The gold ● marks the team that was short.`})();
 
