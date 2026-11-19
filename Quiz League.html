@@ -1,0 +1,274 @@
+<!doctype html><html lang="en"><head><meta name="robots" content="noindex, nofollow"><script id="bdt-guard">(function(){var alone;try{alone=window.top===window.self}catch(e){alone=false}if(!alone){var st=document.createElement('style');st.id='bdt-bars';st.textContent='html{scrollbar-width:thin;scrollbar-color:#C9A24A #0B1410}::-webkit-scrollbar{width:10px;height:10px}::-webkit-scrollbar-track,::-webkit-scrollbar-corner{background:#0B1410}::-webkit-scrollbar-thumb{background:#C9A24A;border-radius:6px;border:2px solid #0B1410}::-webkit-scrollbar-thumb:hover{background:#F0C566}';(document.head||document.documentElement).appendChild(st);var f=function(){var d=document.documentElement,b=document.body,v=d.scrollHeight>innerHeight+2?'contain':'';d.style.overscrollBehaviorY=v;if(b)b.style.overscrollBehaviorY=v};addEventListener('load',f);addEventListener('resize',f);document.addEventListener('DOMContentLoaded',function(){(document.head||document.documentElement).appendChild(st);f();try{new ResizeObserver(f).observe(document.body)}catch(e){}});return}if(/BDTApp/.test(navigator.userAgent)||location.protocol==='file:'||/^(localhost|127\.|\[::1\])/.test(location.hostname))return;try{window.stop()}catch(e){}document.documentElement.innerHTML='\x3chead>\x3cmeta charset="utf-8">\x3cmeta name="viewport" content="width=device-width,initial-scale=1">\x3cmeta name="robots" content="noindex, nofollow">\x3ctitle>Big Dogs Tour\x3c/title>\x3c/head>\x3cbody style="margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#050B09;color:#F4F1E4;font:16px/1.5 system-ui,sans-serif;text-align:center;padding:24px;box-sizing:border-box">\x3cp>This page is part of the Big Dogs Tour website.\x3cbr>\x3ca style="color:#F0C566" href="https://www.bigdogstour.com">Go to www.bigdogstour.com\x3c/a>\x3c/p>\x3c/body>';})();</script><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>html{-webkit-text-size-adjust:100%;text-size-adjust:100%}</style>
+<title>Big Dogs Tour – Quiz League</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* Black base, gold for structure, red for the 9pm reveal, green for right answers. Single column, phone first. */
+:root{
+  --bg:#050b09; --panel:#0e1411; --line:#2a2f2c; --text:#f3f3f3; --muted:#9aa39e;
+  --gold:#c9a227; --red:#ff3b30; --good:#3ecf6b;
+  --display:'Anton','Impact','Arial Narrow',sans-serif; --body:'Barlow',system-ui,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text);font-family:var(--body);font-size:17px}
+.wrap{max-width:640px;margin:0 auto;padding:16px 16px 48px}
+h1,h2{font-family:var(--display);font-weight:400;text-transform:uppercase;letter-spacing:.02em;margin:0;text-wrap:balance}
+.top{display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid var(--gold);padding-bottom:10px;margin-bottom:14px}
+.top h1{font-size:30px;color:var(--gold)}
+.top span{font-family:var(--display);font-size:20px}
+label.k{display:block;font-family:var(--display);font-size:20px;color:var(--gold);margin:14px 0 6px;text-transform:uppercase}
+select{width:100%;font:inherit;font-size:19px;padding:12px;background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:8px}
+select.need{border-color:var(--gold);box-shadow:0 0 0 2px rgba(201,162,39,.35)}
+.tabs{display:flex;gap:8px;margin:16px 0 10px;overflow-x:auto;padding-bottom:4px;scrollbar-width:thin}
+.tab{flex:1 0 auto;min-width:76px;background:var(--panel);border:1px solid var(--line);color:var(--muted);border-radius:8px;padding:8px 10px;font-family:var(--display);font-size:16px;cursor:pointer;text-align:center;position:relative}
+.tab[aria-selected="true"]{border-color:var(--gold);color:var(--gold)}
+.tab.live::after{content:"";position:absolute;top:6px;right:6px;width:7px;height:7px;border-radius:50%;background:var(--red)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
+.card .tag{font-family:var(--display);color:var(--gold);font-size:18px;text-transform:uppercase}
+.q{font-size:22px;font-weight:600;margin:6px 0 14px;line-height:1.25}
+.opts{display:grid;gap:10px}
+.opt{display:flex;align-items:center;gap:12px;background:#000;border:2px solid var(--line);border-radius:10px;padding:13px 14px;font-size:20px;color:var(--text);cursor:pointer;text-align:left;font-family:var(--body);font-weight:600}
+.opt b{font-family:var(--display);font-weight:400;color:var(--gold);font-size:24px;width:26px;flex:none}
+.opt[aria-pressed="true"]{border-color:var(--gold);background:#1a1405}
+.opt.right{border-color:var(--good);background:#0b2013}
+.opt.wrong{opacity:.55}
+.opt.wrong.mine{opacity:.8;border-color:var(--red)}
+.opt:disabled{cursor:default}
+.status{margin:12px 0 0;font-size:16px;color:var(--muted)}
+.status strong{color:var(--text)}
+.status .err{color:var(--red)}
+.clock{margin:6px 0 0;font-size:15px;color:var(--muted)}
+.clock b{color:var(--gold);font-weight:600}
+.reveal{margin-top:14px;padding:14px;border-radius:10px;background:#1b0907;border:1px solid var(--red)}
+.reveal .big{font-family:var(--display);font-size:34px;color:var(--red);text-transform:uppercase;line-height:1.1}
+.reveal p{margin:6px 0 0;color:#ddd}
+h2{font-size:24px;color:var(--gold);margin:26px 0 10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:15px;background:var(--panel)}
+.chip.in{border-color:var(--gold);color:var(--gold)}
+.chip.ok{border-color:var(--good);color:var(--good)}
+.chip.me{font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.chip small{color:var(--muted);margin-left:4px}
+.chip.wait{border-style:dashed;color:var(--muted)}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+th,td{padding:9px 8px;border-bottom:1px solid var(--line);text-align:left}
+th{font-family:var(--display);font-weight:400;color:var(--muted);text-transform:uppercase;font-size:14px;letter-spacing:.05em}
+td.n,th.n{text-align:right}
+td.pos{width:34px;color:var(--muted)}
+tr.me td{background:#1a1405;color:var(--gold)}
+td.pts{font-family:var(--display);font-size:22px}
+.empty{color:var(--muted);font-size:16px;padding:6px 0}
+.msg{color:var(--muted);text-align:center;padding:30px 10px;font-size:17px}
+.foot{margin-top:26px;color:var(--muted);font-size:14px;line-height:1.45}
+[hidden]{display:none!important}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><h1>Quiz League</h1><span>BDT 2027</span></div>
+
+  <label class="k" for="who">Who are you?</label>
+  <select id="who"><option value="">Pick your name</option></select>
+
+  <div class="tabs" role="tablist" id="tabs" aria-label="Quiz days"></div>
+
+  <div class="card" id="card"><p class="msg">Loading the quiz…</p></div>
+
+  <div id="more" hidden>
+    <h2 id="chipsHead">Who has answered</h2>
+    <div class="chips" id="chips"></div>
+  </div>
+
+  <h2>League table</h2>
+  <table id="table" hidden>
+    <thead><tr><th>#</th><th>Dog</th><th class="n">Played</th><th class="n">Pts</th></tr></thead>
+    <tbody id="league"></tbody>
+  </table>
+  <p class="empty" id="noLeague">The table starts after the first 9pm reveal.</p>
+
+  <p class="foot">One point for each right answer. You can change your answer until 9pm (UK time). Before then everyone can see who has answered, but not what. At 9pm the right answer and everyone's picks appear.</p>
+</div>
+
+<script>
+(function(){
+// Live address on bigdogstour.com. On a local test copy (localhost only) ?api=... points somewhere else.
+var API='https://www.bigdogstour.com/_functions';
+try{var q=new URLSearchParams(location.search).get('api');if(q&&/^(localhost|127\.)/.test(location.hostname))API=q.replace(/\/$/,'')}catch(e){}
+
+var LETTERS='ABCDEF';
+var data=null,skew=0,cur=null,me=null,saving=false,errMsg='',revealTimer=null;
+var mine={};   // quizId -> pick made on this phone (only kept here, so picks stay secret until 9pm)
+
+function $(id){return document.getElementById(id)}
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+function store(k,v){try{if(v==null)localStorage.removeItem(k);else localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+function recall(k){try{return JSON.parse(localStorage.getItem(k))}catch(e){return null}}
+function now(){return Date.now()+skew}
+function quiz(){return data&&data.quizzes.filter(function(z){return z.id===cur})[0]}
+function label(z){return z.day!==''&&z.day!=null?'Day '+z.day:z.id}
+function ukClock(ms){
+  try{return new Date(ms).toLocaleTimeString('en-GB',{timeZone:'Europe/London',hour:'numeric',minute:'2-digit',hour12:true}).replace(':00','').replace(' ','')}catch(e){return '9pm'}
+}
+function ukDay(ms){
+  try{return new Date(ms).toLocaleDateString('en-GB',{timeZone:'Europe/London',weekday:'long',day:'numeric',month:'long'})}catch(e){return ''}
+}
+function left(ms){
+  var m=Math.max(0,Math.ceil(ms/60000)),h=Math.floor(m/60);m=m%60;
+  return h?h+'h '+m+'m':m+' min';
+}
+
+me=recall('bdtQuizMe');mine=recall('bdtQuizMine')||{};
+
+function load(){
+  return fetch(API+'/quiz',{cache:'no-store'}).then(function(r){return r.json()}).then(function(d){
+    if(!d||d.error||!d.quizzes)throw new Error('bad data');
+    data=d;skew=d.now-Date.now();
+    if(me&&d.players.indexOf(me)<0){me=null;store('bdtQuizMe',null)}
+    if(!quiz())cur=pickDefault();
+    planReveal();render();
+  }).catch(function(){
+    if(!data)$('card').innerHTML='<p class="msg">The quiz could not load. Check your signal and pull down to refresh.</p>';
+  });
+}
+
+// Open on today's live quiz if there is one, otherwise the most recent.
+function pickDefault(){
+  var qs=data.quizzes;if(!qs.length)return null;
+  var live=qs.filter(function(z){return !z.revealed});
+  return (live.length?live[live.length-1]:qs[qs.length-1]).id;
+}
+
+// Fetch again the moment the next answer is due out.
+function planReveal(){
+  clearTimeout(revealTimer);
+  var due=data.quizzes.filter(function(z){return !z.revealed}).map(function(z){return z.revealAt});
+  if(data.nextOpensAt)due.push(data.nextOpensAt);
+  if(!due.length)return;
+  var wait=Math.min.apply(null,due)-now()+1500;
+  if(wait<2147483647)revealTimer=setTimeout(load,Math.max(wait,1500));
+}
+
+function render(){
+  // names
+  var s=$('who');
+  if(s.options.length<2){
+    s.innerHTML='<option value="">Pick your name</option>'+data.players.map(function(p){return '<option>'+esc(p)+'</option>'}).join('');
+  }
+  s.value=me||'';s.classList.toggle('need',!me);
+
+  // tabs, newest first
+  var qs=data.quizzes.slice().reverse();
+  $('tabs').innerHTML=qs.map(function(z){
+    return '<button class="tab'+(z.revealed?'':' live')+'" role="tab" type="button" data-id="'+esc(z.id)+'" aria-selected="'+(z.id===cur)+'">'+esc(label(z))+'</button>';
+  }).join('');
+  var on=$('tabs').querySelector('[aria-selected="true"]');if(on&&on.scrollIntoView)on.scrollIntoView({block:'nearest',inline:'nearest'});
+
+  renderCard();renderChips();renderLeague();
+}
+
+function renderCard(){
+  var z=quiz();
+  if(!z){
+    $('card').innerHTML='<p class="msg">'+(data.nextOpensAt?'The first quiz opens on '+esc(ukDay(data.nextOpensAt))+'.':'No quiz yet. Check back soon.')+'</p>';
+    $('more').hidden=true;return;
+  }
+  var rev=z.revealed,my=myPick(z);
+  var h='<div class="tag">'+esc(label(z))+(z.tag?' · '+esc(z.tag):'')+'</div><div class="q">'+esc(z.question)+'</div><div class="opts">';
+  z.options.forEach(function(o,i){
+    var cls=rev?(i===z.correct?'right':'wrong'+(i===my?' mine':'')):'';
+    h+='<button class="opt '+cls+'" type="button" data-o="'+i+'" aria-pressed="'+(my===i)+'"'+(rev?' disabled':'')+'><b>'+LETTERS[i]+'</b>'+esc(o)+'</button>';
+  });
+  h+='</div>';
+  if(!rev){
+    var st;
+    if(errMsg)st='<span class="err">'+esc(errMsg)+'</span>';
+    else if(!me)st='Pick your name above, then choose an answer.';
+    else if(saving)st='Saving…';
+    else if(my!=null)st='<strong>Locked in: '+LETTERS[my]+', '+esc(z.options[my])+'.</strong> You can change it until '+esc(ukClock(z.revealAt))+'.';
+    else if(z.answered.indexOf(me)>=0)st='<strong>You have answered</strong> (on another phone). Tap an answer to change it.';
+    else st='Choose an answer. You can change it until '+esc(ukClock(z.revealAt))+'.';
+    h+='<p class="status">'+st+'</p><p class="clock">Answer revealed at <b>'+esc(ukClock(z.revealAt))+'</b> · '+left(z.revealAt-now())+' to go</p>';
+  }else{
+    var verdict='';
+    if(me)verdict='<p><strong>'+(my==null?'You did not answer this one.':my===z.correct?'You got it. 1 point.':'Not this time. 0 points.')+'</strong></p>';
+    h+='<div class="reveal"><div class="big">'+esc(z.options[z.correct])+'</div>'+(z.note?'<p>'+esc(z.note)+'</p>':'')+verdict+'</div>';
+  }
+  $('card').innerHTML=h;
+}
+
+function myPick(z){
+  if(!me)return null;
+  if(z.revealed){var p=z.picks&&z.picks[me];return p==null?null:p}
+  var m=mine[z.id];return m&&m.player===me?m.pick:null;
+}
+
+function renderChips(){
+  var z=quiz();if(!z){$('more').hidden=true;return}
+  $('more').hidden=false;
+  var names=z.answered,h;
+  $('chipsHead').textContent=z.revealed?'Everyone’s picks':'Who has answered';
+  h=names.map(function(d){
+    var meCls=d===me?' me':'';
+    if(z.revealed){var a=z.picks[d];return '<span class="chip'+(a===z.correct?' ok':'')+meCls+'">'+esc(d)+'<small>'+LETTERS[a]+'</small></span>'}
+    return '<span class="chip in'+meCls+'">'+esc(d)+'</span>';
+  }).join('');
+  if(!names.length)h='<span class="chip">Nobody yet</span>';
+  var rest=data.players.length-names.length;
+  if(rest>0)h+='<span class="chip wait">'+rest+(z.revealed?' did not answer':' still to answer')+'</span>';
+  $('chips').innerHTML=h;
+}
+
+function renderLeague(){
+  var rows=data.league||[];
+  $('table').hidden=!rows.length;$('noLeague').hidden=!!rows.length;
+  var pos=0,last=null;
+  $('league').innerHTML=rows.map(function(r,i){
+    if(r.points!==last){pos=i+1;last=r.points}
+    return '<tr class="'+(r.player===me?'me':'')+'"><td class="pos">'+pos+'</td><td>'+esc(r.player)+'</td><td class="n">'+r.played+'</td><td class="n pts">'+r.points+'</td></tr>';
+  }).join('');
+}
+
+function send(z,pick){
+  var before=mine[z.id];
+  mine[z.id]={player:me,pick:pick};saving=true;errMsg='';renderCard();
+  // text/plain keeps this a "simple" request, so no extra permission check is needed.
+  fetch(API+'/quizAnswer',{method:'POST',headers:{'Content-Type':'text/plain'},body:JSON.stringify({player:me,quizId:z.id,pick:pick})})
+    .then(function(r){return r.json().then(function(b){return{ok:r.ok,b:b}})})
+    .then(function(res){
+      saving=false;
+      if(res.ok&&res.b&&res.b.ok){
+        store('bdtQuizMine',mine);
+        if(z.answered.indexOf(me)<0){z.answered.push(me);z.answered.sort()}
+        renderCard();renderChips();
+      }else{
+        if(before)mine[z.id]=before;else delete mine[z.id];
+        errMsg=(res.b&&res.b.message)||'Not saved. Try again.';
+        load();
+      }
+    }).catch(function(){
+      saving=false;if(before)mine[z.id]=before;else delete mine[z.id];
+      errMsg='Not saved. Check your signal and try again.';renderCard();
+    });
+}
+
+$('who').onchange=function(){me=this.value||null;store('bdtQuizMe',me);errMsg='';if(data)render()};
+$('tabs').onclick=function(e){var b=e.target.closest('.tab');if(b){cur=b.dataset.id;errMsg='';render()}};
+$('card').onclick=function(e){
+  var b=e.target.closest('.opt');if(!b||b.disabled||saving)return;
+  var z=quiz();if(!z||z.revealed)return;
+  if(!me){errMsg='Pick your name first.';renderCard();$('who').focus();return}
+  if(now()>=z.revealAt){load();return}
+  send(z,+b.dataset.o);
+};
+
+load();
+// Keep the countdown ticking and pick up new answers.
+setInterval(function(){if(data&&!saving)renderCard()},30000);
+setInterval(function(){if(!document.hidden&&!saving)load()},60000);
+document.addEventListener('visibilitychange',function(){if(!document.hidden)load()});
+})();
+</script>
+</body>
+</html>

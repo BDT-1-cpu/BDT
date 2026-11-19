@@ -31,6 +31,7 @@ The pages themselves add the dark and gold scroll bar and stop the mouse wheel s
 | Nicknames | https://bdt-1-cpu.github.io/BDT/Nicknames.html |
 | Videos | https://bdt-1-cpu.github.io/BDT/Tour%20Videos.html |
 | Rules | https://bdt-1-cpu.github.io/BDT/Rules%2C%20Privacy%20%26%20Support.html |
+| Quiz (Quiz League, see `QUIZ_LEAGUE_SETUP.md`) | https://bdt-1-cpu.github.io/BDT/Quiz%20League.html |
 | Phone results page (not a Wix page – open on a phone) | https://bdt-1-cpu.github.io/BDT/scorer.html |
 | BDT 2002 | https://bdt-1-cpu.github.io/BDT/BDT%202002.html |
 | BDT 2003 | https://bdt-1-cpu.github.io/BDT/BDT%202003.html |
